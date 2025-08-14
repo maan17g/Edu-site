@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists - CodeMaster Academy</title>
+    <meta name="description" content="Learn to create organized content with HTML lists including ordered, unordered, and definition lists">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html" class="active">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Lists</h1>
+                    <p class="topic-description">
+                        Master the art of organizing content with HTML lists, from simple bullet points to complex nested structures and styled lists.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding HTML Lists</h2>
+                    <p>
+                        HTML lists are fundamental elements for organizing related information in a structured, readable format. They help break down complex information into digestible chunks and create visual hierarchy that guides users through your content. Lists are essential for navigation menus, feature listings, step-by-step instructions, and any content that benefits from organization.
+                    </p>
+                    <p>
+                        There are three main types of HTML lists: unordered lists (bulleted), ordered lists (numbered), and definition lists (term-description pairs). Each serves specific purposes and can be styled extensively with CSS to match your design needs.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>📋 Key Concept</h4>
+                        <p>Lists provide semantic meaning to grouped content, helping screen readers, search engines, and other tools understand the relationship between items and their collective purpose.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Unordered Lists</h2>
+                    <p>
+                        Unordered lists use the <code>&lt;ul&gt;</code> element and are perfect when the order of items doesn't matter. They're commonly used for navigation menus, feature lists, and collections of related items.
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic unordered list --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+    <span class="tag">&lt;li&gt;</span>HTML fundamentals<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>CSS styling<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>JavaScript programming<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Responsive design<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- List with rich content --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+    <span class="tag">&lt;li&gt;</span>
+        <span class="tag">&lt;strong&gt;</span>Frontend Development<span class="tag">&lt;/strong&gt;</span>
+        <span class="tag">&lt;p&gt;</span>Create user interfaces with HTML, CSS, and JavaScript<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>
+        <span class="tag">&lt;strong&gt;</span>Backend Development<span class="tag">&lt;/strong&gt;</span>
+        <span class="tag">&lt;p&gt;</span>Build server-side logic and databases<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">How unordered lists appear:</div>
+                        <ul>
+                            <li>HTML fundamentals</li>
+                            <li>CSS styling</li>
+                            <li>JavaScript programming</li>
+                            <li>Responsive design</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Ordered Lists</h2>
+                    <p>
+                        Ordered lists use the <code>&lt;ol&gt;</code> element and are ideal when sequence matters. They're perfect for step-by-step instructions, rankings, timelines, and any content where order is significant.
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic ordered list --&gt;</span>
+<span class="tag">&lt;ol&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Plan your website structure<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Create HTML markup<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Add CSS styling<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Test across devices<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Deploy to production<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="comment">&lt;!-- Ordered list with custom start --&gt;</span>
+<span class="tag">&lt;ol</span> <span class="attr">start=</span><span class="string">"5"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Advanced CSS techniques<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>JavaScript frameworks<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Performance optimization<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="comment">&lt;!-- Different numbering types --&gt;</span>
+<span class="tag">&lt;ol</span> <span class="attr">type=</span><span class="string">"A"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span>First major section<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Second major section<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="tag">&lt;ol</span> <span class="attr">type=</span><span class="string">"i"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span>First subsection<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Second subsection<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Ordered list numbering types:</div>
+                        <ul>
+                            <li><code>type="1"</code> - Numbers (1, 2, 3...) - Default</li>
+                            <li><code>type="A"</code> - Uppercase letters (A, B, C...)</li>
+                            <li><code>type="a"</code> - Lowercase letters (a, b, c...)</li>
+                            <li><code>type="I"</code> - Uppercase Roman numerals (I, II, III...)</li>
+                            <li><code>type="i"</code> - Lowercase Roman numerals (i, ii, iii...)</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Definition Lists</h2>
+                    <p>
+                        Definition lists use the <code>&lt;dl&gt;</code> element and are perfect for glossaries, FAQs, metadata, and any content that pairs terms with descriptions.
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic definition list --&gt;</span>
+<span class="tag">&lt;dl&gt;</span>
+    <span class="tag">&lt;dt&gt;</span>HTML<span class="tag">&lt;/dt&gt;</span>
+    <span class="tag">&lt;dd&gt;</span>HyperText Markup Language - the standard markup language for web pages<span class="tag">&lt;/dd&gt;</span>
+    
+    <span class="tag">&lt;dt&gt;</span>CSS<span class="tag">&lt;/dt&gt;</span>
+    <span class="tag">&lt;dd&gt;</span>Cascading Style Sheets - used for styling HTML elements<span class="tag">&lt;/dd&gt;</span>
+    
+    <span class="tag">&lt;dt&gt;</span>JavaScript<span class="tag">&lt;/dt&gt;</span>
+    <span class="tag">&lt;dd&gt;</span>Programming language that adds interactivity to web pages<span class="tag">&lt;/dd&gt;</span>
+<span class="tag">&lt;/dl&gt;</span>
+
+<span class="comment">&lt;!-- Multiple definitions for one term --&gt;</span>
+<span class="tag">&lt;dl&gt;</span>
+    <span class="tag">&lt;dt&gt;</span>Responsive Design<span class="tag">&lt;/dt&gt;</span>
+    <span class="tag">&lt;dd&gt;</span>Web design approach that adapts to different screen sizes<span class="tag">&lt;/dd&gt;</span>
+    <span class="tag">&lt;dd&gt;</span>Ensures optimal viewing experience across devices<span class="tag">&lt;/dd&gt;</span>
+    
+    <span class="tag">&lt;dt&gt;</span>Mobile-First<span class="tag">&lt;/dt&gt;</span>
+    <span class="tag">&lt;dd&gt;</span>Design strategy starting with mobile devices<span class="tag">&lt;/dd&gt;</span>
+<span class="tag">&lt;/dl&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Definition list structure:</div>
+                        <dl style="margin: 1rem 0;">
+                            <dt style="font-weight: bold; margin-top: 1rem;">HTML</dt>
+                            <dd style="margin-left: 1.5rem;">HyperText Markup Language - the standard markup language for web pages</dd>
+                            <dt style="font-weight: bold; margin-top: 1rem;">CSS</dt>
+                            <dd style="margin-left: 1.5rem;">Cascading Style Sheets - used for styling HTML elements</dd>
+                        </dl>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Nested Lists</h2>
+                    <p>
+                        Lists can be nested inside other lists to create hierarchical structures, perfect for navigation menus, outline formats, and complex categorizations.
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Nested unordered lists --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Frontend Technologies
+        <span class="tag">&lt;ul&gt;</span>
+            <span class="tag">&lt;li&gt;</span>HTML5<span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span>CSS3
+                <span class="tag">&lt;ul&gt;</span>
+                    <span class="tag">&lt;li&gt;</span>Flexbox<span class="tag">&lt;/li&gt;</span>
+                    <span class="tag">&lt;li&gt;</span>Grid<span class="tag">&lt;/li&gt;</span>
+                    <span class="tag">&lt;li&gt;</span>Animations<span class="tag">&lt;/li&gt;</span>
+                <span class="tag">&lt;/ul&gt;</span>
+            <span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span>JavaScript<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Backend Technologies
+        <span class="tag">&lt;ul&gt;</span>
+            <span class="tag">&lt;li&gt;</span>Node.js<span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span>Python<span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span>Databases<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- Mixed list types --&gt;</span>
+<span class="tag">&lt;ol&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Learning Phase
+        <span class="tag">&lt;ul&gt;</span>
+            <span class="tag">&lt;li&gt;</span>Complete online tutorials<span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span>Practice with small projects<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Building Phase
+        <span class="tag">&lt;ul&gt;</span>
+            <span class="tag">&lt;li&gt;</span>Create portfolio projects<span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span>Contribute to open source<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Styling Lists with CSS</h2>
+                    <p>
+                        CSS provides extensive control over list appearance, from simple bullet changes to complex custom designs:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* Remove default list styling */</span>
+<span class="selector">ul.clean, ol.clean</span> {
+    <span class="property">list-style</span>: <span class="value">none</span>;
+    <span class="property">padding</span>: <span class="value">0</span>;
+    <span class="property">margin</span>: <span class="value">0</span>;
+}
+
+<span class="comment">/* Custom bullet points */</span>
+<span class="selector">ul.custom</span> {
+    <span class="property">list-style-type</span>: <span class="value">none</span>;
+}
+
+<span class="selector">ul.custom li::before</span> {
+    <span class="property">content</span>: <span class="value">"→"</span>;
+    <span class="property">color</span>: <span class="value">#007bff</span>;
+    <span class="property">margin-right</span>: <span class="value">8px</span>;
+    <span class="property">font-weight</span>: <span class="value">bold</span>;
+}
+
+<span class="comment">/* Horizontal list for navigation */</span>
+<span class="selector">ul.nav</span> {
+    <span class="property">display</span>: <span class="value">flex</span>;
+    <span class="property">list-style</span>: <span class="value">none</span>;
+    <span class="property">padding</span>: <span class="value">0</span>;
+    <span class="property">gap</span>: <span class="value">1rem</span>;
+}
+
+<span class="selector">ul.nav li</span> {
+    <span class="property">background</span>: <span class="value">#f8f9fa</span>;
+    <span class="property">padding</span>: <span class="value">0.5rem 1rem</span>;
+    <span class="property">border-radius</span>: <span class="value">4px</span>;
+}
+
+<span class="comment">/* Styled definition lists */</span>
+<span class="selector">dl.glossary dt</span> {
+    <span class="property">font-weight</span>: <span class="value">bold</span>;
+    <span class="property">color</span>: <span class="value">#2c3e50</span>;
+    <span class="property">margin-top</span>: <span class="value">1rem</span>;
+    <span class="property">border-bottom</span>: <span class="value">2px solid #3498db</span>;
+    <span class="property">padding-bottom</span>: <span class="value">0.25rem</span>;
+}
+
+<span class="selector">dl.glossary dd</span> {
+    <span class="property">margin-left</span>: <span class="value">1rem</span>;
+    <span class="property">margin-bottom</span>: <span class="value">0.5rem</span>;
+    <span class="property">color</span>: <span class="value">#555</span>;
+}</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>List Accessibility</h2>
+                    <p>
+                        Proper list implementation enhances accessibility for all users:
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>♿ Accessibility Best Practices</h4>
+                        <ul>
+                            <li><strong>Use semantic lists:</strong> Choose the right list type for your content</li>
+                            <li><strong>Maintain structure:</strong> Don't use CSS to completely hide list semantics</li>
+                            <li><strong>Provide context:</strong> Use headings to introduce lists when needed</li>
+                            <li><strong>Keyboard navigation:</strong> Ensure list items are focusable when interactive</li>
+                            <li><strong>Screen reader support:</strong> Use ARIA labels for complex lists</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Accessible navigation list --&gt;</span>
+<span class="tag">&lt;nav</span> <span class="attr">aria-label=</span><span class="string">"Main navigation"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;ul&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/"</span> <span class="attr">aria-current=</span><span class="string">"page"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/about"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/contact"</span><span class="tag">&gt;</span>Contact<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/nav&gt;</span>
+
+<span class="comment">&lt;!-- List with contextual heading --&gt;</span>
+<span class="tag">&lt;section&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>Course Requirements<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;ul&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Basic computer literacy<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Text editor or IDE<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Modern web browser<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/section&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Advanced List Techniques</h2>
+                    
+                    <h3>Interactive Lists</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Checkbox list --&gt;</span>
+<span class="tag">&lt;ul</span> <span class="attr">class=</span><span class="string">"checklist"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"checkbox"</span> <span class="attr">id=</span><span class="string">"task1"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"task1"</span><span class="tag">&gt;</span>Learn HTML basics<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"checkbox"</span> <span class="attr">id=</span><span class="string">"task2"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"task2"</span><span class="tag">&gt;</span>Style with CSS<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- Expandable list items --&gt;</span>
+<span class="tag">&lt;ul</span> <span class="attr">class=</span><span class="string">"expandable"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span>
+        <span class="tag">&lt;details&gt;</span>
+            <span class="tag">&lt;summary&gt;</span>Web Development Basics<span class="tag">&lt;/summary&gt;</span>
+            <span class="tag">&lt;p&gt;</span>Learn the fundamental technologies that power the web.<span class="tag">&lt;/p&gt;</span>
+        <span class="tag">&lt;/details&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Lists with Rich Media</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Product list with images --&gt;</span>
+<span class="tag">&lt;ul</span> <span class="attr">class=</span><span class="string">"product-list"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span>
+        <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"laptop.jpg"</span> <span class="attr">alt=</span><span class="string">"Gaming laptop"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h3&gt;</span>Gaming Laptop Pro<span class="tag">&lt;/h3&gt;</span>
+        <span class="tag">&lt;p&gt;</span>High-performance laptop for gaming and development.<span class="tag">&lt;/p&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"price"</span><span class="tag">&gt;</span>$1,299<span class="tag">&lt;/span&gt;</span>
+    <span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common List Mistakes</h2>
+                    <div class="example-box">
+                        <div class="example-title">❌ Mistakes to Avoid:</div>
+                        <ul>
+                            <li><strong>Using divs instead of lists:</strong> When content is truly a list</li>
+                            <li><strong>Breaking list structure:</strong> Putting block elements directly in ul/ol</li>
+                            <li><strong>Wrong list type:</strong> Using ul for sequential content</li>
+                            <li><strong>Excessive nesting:</strong> More than 3-4 levels becomes hard to follow</li>
+                            <li><strong>Missing list items:</strong> Content directly in ul/ol without li wrapper</li>
+                            <li><strong>Inconsistent styling:</strong> Different list styles in similar contexts</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ❌ Wrong: Not using semantic lists --&gt;</span>
+<span class="tag">&lt;div&gt;</span>
+    <span class="tag">&lt;div&gt;</span>• Item 1<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div&gt;</span>• Item 2<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div&gt;</span>• Item 3<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Correct: Using proper list structure --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Item 1<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Item 2<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Item 3<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="images.html" class="nav-btn">← Previous: Images</a>
+                    <a href="tables.html" class="nav-btn">Next: Tables →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

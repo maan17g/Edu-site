@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head Element - CodeMaster Academy</title>
+    <meta name="description" content="Master the HTML head element and learn how to properly structure document metadata">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html" class="active">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">The Head Element</h1>
+                    <p class="topic-description">
+                        Learn to master the HTML head section - the invisible powerhouse that controls how browsers and search engines understand your webpage.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What is the Head Element?</h2>
+                    <p>
+                        The HTML <code>&lt;head&gt;</code> element is a container for metadata about your document. Unlike the body content, everything in the head section is invisible to users but crucial for browsers, search engines, and other web services to properly understand and process your webpage.
+                    </p>
+                    <p>
+                        Think of the head element as your webpage's ID card and instruction manual. It tells browsers how to interpret your content, what resources to load, and provides essential information that helps your page function correctly across different devices and platforms.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🧠 Key Concept</h4>
+                        <p>The head element contains machine-readable information about the document, not content for human readers. This metadata is essential for proper rendering, SEO, social sharing, and browser functionality.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Essential Head Elements</h2>
+                    <p>
+                        Let's explore the most important elements that belong in your HTML head section:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;head&gt;</span>
+    <span class="comment">&lt;!-- Character encoding - ALWAYS first --&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">charset=</span><span class="string">"UTF-8"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Responsive viewport --&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"viewport"</span> <span class="attr">content=</span><span class="string">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Page title (shows in browser tab) --&gt;</span>
+    <span class="tag">&lt;title&gt;</span>Your Page Title - Site Name<span class="tag">&lt;/title&gt;</span>
+    
+    <span class="comment">&lt;!-- Meta description for search engines --&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"description"</span> <span class="attr">content=</span><span class="string">"A compelling description of your page"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- External stylesheet --&gt;</span>
+    <span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"stylesheet"</span> <span class="attr">href=</span><span class="string">"styles.css"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Favicon --&gt;</span>
+    <span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"icon"</span> <span class="attr">href=</span><span class="string">"favicon.ico"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/head&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>The Title Element</h2>
+                    <p>
+                        The title element is one of the most important elements in your head section. It appears in browser tabs, bookmarks, and search engine results.
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Good: Descriptive and specific --&gt;</span>
+<span class="tag">&lt;title&gt;</span>Learn HTML Basics - Web Development Tutorial | CodeMaster<span class="tag">&lt;/title&gt;</span>
+
+<span class="comment">&lt;!-- Avoid: Too generic --&gt;</span>
+<span class="tag">&lt;title&gt;</span>Home<span class="tag">&lt;/title&gt;</span>
+
+<span class="comment">&lt;!-- Avoid: Too long (gets truncated) --&gt;</span>
+<span class="tag">&lt;title&gt;</span>This is an extremely long title that will be truncated in browser tabs and search results<span class="tag">&lt;/title&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Title Best Practices:</div>
+                        <ul>
+                            <li>Keep between 50-60 characters for optimal search results</li>
+                            <li>Include your primary keyword naturally</li>
+                            <li>Make each page's title unique</li>
+                            <li>Put the most important words first</li>
+                            <li>Include your brand name (usually at the end)</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Meta Tags Explained</h2>
+                    <p>
+                        Meta tags provide structured metadata about your webpage. Here are the most essential ones:
+                    </p>
+                    
+                    <h3>Character Encoding</h3>
+                    <p>This should always be the first element in your head:</p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;meta</span> <span class="attr">charset=</span><span class="string">"UTF-8"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                    
+                    <p>UTF-8 supports all Unicode characters and is the standard encoding for web pages.</p>
+                    
+                    <h3>Viewport Meta Tag</h3>
+                    <p>Essential for responsive design on mobile devices:</p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"viewport"</span> <span class="attr">content=</span><span class="string">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Viewport Properties:</div>
+                        <ul>
+                            <li><code>width=device-width</code> - Makes the page width follow the screen width</li>
+                            <li><code>initial-scale=1.0</code> - Sets the initial zoom level when the page loads</li>
+                            <li><code>user-scalable=no</code> - Prevents user zooming (use sparingly)</li>
+                            <li><code>maximum-scale=5.0</code> - Sets maximum zoom level</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>SEO Meta Tags</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Description shown in search results --&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"description"</span> <span class="attr">content=</span><span class="string">"Learn HTML head elements and metadata in this comprehensive tutorial"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Keywords (less important now) --&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"keywords"</span> <span class="attr">content=</span><span class="string">"HTML, head, metadata, tutorial"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Author information --&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"author"</span> <span class="attr">content=</span><span class="string">"CodeMaster Academy"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Link Elements and External Resources</h2>
+                    <p>
+                        The link element connects your HTML document to external resources like stylesheets, fonts, and icons.
+                    </p>
+                    
+                    <h3>Stylesheets</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- External CSS file --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"stylesheet"</span> <span class="attr">href=</span><span class="string">"styles.css"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Google Fonts --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">href=</span><span class="string">"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"</span> <span class="attr">rel=</span><span class="string">"stylesheet"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Print stylesheet --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"stylesheet"</span> <span class="attr">href=</span><span class="string">"print.css"</span> <span class="attr">media=</span><span class="string">"print"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Favicons and Icons</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Standard favicon --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"icon"</span> <span class="attr">href=</span><span class="string">"favicon.ico"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Modern PNG favicon --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"icon"</span> <span class="attr">type=</span><span class="string">"image/png"</span> <span class="attr">sizes=</span><span class="string">"32x32"</span> <span class="attr">href=</span><span class="string">"favicon-32x32.png"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Apple touch icon --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"apple-touch-icon"</span> <span class="attr">sizes=</span><span class="string">"180x180"</span> <span class="attr">href=</span><span class="string">"apple-touch-icon.png"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Android Chrome icons --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"icon"</span> <span class="attr">type=</span><span class="string">"image/png"</span> <span class="attr">sizes=</span><span class="string">"192x192"</span> <span class="attr">href=</span><span class="string">"android-chrome-192x192.png"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Social Media and Open Graph Tags</h2>
+                    <p>
+                        Open Graph tags control how your page appears when shared on social media platforms:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Open Graph tags for Facebook, LinkedIn, etc. --&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">property=</span><span class="string">"og:title"</span> <span class="attr">content=</span><span class="string">"Learn HTML Head Elements | CodeMaster Academy"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">property=</span><span class="string">"og:description"</span> <span class="attr">content=</span><span class="string">"Master HTML head elements and metadata"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">property=</span><span class="string">"og:image"</span> <span class="attr">content=</span><span class="string">"https://example.com/image.jpg"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">property=</span><span class="string">"og:url"</span> <span class="attr">content=</span><span class="string">"https://example.com/html-head"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">property=</span><span class="string">"og:type"</span> <span class="attr">content=</span><span class="string">"article"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Twitter Card tags --&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"twitter:card"</span> <span class="attr">content=</span><span class="string">"summary_large_image"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"twitter:title"</span> <span class="attr">content=</span><span class="string">"Learn HTML Head Elements"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"twitter:description"</span> <span class="attr">content=</span><span class="string">"Master HTML head elements"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"twitter:image"</span> <span class="attr">content=</span><span class="string">"https://example.com/image.jpg"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Internal Styles and Scripts</h2>
+                    <p>
+                        While external files are preferred, you can include CSS and JavaScript directly in the head:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Internal CSS --&gt;</span>
+<span class="tag">&lt;style&gt;</span>
+    <span class="selector">body</span> {
+        <span class="property">font-family</span>: <span class="value">Arial, sans-serif</span>;
+        <span class="property">margin</span>: <span class="value">0</span>;
+        <span class="property">padding</span>: <span class="value">20px</span>;
+    }
+    
+    <span class="selector">.highlight</span> {
+        <span class="property">background-color</span>: <span class="value">#ffff99</span>;
+        <span class="property">padding</span>: <span class="value">2px 4px</span>;
+    }
+<span class="tag">&lt;/style&gt;</span>
+
+<span class="comment">&lt;!-- JavaScript --&gt;</span>
+<span class="tag">&lt;script&gt;</span>
+    // This runs before the page loads
+    console.log('Head script executed');
+<span class="tag">&lt;/script&gt;</span>
+
+<span class="comment">&lt;!-- External JavaScript --&gt;</span>
+<span class="tag">&lt;script</span> <span class="attr">src=</span><span class="string">"script.js"</span><span class="tag">&gt;</span><span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4>⚡ Performance Tip</h4>
+                        <p>JavaScript in the head blocks HTML parsing. Consider using <code>defer</code> or <code>async</code> attributes, or place scripts at the bottom of the body for better performance.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Complete Head Example</h2>
+                    <p>
+                        Here's a comprehensive example of a well-structured head element:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;head&gt;</span>
+    <span class="comment">&lt;!-- Essential meta tags --&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">charset=</span><span class="string">"UTF-8"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"viewport"</span> <span class="attr">content=</span><span class="string">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- SEO meta tags --&gt;</span>
+    <span class="tag">&lt;title&gt;</span>Professional Web Development Tutorials | CodeMaster Academy<span class="tag">&lt;/title&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"description"</span> <span class="attr">content=</span><span class="string">"Learn modern web development with our comprehensive HTML, CSS, and JavaScript tutorials"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"keywords"</span> <span class="attr">content=</span><span class="string">"web development, HTML, CSS, JavaScript, tutorials"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"author"</span> <span class="attr">content=</span><span class="string">"CodeMaster Academy"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Open Graph tags --&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">property=</span><span class="string">"og:title"</span> <span class="attr">content=</span><span class="string">"Professional Web Development Tutorials"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">property=</span><span class="string">"og:description"</span> <span class="attr">content=</span><span class="string">"Learn modern web development with comprehensive tutorials"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">property=</span><span class="string">"og:image"</span> <span class="attr">content=</span><span class="string">"https://codemaster.com/og-image.jpg"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">property=</span><span class="string">"og:url"</span> <span class="attr">content=</span><span class="string">"https://codemaster.com"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Twitter Card tags --&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"twitter:card"</span> <span class="attr">content=</span><span class="string">"summary_large_image"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"twitter:title"</span> <span class="attr">content=</span><span class="string">"Professional Web Development Tutorials"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Favicons --&gt;</span>
+    <span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"icon"</span> <span class="attr">href=</span><span class="string">"favicon.ico"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"icon"</span> <span class="attr">type=</span><span class="string">"image/png"</span> <span class="attr">sizes=</span><span class="string">"32x32"</span> <span class="attr">href=</span><span class="string">"favicon-32x32.png"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"apple-touch-icon"</span> <span class="attr">sizes=</span><span class="string">"180x180"</span> <span class="attr">href=</span><span class="string">"apple-touch-icon.png"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- External resources --&gt;</span>
+    <span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"stylesheet"</span> <span class="attr">href=</span><span class="string">"styles.css"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;link</span> <span class="attr">href=</span><span class="string">"https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"</span> <span class="attr">rel=</span><span class="string">"stylesheet"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Optional: Preload critical resources --&gt;</span>
+    <span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"preload"</span> <span class="attr">href=</span><span class="string">"hero-image.jpg"</span> <span class="attr">as=</span><span class="string">"image"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/head&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Head Element Best Practices</h2>
+                    
+                    <div class="highlight-box">
+                        <h4>🎯 Essential Guidelines</h4>
+                        <ul>
+                            <li><strong>Order matters:</strong> charset should be first, then viewport</li>
+                            <li><strong>Keep it clean:</strong> Only include what you actually need</li>
+                            <li><strong>Optimize for performance:</strong> Use external files for CSS/JS when possible</li>
+                            <li><strong>Test social sharing:</strong> Use Facebook's Open Graph debugger</li>
+                            <li><strong>Validate regularly:</strong> Check your HTML with W3C validator</li>
+                            <li><strong>Monitor performance:</strong> Use tools like PageSpeed Insights</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Common Mistakes to Avoid</h3>
+                    <div class="example-box">
+                        <div class="example-title">❌ What NOT to do:</div>
+                        <ul>
+                            <li>Forgetting the charset meta tag</li>
+                            <li>Missing viewport meta tag for mobile</li>
+                            <li>Using generic page titles like "Home" or "Page"</li>
+                            <li>Including unnecessary JavaScript in the head</li>
+                            <li>Forgetting to update Open Graph tags when content changes</li>
+                            <li>Using outdated or deprecated meta tags</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="html-structure.html" class="nav-btn">← Previous: HTML Structure</a>
+                    <a href="body-element.html" class="nav-btn">Next: Body Element →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

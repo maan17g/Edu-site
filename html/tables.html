@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables - CodeMaster Academy</title>
+    <meta name="description" content="Learn to create accessible and responsive HTML tables for displaying structured data">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html" class="active">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Tables</h1>
+                    <p class="topic-description">
+                        Master the creation of accessible, responsive HTML tables for displaying structured tabular data effectively.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding HTML Tables</h2>
+                    <p>
+                        HTML tables are designed specifically for displaying tabular data - information that naturally fits into rows and columns, such as spreadsheets, databases, or comparison charts. Tables provide structure and relationships between data points, making complex information easier to understand and navigate.
+                    </p>
+                    <p>
+                        While tables were once misused for layout purposes, modern HTML uses tables solely for their intended purpose: presenting data with clear relationships between rows and columns. Proper table markup includes semantic elements that enhance accessibility and provide context to screen readers and other assistive technologies.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>📊 Key Concept</h4>
+                        <p>Tables should only be used for tabular data - information that has logical relationships between rows and columns. For layout purposes, use CSS Grid or Flexbox instead.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Basic Table Structure</h2>
+                    <p>
+                        A complete HTML table consists of several key elements working together:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic table structure --&gt;</span>
+<span class="tag">&lt;table&gt;</span>
+    <span class="tag">&lt;thead&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Product<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Price<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Stock<span class="tag">&lt;/th&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/thead&gt;</span>
+    <span class="tag">&lt;tbody&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Laptop<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$899<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>12<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Mouse<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$25<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>45<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/tbody&gt;</span>
+<span class="tag">&lt;/table&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Table Elements Explained:</div>
+                        <ul>
+                            <li><code>&lt;table&gt;</code> - Main container for the entire table</li>
+                            <li><code>&lt;thead&gt;</code> - Table header section</li>
+                            <li><code>&lt;tbody&gt;</code> - Table body containing data rows</li>
+                            <li><code>&lt;tfoot&gt;</code> - Table footer (optional)</li>
+                            <li><code>&lt;tr&gt;</code> - Table row</li>
+                            <li><code>&lt;th&gt;</code> - Table header cell</li>
+                            <li><code>&lt;td&gt;</code> - Table data cell</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Complete Table with All Sections</h2>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;table&gt;</span>
+    <span class="comment">&lt;!-- Table caption for accessibility --&gt;</span>
+    <span class="tag">&lt;caption&gt;</span>Quarterly Sales Report 2025<span class="tag">&lt;/caption&gt;</span>
+    
+    <span class="comment">&lt;!-- Table header --&gt;</span>
+    <span class="tag">&lt;thead&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"col"</span><span class="tag">&gt;</span>Product Category<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"col"</span><span class="tag">&gt;</span>Q1 Sales<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"col"</span><span class="tag">&gt;</span>Q2 Sales<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"col"</span><span class="tag">&gt;</span>Total<span class="tag">&lt;/th&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/thead&gt;</span>
+    
+    <span class="comment">&lt;!-- Table body --&gt;</span>
+    <span class="tag">&lt;tbody&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"row"</span><span class="tag">&gt;</span>Electronics<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$125,000<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$142,000<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$267,000<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"row"</span><span class="tag">&gt;</span>Clothing<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$89,000<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$95,000<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$184,000<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"row"</span><span class="tag">&gt;</span>Books<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$45,000<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$52,000<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$97,000<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/tbody&gt;</span>
+    
+    <span class="comment">&lt;!-- Table footer --&gt;</span>
+    <span class="tag">&lt;tfoot&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"row"</span><span class="tag">&gt;</span>Grand Total<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$259,000<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>$289,000<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span><span class="tag">&lt;strong&gt;</span>$548,000<span class="tag">&lt;/strong&gt;</span><span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/tfoot&gt;</span>
+<span class="tag">&lt;/table&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Cell Spanning</h2>
+                    <p>
+                        Tables can span cells across multiple rows or columns using colspan and rowspan attributes:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Table with spanning cells --&gt;</span>
+<span class="tag">&lt;table&gt;</span>
+    <span class="tag">&lt;caption&gt;</span>Project Timeline<span class="tag">&lt;/caption&gt;</span>
+    <span class="tag">&lt;thead&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Phase<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">colspan=</span><span class="string">"3"</span><span class="tag">&gt;</span>Timeline (Weeks)<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Resources<span class="tag">&lt;/th&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th&gt;</span>&nbsp;<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Start<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Duration<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>End<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Team Size<span class="tag">&lt;/th&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/thead&gt;</span>
+    <span class="tag">&lt;tbody&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">rowspan=</span><span class="string">"2"</span><span class="tag">&gt;</span>Planning<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Week 1<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>2 weeks<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Week 2<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>3 people<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td</span> <span class="attr">colspan=</span><span class="string">"4"</span><span class="tag">&gt;</span>Requirements gathering and initial design<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/tbody&gt;</span>
+<span class="tag">&lt;/table&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Table Accessibility</h2>
+                    <p>
+                        Making tables accessible ensures all users can understand and navigate the data:
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>♿ Table Accessibility Best Practices</h4>
+                        <ul>
+                            <li><strong>Use captions:</strong> Describe the table's purpose and content</li>
+                            <li><strong>Scope attributes:</strong> Define relationships between headers and data</li>
+                            <li><strong>Logical structure:</strong> Use thead, tbody, and tfoot appropriately</li>
+                            <li><strong>Clear headers:</strong> Make column and row headers descriptive</li>
+                            <li><strong>Consistent formatting:</strong> Keep data types consistent within columns</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Highly accessible table --&gt;</span>
+<span class="tag">&lt;table</span> <span class="attr">role=</span><span class="string">"table"</span> <span class="attr">aria-labelledby=</span><span class="string">"table-title"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;caption</span> <span class="attr">id=</span><span class="string">"table-title"</span><span class="tag">&gt;</span>
+        Student Grade Report - Fall 2025 Semester
+        <span class="tag">&lt;details&gt;</span>
+            <span class="tag">&lt;summary&gt;</span>Table Description<span class="tag">&lt;/summary&gt;</span>
+            <span class="tag">&lt;p&gt;</span>This table shows student names, course grades, and final averages.<span class="tag">&lt;/p&gt;</span>
+        <span class="tag">&lt;/details&gt;</span>
+    <span class="tag">&lt;/caption&gt;</span>
+    
+    <span class="tag">&lt;thead&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"col"</span> <span class="attr">id=</span><span class="string">"student"</span><span class="tag">&gt;</span>Student Name<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"col"</span> <span class="attr">id=</span><span class="string">"math"</span><span class="tag">&gt;</span>Mathematics<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"col"</span> <span class="attr">id=</span><span class="string">"science"</span><span class="tag">&gt;</span>Science<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"col"</span> <span class="attr">id=</span><span class="string">"average"</span><span class="tag">&gt;</span>Average<span class="tag">&lt;/th&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/thead&gt;</span>
+    
+    <span class="tag">&lt;tbody&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">scope=</span><span class="string">"row"</span> <span class="attr">headers=</span><span class="string">"student"</span><span class="tag">&gt;</span>Alice Johnson<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;td</span> <span class="attr">headers=</span><span class="string">"student math"</span><span class="tag">&gt;</span>92%<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td</span> <span class="attr">headers=</span><span class="string">"student science"</span><span class="tag">&gt;</span>88%<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td</span> <span class="attr">headers=</span><span class="string">"student average"</span><span class="tag">&gt;</span>90%<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/tbody&gt;</span>
+<span class="tag">&lt;/table&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Responsive Table Design</h2>
+                    <p>
+                        Modern tables need to work on all screen sizes. Here are several strategies:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* Basic responsive table */</span>
+<span class="selector">.table-container</span> {
+    <span class="property">overflow-x</span>: <span class="value">auto</span>;
+    <span class="property">margin</span>: <span class="value">1rem 0</span>;
+}
+
+<span class="selector">table</span> {
+    <span class="property">width</span>: <span class="value">100%</span>;
+    <span class="property">border-collapse</span>: <span class="value">collapse</span>;
+    <span class="property">min-width</span>: <span class="value">500px</span>;
+}
+
+<span class="comment">/* Mobile-first responsive table */</span>
+<span class="selector">@media (max-width: 768px)</span> {
+    <span class="selector">.responsive-table</span> {
+        <span class="property">font-size</span>: <span class="value">0.8rem</span>;
+    }
+    
+    <span class="selector">.responsive-table th,
+    .responsive-table td</span> {
+        <span class="property">padding</span>: <span class="value">0.5rem 0.25rem</span>;
+    }
+    
+    <span class="comment">/* Hide less important columns on mobile */</span>
+    <span class="selector">.hide-mobile</span> {
+        <span class="property">display</span>: <span class="value">none</span>;
+    }
+}
+
+<span class="comment">/* Card-style responsive tables */</span>
+<span class="selector">@media (max-width: 600px)</span> {
+    <span class="selector">.card-table</span> {
+        <span class="property">border</span>: <span class="value">0</span>;
+    }
+    
+    <span class="selector">.card-table thead</span> {
+        <span class="property">display</span>: <span class="value">none</span>;
+    }
+    
+    <span class="selector">.card-table tr</span> {
+        <span class="property">display</span>: <span class="value">block</span>;
+        <span class="property">margin-bottom</span>: <span class="value">1rem</span>;
+        <span class="property">border</span>: <span class="value">1px solid #ddd</span>;
+        <span class="property">border-radius</span>: <span class="value">8px</span>;
+        <span class="property">padding</span>: <span class="value">1rem</span>;
+    }
+    
+    <span class="selector">.card-table td</span> {
+        <span class="property">display</span>: <span class="value">block</span>;
+        <span class="property">text-align</span>: <span class="value">right</span>;
+        <span class="property">border</span>: <span class="value">none</span>;
+        <span class="property">padding</span>: <span class="value">0.5rem 0</span>;
+    }
+    
+    <span class="selector">.card-table td::before</span> {
+        <span class="property">content</span>: <span class="value">attr(data-label)</span>;
+        <span class="property">float</span>: <span class="value">left</span>;
+        <span class="property">font-weight</span>: <span class="value">bold</span>;
+    }
+}</pre>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Responsive table with data labels --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"table-container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;table</span> <span class="attr">class=</span><span class="string">"card-table"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;thead&gt;</span>
+            <span class="tag">&lt;tr&gt;</span>
+                <span class="tag">&lt;th&gt;</span>Product<span class="tag">&lt;/th&gt;</span>
+                <span class="tag">&lt;th&gt;</span>Price<span class="tag">&lt;/th&gt;</span>
+                <span class="tag">&lt;th</span> <span class="attr">class=</span><span class="string">"hide-mobile"</span><span class="tag">&gt;</span>Stock<span class="tag">&lt;/th&gt;</span>
+                <span class="tag">&lt;th&gt;</span>Status<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;/thead&gt;</span>
+        <span class="tag">&lt;tbody&gt;</span>
+            <span class="tag">&lt;tr&gt;</span>
+                <span class="tag">&lt;td</span> <span class="attr">data-label=</span><span class="string">"Product:"</span><span class="tag">&gt;</span>Laptop<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td</span> <span class="attr">data-label=</span><span class="string">"Price:"</span><span class="tag">&gt;</span>$899<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td</span> <span class="attr">data-label=</span><span class="string">"Stock:"</span> <span class="attr">class=</span><span class="string">"hide-mobile"</span><span class="tag">&gt;</span>12<span class="tag">&lt;/td&gt;</span>
+                <span class="tag">&lt;td</span> <span class="attr">data-label=</span><span class="string">"Status:"</span><span class="tag">&gt;</span>In Stock<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;/tbody&gt;</span>
+    <span class="tag">&lt;/table&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Table Styling</h2>
+                    <p>
+                        CSS provides extensive control over table appearance:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* Modern table styling */</span>
+<span class="selector">table</span> {
+    <span class="property">width</span>: <span class="value">100%</span>;
+    <span class="property">border-collapse</span>: <span class="value">collapse</span>;
+    <span class="property">margin</span>: <span class="value">1rem 0</span>;
+    <span class="property">font-family</span>: <span class="value">'Inter', sans-serif</span>;
+    <span class="property">box-shadow</span>: <span class="value">0 1px 3px rgba(0,0,0,0.1)</span>;
+    <span class="property">border-radius</span>: <span class="value">8px</span>;
+    <span class="property">overflow</span>: <span class="value">hidden</span>;
+}
+
+<span class="selector">caption</span> {
+    <span class="property">font-size</span>: <span class="value">1.25rem</span>;
+    <span class="property">font-weight</span>: <span class="value">600</span>;
+    <span class="property">margin-bottom</span>: <span class="value">1rem</span>;
+    <span class="property">text-align</span>: <span class="value">left</span>;
+    <span class="property">color</span>: <span class="value">#2c3e50</span>;
+}
+
+<span class="selector">th</span> {
+    <span class="property">background</span>: <span class="value">linear-gradient(135deg, #667eea 0%, #764ba2 100%)</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+    <span class="property">font-weight</span>: <span class="value">600</span>;
+    <span class="property">padding</span>: <span class="value">1rem</span>;
+    <span class="property">text-align</span>: <span class="value">left</span>;
+    <span class="property">border-bottom</span>: <span class="value">2px solid #5a67d8</span>;
+}
+
+<span class="selector">td</span> {
+    <span class="property">padding</span>: <span class="value">0.75rem 1rem</span>;
+    <span class="property">border-bottom</span>: <span class="value">1px solid #e2e8f0</span>;
+    <span class="property">vertical-align</span>: <span class="value">top</span>;
+}
+
+<span class="comment">/* Alternating row colors */</span>
+<span class="selector">tbody tr:nth-child(even)</span> {
+    <span class="property">background-color</span>: <span class="value">#f8fafc</span>;
+}
+
+<span class="comment">/* Hover effects */</span>
+<span class="selector">tbody tr:hover</span> {
+    <span class="property">background-color</span>: <span class="value">#e6fffa</span>;
+    <span class="property">transform</span>: <span class="value">scale(1.01)</span>;
+    <span class="property">transition</span>: <span class="value">all 0.2s ease</span>;
+}
+
+<span class="comment">/* Footer styling */</span>
+<span class="selector">tfoot th, tfoot td</span> {
+    <span class="property">background-color</span>: <span class="value">#f1f5f9</span>;
+    <span class="property">font-weight</span>: <span class="value">600</span>;
+    <span class="property">border-top</span>: <span class="value">2px solid #cbd5e0</span>;
+}</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Advanced Table Features</h2>
+                    
+                    <h3>Sortable Tables</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Table with sort indicators (CSS only) --&gt;</span>
+<span class="tag">&lt;table</span> <span class="attr">class=</span><span class="string">"sortable"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;thead&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">tabindex=</span><span class="string">"0"</span> <span class="attr">role=</span><span class="string">"button"</span><span class="tag">&gt;</span>
+                Name <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"sort-indicator"</span><span class="tag">&gt;</span>↕<span class="tag">&lt;/span&gt;</span>
+            <span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th</span> <span class="attr">tabindex=</span><span class="string">"0"</span> <span class="attr">role=</span><span class="string">"button"</span><span class="tag">&gt;</span>
+                Age <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"sort-indicator"</span><span class="tag">&gt;</span>↕<span class="tag">&lt;/span&gt;</span>
+            <span class="tag">&lt;/th&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/thead&gt;</span>
+<span class="tag">&lt;/table&gt;</span>
+
+<span class="tag">&lt;style&gt;</span>
+.sortable th {
+    cursor: pointer;
+    user-select: none;
+}
+
+.sortable th:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.sort-indicator {
+    opacity: 0.5;
+    margin-left: 0.5rem;
+}
+
+.sortable th:focus {
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+}
+<span class="tag">&lt;/style&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Tables with Rich Content</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Table with images and buttons --&gt;</span>
+<span class="tag">&lt;table&gt;</span>
+    <span class="tag">&lt;caption&gt;</span>Product Catalog<span class="tag">&lt;/caption&gt;</span>
+    <span class="tag">&lt;thead&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Image<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Product<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Description<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Actions<span class="tag">&lt;/th&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/thead&gt;</span>
+    <span class="tag">&lt;tbody&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td&gt;</span>
+                <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"laptop-thumb.jpg"</span> 
+                     <span class="attr">alt=</span><span class="string">"Gaming laptop"</span>
+                     <span class="attr">class=</span><span class="string">"product-thumb"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>
+                <span class="tag">&lt;h4&gt;</span>Gaming Laptop Pro<span class="tag">&lt;/h4&gt;</span>
+                <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"price"</span><span class="tag">&gt;</span>$1,299<span class="tag">&lt;/span&gt;</span>
+            <span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>
+                <span class="tag">&lt;p&gt;</span>High-performance gaming laptop with RTX graphics.<span class="tag">&lt;/p&gt;</span>
+                <span class="tag">&lt;ul&gt;</span>
+                    <span class="tag">&lt;li&gt;</span>16GB RAM<span class="tag">&lt;/li&gt;</span>
+                    <span class="tag">&lt;li&gt;</span>1TB SSD<span class="tag">&lt;/li&gt;</span>
+                <span class="tag">&lt;/ul&gt;</span>
+            <span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>
+                <span class="tag">&lt;button</span> <span class="attr">class=</span><span class="string">"btn-primary"</span><span class="tag">&gt;</span>View Details<span class="tag">&lt;/button&gt;</span>
+                <span class="tag">&lt;button</span> <span class="attr">class=</span><span class="string">"btn-secondary"</span><span class="tag">&gt;</span>Add to Cart<span class="tag">&lt;/button&gt;</span>
+            <span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/tbody&gt;</span>
+<span class="tag">&lt;/table&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common Table Mistakes</h2>
+                    <div class="example-box">
+                        <div class="example-title">❌ Mistakes to Avoid:</div>
+                        <ul>
+                            <li><strong>Using tables for layout:</strong> Use CSS Grid or Flexbox instead</li>
+                            <li><strong>Missing table headers:</strong> Always use th elements for headers</li>
+                            <li><strong>No scope attributes:</strong> Essential for screen reader navigation</li>
+                            <li><strong>Missing captions:</strong> Tables need descriptive captions</li>
+                            <li><strong>Inconsistent data types:</strong> Keep columns consistent</li>
+                            <li><strong>Non-responsive design:</strong> Tables must work on mobile</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ❌ Wrong: Table for layout --&gt;</span>
+<span class="tag">&lt;table&gt;</span>
+    <span class="tag">&lt;tr&gt;</span>
+        <span class="tag">&lt;td&gt;</span>Sidebar content<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;td&gt;</span>Main content<span class="tag">&lt;/td&gt;</span>
+    <span class="tag">&lt;/tr&gt;</span>
+<span class="tag">&lt;/table&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Correct: CSS Grid for layout --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"grid-layout"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;aside&gt;</span>Sidebar content<span class="tag">&lt;/aside&gt;</span>
+    <span class="tag">&lt;main&gt;</span>Main content<span class="tag">&lt;/main&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="tag">&lt;style&gt;</span>
+.grid-layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+}
+<span class="tag">&lt;/style&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="lists.html" class="nav-btn">← Previous: Lists</a>
+                    <a href="forms.html" class="nav-btn">Next: Forms →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

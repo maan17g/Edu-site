@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to HTML - CodeMaster Academy</title>
+    <meta name="description" content="Learn the fundamentals of HTML - the building blocks of the web">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html" class="active">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">Introduction to HTML</h1>
+                    <p class="topic-description">
+                        Discover the foundation of web development and learn how HTML creates the structure of every webpage on the internet.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What is HTML?</h2>
+                    <p>
+                        HTML (HyperText Markup Language) is the standard markup language used to create web pages. It forms the backbone of virtually every website on the internet, providing the structure and content that browsers interpret and display to users.
+                    </p>
+                    <p>
+                        Think of HTML as the skeleton of a webpage. Just as a building needs a solid framework to support its walls, windows, and doors, a webpage needs HTML to define its headings, paragraphs, images, links, and other elements. Without HTML, web pages would be just plain text with no structure or formatting.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>💡 Key Insight</h4>
+                        <p>HTML is not a programming language—it's a markup language. This means it uses tags to "mark up" content and tell the browser how to structure and display information.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>The History of HTML</h2>
+                    <p>
+                        HTML was created by Tim Berners-Lee in 1990 while he was working at CERN. His goal was to create a way to share scientific documents across different computer systems. The first version was simple, containing just 18 elements, but it laid the foundation for the modern web.
+                    </p>
+                    <p>
+                        Over the years, HTML has evolved significantly:
+                    </p>
+                    <ul>
+                        <li><strong>HTML 1.0 (1990):</strong> The original version with basic text formatting</li>
+                        <li><strong>HTML 2.0 (1995):</strong> Added forms and more structural elements</li>
+                        <li><strong>HTML 3.2 (1997):</strong> Introduced tables and better styling options</li>
+                        <li><strong>HTML 4.01 (1999):</strong> Added support for stylesheets and scripting</li>
+                        <li><strong>XHTML (2000):</strong> A stricter, XML-based version of HTML</li>
+                        <li><strong>HTML5 (2014):</strong> The current standard with multimedia support and semantic elements</li>
+                    </ul>
+                </section>
+                
+                <section class="content-section">
+                    <h2>How HTML Works</h2>
+                    <p>
+                        HTML works by using a system of tags that surround content to give it meaning and structure. These tags are enclosed in angle brackets and usually come in pairs: an opening tag and a closing tag.
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre>&lt;tagname&gt;Content goes here&lt;/tagname&gt;
+
+<span class="tag">&lt;h1&gt;</span>This is a main heading<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;p&gt;</span>This is a paragraph of text.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;strong&gt;</span>This text is bold<span class="tag">&lt;/strong&gt;</span></pre>
+                    </div>
+                    
+                    <p>
+                        When a web browser receives an HTML document, it reads these tags and interprets them to display the content with the appropriate structure and formatting. The browser essentially "renders" the HTML into the visual webpage that users see.
+                    </p>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Basic HTML Structure</h2>
+                    <p>
+                        Every HTML document follows a basic structure that tells the browser important information about the page. Here's what a minimal HTML document looks like:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr">lang=</span><span class="string">"en"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">charset=</span><span class="string">"UTF-8"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"viewport"</span> <span class="attr">content=</span><span class="string">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;title&gt;</span>My First Web Page<span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>Welcome to My Website<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This is my first paragraph.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Let's break down each part:</div>
+                        <ul>
+                            <li><code>&lt;!DOCTYPE html&gt;</code> - Tells the browser this is an HTML5 document</li>
+                            <li><code>&lt;html&gt;</code> - The root element that contains all other elements</li>
+                            <li><code>&lt;head&gt;</code> - Contains metadata that isn't displayed on the page</li>
+                            <li><code>&lt;title&gt;</code> - Sets the title shown in the browser tab</li>
+                            <li><code>&lt;body&gt;</code> - Contains all the visible content of the page</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>HTML Elements and Tags</h2>
+                    <p>
+                        An HTML element consists of a start tag, content, and an end tag. The tags use angle brackets, and the end tag includes a forward slash. Some elements, called "void elements," don't have closing tags because they don't contain content.
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment"><!-- Elements with content --></span>
+<span class="tag">&lt;h1&gt;</span>This is a heading<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;p&gt;</span>This is a paragraph<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;strong&gt;</span>This is bold text<span class="tag">&lt;/strong&gt;</span>
+
+<span class="comment"><!-- Void elements (no closing tag) --></span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"image.jpg"</span> <span class="attr">alt=</span><span class="string">"Description"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;br&gt;</span>
+<span class="tag">&lt;hr&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Why Learn HTML?</h2>
+                    <p>
+                        Learning HTML is essential for anyone interested in web development, digital marketing, or creating content for the web. Here are compelling reasons to master HTML:
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🚀 Career Benefits</h4>
+                        <ul>
+                            <li><strong>Foundation for Web Development:</strong> HTML is the starting point for all web technologies</li>
+                            <li><strong>Better Job Opportunities:</strong> Understanding HTML opens doors in tech, marketing, and design</li>
+                            <li><strong>Independence:</strong> Create and modify websites without relying on others</li>
+                            <li><strong>Cost Savings:</strong> Maintain your own websites instead of hiring developers</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Real-World Applications</h3>
+                    <p>
+                        HTML knowledge is valuable in many scenarios:
+                    </p>
+                    <ul>
+                        <li><strong>Building Websites:</strong> Create personal blogs, business sites, or portfolios</li>
+                        <li><strong>Email Marketing:</strong> Design better email templates and newsletters</li>
+                        <li><strong>Content Management:</strong> Work more effectively with CMS platforms like WordPress</li>
+                        <li><strong>SEO Optimization:</strong> Understand how search engines read your content</li>
+                        <li><strong>Accessibility:</strong> Make websites usable for people with disabilities</li>
+                    </ul>
+                </section>
+                
+                <section class="content-section">
+                    <h2>HTML Best Practices</h2>
+                    <p>
+                        Even as a beginner, it's important to learn good habits that will serve you well as you advance. Here are some fundamental best practices:
+                    </p>
+                    
+                    <h3>1. Use Semantic HTML</h3>
+                    <p>
+                        Choose HTML elements based on their meaning, not their appearance. This makes your code more accessible and easier to understand:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment"><!-- Good: Semantic and meaningful --></span>
+<span class="tag">&lt;article&gt;</span>
+    <span class="tag">&lt;header&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Article Title<span class="tag">&lt;/h1&gt;</span>
+        <span class="tag">&lt;time&gt;</span>2025-01-15<span class="tag">&lt;/time&gt;</span>
+    <span class="tag">&lt;/header&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Article content...<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/article&gt;</span>
+
+<span class="comment"><!-- Avoid: Non-semantic --></span>
+<span class="tag">&lt;div&gt;</span>
+    <span class="tag">&lt;div&gt;</span>
+        <span class="tag">&lt;div&gt;</span>Article Title<span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;div&gt;</span>2025-01-15<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div&gt;</span>Article content...<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+                    </div>
+                    
+                    <h3>2. Always Include Alt Text for Images</h3>
+                    <p>
+                        Alt text makes images accessible to screen readers and helps with SEO:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"sunset.jpg"</span> <span class="attr">alt=</span><span class="string">"Beautiful sunset over the ocean with orange and pink clouds"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                    
+                    <h3>3. Validate Your HTML</h3>
+                    <p>
+                        Use the W3C HTML Validator to check for errors and ensure your code follows standards. Valid HTML is more likely to work consistently across different browsers and devices.
+                    </p>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Getting Started</h2>
+                    <p>
+                        Ready to start writing HTML? Here's what you need:
+                    </p>
+                    
+                    <h3>Tools You'll Need</h3>
+                    <ul>
+                        <li><strong>Text Editor:</strong> VS Code, Sublime Text, or even Notepad</li>
+                        <li><strong>Web Browser:</strong> Chrome, Firefox, Safari, or Edge</li>
+                        <li><strong>That's it!</strong> HTML is simple and doesn't require special software</li>
+                    </ul>
+                    
+                    <h3>Your First HTML File</h3>
+                    <p>
+                        Create a new file called <code>index.html</code> and add the basic HTML structure we learned earlier. Save the file and open it in your web browser to see your first webpage!
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🎯 Next Steps</h4>
+                        <p>
+                            Now that you understand what HTML is and why it's important, you're ready to dive deeper into HTML structure and learn about the different elements that make up a webpage. Continue with the next topic to start building your HTML foundation.
+                        </p>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="../index.html" class="nav-btn">← Back to Home</a>
+                    <a href="html-structure.html" class="nav-btn">Next: HTML Structure →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

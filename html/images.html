@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images - CodeMaster Academy</title>
+    <meta name="description" content="Master HTML images with proper optimization, accessibility, and responsive techniques">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html" class="active">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Images</h1>
+                    <p class="topic-description">
+                        Learn to implement images effectively with proper optimization, accessibility, and responsive design techniques for modern web development.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding HTML Images</h2>
+                    <p>
+                        Images are essential elements of modern web design, providing visual context, enhancing user experience, and conveying information that words alone cannot express. The HTML <code>&lt;img&gt;</code> element is a self-closing tag that embeds images directly into your web pages.
+                    </p>
+                    <p>
+                        Unlike text content, images require careful consideration of file size, format, accessibility, and responsive behavior. Proper image implementation affects page loading speed, user experience, SEO, and accessibility for users with disabilities.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🖼️ Key Concept</h4>
+                        <p>The img element is a replaced element, meaning its content is replaced by an external resource. This makes it different from container elements like divs or paragraphs that hold content between their tags.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Basic Image Syntax</h2>
+                    <p>
+                        The basic img element requires only a <code>src</code> attribute, but the <code>alt</code> attribute is essential for accessibility:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic image syntax --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"image.jpg"</span> <span class="attr">alt=</span><span class="string">"Description of the image"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Complete image with dimensions --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"landscape.jpg"</span> 
+     <span class="attr">alt=</span><span class="string">"Beautiful mountain landscape at sunset"</span>
+     <span class="attr">width=</span><span class="string">"800"</span> 
+     <span class="attr">height=</span><span class="string">"600"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Image with additional attributes --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"profile.jpg"</span> 
+     <span class="attr">alt=</span><span class="string">"John Doe, Software Developer"</span>
+     <span class="attr">class=</span><span class="string">"profile-image"</span>
+     <span class="attr">loading=</span><span class="string">"lazy"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Essential Image Attributes:</div>
+                        <ul>
+                            <li><code>src</code> - Path to the image file (required)</li>
+                            <li><code>alt</code> - Alternative text for accessibility (required)</li>
+                            <li><code>width</code> - Image width in pixels</li>
+                            <li><code>height</code> - Image height in pixels</li>
+                            <li><code>loading</code> - Controls when the image loads (lazy/eager)</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Image File Formats</h2>
+                    <p>
+                        Choosing the right image format is crucial for performance and quality:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- JPEG for photographs --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"photo.jpg"</span> <span class="attr">alt=</span><span class="string">"Family vacation photo"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- PNG for graphics with transparency --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"logo.png"</span> <span class="attr">alt=</span><span class="string">"Company logo"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- WebP for modern browsers --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"hero.webp"</span> <span class="attr">alt=</span><span class="string">"Hero banner image"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- SVG for scalable graphics --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"icon.svg"</span> <span class="attr">alt=</span><span class="string">"Settings icon"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Format Selection Guide:</div>
+                        <ul>
+                            <li><strong>JPEG:</strong> Best for photographs and complex images</li>
+                            <li><strong>PNG:</strong> Best for graphics, screenshots, images with transparency</li>
+                            <li><strong>WebP:</strong> Modern format with excellent compression</li>
+                            <li><strong>AVIF:</strong> Next-generation format with superior compression</li>
+                            <li><strong>SVG:</strong> Perfect for scalable graphics and simple illustrations</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Responsive Images</h2>
+                    <p>
+                        Modern web design requires images that adapt to different screen sizes and resolutions:
+                    </p>
+                    
+                    <h3>Using the srcset Attribute</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Different image sizes for different screen densities --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"image-400.jpg"</span>
+     <span class="attr">srcset=</span><span class="string">"image-400.jpg 400w,
+             image-800.jpg 800w,
+             image-1200.jpg 1200w"</span>
+     <span class="attr">sizes=</span><span class="string">"(max-width: 600px) 400px,
+            (max-width: 1000px) 800px,
+            1200px"</span>
+     <span class="attr">alt=</span><span class="string">"Responsive landscape image"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- High-density display support --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"profile.jpg"</span>
+     <span class="attr">srcset=</span><span class="string">"profile.jpg 1x,
+             profile-2x.jpg 2x,
+             profile-3x.jpg 3x"</span>
+     <span class="attr">alt=</span><span class="string">"User profile picture"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Picture Element for Art Direction</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;picture&gt;</span>
+    <span class="comment">&lt;!-- Different image crops for different screen sizes --&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">media=</span><span class="string">"(max-width: 768px)"</span> 
+            <span class="attr">srcset=</span><span class="string">"banner-mobile.jpg"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">media=</span><span class="string">"(max-width: 1200px)"</span> 
+            <span class="attr">srcset=</span><span class="string">"banner-tablet.jpg"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"banner-desktop.jpg"</span> 
+         <span class="attr">alt=</span><span class="string">"Product showcase banner"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/picture&gt;</span>
+
+<span class="comment">&lt;!-- Modern format fallback --&gt;</span>
+<span class="tag">&lt;picture&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">srcset=</span><span class="string">"image.avif"</span> <span class="attr">type=</span><span class="string">"image/avif"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">srcset=</span><span class="string">"image.webp"</span> <span class="attr">type=</span><span class="string">"image/webp"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"image.jpg"</span> <span class="attr">alt=</span><span class="string">"Fallback JPEG image"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/picture&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Image Accessibility</h2>
+                    <p>
+                        Making images accessible ensures all users can understand your content:
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>♿ Alt Text Best Practices</h4>
+                        <ul>
+                            <li><strong>Be descriptive:</strong> Describe what's in the image</li>
+                            <li><strong>Be concise:</strong> Keep descriptions under 125 characters</li>
+                            <li><strong>Include context:</strong> Explain why the image matters</li>
+                            <li><strong>Skip decorative images:</strong> Use empty alt="" for decorative images</li>
+                            <li><strong>Avoid redundancy:</strong> Don't repeat surrounding text</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ✅ Good alt text examples --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"chart.png"</span> 
+     <span class="attr">alt=</span><span class="string">"Sales increased 25% from January to March 2025"</span><span class="tag">&gt;</span>
+
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"ceo-headshot.jpg"</span> 
+     <span class="attr">alt=</span><span class="string">"Sarah Johnson, Chief Executive Officer"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Empty alt for decorative images --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"decorative-border.png"</span> <span class="attr">alt=</span><span class="string">""</span> <span class="attr">role=</span><span class="string">"presentation"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- ❌ Poor alt text examples --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"chart.png"</span> <span class="attr">alt=</span><span class="string">"Chart"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"photo.jpg"</span> <span class="attr">alt=</span><span class="string">"Photo of person"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Performance Optimization</h2>
+                    <p>
+                        Optimizing images is crucial for web performance and user experience:
+                    </p>
+                    
+                    <h3>Lazy Loading</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Native lazy loading --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"hero.jpg"</span> 
+     <span class="attr">alt=</span><span class="string">"Hero image"</span> 
+     <span class="attr">loading=</span><span class="string">"eager"</span><span class="tag">&gt;</span>
+
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"gallery-1.jpg"</span> 
+     <span class="attr">alt=</span><span class="string">"Gallery image 1"</span> 
+     <span class="attr">loading=</span><span class="string">"lazy"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Preload critical images --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"preload"</span> <span class="attr">as=</span><span class="string">"image"</span> <span class="attr">href=</span><span class="string">"hero.jpg"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Image Compression and Sizing</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Specify dimensions to prevent layout shift --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"product.jpg"</span>
+     <span class="attr">alt=</span><span class="string">"Wireless headphones"</span>
+     <span class="attr">width=</span><span class="string">"400"</span>
+     <span class="attr">height=</span><span class="string">"300"</span>
+     <span class="attr">style=</span><span class="string">"max-width: 100%; height: auto;"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Using CSS aspect ratio --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"thumbnail.jpg"</span>
+     <span class="attr">alt=</span><span class="string">"Video thumbnail"</span>
+     <span class="attr">class=</span><span class="string">"thumbnail"</span><span class="tag">&gt;</span>
+
+<span class="tag">&lt;style&gt;</span>
+.thumbnail {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+<span class="tag">&lt;/style&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Advanced Image Techniques</h2>
+                    
+                    <h3>Figure and Figcaption</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Semantic image with caption --&gt;</span>
+<span class="tag">&lt;figure&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"architecture.jpg"</span>
+         <span class="attr">alt=</span><span class="string">"Modern glass building with geometric patterns"</span>
+         <span class="attr">width=</span><span class="string">"600"</span>
+         <span class="attr">height=</span><span class="string">"400"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;figcaption&gt;</span>
+        The new headquarters building features sustainable design 
+        and innovative architecture. Photo by John Smith, 2025.
+    <span class="tag">&lt;/figcaption&gt;</span>
+<span class="tag">&lt;/figure&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Image Maps</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Interactive image map --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"office-floor-plan.png"</span>
+     <span class="attr">alt=</span><span class="string">"Office floor plan with clickable rooms"</span>
+     <span class="attr">usemap=</span><span class="string">"#office-map"</span><span class="tag">&gt;</span>
+
+<span class="tag">&lt;map</span> <span class="attr">name=</span><span class="string">"office-map"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;area</span> <span class="attr">shape=</span><span class="string">"rect"</span> 
+          <span class="attr">coords=</span><span class="string">"0,0,100,100"</span> 
+          <span class="attr">href=</span><span class="string">"/rooms/reception"</span>
+          <span class="attr">alt=</span><span class="string">"Reception area"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;area</span> <span class="attr">shape=</span><span class="string">"circle"</span> 
+          <span class="attr">coords=</span><span class="string">"200,150,50"</span> 
+          <span class="attr">href=</span><span class="string">"/rooms/conference"</span>
+          <span class="attr">alt=</span><span class="string">"Conference room"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/map&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Base64 Encoded Images</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Small icons as base64 (use sparingly) --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiLz4="</span>
+     <span class="attr">alt=</span><span class="string">"Small icon"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Better approach: Use SVG directly --&gt;</span>
+<span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"24"</span> <span class="attr">height=</span><span class="string">"24"</span> <span class="attr">role=</span><span class="string">"img"</span> <span class="attr">aria-label=</span><span class="string">"Settings icon"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"</span><span class="tag">/&gt;</span>
+<span class="tag">&lt;/svg&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>CSS Image Styling</h2>
+                    <p>
+                        CSS provides powerful tools for styling and positioning images:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* Responsive image styles */</span>
+<span class="selector">img</span> {
+    <span class="property">max-width</span>: <span class="value">100%</span>;
+    <span class="property">height</span>: <span class="value">auto</span>;
+    <span class="property">display</span>: <span class="value">block</span>;
+}
+
+<span class="comment">/* Object-fit for aspect ratio control */</span>
+<span class="selector">.hero-image</span> {
+    <span class="property">width</span>: <span class="value">100%</span>;
+    <span class="property">height</span>: <span class="value">400px</span>;
+    <span class="property">object-fit</span>: <span class="value">cover</span>;
+    <span class="property">object-position</span>: <span class="value">center</span>;
+}
+
+<span class="comment">/* Image filters and effects */</span>
+<span class="selector">.gallery-image</span> {
+    <span class="property">border-radius</span>: <span class="value">8px</span>;
+    <span class="property">box-shadow</span>: <span class="value">0 4px 8px rgba(0,0,0,0.1)</span>;
+    <span class="property">transition</span>: <span class="value">transform 0.3s ease</span>;
+}
+
+<span class="selector">.gallery-image:hover</span> {
+    <span class="property">transform</span>: <span class="value">scale(1.05)</span>;
+    <span class="property">filter</span>: <span class="value">brightness(1.1)</span>;
+}
+
+<span class="comment">/* Placeholder while loading */</span>
+<span class="selector">.image-placeholder</span> {
+    <span class="property">background-color</span>: <span class="value">#f0f0f0</span>;
+    <span class="property">background-image</span>: <span class="value">linear-gradient(45deg, #e0e0e0 25%, transparent 25%, transparent 75%, #e0e0e0 75%)</span>;
+    <span class="property">background-size</span>: <span class="value">20px 20px</span>;
+    <span class="property">animation</span>: <span class="value">loading 1s infinite linear</span>;
+}
+
+<span class="selector">@keyframes loading</span> {
+    <span class="selector">0%</span> { <span class="property">background-position</span>: <span class="value">0 0</span>; }
+    <span class="selector">100%</span> { <span class="property">background-position</span>: <span class="value">20px 20px</span>; }
+}</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Image SEO Best Practices</h2>
+                    <p>
+                        Optimizing images for search engines improves discoverability:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- SEO-optimized image --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"red-nike-running-shoes-2025.jpg"</span>
+     <span class="attr">alt=</span><span class="string">"Red Nike Air Max running shoes for men"</span>
+     <span class="attr">title=</span><span class="string">"Nike Air Max - Professional Running Shoes"</span>
+     <span class="attr">width=</span><span class="string">"400"</span>
+     <span class="attr">height=</span><span class="string">"300"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Structured data for products --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Product"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"product.jpg"</span>
+         <span class="attr">alt=</span><span class="string">"Professional camera lens"</span>
+         <span class="attr">itemprop=</span><span class="string">"image"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>Canon EF 50mm f/1.8 Lens<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4>🔍 SEO Tips</h4>
+                        <ul>
+                            <li><strong>Descriptive filenames:</strong> Use keywords in image filenames</li>
+                            <li><strong>Optimized alt text:</strong> Include relevant keywords naturally</li>
+                            <li><strong>Appropriate file sizes:</strong> Compress images without quality loss</li>
+                            <li><strong>Image sitemaps:</strong> Help search engines find your images</li>
+                            <li><strong>Structured data:</strong> Use schema markup for product images</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common Image Mistakes</h2>
+                    <div class="example-box">
+                        <div class="example-title">❌ Mistakes to Avoid:</div>
+                        <ul>
+                            <li><strong>Missing alt attributes:</strong> Every img needs alt text</li>
+                            <li><strong>Oversized images:</strong> Don't serve huge files for small displays</li>
+                            <li><strong>Missing width/height:</strong> Causes layout shift during loading</li>
+                            <li><strong>Generic alt text:</strong> "Image" or "Photo" provides no value</li>
+                            <li><strong>Wrong formats:</strong> Using PNG for photos or JPEG for logos</li>
+                            <li><strong>Blocking lazy loading:</strong> Loading="eager" on below-fold images</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ❌ Common mistakes --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"IMG_001.jpg"</span><span class="tag">&gt;</span> <span class="comment">&lt;!-- Missing alt --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"huge-photo.jpg"</span> <span class="attr">alt=</span><span class="string">"Photo"</span><span class="tag">&gt;</span> <span class="comment">&lt;!-- Generic alt --&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Better approach --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"team-meeting-conference-room.jpg"</span>
+     <span class="attr">alt=</span><span class="string">"Marketing team discussing quarterly results in conference room"</span>
+     <span class="attr">width=</span><span class="string">"600"</span>
+     <span class="attr">height=</span><span class="string">"400"</span>
+     <span class="attr">loading=</span><span class="string">"lazy"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Testing and Validation</h2>
+                    <p>
+                        Regularly test your images for accessibility and performance:
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🧪 Testing Checklist</h4>
+                        <ul>
+                            <li><strong>Screen reader testing:</strong> Test with NVDA, JAWS, or VoiceOver</li>
+                            <li><strong>Performance testing:</strong> Use tools like PageSpeed Insights</li>
+                            <li><strong>Visual testing:</strong> Check images on different devices</li>
+                            <li><strong>Network testing:</strong> Test on slow connections</li>
+                            <li><strong>Accessibility audit:</strong> Use automated testing tools</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="links.html" class="nav-btn">← Previous: Links</a>
+                    <a href="lists.html" class="nav-btn">Next: Lists →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

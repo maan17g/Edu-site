@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links - CodeMaster Academy</title>
+    <meta name="description" content="Master HTML links and navigation with anchor elements, link types, and accessibility best practices">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html" class="active">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Links</h1>
+                    <p class="topic-description">
+                        Learn to create powerful navigation and connections between web pages using HTML anchor elements and modern linking techniques.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What are HTML Links?</h2>
+                    <p>
+                        HTML links, created with the <code>&lt;a&gt;</code> (anchor) element, are the foundation of web navigation. They connect web pages, files, email addresses, and sections within the same page. Links are what make the World Wide Web truly "web-like" by creating interconnected pathways between different pieces of content.
+                    </p>
+                    <p>
+                        Links serve multiple purposes: navigation between pages, jumping to specific sections, downloading files, opening email clients, making phone calls on mobile devices, and much more. They're one of the most important elements for user experience and SEO.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🔗 Key Concept</h4>
+                        <p>The anchor element <code>&lt;a&gt;</code> is both a container for clickable content and a navigation mechanism. The <code>href</code> attribute defines the destination, while the content between the tags becomes the clickable text or element.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Basic Link Syntax</h2>
+                    <p>
+                        The basic structure of an HTML link consists of the anchor element with an <code>href</code> attribute:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic link structure --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"destination"</span><span class="tag">&gt;</span>Link text<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- External website link --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://www.example.com"</span><span class="tag">&gt;</span>Visit Example.com<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Internal page link --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/about.html"</span><span class="tag">&gt;</span>About Us<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Relative link --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"../contact.html"</span><span class="tag">&gt;</span>Contact<span class="tag">&lt;/a&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">How these links appear:</div>
+                        <p><a href="https://www.example.com">Visit Example.com</a></p>
+                        <p><a href="/about.html">About Us</a></p>
+                        <p><a href="../contact.html">Contact</a></p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Types of Links</h2>
+                    
+                    <h3>1. External Links</h3>
+                    <p>Links to other websites or domains:</p>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- External links --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://www.google.com"</span><span class="tag">&gt;</span>Google<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://github.com"</span> <span class="attr">target=</span><span class="string">"_blank"</span><span class="tag">&gt;</span>GitHub<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Best practice: Add rel attribute for external links --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://example.com"</span> <span class="attr">target=</span><span class="string">"_blank"</span> <span class="attr">rel=</span><span class="string">"noopener noreferrer"</span><span class="tag">&gt;</span>
+    External Site
+<span class="tag">&lt;/a&gt;</span></pre>
+                    </div>
+                    
+                    <h3>2. Internal Links</h3>
+                    <p>Links to pages within your website:</p>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Absolute internal paths --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/products/laptops.html"</span><span class="tag">&gt;</span>Laptops<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/blog/article-1.html"</span><span class="tag">&gt;</span>Latest Article<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Relative internal paths --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"page2.html"</span><span class="tag">&gt;</span>Next Page<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"../index.html"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"../../products/"</span><span class="tag">&gt;</span>Products Directory<span class="tag">&lt;/a&gt;</span></pre>
+                    </div>
+                    
+                    <h3>3. Anchor Links</h3>
+                    <p>Links to specific sections within the same page:</p>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Link to section ID --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#introduction"</span><span class="tag">&gt;</span>Go to Introduction<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#contact-form"</span><span class="tag">&gt;</span>Jump to Contact Form<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Corresponding target elements --&gt;</span>
+<span class="tag">&lt;section</span> <span class="attr">id=</span><span class="string">"introduction"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>Introduction<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Content here...<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/section&gt;</span>
+
+<span class="comment">&lt;!-- Back to top link --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#top"</span><span class="tag">&gt;</span>Back to Top<span class="tag">&lt;/a&gt;</span></pre>
+                    </div>
+                    
+                    <h3>4. Special Links</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Email links --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"mailto:contact@example.com"</span><span class="tag">&gt;</span>Send Email<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"mailto:support@example.com?subject=Help Request&body=Hello,"</span><span class="tag">&gt;</span>
+    Email Support
+<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Phone links --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"tel:+1234567890"</span><span class="tag">&gt;</span>Call Us: (123) 456-7890<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Download links --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/files/brochure.pdf"</span> <span class="attr">download</span><span class="tag">&gt;</span>Download Brochure<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/files/report.pdf"</span> <span class="attr">download=</span><span class="string">"annual-report-2025.pdf"</span><span class="tag">&gt;</span>
+    Download Report
+<span class="tag">&lt;/a&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Link Attributes</h2>
+                    <p>
+                        Links support various attributes that control their behavior and provide additional information:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Target attribute --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://example.com"</span> <span class="attr">target=</span><span class="string">"_blank"</span><span class="tag">&gt;</span>Open in new tab<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/page.html"</span> <span class="attr">target=</span><span class="string">"_self"</span><span class="tag">&gt;</span>Open in same tab<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Rel attribute for security and SEO --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://external.com"</span> <span class="attr">rel=</span><span class="string">"noopener noreferrer"</span><span class="tag">&gt;</span>Safe external link<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://sponsor.com"</span> <span class="attr">rel=</span><span class="string">"sponsored"</span><span class="tag">&gt;</span>Sponsored link<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://untrusted.com"</span> <span class="attr">rel=</span><span class="string">"nofollow"</span><span class="tag">&gt;</span>No SEO value<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Title attribute for tooltips --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/about"</span> <span class="attr">title=</span><span class="string">"Learn more about our company"</span><span class="tag">&gt;</span>About Us<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Download attribute --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/files/document.pdf"</span> <span class="attr">download=</span><span class="string">"my-document.pdf"</span><span class="tag">&gt;</span>Download PDF<span class="tag">&lt;/a&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Common rel attribute values:</div>
+                        <ul>
+                            <li><code>noopener</code> - Prevents new page from accessing window.opener</li>
+                            <li><code>noreferrer</code> - Prevents passing referrer information</li>
+                            <li><code>nofollow</code> - Tells search engines not to follow the link</li>
+                            <li><code>sponsored</code> - Indicates paid or sponsored content</li>
+                            <li><code>ugc</code> - User-generated content (comments, forum posts)</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Styling Links with CSS</h2>
+                    <p>
+                        CSS provides extensive control over link appearance and behavior:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* Basic link styling */</span>
+<span class="selector">a</span> {
+    <span class="property">color</span>: <span class="value">#007bff</span>;
+    <span class="property">text-decoration</span>: <span class="value">none</span>;
+    <span class="property">transition</span>: <span class="value">color 0.3s ease</span>;
+}
+
+<span class="comment">/* Link states */</span>
+<span class="selector">a:hover</span> {
+    <span class="property">color</span>: <span class="value">#0056b3</span>;
+    <span class="property">text-decoration</span>: <span class="value">underline</span>;
+}
+
+<span class="selector">a:visited</span> {
+    <span class="property">color</span>: <span class="value">#6c757d</span>;
+}
+
+<span class="selector">a:focus</span> {
+    <span class="property">outline</span>: <span class="value">2px solid #007bff</span>;
+    <span class="property">outline-offset</span>: <span class="value">2px</span>;
+}
+
+<span class="selector">a:active</span> {
+    <span class="property">color</span>: <span class="value">#004085</span>;
+}
+
+<span class="comment">/* Button-style links */</span>
+<span class="selector">.btn-link</span> {
+    <span class="property">display</span>: <span class="value">inline-block</span>;
+    <span class="property">padding</span>: <span class="value">12px 24px</span>;
+    <span class="property">background-color</span>: <span class="value">#007bff</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+    <span class="property">border-radius</span>: <span class="value">6px</span>;
+    <span class="property">text-decoration</span>: <span class="value">none</span>;
+    <span class="property">transition</span>: <span class="value">background-color 0.3s ease</span>;
+}
+
+<span class="selector">.btn-link:hover</span> {
+    <span class="property">background-color</span>: <span class="value">#0056b3</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+}</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Advanced Link Techniques</h2>
+                    
+                    <h3>Links with Multiple Elements</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Link containing multiple elements --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/products/laptop"</span> <span class="attr">class=</span><span class="string">"product-card"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"laptop.jpg"</span> <span class="attr">alt=</span><span class="string">"Gaming Laptop"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h3&gt;</span>Gaming Laptop Pro<span class="tag">&lt;/h3&gt;</span>
+    <span class="tag">&lt;p&gt;</span>High-performance laptop for gaming and productivity.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"price"</span><span class="tag">&gt;</span>$1,299<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;/a&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Skip Links for Accessibility</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Skip navigation for screen readers --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#main-content"</span> <span class="attr">class=</span><span class="string">"skip-link"</span><span class="tag">&gt;</span>Skip to main content<span class="tag">&lt;/a&gt;</span>
+
+<span class="tag">&lt;style&gt;</span>
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+<span class="tag">&lt;/style&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Breadcrumb Navigation</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;nav</span> <span class="attr">aria-label=</span><span class="string">"Breadcrumb"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;ol</span> <span class="attr">class=</span><span class="string">"breadcrumb"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/products"</span><span class="tag">&gt;</span>Products<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/products/laptops"</span><span class="tag">&gt;</span>Laptops<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li</span> <span class="attr">aria-current=</span><span class="string">"page"</span><span class="tag">&gt;</span>Gaming Laptop Pro<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ol&gt;</span>
+<span class="tag">&lt;/nav&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Link Accessibility</h2>
+                    <p>
+                        Creating accessible links ensures all users can navigate your website effectively:
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>♿ Accessibility Best Practices</h4>
+                        <ul>
+                            <li><strong>Descriptive link text:</strong> Avoid "click here" or "read more"</li>
+                            <li><strong>Sufficient color contrast:</strong> Ensure links are distinguishable</li>
+                            <li><strong>Focus indicators:</strong> Provide clear focus styles for keyboard navigation</li>
+                            <li><strong>Screen reader support:</strong> Use ARIA labels when necessary</li>
+                            <li><strong>Touch targets:</strong> Make links large enough for mobile users</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ❌ Poor accessibility --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/article.html"</span><span class="tag">&gt;</span>Click here<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/download.pdf"</span><span class="tag">&gt;</span>Read more<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Good accessibility --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/web-development-guide.html"</span><span class="tag">&gt;</span>
+    Complete Web Development Guide
+<span class="tag">&lt;/a&gt;</span>
+
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/annual-report.pdf"</span> <span class="attr">download</span><span class="tag">&gt;</span>
+    Download 2025 Annual Report (PDF, 2.3MB)
+<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Using ARIA labels for context --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/edit-profile"</span> <span class="attr">aria-label=</span><span class="string">"Edit your profile settings"</span><span class="tag">&gt;</span>
+    Edit
+<span class="tag">&lt;/a&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Link Performance and SEO</h2>
+                    
+                    <h3>Internal Linking Strategy</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Strategic internal linking --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    Before starting your web development journey, make sure to 
+    <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/html-basics"</span><span class="tag">&gt;</span>learn HTML basics<span class="tag">&lt;/a&gt;</span> and understand 
+    <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/css-fundamentals"</span><span class="tag">&gt;</span>CSS fundamentals<span class="tag">&lt;/a&gt;</span>.
+<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Related content links --&gt;</span>
+<span class="tag">&lt;aside</span> <span class="attr">class=</span><span class="string">"related-content"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h3&gt;</span>Related Articles<span class="tag">&lt;/h3&gt;</span>
+    <span class="tag">&lt;ul&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/advanced-css-techniques"</span><span class="tag">&gt;</span>Advanced CSS Techniques<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/responsive-design-guide"</span><span class="tag">&gt;</span>Responsive Design Guide<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/aside&gt;</span></pre>
+                    </div>
+                    
+                    <h3>External Link Best Practices</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Proper external link attributes --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://developer.mozilla.org"</span> 
+   <span class="attr">target=</span><span class="string">"_blank"</span> 
+   <span class="attr">rel=</span><span class="string">"noopener noreferrer"</span>
+   <span class="attr">title=</span><span class="string">"Mozilla Developer Network (opens in new tab)"</span><span class="tag">&gt;</span>
+    MDN Web Docs
+<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Sponsored/affiliate links --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://affiliate-link.com"</span> <span class="attr">rel=</span><span class="string">"sponsored nofollow"</span><span class="tag">&gt;</span>
+    Recommended Product
+<span class="tag">&lt;/a&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Link States and Styling</h2>
+                    <p>
+                        Understanding and properly styling link states improves user experience:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* Complete link state styling */</span>
+<span class="selector">a</span> {
+    <span class="property">color</span>: <span class="value">#0066cc</span>;
+    <span class="property">text-decoration</span>: <span class="value">underline</span>;
+    <span class="property">text-decoration-color</span>: <span class="value">transparent</span>;
+    <span class="property">transition</span>: <span class="value">all 0.3s ease</span>;
+}
+
+<span class="comment">/* Hover state */</span>
+<span class="selector">a:hover</span> {
+    <span class="property">color</span>: <span class="value">#004499</span>;
+    <span class="property">text-decoration-color</span>: <span class="value">currentColor</span>;
+}
+
+<span class="comment">/* Focus state for keyboard navigation */</span>
+<span class="selector">a:focus</span> {
+    <span class="property">outline</span>: <span class="value">2px solid #0066cc</span>;
+    <span class="property">outline-offset</span>: <span class="value">2px</span>;
+    <span class="property">background-color</span>: <span class="value">rgba(0, 102, 204, 0.1)</span>;
+}
+
+<span class="comment">/* Active state */</span>
+<span class="selector">a:active</span> {
+    <span class="property">color</span>: <span class="value">#002266</span>;
+    <span class="property">transform</span>: <span class="value">translateY(1px)</span>;
+}
+
+<span class="comment">/* Visited state */</span>
+<span class="selector">a:visited</span> {
+    <span class="property">color</span>: <span class="value">#663399</span>;
+}
+
+<span class="comment">/* External link indicators */</span>
+<span class="selector">a[href^="http"]:not([href*="yoursite.com"])::after</span> {
+    <span class="property">content</span>: <span class="value">" ↗"</span>;
+    <span class="property">font-size</span>: <span class="value">0.8em</span>;
+}</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common Link Mistakes</h2>
+                    <div class="example-box">
+                        <div class="example-title">❌ Mistakes to Avoid:</div>
+                        <ul>
+                            <li><strong>Generic link text:</strong> "Click here", "Read more", "Learn more"</li>
+                            <li><strong>Missing target="_blank" safety:</strong> Not using rel="noopener noreferrer"</li>
+                            <li><strong>Poor focus indicators:</strong> Removing outline without replacement</li>
+                            <li><strong>Tiny touch targets:</strong> Links too small for mobile users</li>
+                            <li><strong>Color-only differentiation:</strong> Links only distinguished by color</li>
+                            <li><strong>Broken relative paths:</strong> Incorrect file path references</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ❌ Common mistakes --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://external.com"</span> <span class="attr">target=</span><span class="string">"_blank"</span><span class="tag">&gt;</span>Click here<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"javascript:void(0)"</span><span class="tag">&gt;</span>Link<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Correct approach --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://external.com"</span> 
+   <span class="attr">target=</span><span class="string">"_blank"</span> 
+   <span class="attr">rel=</span><span class="string">"noopener noreferrer"</span><span class="tag">&gt;</span>
+    External Resource: Complete Guide
+<span class="tag">&lt;/a&gt;</span>
+
+<span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"button"</span> <span class="attr">onclick=</span><span class="string">"handleClick()"</span><span class="tag">&gt;</span>
+    Interactive Action
+<span class="tag">&lt;/button&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="paragraphs.html" class="nav-btn">← Previous: Paragraphs</a>
+                    <a href="images.html" class="nav-btn">Next: Images →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

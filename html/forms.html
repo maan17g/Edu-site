@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms - CodeMaster Academy</title>
+    <meta name="description" content="Learn to create interactive HTML forms with proper structure, validation, and accessibility">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html" class="active">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Forms</h1>
+                    <p class="topic-description">
+                        Master HTML forms to create interactive user interfaces that collect, validate, and submit user data effectively.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding HTML Forms</h2>
+                    <p>
+                        HTML forms are the primary way websites collect information from users. Whether it's a simple contact form, user registration, or complex data entry, forms bridge the gap between users and web applications. They provide a structured way to gather input, validate data, and submit information to servers for processing.
+                    </p>
+                    <p>
+                        Forms consist of various input elements wrapped in a <code>&lt;form&gt;</code> container that defines how and where the data should be sent. Modern forms also include client-side validation, accessibility features, and responsive design to create optimal user experiences across all devices.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>📝 Key Concept</h4>
+                        <p>Forms are interactive elements that allow two-way communication between users and web applications. They collect user input and provide feedback, making websites dynamic and engaging.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Basic Form Structure</h2>
+                    <p>
+                        Every HTML form starts with the <code>&lt;form&gt;</code> element, which acts as a container for all form controls:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic form structure --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">action=</span><span class="string">"/submit"</span> <span class="attr">method=</span><span class="string">"POST"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Form controls go here --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"username"</span><span class="tag">&gt;</span>Username:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">id=</span><span class="string">"username"</span> <span class="attr">name=</span><span class="string">"username"</span> <span class="attr">required</span><span class="tag">&gt;</span>
+    
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"email"</span><span class="tag">&gt;</span>Email:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"email"</span> <span class="attr">id=</span><span class="string">"email"</span> <span class="attr">name=</span><span class="string">"email"</span> <span class="attr">required</span><span class="tag">&gt;</span>
+    
+    <span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"submit"</span><span class="tag">&gt;</span>Submit<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Essential Form Attributes:</div>
+                        <ul>
+                            <li><code>action</code> - URL where form data is sent</li>
+                            <li><code>method</code> - HTTP method (GET or POST)</li>
+                            <li><code>enctype</code> - Encoding type for file uploads</li>
+                            <li><code>novalidate</code> - Disables browser validation</li>
+                            <li><code>target</code> - Where to display the response</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Form Controls and Labels</h2>
+                    <p>
+                        Proper labeling is crucial for accessibility and usability. Every form control should have an associated label:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Explicit labeling (recommended) --&gt;</span>
+<span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"first-name"</span><span class="tag">&gt;</span>First Name:<span class="tag">&lt;/label&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">id=</span><span class="string">"first-name"</span> <span class="attr">name=</span><span class="string">"firstName"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Implicit labeling --&gt;</span>
+<span class="tag">&lt;label&gt;</span>
+    Last Name:
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">name=</span><span class="string">"lastName"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/label&gt;</span>
+
+<span class="comment">&lt;!-- Required field indicators --&gt;</span>
+<span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"phone"</span><span class="tag">&gt;</span>
+    Phone Number <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"required"</span><span class="tag">&gt;</span>*<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;/label&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"tel"</span> <span class="attr">id=</span><span class="string">"phone"</span> <span class="attr">name=</span><span class="string">"phone"</span> <span class="attr">required</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Complete Contact Form Example</h2>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;form</span> <span class="attr">action=</span><span class="string">"/contact"</span> <span class="attr">method=</span><span class="string">"POST"</span> <span class="attr">class=</span><span class="string">"contact-form"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;fieldset&gt;</span>
+        <span class="tag">&lt;legend&gt;</span>Personal Information<span class="tag">&lt;/legend&gt;</span>
+        
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"full-name"</span><span class="tag">&gt;</span>Full Name *<span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> 
+                   <span class="attr">id=</span><span class="string">"full-name"</span> 
+                   <span class="attr">name=</span><span class="string">"fullName"</span>
+                   <span class="attr">required</span>
+                   <span class="attr">aria-describedby=</span><span class="string">"name-help"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;small</span> <span class="attr">id=</span><span class="string">"name-help"</span><span class="tag">&gt;</span>Enter your first and last name<span class="tag">&lt;/small&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+        
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"email"</span><span class="tag">&gt;</span>Email Address *<span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"email"</span> 
+                   <span class="attr">id=</span><span class="string">"email"</span> 
+                   <span class="attr">name=</span><span class="string">"email"</span>
+                   <span class="attr">required</span>
+                   <span class="attr">placeholder=</span><span class="string">"you@example.com"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/fieldset&gt;</span>
+    
+    <span class="tag">&lt;fieldset&gt;</span>
+        <span class="tag">&lt;legend&gt;</span>Message Details<span class="tag">&lt;/legend&gt;</span>
+        
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"subject"</span><span class="tag">&gt;</span>Subject<span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;select</span> <span class="attr">id=</span><span class="string">"subject"</span> <span class="attr">name=</span><span class="string">"subject"</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;option</span> <span class="attr">value=</span><span class="string">""</span><span class="tag">&gt;</span>Select a topic<span class="tag">&lt;/option&gt;</span>
+                <span class="tag">&lt;option</span> <span class="attr">value=</span><span class="string">"general"</span><span class="tag">&gt;</span>General Inquiry<span class="tag">&lt;/option&gt;</span>
+                <span class="tag">&lt;option</span> <span class="attr">value=</span><span class="string">"support"</span><span class="tag">&gt;</span>Technical Support<span class="tag">&lt;/option&gt;</span>
+                <span class="tag">&lt;option</span> <span class="attr">value=</span><span class="string">"business"</span><span class="tag">&gt;</span>Business Partnership<span class="tag">&lt;/option&gt;</span>
+            <span class="tag">&lt;/select&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+        
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"message"</span><span class="tag">&gt;</span>Message *<span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;textarea</span> <span class="attr">id=</span><span class="string">"message"</span> 
+                      <span class="attr">name=</span><span class="string">"message"</span>
+                      <span class="attr">rows=</span><span class="string">"5"</span>
+                      <span class="attr">required</span>
+                      <span class="attr">placeholder=</span><span class="string">"Tell us about your inquiry..."</span><span class="tag">&gt;</span><span class="tag">&lt;/textarea&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/fieldset&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-actions"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"reset"</span><span class="tag">&gt;</span>Clear Form<span class="tag">&lt;/button&gt;</span>
+        <span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"submit"</span><span class="tag">&gt;</span>Send Message<span class="tag">&lt;/button&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Form Validation</h2>
+                    <p>
+                        HTML5 provides built-in validation attributes that work without JavaScript:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- HTML5 validation attributes --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> 
+       <span class="attr">required</span>
+       <span class="attr">minlength=</span><span class="string">"3"</span>
+       <span class="attr">maxlength=</span><span class="string">"50"</span>
+       <span class="attr">pattern=</span><span class="string">"[A-Za-z\s]+"</span>
+       <span class="attr">title=</span><span class="string">"Only letters and spaces allowed"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Number validation --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"number"</span> 
+       <span class="attr">min=</span><span class="string">"18"</span>
+       <span class="attr">max=</span><span class="string">"99"</span>
+       <span class="attr">step=</span><span class="string">"1"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Custom validation messages --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"email"</span>
+       <span class="attr">required</span>
+       <span class="attr">data-validation-required=</span><span class="string">"Please enter your email"</span>
+       <span class="attr">data-validation-email=</span><span class="string">"Please enter a valid email"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Accessible Forms</h2>
+                    <p>
+                        Creating accessible forms ensures all users can interact with your content:
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>♿ Form Accessibility Checklist</h4>
+                        <ul>
+                            <li><strong>Label everything:</strong> Every input needs a proper label</li>
+                            <li><strong>Use fieldsets:</strong> Group related form controls</li>
+                            <li><strong>Provide instructions:</strong> Clear guidance for complex fields</li>
+                            <li><strong>Error messages:</strong> Associate errors with specific fields</li>
+                            <li><strong>Keyboard navigation:</strong> Ensure proper tab order</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Accessible form with error handling --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">novalidate</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"username"</span><span class="tag">&gt;</span>Username<span class="tag">&lt;/label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> 
+               <span class="attr">id=</span><span class="string">"username"</span>
+               <span class="attr">name=</span><span class="string">"username"</span>
+               <span class="attr">aria-describedby=</span><span class="string">"username-error username-help"</span>
+               <span class="attr">aria-invalid=</span><span class="string">"false"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"username-help"</span><span class="tag">&gt;</span>Choose a unique username<span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"username-error"</span> <span class="attr">role=</span><span class="string">"alert"</span> <span class="attr">hidden</span><span class="tag">&gt;</span>
+            Username is required
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Form Styling</h2>
+                    <p>
+                        CSS can transform basic forms into beautiful, professional interfaces:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* Modern form styling */</span>
+<span class="selector">.contact-form</span> {
+    <span class="property">max-width</span>: <span class="value">600px</span>;
+    <span class="property">margin</span>: <span class="value">2rem auto</span>;
+    <span class="property">padding</span>: <span class="value">2rem</span>;
+    <span class="property">background</span>: <span class="value">white</span>;
+    <span class="property">border-radius</span>: <span class="value">12px</span>;
+    <span class="property">box-shadow</span>: <span class="value">0 4px 6px rgba(0,0,0,0.1)</span>;
+}
+
+<span class="selector">fieldset</span> {
+    <span class="property">border</span>: <span class="value">1px solid #e2e8f0</span>;
+    <span class="property">border-radius</span>: <span class="value">8px</span>;
+    <span class="property">padding</span>: <span class="value">1.5rem</span>;
+    <span class="property">margin-bottom</span>: <span class="value">1.5rem</span>;
+}
+
+<span class="selector">legend</span> {
+    <span class="property">font-weight</span>: <span class="value">600</span>;
+    <span class="property">color</span>: <span class="value">#2d3748</span>;
+    <span class="property">padding</span>: <span class="value">0 0.5rem</span>;
+}
+
+<span class="selector">.form-group</span> {
+    <span class="property">margin-bottom</span>: <span class="value">1.5rem</span>;
+}
+
+<span class="selector">label</span> {
+    <span class="property">display</span>: <span class="value">block</span>;
+    <span class="property">margin-bottom</span>: <span class="value">0.5rem</span>;
+    <span class="property">font-weight</span>: <span class="value">500</span>;
+    <span class="property">color</span>: <span class="value">#374151</span>;
+}
+
+<span class="selector">input, select, textarea</span> {
+    <span class="property">width</span>: <span class="value">100%</span>;
+    <span class="property">padding</span>: <span class="value">0.75rem</span>;
+    <span class="property">border</span>: <span class="value">1px solid #d1d5db</span>;
+    <span class="property">border-radius</span>: <span class="value">6px</span>;
+    <span class="property">font-size</span>: <span class="value">1rem</span>;
+    <span class="property">transition</span>: <span class="value">border-color 0.3s ease</span>;
+}
+
+<span class="selector">input:focus, select:focus, textarea:focus</span> {
+    <span class="property">outline</span>: <span class="value">none</span>;
+    <span class="property">border-color</span>: <span class="value">#3b82f6</span>;
+    <span class="property">box-shadow</span>: <span class="value">0 0 0 3px rgba(59, 130, 246, 0.1)</span>;
+}</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common Form Mistakes</h2>
+                    <div class="example-box">
+                        <div class="example-title">❌ Mistakes to Avoid:</div>
+                        <ul>
+                            <li><strong>Missing labels:</strong> Every input needs an associated label</li>
+                            <li><strong>Poor error messages:</strong> Be specific about what's wrong</li>
+                            <li><strong>No validation:</strong> Always validate both client and server-side</li>
+                            <li><strong>Inaccessible forms:</strong> Consider users with disabilities</li>
+                            <li><strong>Long forms:</strong> Break complex forms into steps</li>
+                            <li><strong>No feedback:</strong> Users need confirmation when forms are submitted</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="tables.html" class="nav-btn">← Previous: Tables</a>
+                    <a href="input-types.html" class="nav-btn">Next: Input Types →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

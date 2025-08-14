@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Input Types - CodeMaster Academy</title>
+    <meta name="description" content="Explore all HTML input types and learn to choose the right input for every form requirement">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html" class="active">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Input Types</h1>
+                    <p class="topic-description">
+                        Discover the complete range of HTML input types and learn to select the perfect input for every user interaction scenario.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding Input Types</h2>
+                    <p>
+                        HTML5 introduced numerous input types that provide better user experiences, automatic validation, and platform-specific interfaces. The right input type can trigger appropriate virtual keyboards on mobile devices, provide built-in validation, and create more intuitive user interfaces.
+                    </p>
+                    <p>
+                        Each input type serves a specific purpose and comes with its own set of attributes, validation rules, and user interface behaviors. Understanding these differences allows you to create forms that are both functional and user-friendly across all devices and platforms.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🎯 Key Concept</h4>
+                        <p>Choosing the correct input type improves accessibility, provides better user experience, and enables automatic form validation without JavaScript.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Text Input Types</h2>
+                    <p>
+                        Text-based inputs are the foundation of form data collection:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic text input --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">placeholder=</span><span class="string">"Enter your name"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Password input (masked) --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"password"</span> <span class="attr">placeholder=</span><span class="string">"Enter password"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Email input with validation --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"email"</span> <span class="attr">placeholder=</span><span class="string">"user@example.com"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- URL input --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"url"</span> <span class="attr">placeholder=</span><span class="string">"https://example.com"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Telephone input --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"tel"</span> <span class="attr">placeholder=</span><span class="string">"+1 (555) 123-4567"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Search input --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"search"</span> <span class="attr">placeholder=</span><span class="string">"Search products..."</span><span class="tag">&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Text Input Benefits:</div>
+                        <ul>
+                            <li><strong>Email:</strong> Triggers email keyboard on mobile, validates format</li>
+                            <li><strong>URL:</strong> Shows .com key on mobile keyboards</li>
+                            <li><strong>Tel:</strong> Displays numeric keypad on mobile devices</li>
+                            <li><strong>Search:</strong> Provides search-specific styling and behavior</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Numeric Input Types</h2>
+                    <p>
+                        Specialized inputs for collecting numeric data:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic number input --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"number"</span> 
+       <span class="attr">min=</span><span class="string">"0"</span> 
+       <span class="attr">max=</span><span class="string">"100"</span> 
+       <span class="attr">step=</span><span class="string">"1"</span> 
+       <span class="attr">value=</span><span class="string">"50"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Range slider --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"range"</span> 
+       <span class="attr">min=</span><span class="string">"0"</span> 
+       <span class="attr">max=</span><span class="string">"100"</span> 
+       <span class="attr">value=</span><span class="string">"75"</span>
+       <span class="attr">id=</span><span class="string">"volume"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"volume"</span><span class="tag">&gt;</span>Volume: <span class="tag">&lt;output&gt;</span>75<span class="tag">&lt;/output&gt;</span><span class="tag">&lt;/label&gt;</span>
+
+<span class="comment">&lt;!-- Decimal numbers --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"number"</span> 
+       <span class="attr">step=</span><span class="string">"0.01"</span> 
+       <span class="attr">placeholder=</span><span class="string">"0.00"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Date and Time Inputs</h2>
+                    <p>
+                        HTML5 provides sophisticated date and time input controls:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Date picker --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"date"</span> 
+       <span class="attr">min=</span><span class="string">"2025-01-01"</span> 
+       <span class="attr">max=</span><span class="string">"2025-12-31"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Time picker --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"time"</span> 
+       <span class="attr">min=</span><span class="string">"09:00"</span> 
+       <span class="attr">max=</span><span class="string">"18:00"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Date and time combined --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"datetime-local"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Month picker --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"month"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Week picker --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"week"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Complete appointment form --&gt;</span>
+<span class="tag">&lt;fieldset&gt;</span>
+    <span class="tag">&lt;legend&gt;</span>Schedule Appointment<span class="tag">&lt;/legend&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"appointment-date"</span><span class="tag">&gt;</span>Date:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"date"</span> 
+           <span class="attr">id=</span><span class="string">"appointment-date"</span>
+           <span class="attr">required</span><span class="tag">&gt;</span>
+    
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"appointment-time"</span><span class="tag">&gt;</span>Time:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"time"</span> 
+           <span class="attr">id=</span><span class="string">"appointment-time"</span>
+           <span class="attr">required</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/fieldset&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Selection Input Types</h2>
+                    <p>
+                        Inputs for making choices from predefined options:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Radio buttons (single choice) --&gt;</span>
+<span class="tag">&lt;fieldset&gt;</span>
+    <span class="tag">&lt;legend&gt;</span>Preferred Contact Method<span class="tag">&lt;/legend&gt;</span>
+    <span class="tag">&lt;label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"radio"</span> <span class="attr">name=</span><span class="string">"contact"</span> <span class="attr">value=</span><span class="string">"email"</span><span class="tag">&gt;</span>
+        Email
+    <span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"radio"</span> <span class="attr">name=</span><span class="string">"contact"</span> <span class="attr">value=</span><span class="string">"phone"</span><span class="tag">&gt;</span>
+        Phone
+    <span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"radio"</span> <span class="attr">name=</span><span class="string">"contact"</span> <span class="attr">value=</span><span class="string">"mail"</span><span class="tag">&gt;</span>
+        Mail
+    <span class="tag">&lt;/label&gt;</span>
+<span class="tag">&lt;/fieldset&gt;</span>
+
+<span class="comment">&lt;!-- Checkboxes (multiple choices) --&gt;</span>
+<span class="tag">&lt;fieldset&gt;</span>
+    <span class="tag">&lt;legend&gt;</span>Interests<span class="tag">&lt;/legend&gt;</span>
+    <span class="tag">&lt;label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"checkbox"</span> <span class="attr">name=</span><span class="string">"interests"</span> <span class="attr">value=</span><span class="string">"webdev"</span><span class="tag">&gt;</span>
+        Web Development
+    <span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"checkbox"</span> <span class="attr">name=</span><span class="string">"interests"</span> <span class="attr">value=</span><span class="string">"design"</span><span class="tag">&gt;</span>
+        Design
+    <span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"checkbox"</span> <span class="attr">name=</span><span class="string">"interests"</span> <span class="attr">value=</span><span class="string">"marketing"</span><span class="tag">&gt;</span>
+        Marketing
+    <span class="tag">&lt;/label&gt;</span>
+<span class="tag">&lt;/fieldset&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>File Upload Inputs</h2>
+                    <p>
+                        File inputs allow users to upload documents, images, and other files:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic file upload --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"file"</span> <span class="attr">name=</span><span class="string">"document"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Image uploads only --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"file"</span> 
+       <span class="attr">accept=</span><span class="string">"image/*"</span>
+       <span class="attr">name=</span><span class="string">"profile-photo"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Multiple file upload --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"file"</span> 
+       <span class="attr">multiple</span>
+       <span class="attr">accept=</span><span class="string">".pdf,.doc,.docx"</span>
+       <span class="attr">name=</span><span class="string">"documents"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Specific file types --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"file"</span> 
+       <span class="attr">accept=</span><span class="string">".jpg,.jpeg,.png,.gif"</span>
+       <span class="attr">name=</span><span class="string">"gallery-images"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Specialized Input Types</h2>
+                    <p>
+                        HTML5 includes several specialized input types for specific use cases:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Color picker --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"color"</span> 
+       <span class="attr">value=</span><span class="string">"#ff0000"</span>
+       <span class="attr">name=</span><span class="string">"theme-color"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Hidden input --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"hidden"</span> 
+       <span class="attr">name=</span><span class="string">"csrf-token"</span> 
+       <span class="attr">value=</span><span class="string">"abc123"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Submit button --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"submit"</span> <span class="attr">value=</span><span class="string">"Send Form"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Reset button --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"reset"</span> <span class="attr">value=</span><span class="string">"Clear Form"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Generic button --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"button"</span> <span class="attr">value=</span><span class="string">"Click Me"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Image submit button --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"image"</span> 
+       <span class="attr">src=</span><span class="string">"submit-button.png"</span>
+       <span class="attr">alt=</span><span class="string">"Submit Form"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Input Attributes and Validation</h2>
+                    <p>
+                        Input types work with various attributes to control behavior and validation:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Comprehensive input with all attributes --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span>
+       <span class="attr">id=</span><span class="string">"username"</span>
+       <span class="attr">name=</span><span class="string">"username"</span>
+       <span class="attr">placeholder=</span><span class="string">"Enter username"</span>
+       <span class="attr">value=</span><span class="string">"defaultValue"</span>
+       <span class="attr">required</span>
+       <span class="attr">minlength=</span><span class="string">"3"</span>
+       <span class="attr">maxlength=</span><span class="string">"20"</span>
+       <span class="attr">pattern=</span><span class="string">"[a-zA-Z0-9]+"</span>
+       <span class="attr">title=</span><span class="string">"Username can only contain letters and numbers"</span>
+       <span class="attr">autocomplete=</span><span class="string">"username"</span>
+       <span class="attr">readonly</span>
+       <span class="attr">disabled</span>
+       <span class="attr">autofocus</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Form with different input combinations --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">class=</span><span class="string">"comprehensive-form"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;fieldset&gt;</span>
+        <span class="tag">&lt;legend&gt;</span>Personal Information<span class="tag">&lt;/legend&gt;</span>
+        
+        <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"full-name"</span><span class="tag">&gt;</span>Full Name *<span class="tag">&lt;/label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">id=</span><span class="string">"full-name"</span> <span class="attr">required</span><span class="tag">&gt;</span>
+        
+        <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"birthdate"</span><span class="tag">&gt;</span>Birth Date<span class="tag">&lt;/label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"date"</span> <span class="attr">id=</span><span class="string">"birthdate"</span> <span class="attr">max=</span><span class="string">"2007-01-01"</span><span class="tag">&gt;</span>
+        
+        <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"age"</span><span class="tag">&gt;</span>Age<span class="tag">&lt;/label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"number"</span> <span class="attr">id=</span><span class="string">"age"</span> <span class="attr">min=</span><span class="string">"18"</span> <span class="attr">max=</span><span class="string">"120"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/fieldset&gt;</span>
+    
+    <span class="tag">&lt;fieldset&gt;</span>
+        <span class="tag">&lt;legend&gt;</span>Preferences<span class="tag">&lt;/legend&gt;</span>
+        
+        <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"volume"</span><span class="tag">&gt;</span>Volume<span class="tag">&lt;/label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"range"</span> <span class="attr">id=</span><span class="string">"volume"</span> <span class="attr">min=</span><span class="string">"0"</span> <span class="attr">max=</span><span class="string">"100"</span> <span class="attr">value=</span><span class="string">"50"</span><span class="tag">&gt;</span>
+        
+        <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"theme-color"</span><span class="tag">&gt;</span>Theme Color<span class="tag">&lt;/label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"color"</span> <span class="attr">id=</span><span class="string">"theme-color"</span> <span class="attr">value=</span><span class="string">"#007bff"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/fieldset&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Input Type Browser Support</h2>
+                    <p>
+                        While most modern browsers support HTML5 input types, some older browsers may fall back to text inputs:
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🌐 Browser Compatibility</h4>
+                        <ul>
+                            <li><strong>Excellent support:</strong> text, password, email, number, tel</li>
+                            <li><strong>Good support:</strong> date, time, range, color</li>
+                            <li><strong>Progressive enhancement:</strong> datetime-local, month, week</li>
+                            <li><strong>Graceful degradation:</strong> Unsupported types become text inputs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Feature detection with JavaScript --&gt;</span>
+<span class="tag">&lt;script&gt;</span>
+function supportsInputType(type) {
+    const input = document.createElement('input');
+    input.type = type;
+    return input.type === type;
+}
+
+// Check if date input is supported
+if (!supportsInputType('date')) {
+    // Provide a fallback or polyfill
+    loadDatePickerPolyfill();
+}
+<span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices for Input Types</h2>
+                    <div class="highlight-box">
+                        <h4>💡 Input Type Guidelines</h4>
+                        <ul>
+                            <li><strong>Match purpose:</strong> Use email type for email addresses</li>
+                            <li><strong>Mobile optimization:</strong> Right input types trigger appropriate keyboards</li>
+                            <li><strong>Validation:</strong> Combine HTML5 validation with server-side validation</li>
+                            <li><strong>Accessibility:</strong> Always provide labels and descriptions</li>
+                            <li><strong>Fallbacks:</strong> Plan for browsers that don't support specific types</li>
+                            <li><strong>User experience:</strong> Provide clear instructions and error messages</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="forms.html" class="nav-btn">← Previous: Forms</a>
+                    <a href="semantic-elements.html" class="nav-btn">Next: Semantic Elements →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

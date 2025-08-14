@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Paragraphs - CodeMaster Academy</title>
+    <meta name="description" content="Learn to create and format paragraphs in HTML with proper text structure and semantic meaning">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html" class="active">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Paragraphs</h1>
+                    <p class="topic-description">
+                        Master the art of creating well-structured text content using HTML paragraph elements and text formatting techniques.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding HTML Paragraphs</h2>
+                    <p>
+                        The HTML <code>&lt;p&gt;</code> element is the fundamental building block for text content on the web. It represents a paragraph of text and is one of the most commonly used HTML elements. Paragraphs provide semantic meaning to your content, helping browsers, search engines, and assistive technologies understand the structure of your text.
+                    </p>
+                    <p>
+                        Every paragraph automatically creates space above and below itself, separating distinct blocks of content. This default spacing helps create visual hierarchy and improves readability, making your content easier to scan and digest.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>📝 Key Concept</h4>
+                        <p>Paragraphs are block-level elements, meaning they take up the full width available and automatically start on a new line. They're essential for creating readable, well-structured content.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Basic Paragraph Syntax</h2>
+                    <p>
+                        Creating paragraphs in HTML is straightforward. Simply wrap your text content in opening and closing paragraph tags:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;p&gt;</span>This is a simple paragraph of text.<span class="tag">&lt;/p&gt;</span>
+
+<span class="tag">&lt;p&gt;</span>
+    This is another paragraph. It can contain multiple sentences 
+    and will automatically wrap to the next line when it reaches 
+    the edge of its container.
+<span class="tag">&lt;/p&gt;</span>
+
+<span class="tag">&lt;p&gt;</span>
+    Even if you write your HTML 
+    with line breaks like this, 
+    the browser will display it 
+    as continuous text with normal spacing.
+<span class="tag">&lt;/p&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">How these paragraphs appear:</div>
+                        <p>This is a simple paragraph of text.</p>
+                        <p>This is another paragraph. It can contain multiple sentences and will automatically wrap to the next line when it reaches the edge of its container.</p>
+                        <p>Even if you write your HTML with line breaks like this, the browser will display it as continuous text with normal spacing.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Text Formatting Within Paragraphs</h2>
+                    <p>
+                        Paragraphs can contain various inline elements for text formatting and emphasis:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;p&gt;</span>
+    This paragraph contains <span class="tag">&lt;strong&gt;</span>bold text<span class="tag">&lt;/strong&gt;</span> for strong emphasis 
+    and <span class="tag">&lt;em&gt;</span>italic text<span class="tag">&lt;/em&gt;</span> for regular emphasis.
+<span class="tag">&lt;/p&gt;</span>
+
+<span class="tag">&lt;p&gt;</span>
+    You can also use <span class="tag">&lt;mark&gt;</span>highlighted text<span class="tag">&lt;/mark&gt;</span>, 
+    <span class="tag">&lt;small&gt;</span>smaller text<span class="tag">&lt;/small&gt;</span>, and 
+    <span class="tag">&lt;code&gt;</span>inline code<span class="tag">&lt;/code&gt;</span> within paragraphs.
+<span class="tag">&lt;/p&gt;</span>
+
+<span class="tag">&lt;p&gt;</span>
+    For additional formatting, you might use 
+    <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"highlight"</span><span class="tag">&gt;</span>custom styled text<span class="tag">&lt;/span&gt;</span> 
+    or <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#"</span><span class="tag">&gt;</span>links<span class="tag">&lt;/a&gt;</span> to other content.
+<span class="tag">&lt;/p&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Formatted text example:</div>
+                        <p>This paragraph contains <strong>bold text</strong> for strong emphasis and <em>italic text</em> for regular emphasis.</p>
+                        <p>You can also use <mark>highlighted text</mark>, <small>smaller text</small>, and <code>inline code</code> within paragraphs.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Line Breaks and Spacing</h2>
+                    <p>
+                        HTML treats consecutive whitespace characters (spaces, tabs, line breaks) as a single space. To control text flow and spacing, you have several options:
+                    </p>
+                    
+                    <h3>Line Breaks with &lt;br&gt;</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;p&gt;</span>
+    This is the first line.<span class="tag">&lt;br&gt;</span>
+    This is the second line.<span class="tag">&lt;br&gt;</span>
+    This is the third line.
+<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Better approach for addresses --&gt;</span>
+<span class="tag">&lt;address&gt;</span>
+    John Doe<span class="tag">&lt;br&gt;</span>
+    123 Main Street<span class="tag">&lt;br&gt;</span>
+    City, State 12345
+<span class="tag">&lt;/address&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Preserving Whitespace with &lt;pre&gt;</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;pre&gt;</span>
+This     text     preserves
+    all    whitespace
+        including    indentation
+            and line breaks.
+<span class="tag">&lt;/pre&gt;</span></pre>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4>⚠️ Best Practice</h4>
+                        <p>Use <code>&lt;br&gt;</code> sparingly and only for actual line breaks (like addresses or poetry). For spacing between elements, use CSS margins instead of multiple <code>&lt;br&gt;</code> tags.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Paragraph Attributes</h2>
+                    <p>
+                        Like other HTML elements, paragraphs can have attributes for styling, identification, and accessibility:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Class attribute for CSS styling --&gt;</span>
+<span class="tag">&lt;p</span> <span class="attr">class=</span><span class="string">"intro-text"</span><span class="tag">&gt;</span>This is an introduction paragraph.<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- ID attribute for unique identification --&gt;</span>
+<span class="tag">&lt;p</span> <span class="attr">id=</span><span class="string">"main-content"</span><span class="tag">&gt;</span>This is the main content paragraph.<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Multiple classes --&gt;</span>
+<span class="tag">&lt;p</span> <span class="attr">class=</span><span class="string">"highlight important"</span><span class="tag">&gt;</span>This paragraph has multiple CSS classes.<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Custom data attributes --&gt;</span>
+<span class="tag">&lt;p</span> <span class="attr">data-section=</span><span class="string">"introduction"</span> <span class="attr">data-priority=</span><span class="string">"high"</span><span class="tag">&gt;</span>
+    This paragraph has custom data attributes for JavaScript.
+<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Language specification --&gt;</span>
+<span class="tag">&lt;p</span> <span class="attr">lang=</span><span class="string">"es"</span><span class="tag">&gt;</span>Este párrafo está en español.<span class="tag">&lt;/p&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Advanced Paragraph Techniques</h2>
+                    
+                    <h3>Drop Caps and Special Formatting</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Drop cap using CSS --&gt;</span>
+<span class="tag">&lt;p</span> <span class="attr">class=</span><span class="string">"drop-cap"</span><span class="tag">&gt;</span>
+    Once upon a time, in a land far away, there lived a young 
+    developer who wanted to create beautiful websites.
+<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- CSS for drop cap --&gt;</span>
+<span class="tag">&lt;style&gt;</span>
+.drop-cap::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    float: left;
+    line-height: 1;
+    margin-right: 0.1em;
+}
+<span class="tag">&lt;/style&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Quotations and Citations</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Inline quotations --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    As Einstein said, <span class="tag">&lt;q&gt;</span>Imagination is more important than knowledge<span class="tag">&lt;/q&gt;</span>, 
+    and this applies perfectly to web development.
+<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Block quotations --&gt;</span>
+<span class="tag">&lt;blockquote</span> <span class="attr">cite=</span><span class="string">"https://example.com"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;p&gt;</span>
+        The best way to learn web development is through practice 
+        and building real projects.
+    <span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;footer&gt;</span>
+        <span class="tag">&lt;cite&gt;</span>— Web Development Guide<span class="tag">&lt;/cite&gt;</span>
+    <span class="tag">&lt;/footer&gt;</span>
+<span class="tag">&lt;/blockquote&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Semantic Alternatives to Paragraphs</h2>
+                    <p>
+                        Sometimes other elements might be more semantically appropriate than generic paragraphs:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Address information --&gt;</span>
+<span class="tag">&lt;address&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"mailto:contact@example.com"</span><span class="tag">&gt;</span>contact@example.com<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;br&gt;</span>
+    123 Web Developer Lane<span class="tag">&lt;br&gt;</span>
+    Code City, CC 12345
+<span class="tag">&lt;/address&gt;</span>
+
+<span class="comment">&lt;!-- Figure captions --&gt;</span>
+<span class="tag">&lt;figure&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"chart.jpg"</span> <span class="attr">alt=</span><span class="string">"Sales chart"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;figcaption&gt;</span>
+        Sales performance showing 25% growth over the last quarter.
+    <span class="tag">&lt;/figcaption&gt;</span>
+<span class="tag">&lt;/figure&gt;</span>
+
+<span class="comment">&lt;!-- Time and date information --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    Published on <span class="tag">&lt;time</span> <span class="attr">datetime=</span><span class="string">"2025-01-15"</span><span class="tag">&gt;</span>January 15, 2025<span class="tag">&lt;/time&gt;</span>
+<span class="tag">&lt;/p&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Styling Paragraphs with CSS</h2>
+                    <p>
+                        CSS provides extensive control over paragraph appearance and typography:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* Basic paragraph styling */</span>
+<span class="selector">p</span> {
+    <span class="property">font-family</span>: <span class="value">'Georgia', serif</span>;
+    <span class="property">font-size</span>: <span class="value">16px</span>;
+    <span class="property">line-height</span>: <span class="value">1.6</span>;
+    <span class="property">margin-bottom</span>: <span class="value">1em</span>;
+    <span class="property">color</span>: <span class="value">#333</span>;
+}
+
+<span class="comment">/* First paragraph special styling */</span>
+<span class="selector">p:first-of-type</span> {
+    <span class="property">font-size</span>: <span class="value">18px</span>;
+    <span class="property">font-weight</span>: <span class="value">500</span>;
+    <span class="property">color</span>: <span class="value">#2c3e50</span>;
+}
+
+<span class="comment">/* Justified text for long paragraphs */</span>
+<span class="selector">.article-content p</span> {
+    <span class="property">text-align</span>: <span class="value">justify</span>;
+    <span class="property">hyphens</span>: <span class="value">auto</span>;
+}
+
+<span class="comment">/* Highlighted paragraphs */</span>
+<span class="selector">.highlight</span> {
+    <span class="property">background-color</span>: <span class="value">#f8f9fa</span>;
+    <span class="property">border-left</span>: <span class="value">4px solid #007bff</span>;
+    <span class="property">padding</span>: <span class="value">1rem</span>;
+    <span class="property">margin</span>: <span class="value">1.5rem 0</span>;
+}</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Accessibility Considerations</h2>
+                    <p>
+                        Proper paragraph usage enhances accessibility for all users:
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>♿ Accessibility Best Practices</h4>
+                        <ul>
+                            <li><strong>Use appropriate line height:</strong> 1.4-1.6 for better readability</li>
+                            <li><strong>Limit line length:</strong> 45-75 characters per line for optimal reading</li>
+                            <li><strong>Ensure sufficient contrast:</strong> Text should have at least 4.5:1 contrast ratio</li>
+                            <li><strong>Use semantic elements:</strong> Don't use paragraphs for non-paragraph content</li>
+                            <li><strong>Break up long text:</strong> Use headings and lists to improve scannability</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Good: Proper structure --&gt;</span>
+<span class="tag">&lt;section&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>Section Title<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Introduction paragraph with clear, concise language.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;p&gt;</span>
+        Supporting paragraph that elaborates on the topic 
+        without being overly long or complex.
+    <span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/section&gt;</span>
+
+<span class="comment">&lt;!-- Avoid: Wall of text --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    Very long paragraph that goes on and on without breaks or structure 
+    making it difficult to read and understand especially for users with 
+    cognitive disabilities or those using assistive technologies...
+<span class="tag">&lt;/p&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common Paragraph Mistakes</h2>
+                    <div class="example-box">
+                        <div class="example-title">❌ Mistakes to Avoid:</div>
+                        <ul>
+                            <li><strong>Using &lt;br&gt; for spacing:</strong> Use CSS margins instead</li>
+                            <li><strong>Empty paragraphs:</strong> Don't use <code>&lt;p&gt;&nbsp;&lt;/p&gt;</code> for spacing</li>
+                            <li><strong>Wrong semantic choice:</strong> Use headings for titles, not paragraphs</li>
+                            <li><strong>Overly long paragraphs:</strong> Break up dense text into smaller chunks</li>
+                            <li><strong>Missing closing tags:</strong> Always close paragraph tags properly</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ❌ Wrong: Using paragraphs for spacing --&gt;</span>
+<span class="tag">&lt;p&gt;</span>First paragraph<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;p&gt;</span>&nbsp;<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;p&gt;</span>&nbsp;<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;p&gt;</span>Second paragraph<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Correct: Using CSS for spacing --&gt;</span>
+<span class="tag">&lt;p&gt;</span>First paragraph<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;p</span> <span class="attr">class=</span><span class="string">"large-margin"</span><span class="tag">&gt;</span>Second paragraph<span class="tag">&lt;/p&gt;</span>
+
+<span class="tag">&lt;style&gt;</span>
+.large-margin {
+    margin-top: 3rem;
+}
+<span class="tag">&lt;/style&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Responsive Paragraph Design</h2>
+                    <p>
+                        Modern web development requires paragraphs that work well on all devices:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* Responsive typography */</span>
+<span class="selector">p</span> {
+    <span class="property">font-size</span>: <span class="value">clamp(14px, 2.5vw, 18px)</span>;
+    <span class="property">line-height</span>: <span class="value">1.6</span>;
+    <span class="property">max-width</span>: <span class="value">65ch</span>; <span class="comment">/* Optimal line length */</span>
+}
+
+<span class="comment">/* Mobile-specific adjustments */</span>
+<span class="selector">@media (max-width: 768px)</span> {
+    <span class="selector">p</span> {
+        <span class="property">font-size</span>: <span class="value">16px</span>;
+        <span class="property">line-height</span>: <span class="value">1.5</span>;
+        <span class="property">margin-bottom</span>: <span class="value">1.25rem</span>;
+    }
+}
+
+<span class="comment">/* Large screen optimization */</span>
+<span class="selector">@media (min-width: 1200px)</span> {
+    <span class="selector">p</span> {
+        <span class="property">font-size</span>: <span class="value">18px</span>;
+        <span class="property">line-height</span>: <span class="value">1.7</span>;
+    }
+}</pre>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="headings.html" class="nav-btn">← Previous: Headings</a>
+                    <a href="links.html" class="nav-btn">Next: Links →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

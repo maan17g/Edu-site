@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Element - CodeMaster Academy</title>
+    <meta name="description" content="Learn about the HTML body element and how to structure visible content on your webpage">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html" class="active">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">The Body Element</h1>
+                    <p class="topic-description">
+                        Master the HTML body element - the container for all visible content that users see and interact with on your webpage.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding the Body Element</h2>
+                    <p>
+                        The <code>&lt;body&gt;</code> element is where all the magic happens. It contains everything that users see and interact with on your webpage - text, images, videos, forms, navigation menus, and more. While the head element contains invisible metadata, the body element holds all the visible content that makes up your user experience.
+                    </p>
+                    <p>
+                        Think of the body element as the canvas for your webpage. Just as an artist needs a canvas to create their masterpiece, web developers need the body element to display their content and create engaging user experiences.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🎨 Key Concept</h4>
+                        <p>The body element represents the main content area of your HTML document. Everything inside the body tag will be displayed in the browser viewport and can be styled with CSS and made interactive with JavaScript.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Basic Body Structure</h2>
+                    <p>
+                        Here's how the body element fits into the overall HTML document structure:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr">lang=</span><span class="string">"en"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+    <span class="comment">&lt;!-- Meta information (invisible) --&gt;</span>
+    <span class="tag">&lt;title&gt;</span>Page Title<span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+
+<span class="tag">&lt;body&gt;</span>
+    <span class="comment">&lt;!-- All visible content goes here --&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>Welcome to My Website<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This is a paragraph of text that users can see.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"image.jpg"</span> <span class="attr">alt=</span><span class="string">"Description"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"contact.html"</span><span class="tag">&gt;</span>Contact Us<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Body Attributes</h2>
+                    <p>
+                        The body element can have various attributes that affect the entire page. While many of these are now handled with CSS, understanding them is still valuable:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Modern approach: Use CSS for styling --&gt;</span>
+<span class="tag">&lt;body</span> <span class="attr">class=</span><span class="string">"home-page dark-theme"</span> <span class="attr">id=</span><span class="string">"top"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Body content --&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+
+<span class="comment">&lt;!-- Legacy approach (avoid in modern development) --&gt;</span>
+<span class="tag">&lt;body</span> <span class="attr">bgcolor=</span><span class="string">"#ffffff"</span> <span class="attr">text=</span><span class="string">"#000000"</span> <span class="attr">link=</span><span class="string">"#0000ff"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Not recommended: use CSS instead --&gt;</span>
+<span class="tag">&lt;/body&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Common Body Attributes:</div>
+                        <ul>
+                            <li><code>class</code> - Assigns CSS classes for styling</li>
+                            <li><code>id</code> - Provides a unique identifier</li>
+                            <li><code>style</code> - Inline CSS styles (use sparingly)</li>
+                            <li><code>data-*</code> - Custom data attributes for JavaScript</li>
+                            <li><code>onload</code> - JavaScript to run when page loads (better to use external JS)</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Structuring Content in the Body</h2>
+                    <p>
+                        Modern HTML5 provides semantic elements to structure your body content meaningfully:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;body&gt;</span>
+    <span class="comment">&lt;!-- Site header with logo and navigation --&gt;</span>
+    <span class="tag">&lt;header</span> <span class="attr">class=</span><span class="string">"site-header"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"logo"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;h1&gt;</span>My Website<span class="tag">&lt;/h1&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+        
+        <span class="tag">&lt;nav</span> <span class="attr">class=</span><span class="string">"main-navigation"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;ul&gt;</span>
+                <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+                <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/about"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+                <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/contact"</span><span class="tag">&gt;</span>Contact<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;/ul&gt;</span>
+        <span class="tag">&lt;/nav&gt;</span>
+    <span class="tag">&lt;/header&gt;</span>
+    
+    <span class="comment">&lt;!-- Main content area --&gt;</span>
+    <span class="tag">&lt;main</span> <span class="attr">class=</span><span class="string">"main-content"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;section</span> <span class="attr">class=</span><span class="string">"hero"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;h1&gt;</span>Welcome to Our Site<span class="tag">&lt;/h1&gt;</span>
+            <span class="tag">&lt;p&gt;</span>Your journey to excellence starts here.<span class="tag">&lt;/p&gt;</span>
+            <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#learn-more"</span> <span class="attr">class=</span><span class="string">"cta-button"</span><span class="tag">&gt;</span>Learn More<span class="tag">&lt;/a&gt;</span>
+        <span class="tag">&lt;/section&gt;</span>
+        
+        <span class="tag">&lt;section</span> <span class="attr">id=</span><span class="string">"learn-more"</span> <span class="attr">class=</span><span class="string">"features"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;h2&gt;</span>Our Features<span class="tag">&lt;/h2&gt;</span>
+            <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"feature-grid"</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;article</span> <span class="attr">class=</span><span class="string">"feature"</span><span class="tag">&gt;</span>
+                    <span class="tag">&lt;h3&gt;</span>Fast Performance<span class="tag">&lt;/h3&gt;</span>
+                    <span class="tag">&lt;p&gt;</span>Lightning-fast loading times.<span class="tag">&lt;/p&gt;</span>
+                <span class="tag">&lt;/article&gt;</span>
+                
+                <span class="tag">&lt;article</span> <span class="attr">class=</span><span class="string">"feature"</span><span class="tag">&gt;</span>
+                    <span class="tag">&lt;h3&gt;</span>Responsive Design<span class="tag">&lt;/h3&gt;</span>
+                    <span class="tag">&lt;p&gt;</span>Perfect on all devices.<span class="tag">&lt;/p&gt;</span>
+                <span class="tag">&lt;/article&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;/section&gt;</span>
+    <span class="tag">&lt;/main&gt;</span>
+    
+    <span class="comment">&lt;!-- Sidebar content --&gt;</span>
+    <span class="tag">&lt;aside</span> <span class="attr">class=</span><span class="string">"sidebar"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h3&gt;</span>Recent Posts<span class="tag">&lt;/h3&gt;</span>
+        <span class="tag">&lt;ul&gt;</span>
+            <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#"</span><span class="tag">&gt;</span>How to Learn HTML<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#"</span><span class="tag">&gt;</span>CSS Grid Tutorial<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;/aside&gt;</span>
+    
+    <span class="comment">&lt;!-- Site footer --&gt;</span>
+    <span class="tag">&lt;footer</span> <span class="attr">class=</span><span class="string">"site-footer"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;p&gt;</span>&copy; 2025 My Website. All rights reserved.<span class="tag">&lt;/p&gt;</span>
+        <span class="tag">&lt;nav</span> <span class="attr">class=</span><span class="string">"footer-nav"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/privacy"</span><span class="tag">&gt;</span>Privacy<span class="tag">&lt;/a&gt;</span>
+            <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/terms"</span><span class="tag">&gt;</span>Terms<span class="tag">&lt;/a&gt;</span>
+        <span class="tag">&lt;/nav&gt;</span>
+    <span class="tag">&lt;/footer&gt;</span>
+<span class="tag">&lt;/body&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Types of Content in the Body</h2>
+                    <p>
+                        The body can contain various types of content elements. Understanding these categories helps you structure your content properly:
+                    </p>
+                    
+                    <h3>1. Text Content</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Headings --&gt;</span>
+<span class="tag">&lt;h1&gt;</span>Main Page Title<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span>Section Title<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;h3&gt;</span>Subsection Title<span class="tag">&lt;/h3&gt;</span>
+
+<span class="comment">&lt;!-- Paragraphs and text formatting --&gt;</span>
+<span class="tag">&lt;p&gt;</span>This is a regular paragraph with <span class="tag">&lt;strong&gt;</span>bold text<span class="tag">&lt;/strong&gt;</span> and <span class="tag">&lt;em&gt;</span>italic text<span class="tag">&lt;/em&gt;</span>.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;p&gt;</span>You can also use <span class="tag">&lt;mark&gt;</span>highlighted text<span class="tag">&lt;/mark&gt;</span> and <span class="tag">&lt;code&gt;</span>inline code<span class="tag">&lt;/code&gt;</span>.<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Quotes --&gt;</span>
+<span class="tag">&lt;blockquote&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This is a blockquote for longer quotations.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;cite&gt;</span>Author Name<span class="tag">&lt;/cite&gt;</span>
+<span class="tag">&lt;/blockquote&gt;</span></pre>
+                    </div>
+                    
+                    <h3>2. Lists</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Unordered list --&gt;</span>
+<span class="tag">&lt;ul&gt;</span>
+    <span class="tag">&lt;li&gt;</span>First item<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Second item<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Third item<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- Ordered list --&gt;</span>
+<span class="tag">&lt;ol&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Step one<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Step two<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Step three<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ol&gt;</span>
+
+<span class="comment">&lt;!-- Definition list --&gt;</span>
+<span class="tag">&lt;dl&gt;</span>
+    <span class="tag">&lt;dt&gt;</span>HTML<span class="tag">&lt;/dt&gt;</span>
+    <span class="tag">&lt;dd&gt;</span>HyperText Markup Language<span class="tag">&lt;/dd&gt;</span>
+    <span class="tag">&lt;dt&gt;</span>CSS<span class="tag">&lt;/dt&gt;</span>
+    <span class="tag">&lt;dd&gt;</span>Cascading Style Sheets<span class="tag">&lt;/dd&gt;</span>
+<span class="tag">&lt;/dl&gt;</span></pre>
+                    </div>
+                    
+                    <h3>3. Media Elements</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Images --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"photo.jpg"</span> <span class="attr">alt=</span><span class="string">"Description of photo"</span> <span class="attr">width=</span><span class="string">"300"</span> <span class="attr">height=</span><span class="string">"200"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Video --&gt;</span>
+<span class="tag">&lt;video</span> <span class="attr">width=</span><span class="string">"640"</span> <span class="attr">height=</span><span class="string">"360"</span> <span class="attr">controls</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="string">"movie.mp4"</span> <span class="attr">type=</span><span class="string">"video/mp4"</span><span class="tag">&gt;</span>
+    Your browser does not support the video tag.
+<span class="tag">&lt;/video&gt;</span>
+
+<span class="comment">&lt;!-- Audio --&gt;</span>
+<span class="tag">&lt;audio</span> <span class="attr">controls</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="string">"audio.mp3"</span> <span class="attr">type=</span><span class="string">"audio/mpeg"</span><span class="tag">&gt;</span>
+    Your browser does not support the audio element.
+<span class="tag">&lt;/audio&gt;</span></pre>
+                    </div>
+                    
+                    <h3>4. Interactive Elements</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Links --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://example.com"</span><span class="tag">&gt;</span>External link<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"page2.html"</span><span class="tag">&gt;</span>Internal link<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#section1"</span><span class="tag">&gt;</span>Anchor link<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Buttons --&gt;</span>
+<span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"button"</span><span class="tag">&gt;</span>Click me<span class="tag">&lt;/button&gt;</span>
+
+<span class="comment">&lt;!-- Forms --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">action=</span><span class="string">"/submit"</span> <span class="attr">method=</span><span class="string">"post"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"name"</span><span class="tag">&gt;</span>Name:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">id=</span><span class="string">"name"</span> <span class="attr">name=</span><span class="string">"name"</span> <span class="attr">required</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"submit"</span><span class="tag">&gt;</span>Submit<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Body Layout Patterns</h2>
+                    <p>
+                        Here are common layout patterns you'll use to structure content in the body:
+                    </p>
+                    
+                    <h3>Single Column Layout</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;header&gt;</span>Site Header<span class="tag">&lt;/header&gt;</span>
+    <span class="tag">&lt;main&gt;</span>
+        <span class="tag">&lt;article&gt;</span>Main content<span class="tag">&lt;/article&gt;</span>
+    <span class="tag">&lt;/main&gt;</span>
+    <span class="tag">&lt;footer&gt;</span>Site Footer<span class="tag">&lt;/footer&gt;</span>
+<span class="tag">&lt;/body&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Two Column Layout</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;header&gt;</span>Site Header<span class="tag">&lt;/header&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"container"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;main&gt;</span>Main content<span class="tag">&lt;/main&gt;</span>
+        <span class="tag">&lt;aside&gt;</span>Sidebar<span class="tag">&lt;/aside&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;footer&gt;</span>Site Footer<span class="tag">&lt;/footer&gt;</span>
+<span class="tag">&lt;/body&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Three Column Layout</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;header&gt;</span>Site Header<span class="tag">&lt;/header&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"container"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;aside</span> <span class="attr">class=</span><span class="string">"sidebar-left"</span><span class="tag">&gt;</span>Left Sidebar<span class="tag">&lt;/aside&gt;</span>
+        <span class="tag">&lt;main&gt;</span>Main content<span class="tag">&lt;/main&gt;</span>
+        <span class="tag">&lt;aside</span> <span class="attr">class=</span><span class="string">"sidebar-right"</span><span class="tag">&gt;</span>Right Sidebar<span class="tag">&lt;/aside&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;footer&gt;</span>Site Footer<span class="tag">&lt;/footer&gt;</span>
+<span class="tag">&lt;/body&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Body Element Best Practices</h2>
+                    
+                    <div class="highlight-box">
+                        <h4>🎯 Essential Guidelines</h4>
+                        <ul>
+                            <li><strong>Use semantic HTML:</strong> Choose elements based on meaning, not appearance</li>
+                            <li><strong>Structure logically:</strong> Organize content in a logical hierarchy</li>
+                            <li><strong>Accessibility first:</strong> Use proper headings, alt text, and ARIA labels</li>
+                            <li><strong>Mobile responsive:</strong> Design for mobile-first approach</li>
+                            <li><strong>Performance matters:</strong> Optimize images and minimize unnecessary elements</li>
+                            <li><strong>Valid HTML:</strong> Always validate your HTML markup</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Content Organization Tips</h3>
+                    <div class="example-box">
+                        <div class="example-title">✅ Good Practices:</div>
+                        <ul>
+                            <li>Use only one <code>&lt;h1&gt;</code> per page</li>
+                            <li>Keep heading hierarchy logical (h1 → h2 → h3...)</li>
+                            <li>Group related content in sections</li>
+                            <li>Use lists for groups of related items</li>
+                            <li>Always include alt text for images</li>
+                            <li>Use semantic elements instead of generic divs when possible</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Common Mistakes to Avoid</h3>
+                    <div class="example-box">
+                        <div class="example-title">❌ Avoid These Mistakes:</div>
+                        <ul>
+                            <li>Using tables for layout (use CSS instead)</li>
+                            <li>Skipping heading levels (h1 → h3 without h2)</li>
+                            <li>Missing alt attributes on images</li>
+                            <li>Using <code>&lt;br&gt;</code> tags for spacing (use CSS margins)</li>
+                            <li>Putting important content in images without text alternatives</li>
+                            <li>Using deprecated attributes for styling</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Advanced Body Techniques</h2>
+                    
+                    <h3>Skip Navigation for Accessibility</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;body&gt;</span>
+    <span class="comment">&lt;!-- Skip link for screen readers --&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#main-content"</span> <span class="attr">class=</span><span class="string">"skip-link"</span><span class="tag">&gt;</span>Skip to main content<span class="tag">&lt;/a&gt;</span>
+    
+    <span class="tag">&lt;header&gt;</span>
+        <span class="comment">&lt;!-- Navigation --&gt;</span>
+    <span class="tag">&lt;/header&gt;</span>
+    
+    <span class="tag">&lt;main</span> <span class="attr">id=</span><span class="string">"main-content"</span><span class="tag">&gt;</span>
+        <span class="comment">&lt;!-- Main content --&gt;</span>
+    <span class="tag">&lt;/main&gt;</span>
+<span class="tag">&lt;/body&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Progressive Enhancement</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;body</span> <span class="attr">class=</span><span class="string">"no-js"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Content that works without JavaScript --&gt;</span>
+    <span class="tag">&lt;noscript&gt;</span>
+        <span class="tag">&lt;p&gt;</span>This site works better with JavaScript enabled.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/noscript&gt;</span>
+    
+    <span class="comment">&lt;!-- Enhanced content for JavaScript users --&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"js-enhanced"</span><span class="tag">&gt;</span>
+        <span class="comment">&lt;!-- JavaScript-enhanced features --&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/body&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="head-element.html" class="nav-btn">← Previous: Head Element</a>
+                    <a href="headings.html" class="nav-btn">Next: Headings →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Headings - CodeMaster Academy</title>
+    <meta name="description" content="Master HTML headings and create proper document structure with h1-h6 elements">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html" class="active">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Headings</h1>
+                    <p class="topic-description">
+                        Learn to create effective document structure and improve accessibility using HTML heading elements h1 through h6.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What are HTML Headings?</h2>
+                    <p>
+                        HTML headings are used to create a hierarchical structure for your content, similar to the chapters and sections in a book. They range from <code>&lt;h1&gt;</code> (the most important) to <code>&lt;h6&gt;</code> (the least important), helping both users and search engines understand the organization and priority of your content.
+                    </p>
+                    <p>
+                        Headings serve multiple crucial purposes: they create visual hierarchy for users, provide structure for screen readers and assistive technologies, help search engines understand your content organization, and make your pages more scannable and readable.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>📚 Key Concept</h4>
+                        <p>Think of headings as the outline of your content. Just like you wouldn't start a book chapter with a subsection, you shouldn't skip heading levels in HTML. This creates a logical, accessible structure.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>The Six Heading Levels</h2>
+                    <p>
+                        HTML provides six levels of headings, each with default styling that decreases in size and importance:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;h1&gt;</span>This is a Heading 1<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span>This is a Heading 2<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;h3&gt;</span>This is a Heading 3<span class="tag">&lt;/h3&gt;</span>
+<span class="tag">&lt;h4&gt;</span>This is a Heading 4<span class="tag">&lt;/h4&gt;</span>
+<span class="tag">&lt;h5&gt;</span>This is a Heading 5<span class="tag">&lt;/h5&gt;</span>
+<span class="tag">&lt;h6&gt;</span>This is a Heading 6<span class="tag">&lt;/h6&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Visual Example (how they typically appear):</div>
+                        <h1 style="font-size: 2rem; margin: 0.5rem 0;">This is a Heading 1</h1>
+                        <h2 style="font-size: 1.75rem; margin: 0.5rem 0;">This is a Heading 2</h2>
+                        <h3 style="font-size: 1.5rem; margin: 0.5rem 0;">This is a Heading 3</h3>
+                        <h4 style="font-size: 1.25rem; margin: 0.5rem 0;">This is a Heading 4</h4>
+                        <h5 style="font-size: 1.125rem; margin: 0.5rem 0;">This is a Heading 5</h5>
+                        <h6 style="font-size: 1rem; margin: 0.5rem 0;">This is a Heading 6</h6>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Proper Heading Hierarchy</h2>
+                    <p>
+                        The key to effective headings is maintaining a logical hierarchy. Here's how to structure your content properly:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ✅ Good: Proper hierarchy --&gt;</span>
+<span class="tag">&lt;h1&gt;</span>Main Page Title<span class="tag">&lt;/h1&gt;</span>
+  <span class="tag">&lt;h2&gt;</span>Major Section<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;h3&gt;</span>Subsection<span class="tag">&lt;/h3&gt;</span>
+      <span class="tag">&lt;h4&gt;</span>Sub-subsection<span class="tag">&lt;/h4&gt;</span>
+    <span class="tag">&lt;h3&gt;</span>Another Subsection<span class="tag">&lt;/h3&gt;</span>
+  <span class="tag">&lt;h2&gt;</span>Another Major Section<span class="tag">&lt;/h2&gt;</span>
+
+<span class="comment">&lt;!-- ❌ Bad: Skipping levels --&gt;</span>
+<span class="tag">&lt;h1&gt;</span>Main Title<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h4&gt;</span>This skips h2 and h3<span class="tag">&lt;/h4&gt;</span>
+<span class="tag">&lt;h2&gt;</span>This breaks the logical flow<span class="tag">&lt;/h2&gt;</span></pre>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h4>🎯 Hierarchy Rules</h4>
+                        <ul>
+                            <li><strong>One h1 per page:</strong> Use h1 for the main page title</li>
+                            <li><strong>Don't skip levels:</strong> Go h1 → h2 → h3, not h1 → h3</li>
+                            <li><strong>Logical nesting:</strong> Each level should represent a subdivision of the level above</li>
+                            <li><strong>Consistent structure:</strong> Maintain the same pattern throughout your site</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Real-World Examples</h2>
+                    <p>
+                        Let's see how headings work in practical scenarios:
+                    </p>
+                    
+                    <h3>Blog Post Structure</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;article&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>How to Learn Web Development in 2025<span class="tag">&lt;/h1&gt;</span>
+    
+    <span class="tag">&lt;h2&gt;</span>Getting Started<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Introduction paragraph...<span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;h2&gt;</span>Essential Technologies<span class="tag">&lt;/h2&gt;</span>
+    
+    <span class="tag">&lt;h3&gt;</span>HTML Fundamentals<span class="tag">&lt;/h3&gt;</span>
+    <span class="tag">&lt;p&gt;</span>HTML content...<span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;h3&gt;</span>CSS Styling<span class="tag">&lt;/h3&gt;</span>
+    <span class="tag">&lt;p&gt;</span>CSS content...<span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;h4&gt;</span>CSS Grid vs Flexbox<span class="tag">&lt;/h4&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Comparison content...<span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;h3&gt;</span>JavaScript Basics<span class="tag">&lt;/h3&gt;</span>
+    <span class="tag">&lt;p&gt;</span>JavaScript content...<span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;h2&gt;</span>Learning Resources<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Resources content...<span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;h2&gt;</span>Conclusion<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Conclusion content...<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/article&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Website Homepage Structure</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;main&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>Welcome to TechCorp Solutions<span class="tag">&lt;/h1&gt;</span>
+    
+    <span class="tag">&lt;section&gt;</span>
+        <span class="tag">&lt;h2&gt;</span>Our Services<span class="tag">&lt;/h2&gt;</span>
+        
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"service"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;h3&gt;</span>Web Development<span class="tag">&lt;/h3&gt;</span>
+            <span class="tag">&lt;h4&gt;</span>Frontend Development<span class="tag">&lt;/h4&gt;</span>
+            <span class="tag">&lt;h4&gt;</span>Backend Development<span class="tag">&lt;/h4&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+        
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"service"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;h3&gt;</span>Digital Marketing<span class="tag">&lt;/h3&gt;</span>
+            <span class="tag">&lt;h4&gt;</span>SEO Services<span class="tag">&lt;/h4&gt;</span>
+            <span class="tag">&lt;h4&gt;</span>Social Media<span class="tag">&lt;/h4&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/section&gt;</span>
+    
+    <span class="tag">&lt;section&gt;</span>
+        <span class="tag">&lt;h2&gt;</span>About Us<span class="tag">&lt;/h2&gt;</span>
+        <span class="tag">&lt;h3&gt;</span>Our Mission<span class="tag">&lt;/h3&gt;</span>
+        <span class="tag">&lt;h3&gt;</span>Our Team<span class="tag">&lt;/h3&gt;</span>
+    <span class="tag">&lt;/section&gt;</span>
+<span class="tag">&lt;/main&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>SEO and Accessibility Benefits</h2>
+                    <p>
+                        Proper heading usage provides significant benefits for both search engine optimization and accessibility:
+                    </p>
+                    
+                    <h3>SEO Benefits</h3>
+                    <div class="example-box">
+                        <div class="example-title">Search Engine Advantages:</div>
+                        <ul>
+                            <li><strong>Content Structure:</strong> Search engines use headings to understand content hierarchy</li>
+                            <li><strong>Keyword Relevance:</strong> Headings carry more weight than regular text</li>
+                            <li><strong>Featured Snippets:</strong> Well-structured content is more likely to appear in featured snippets</li>
+                            <li><strong>Topic Clusters:</strong> Help search engines understand content relationships</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Accessibility Benefits</h3>
+                    <div class="example-box">
+                        <div class="example-title">Assistive Technology Support:</div>
+                        <ul>
+                            <li><strong>Screen Readers:</strong> Users can navigate by headings to find specific content quickly</li>
+                            <li><strong>Voice Control:</strong> Voice navigation software uses headings as landmarks</li>
+                            <li><strong>Cognitive Accessibility:</strong> Clear structure helps users with cognitive disabilities</li>
+                            <li><strong>Keyboard Navigation:</strong> Some browsers allow users to jump between headings</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Styling Headings with CSS</h2>
+                    <p>
+                        While HTML provides the structure, CSS controls the appearance. Here are some common styling patterns:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* Reset default heading styles */</span>
+<span class="selector">h1, h2, h3, h4, h5, h6</span> {
+    <span class="property">margin</span>: <span class="value">0</span>;
+    <span class="property">font-weight</span>: <span class="value">normal</span>;
+    <span class="property">line-height</span>: <span class="value">1.2</span>;
+}
+
+<span class="comment">/* Custom heading styles */</span>
+<span class="selector">h1</span> {
+    <span class="property">font-size</span>: <span class="value">2.5rem</span>;
+    <span class="property">font-weight</span>: <span class="value">bold</span>;
+    <span class="property">color</span>: <span class="value">#2c3e50</span>;
+    <span class="property">margin-bottom</span>: <span class="value">1rem</span>;
+}
+
+<span class="selector">h2</span> {
+    <span class="property">font-size</span>: <span class="value">2rem</span>;
+    <span class="property">font-weight</span>: <span class="value">600</span>;
+    <span class="property">color</span>: <span class="value">#34495e</span>;
+    <span class="property">margin</span>: <span class="value">2rem 0 1rem</span>;
+    <span class="property">border-bottom</span>: <span class="value">2px solid #3498db</span>;
+    <span class="property">padding-bottom</span>: <span class="value">0.5rem</span>;
+}
+
+<span class="selector">h3</span> {
+    <span class="property">font-size</span>: <span class="value">1.5rem</span>;
+    <span class="property">font-weight</span>: <span class="value">600</span>;
+    <span class="property">color</span>: <span class="value">#2c3e50</span>;
+    <span class="property">margin</span>: <span class="value">1.5rem 0 0.75rem</span>;
+}</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Advanced Heading Techniques</h2>
+                    
+                    <h3>Adding Subtitles</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Method 1: Using hgroup (HTML5) --&gt;</span>
+<span class="tag">&lt;hgroup&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>The Complete Guide to Web Development<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>From Beginner to Professional Developer<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;/hgroup&gt;</span>
+
+<span class="comment">&lt;!-- Method 2: Using p element --&gt;</span>
+<span class="tag">&lt;h1&gt;</span>The Complete Guide to Web Development<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;p</span> <span class="attr">class=</span><span class="string">"subtitle"</span><span class="tag">&gt;</span>From Beginner to Professional Developer<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Method 3: Using span for styling --&gt;</span>
+<span class="tag">&lt;h1&gt;</span>
+    The Complete Guide to Web Development
+    <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"subtitle"</span><span class="tag">&gt;</span>From Beginner to Professional Developer<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;/h1&gt;</span></pre>
+                    </div>
+                    
+                    <h3>Section Headings with IDs</h3>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Adding IDs for anchor links --&gt;</span>
+<span class="tag">&lt;h2</span> <span class="attr">id=</span><span class="string">"introduction"</span><span class="tag">&gt;</span>Introduction<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;h2</span> <span class="attr">id=</span><span class="string">"getting-started"</span><span class="tag">&gt;</span>Getting Started<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;h2</span> <span class="attr">id=</span><span class="string">"advanced-topics"</span><span class="tag">&gt;</span>Advanced Topics<span class="tag">&lt;/h2&gt;</span>
+
+<span class="comment">&lt;!-- Table of contents linking to headings --&gt;</span>
+<span class="tag">&lt;nav</span> <span class="attr">class=</span><span class="string">"table-of-contents"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>Table of Contents<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;ul&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#introduction"</span><span class="tag">&gt;</span>Introduction<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#getting-started"</span><span class="tag">&gt;</span>Getting Started<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#advanced-topics"</span><span class="tag">&gt;</span>Advanced Topics<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/nav&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common Heading Mistakes</h2>
+                    <div class="example-box">
+                        <div class="example-title">❌ Mistakes to Avoid:</div>
+                        <ul>
+                            <li><strong>Using headings for styling:</strong> Don't choose a heading level based on size</li>
+                            <li><strong>Multiple H1 tags:</strong> Use only one H1 per page</li>
+                            <li><strong>Skipping levels:</strong> Don't jump from H1 to H3</li>
+                            <li><strong>Empty headings:</strong> Every heading should contain meaningful text</li>
+                            <li><strong>Using headings as decoration:</strong> Headings should represent actual structure</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ❌ Wrong: Using headings for styling --&gt;</span>
+<span class="tag">&lt;h3&gt;</span>This should be an H1 but I like the size<span class="tag">&lt;/h3&gt;</span>
+<span class="tag">&lt;h1&gt;</span>This should be an H2 but I made it bigger with CSS<span class="tag">&lt;/h1&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Correct: Proper semantic structure --&gt;</span>
+<span class="tag">&lt;h1</span> <span class="attr">class=</span><span class="string">"small-title"</span><span class="tag">&gt;</span>Main Title (styled smaller with CSS)<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2</span> <span class="attr">class=</span><span class="string">"big-subtitle"</span><span class="tag">&gt;</span>Section Title (styled larger with CSS)<span class="tag">&lt;/h2&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices Summary</h2>
+                    
+                    <div class="highlight-box">
+                        <h4>🏆 Heading Excellence Checklist</h4>
+                        <ul>
+                            <li>✅ Use exactly one H1 per page</li>
+                            <li>✅ Maintain logical hierarchy (don't skip levels)</li>
+                            <li>✅ Make headings descriptive and specific</li>
+                            <li>✅ Include keywords naturally in headings</li>
+                            <li>✅ Use CSS for styling, not different heading levels</li>
+                            <li>✅ Add IDs to headings for navigation</li>
+                            <li>✅ Keep headings concise but meaningful</li>
+                            <li>✅ Test with screen readers and keyboard navigation</li>
+                        </ul>
+                    </div>
+                    
+                    <h3>Content Writing Tips</h3>
+                    <div class="example-box">
+                        <div class="example-title">✍️ Writing Effective Headings:</div>
+                        <ul>
+                            <li><strong>Be specific:</strong> "JavaScript Array Methods" vs "Programming Concepts"</li>
+                            <li><strong>Use action words:</strong> "How to Create..." "Why You Should..."</li>
+                            <li><strong>Include keywords:</strong> But keep it natural and readable</li>
+                            <li><strong>Match content:</strong> Heading should accurately represent the section</li>
+                            <li><strong>Consider length:</strong> Aim for 2-8 words when possible</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="body-element.html" class="nav-btn">← Previous: Body Element</a>
+                    <a href="paragraphs.html" class="nav-btn">Next: Paragraphs →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>
