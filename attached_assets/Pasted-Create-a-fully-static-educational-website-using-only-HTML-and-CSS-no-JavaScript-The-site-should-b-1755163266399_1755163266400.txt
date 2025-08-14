@@ -1,0 +1,45 @@
+Create a fully static educational website using only HTML and CSS (no JavaScript). The site should be visually attractive, responsive, and user-friendly. Requirements:
+
+1. **Home Page (`index.html`)**:
+   - Brief introduction to the website and its purpose.
+   - Clear navigation to all language topics.
+   - Attractive layout with header, main content, and footer.
+   - Include a visually engaging banner or hero section.
+
+2. **Languages & Topics**:
+   - 3 languages: HTML, CSS, JavaScript.
+   - Each language has **30 topics**.
+   - Each topic has a separate HTML page (e.g., `/html/topic1.html`).
+   - Each topic page contains:
+     - Topic title prominently at the top.
+     - Approx. 50–100 lines of engaging content (~10 minutes reading).
+     - Examples of code or illustrations inside `<pre>` or styled `<div>` boxes.
+     - Clear headings, subheadings, lists, and sections for readability.
+
+3. **Navigation & Sidebar**:
+   - Create a **checkbox-based sidebar** that can toggle open/close.
+   - Sidebar lists all topics organized by language.
+   - Hover effects for each topic link.
+   - Highlight currently selected topic using CSS only.
+   - Sidebar should collapse on smaller screens for mobile.
+
+4. **Design & Layout**:
+   - Use CSS for layout, typography, colors, gradients, card-style boxes, and spacing.
+   - Smooth hover and transition effects for links, buttons, and cards.
+   - Ensure consistent color scheme and readable font sizes.
+   - Include interactive visual cues using CSS only (hover, focus, selected, checkbox toggle).
+   - Fully responsive design for desktop and mobile.
+
+5. **File Structure**:
+   - Home page: `index.html`
+   - CSS: `/css/style.css`
+   - Topics folders: `/html/`, `/css/`, `/javascript/`
+   - Each topic: `topic-name.html`
+
+6. **Extra Instructions**:
+   - Include enough example content for each topic so the page is engaging (~50–100 lines).
+   - No JavaScript; all interactions (sidebar, highlighting) use CSS only.
+   - Use semantic HTML5 tags: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`.
+   - Make all pages visually cohesive, easy to read, and appealing to students.
+
+Output all HTML and CSS files **fully complete** with example content, sidebar functionality, and styling.
