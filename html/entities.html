@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Entities - CodeMaster Academy</title>
+    <meta name="description" content="Master HTML entities for displaying special characters, symbols, and reserved characters in web pages">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html" class="active">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Entities</h1>
+                    <p class="topic-description">
+                        Learn to display special characters, symbols, and reserved HTML characters using HTML entities for proper text rendering.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding HTML Entities</h2>
+                    <p>
+                        HTML entities are special codes used to display characters that have specific meanings in HTML or characters that are not readily available on standard keyboards. They ensure proper rendering of text content without conflicts with HTML markup syntax.
+                    </p>
+                    <p>
+                        Entities are essential for displaying characters like less-than (&lt;) and greater-than (&gt;) signs, copyright symbols, accented characters, mathematical symbols, and special typography characters in web pages.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🔤 Key Concept</h4>
+                        <p>HTML entities allow you to display special characters that would otherwise be interpreted as HTML code or are not available on standard keyboards.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Entity Syntax</h2>
+                    <p>
+                        HTML entities can be represented using named entities or numeric character references:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Named entities (human-readable) --&gt;</span>
+<span class="tag">&lt;p&gt;</span>This &amp;lt;tag&amp;gt; will be displayed as text.<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: This &lt;tag&gt; will be displayed as text. --&gt;</span>
+
+<span class="comment">&lt;!-- Numeric character references (decimal) --&gt;</span>
+<span class="tag">&lt;p&gt;</span>Copyright &amp;#169; 2025 My Company<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: Copyright © 2025 My Company --&gt;</span>
+
+<span class="comment">&lt;!-- Hexadecimal character references --&gt;</span>
+<span class="tag">&lt;p&gt;</span>Arrow: &amp;#x2192;<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: Arrow: → --&gt;</span>
+
+<span class="comment">&lt;!-- Mixed usage in content --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    The equation is: x &amp;lt; y &amp;amp;&amp;amp; y &amp;gt; z
+    &amp;ndash; that&amp;rsquo;s &amp;ldquo;mathematics&amp;rdquo;!
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: The equation is: x < y && y > z – that's "mathematics"! --&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Entity Syntax Patterns:</div>
+                        <ul>
+                            <li><strong>Named:</strong> <code>&amp;name;</code> (e.g., &amp;copy;)</li>
+                            <li><strong>Decimal:</strong> <code>&amp;#number;</code> (e.g., &amp;#169;)</li>
+                            <li><strong>Hexadecimal:</strong> <code>&amp;#xnumber;</code> (e.g., &amp;#xA9;)</li>
+                            <li>All entities start with <code>&amp;</code> and end with <code>;</code></li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Reserved HTML Characters</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Essential reserved characters --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    To display HTML tags as text:
+    &amp;lt;div class=&amp;quot;example&amp;quot;&amp;gt;Content&amp;lt;/div&amp;gt;
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: To display HTML tags as text: &lt;div class="example"&gt;Content&lt;/div&gt; --&gt;</span>
+
+<span class="comment">&lt;!-- Ampersand in URLs and text --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    Visit: example.com?name=John&amp;amp;age=25&amp;amp;city=NYC
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: Visit: example.com?name=John&age=25&city=NYC --&gt;</span>
+
+<span class="comment">&lt;!-- Quotes in attributes and text --&gt;</span>
+<span class="tag">&lt;p</span> <span class="attr">title=</span><span class="string">"She said &amp;quot;Hello&amp;quot; to me"</span><span class="tag">&gt;</span>
+    He replied: &amp;quot;Nice to meet you!&amp;quot;
+<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Non-breaking space --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    First Name:&amp;nbsp;&amp;nbsp;&amp;nbsp;John&amp;nbsp;Doe
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Creates fixed spaces that won't break --&gt;</span></pre>
+                    </div>
+                    
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Reserved Characters</h4>
+                            <ul>
+                                <li><code>&amp;lt;</code> → &lt; (less than)</li>
+                                <li><code>&amp;gt;</code> → &gt; (greater than)</li>
+                                <li><code>&amp;amp;</code> → &amp; (ampersand)</li>
+                                <li><code>&amp;quot;</code> → " (double quote)</li>
+                                <li><code>&amp;apos;</code> → ' (apostrophe)</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Special Spaces</h4>
+                            <ul>
+                                <li><code>&amp;nbsp;</code> → Non-breaking space</li>
+                                <li><code>&amp;ensp;</code> → En space (width of 'n')</li>
+                                <li><code>&amp;emsp;</code> → Em space (width of 'm')</li>
+                                <li><code>&amp;thinsp;</code> → Thin space</li>
+                                <li><code>&amp;#8203;</code> → Zero-width space</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common Symbols and Characters</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Copyright and trademark symbols --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    &amp;copy; 2025 My Company&amp;trade;. All rights reserved&amp;reg;.
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: © 2025 My Company™. All rights reserved®. --&gt;</span>
+
+<span class="comment">&lt;!-- Currency symbols --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    Prices: &amp;dollar;19.99, &amp;euro;15.50, &amp;pound;12.75, &amp;yen;2000
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: Prices: $19.99, €15.50, £12.75, ¥2000 --&gt;</span>
+
+<span class="comment">&lt;!-- Mathematical symbols --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    Math: x &amp;plusmn; y &amp;times; z &amp;divide; 2 = &amp;infin;
+    &amp;sum; &amp;int; &amp;radic;x &amp;le; &amp;ge; &amp;ne; &amp;equiv;
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: Math: x ± y × z ÷ 2 = ∞ ∑ ∫ √x ≤ ≥ ≠ ≡ --&gt;</span>
+
+<span class="comment">&lt;!-- Arrows and geometric shapes --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    Directions: &amp;uarr; &amp;darr; &amp;larr; &amp;rarr; &amp;harr; &amp;crarr;
+    Shapes: &amp;#9632; &amp;#9633; &amp;#9650; &amp;#9660; &amp;#9679; &amp;#9675;
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: Directions: ↑ ↓ ← → ↔ ↵ Shapes: ■ □ ▲ ▼ ● ○ --&gt;</span>
+
+<span class="comment">&lt;!-- Punctuation and typography --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    Typography: &amp;lsquo;single quotes&amp;rsquo; and &amp;ldquo;double quotes&amp;rdquo;
+    &amp;ndash; en dash, &amp;mdash; em dash, &amp;hellip; ellipsis
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: Typography: 'single quotes' and "double quotes" – en dash, — em dash, … ellipsis --&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Accented Characters</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Latin accented characters --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    French: Caf&amp;eacute;, na&amp;iuml;ve, &amp;ccedil;a va?
+    Spanish: &amp;ntilde;a&amp;ntilde;a, jalape&amp;ntilde;o, &amp;iquest;C&amp;oacute;mo est&amp;aacute;s?
+    German: M&amp;auml;dchen, Stra&amp;szlig;e, Geb&amp;auml;ude
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: Café, naïve, ça va? ñañia, jalapeño, ¿Cómo estás? Mädchen, Straße, Gebäude --&gt;</span>
+
+<span class="comment">&lt;!-- Extended character sets --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    Nordic: &amp;Aring;rhus, K&amp;oslash;benhavn, H&amp;auml;lsingborg
+    Eastern European: Warszawa, Krak&amp;oacute;w, Prage
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: Århus, København, Hälsingborg, Warszawa, Kraków, Prage --&gt;</span>
+
+<span class="comment">&lt;!-- Greek letters (common in science) --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    Greek: &amp;alpha; &amp;beta; &amp;gamma; &amp;delta; &amp;epsilon; &amp;pi; &amp;sigma; &amp;omega;
+    &amp;Alpha; &amp;Beta; &amp;Gamma; &amp;Delta; &amp;Epsilon; &amp;Pi; &amp;Sigma; &amp;Omega;
+<span class="tag">&lt;/p&gt;</span>
+<span class="comment">&lt;!-- Displays: Greek: α β γ δ ε π σ ω Α Β Γ Δ Ε Π Σ Ω --&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Practical Examples</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Code documentation with entities --&gt;</span>
+<span class="tag">&lt;article</span> <span class="attr">class=</span><span class="string">"code-tutorial"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>Understanding the &amp;lt;div&amp;gt; Element<span class="tag">&lt;/h2&gt;</span>
+    
+    <span class="tag">&lt;p&gt;</span>
+        The &amp;lt;div&amp;gt; element is a generic container. 
+        To create one, write: &amp;lt;div class=&amp;quot;example&amp;quot;&amp;gt;content&amp;lt;/div&amp;gt;
+    <span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;pre&gt;</span>
+&amp;lt;!-- This is how you write HTML comments --&amp;gt;
+&amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+    &amp;lt;p&amp;gt;Your content goes here&amp;amp;hellip;&amp;lt;/p&amp;gt;
+&amp;lt;/div&amp;gt;
+    <span class="tag">&lt;/pre&gt;</span>
+<span class="tag">&lt;/article&gt;</span>
+
+<span class="comment">&lt;!-- Business card with special characters --&gt;</span>
+<span class="tag">&lt;address</span> <span class="attr">class=</span><span class="string">"business-card"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h3&gt;</span>Dr. Ren&amp;eacute; M&amp;uuml;ller<span class="tag">&lt;/h3&gt;</span>
+    <span class="tag">&lt;p&gt;</span>
+        Senior Software Engineer &amp;amp; Architect&amp;trade;<span class="tag">&lt;br&gt;</span>
+        Techno Solutions AG&amp;reg;<span class="tag">&lt;br&gt;</span>
+        Z&amp;uuml;rich, Switzerland
+    <span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;p&gt;</span>
+        &amp;phone; +41&amp;nbsp;44&amp;nbsp;123&amp;nbsp;45&amp;nbsp;67<span class="tag">&lt;br&gt;</span>
+        &amp;#9993; rene.mueller&amp;#64;techno.ch<span class="tag">&lt;br&gt;</span>
+        &amp;#127760; www.techno-solutions.ch
+    <span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;p&gt;</span>&amp;copy; 2025 All rights reserved.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/address&gt;</span>
+
+<span class="comment">&lt;!-- Product pricing with currency --&gt;</span>
+<span class="tag">&lt;table</span> <span class="attr">class=</span><span class="string">"price-table"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;thead&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Product<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Price (USD)<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Price (EUR)<span class="tag">&lt;/th&gt;</span>
+            <span class="tag">&lt;th&gt;</span>Status<span class="tag">&lt;/th&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/thead&gt;</span>
+    <span class="tag">&lt;tbody&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td&gt;</span>Web Hosting<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>&amp;dollar;9.99/mo<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>&amp;euro;8.50/mo<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>&amp;#10004; Available<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+        <span class="tag">&lt;tr&gt;</span>
+            <span class="tag">&lt;td&gt;</span>SSL Certificate<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>&amp;dollar;49.99/yr<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>&amp;euro;42.00/yr<span class="tag">&lt;/td&gt;</span>
+            <span class="tag">&lt;td&gt;</span>&amp;#10060; Out of stock<span class="tag">&lt;/td&gt;</span>
+        <span class="tag">&lt;/tr&gt;</span>
+    <span class="tag">&lt;/tbody&gt;</span>
+<span class="tag">&lt;/table&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Entity Reference Tables</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Basic Symbols</h4>
+                            <ul>
+                                <li><code>&amp;copy;</code> → © (copyright)</li>
+                                <li><code>&amp;reg;</code> → ® (registered)</li>
+                                <li><code>&amp;trade;</code> → ™ (trademark)</li>
+                                <li><code>&amp;deg;</code> → ° (degree)</li>
+                                <li><code>&amp;sect;</code> → § (section)</li>
+                                <li><code>&amp;para;</code> → ¶ (paragraph)</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Quotation Marks</h4>
+                            <ul>
+                                <li><code>&amp;lsquo;</code> → ' (left single quote)</li>
+                                <li><code>&amp;rsquo;</code> → ' (right single quote)</li>
+                                <li><code>&amp;ldquo;</code> → " (left double quote)</li>
+                                <li><code>&amp;rdquo;</code> → " (right double quote)</li>
+                                <li><code>&amp;laquo;</code> → « (left guillemet)</li>
+                                <li><code>&amp;raquo;</code> → » (right guillemet)</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Dashes</h4>
+                            <ul>
+                                <li><code>&amp;ndash;</code> → – (en dash)</li>
+                                <li><code>&amp;mdash;</code> → — (em dash)</li>
+                                <li><code>&amp;minus;</code> → − (minus sign)</li>
+                                <li><code>&amp;#8208;</code> → ‐ (hyphen)</li>
+                                <li><code>&amp;#8209;</code> → ‑ (non-breaking hyphen)</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Special Characters</h4>
+                            <ul>
+                                <li><code>&amp;hellip;</code> → … (ellipsis)</li>
+                                <li><code>&amp;middot;</code> → · (middle dot)</li>
+                                <li><code>&amp;bull;</code> → • (bullet)</li>
+                                <li><code>&amp;#8203;</code> → Zero-width space</li>
+                                <li><code>&amp;#8288;</code> → Word joiner</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Always escape reserved HTML characters</li>
+                                <li>Use named entities for common characters</li>
+                                <li>Use UTF-8 encoding when possible</li>
+                                <li>Use non-breaking spaces for fixed spacing</li>
+                                <li>Include proper character set declarations</li>
+                                <li>Test entity rendering across browsers</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Using entities for characters available in UTF-8</li>
+                                <li>Forgetting to escape ampersands in URLs</li>
+                                <li>Using incorrect entity syntax</li>
+                                <li>Over-using entities when direct Unicode works</li>
+                                <li>Mixing character encodings</li>
+                                <li>Using deprecated entity names</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="validation.html" class="nav-button prev">
+                        ← Previous: Validation
+                    </a>
+                    <a href="microdata.html" class="nav-button next">
+                        Next: Microdata →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

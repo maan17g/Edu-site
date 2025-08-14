@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Microdata - CodeMaster Academy</title>
+    <meta name="description" content="Learn HTML microdata and structured data to improve SEO and help search engines understand your content">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html" class="active">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Microdata</h1>
+                    <p class="topic-description">
+                        Master HTML microdata and structured data markup to improve SEO, enhance search result appearance, and help search engines understand your content.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding Structured Data</h2>
+                    <p>
+                        HTML microdata is a specification that allows you to embed machine-readable data within HTML content. It helps search engines, browsers, and other applications understand the meaning and context of your content, leading to enhanced search results with rich snippets, improved SEO, and better content discovery.
+                    </p>
+                    <p>
+                        By adding structured data markup, you can help search engines display your content more effectively in search results, including star ratings, pricing information, event details, author information, and much more.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🔍 Key Concept</h4>
+                        <p>Microdata transforms your HTML from human-readable content into machine-readable structured data that search engines and applications can understand and process.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Microdata Attributes</h2>
+                    <p>
+                        HTML5 microdata uses five key attributes to structure information:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic microdata structure --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Person"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>John Doe<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Job: <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"jobTitle"</span><span class="tag">&gt;</span>Web Developer<span class="tag">&lt;/span&gt;&lt;/p&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Company: <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"worksFor"</span><span class="tag">&gt;</span>Tech Solutions Inc.<span class="tag">&lt;/span&gt;&lt;/p&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Email: <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"mailto:john@example.com"</span> <span class="attr">itemprop=</span><span class="string">"email"</span><span class="tag">&gt;</span>john@example.com<span class="tag">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Nested microdata items --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Organization"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h1</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>CodeMaster Academy<span class="tag">&lt;/h1&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"address"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/PostalAddress"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"streetAddress"</span><span class="tag">&gt;</span>123 Learning Street<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;br&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"addressLocality"</span><span class="tag">&gt;</span>Education City<span class="tag">&lt;/span&gt;</span>,
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"addressRegion"</span><span class="tag">&gt;</span>Learning State<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"postalCode"</span><span class="tag">&gt;</span>12345<span class="tag">&lt;/span&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;p&gt;</span>Phone: <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"telephone"</span><span class="tag">&gt;</span>(555) 123-4567<span class="tag">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Microdata Attributes:</div>
+                        <ul>
+                            <li><code>itemscope</code> - Creates a new item scope</li>
+                            <li><code>itemtype</code> - Defines the type of item (Schema.org URL)</li>
+                            <li><code>itemprop</code> - Defines a property of the item</li>
+                            <li><code>itemid</code> - Global identifier for the item</li>
+                            <li><code>itemref</code> - References other elements as part of the item</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Schema.org Vocabulary</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Product schema example --&gt;</span>
+<span class="tag">&lt;article</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Product"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>Wireless Bluetooth Headphones<span class="tag">&lt;/h2&gt;</span>
+    
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"headphones.jpg"</span> <span class="attr">alt=</span><span class="string">"Product image"</span> <span class="attr">itemprop=</span><span class="string">"image"</span><span class="tag">&gt;</span>
+    
+    <span class="tag">&lt;p</span> <span class="attr">itemprop=</span><span class="string">"description"</span><span class="tag">&gt;</span>
+        Premium quality wireless headphones with noise cancellation 
+        and 30-hour battery life.
+    <span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"offers"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Offer"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"priceCurrency"</span> <span class="attr">content=</span><span class="string">"USD"</span><span class="tag">&gt;</span>$<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"price"</span> <span class="attr">content=</span><span class="string">"199.99"</span><span class="tag">&gt;</span>199.99<span class="tag">&lt;/span&gt;</span>
+        
+        <span class="tag">&lt;link</span> <span class="attr">itemprop=</span><span class="string">"availability"</span> <span class="attr">href=</span><span class="string">"https://schema.org/InStock"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span&gt;</span>In Stock<span class="tag">&lt;/span&gt;</span>
+        
+        <span class="tag">&lt;span&gt;</span>Valid until: <span class="tag">&lt;time</span> <span class="attr">itemprop=</span><span class="string">"priceValidUntil"</span> <span class="attr">datetime=</span><span class="string">"2025-12-31"</span><span class="tag">&gt;</span>December 31, 2025<span class="tag">&lt;/time&gt;&lt;/span&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"aggregateRating"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/AggregateRating"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"ratingValue"</span><span class="tag">&gt;</span>4.5<span class="tag">&lt;/span&gt;</span> out of
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"bestRating"</span><span class="tag">&gt;</span>5<span class="tag">&lt;/span&gt;</span> stars
+        (<span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"reviewCount"</span><span class="tag">&gt;</span>324<span class="tag">&lt;/span&gt;</span> reviews)
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/article&gt;</span>
+
+<span class="comment">&lt;!-- Recipe schema example --&gt;</span>
+<span class="tag">&lt;article</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Recipe"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h1</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>Chocolate Chip Cookies<span class="tag">&lt;/h1&gt;</span>
+    
+    <span class="tag">&lt;p&gt;</span>By <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"author"</span><span class="tag">&gt;</span>Chef Maria<span class="tag">&lt;/span&gt;&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;p</span> <span class="attr">itemprop=</span><span class="string">"description"</span><span class="tag">&gt;</span>
+        Classic chocolate chip cookies that are crispy on the outside
+        and chewy on the inside.
+    <span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;ul&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Prep time: <span class="tag">&lt;time</span> <span class="attr">itemprop=</span><span class="string">"prepTime"</span> <span class="attr">datetime=</span><span class="string">"PT15M"</span><span class="tag">&gt;</span>15 minutes<span class="tag">&lt;/time&gt;&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Cook time: <span class="tag">&lt;time</span> <span class="attr">itemprop=</span><span class="string">"cookTime"</span> <span class="attr">datetime=</span><span class="string">"PT10M"</span><span class="tag">&gt;</span>10 minutes<span class="tag">&lt;/time&gt;&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>Yield: <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"recipeYield"</span><span class="tag">&gt;</span>24 cookies<span class="tag">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"nutrition"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/NutritionInformation"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"calories"</span><span class="tag">&gt;</span>120<span class="tag">&lt;/span&gt;</span> calories per cookie
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/article&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Event and Organization Markup</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Event schema --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Event"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>Web Development Conference 2025<span class="tag">&lt;/h2&gt;</span>
+    
+    <span class="tag">&lt;p</span> <span class="attr">itemprop=</span><span class="string">"description"</span><span class="tag">&gt;</span>
+        Join industry experts for three days of talks, workshops, 
+        and networking focused on modern web development.
+    <span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"location"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Place"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>Convention Center Downtown<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"address"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/PostalAddress"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"streetAddress"</span><span class="tag">&gt;</span>456 Conference Blvd<span class="tag">&lt;/span&gt;</span>,
+            <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"addressLocality"</span><span class="tag">&gt;</span>Tech City<span class="tag">&lt;/span&gt;</span>,
+            <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"addressRegion"</span><span class="tag">&gt;</span>CA<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;p&gt;</span>
+        Date: <span class="tag">&lt;time</span> <span class="attr">itemprop=</span><span class="string">"startDate"</span> <span class="attr">datetime=</span><span class="string">"2025-09-15T09:00"</span><span class="tag">&gt;</span>September 15, 2025 9:00 AM<span class="tag">&lt;/time&gt;</span>
+        to <span class="tag">&lt;time</span> <span class="attr">itemprop=</span><span class="string">"endDate"</span> <span class="attr">datetime=</span><span class="string">"2025-09-17T17:00"</span><span class="tag">&gt;</span>September 17, 2025 5:00 PM<span class="tag">&lt;/time&gt;</span>
+    <span class="tag">&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"offers"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Offer"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"price"</span> <span class="attr">content=</span><span class="string">"299"</span><span class="tag">&gt;</span>$299<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"priceCurrency"</span> <span class="attr">content=</span><span class="string">"USD"</span><span class="tag">&gt;</span>USD<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"availability"</span> <span class="attr">content=</span><span class="string">"https://schema.org/InStock"</span><span class="tag">&gt;</span>Available<span class="tag">&lt;/span&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"organizer"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Organization"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>Tech Events Inc.<span class="tag">&lt;/span&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Local Business schema --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/LocalBusiness"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h1</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>Mario's Pizza<span class="tag">&lt;/h1&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"address"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/PostalAddress"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"streetAddress"</span><span class="tag">&gt;</span>123 Main Street<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;br&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"addressLocality"</span><span class="tag">&gt;</span>Hometown<span class="tag">&lt;/span&gt;</span>,
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"addressRegion"</span><span class="tag">&gt;</span>NY<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"postalCode"</span><span class="tag">&gt;</span>12345<span class="tag">&lt;/span&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;p&gt;</span>Phone: <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"telephone"</span><span class="tag">&gt;</span>(555) 123-PIZZA<span class="tag">&lt;/span&gt;&lt;/p&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"openingHoursSpecification"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/OpeningHoursSpecification"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"dayOfWeek"</span> <span class="attr">content=</span><span class="string">"Monday Tuesday Wednesday Thursday Friday Saturday Sunday"</span><span class="tag">&gt;</span>Every day<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;time</span> <span class="attr">itemprop=</span><span class="string">"opens"</span> <span class="attr">content=</span><span class="string">"11:00"</span><span class="tag">&gt;</span>11:00 AM<span class="tag">&lt;/time&gt;</span> -
+        <span class="tag">&lt;time</span> <span class="attr">itemprop=</span><span class="string">"closes"</span> <span class="attr">content=</span><span class="string">"23:00"</span><span class="tag">&gt;</span>11:00 PM<span class="tag">&lt;/time&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"aggregateRating"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/AggregateRating"</span><span class="tag">&gt;</span>
+        Rating: <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"ratingValue"</span><span class="tag">&gt;</span>4.2<span class="tag">&lt;/span&gt;</span>/5
+        (<span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"reviewCount"</span><span class="tag">&gt;</span>89<span class="tag">&lt;/span&gt;</span> reviews)
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Article and Blog Post Markup</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Article schema --&gt;</span>
+<span class="tag">&lt;article</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Article"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;header&gt;</span>
+        <span class="tag">&lt;h1</span> <span class="attr">itemprop=</span><span class="string">"headline"</span><span class="tag">&gt;</span>10 Essential Web Development Tips for 2025<span class="tag">&lt;/h1&gt;</span>
+        
+        <span class="tag">&lt;p&gt;</span>
+            By <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"author"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Person"</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>Jane Developer<span class="tag">&lt;/span&gt;</span>
+            <span class="tag">&lt;/span&gt;</span>
+            
+            | Published: <span class="tag">&lt;time</span> <span class="attr">itemprop=</span><span class="string">"datePublished"</span> <span class="attr">datetime=</span><span class="string">"2025-01-15"</span><span class="tag">&gt;</span>January 15, 2025<span class="tag">&lt;/time&gt;</span>
+            | Updated: <span class="tag">&lt;time</span> <span class="attr">itemprop=</span><span class="string">"dateModified"</span> <span class="attr">datetime=</span><span class="string">"2025-01-20"</span><span class="tag">&gt;</span>January 20, 2025<span class="tag">&lt;/time&gt;</span>
+        <span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/header&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"image"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/ImageObject"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"web-dev-tips.jpg"</span> <span class="attr">alt=</span><span class="string">"Web development tips"</span> <span class="attr">itemprop=</span><span class="string">"url"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;meta</span> <span class="attr">itemprop=</span><span class="string">"width"</span> <span class="attr">content=</span><span class="string">"1200"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;meta</span> <span class="attr">itemprop=</span><span class="string">"height"</span> <span class="attr">content=</span><span class="string">"630"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"articleBody"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;p&gt;</span>Web development continues to evolve rapidly, and staying current with best practices is essential...<span class="tag">&lt;/p&gt;</span>
+        
+        <span class="tag">&lt;h2&gt;</span>1. Embrace Modern CSS Features<span class="tag">&lt;/h2&gt;</span>
+        <span class="tag">&lt;p&gt;</span>CSS Grid and Flexbox have revolutionized layout design...<span class="tag">&lt;/p&gt;</span>
+        
+        <span class="comment">&lt;!-- More article content --&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"publisher"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Organization"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>CodeMaster Academy<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">itemprop=</span><span class="string">"logo"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/ImageObject"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"logo.png"</span> <span class="attr">alt=</span><span class="string">"CodeMaster Academy Logo"</span> <span class="attr">itemprop=</span><span class="string">"url"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;meta</span> <span class="attr">itemprop=</span><span class="string">"wordCount"</span> <span class="attr">content=</span><span class="string">"1250"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/article&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Testing and Validation</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Tools for testing structured data --&gt;</span>
+
+<span class="comment">Google Rich Results Test: https://search.google.com/test/rich-results
+Schema.org Validator: https://validator.schema.org/
+Google Structured Data Testing Tool (deprecated but still useful)
+Yandex Structured Data Validator: https://webmaster.yandex.com/tools/structured-data/
+
+JSON-LD alternative to microdata:
+&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Article Title",
+  "author": {
+    "@type": "Person",
+    "name": "Author Name"
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-20"
+}
+&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common Schema Types</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Business & Organizations</h4>
+                            <ul>
+                                <li>Organization</li>
+                                <li>LocalBusiness</li>
+                                <li>Corporation</li>
+                                <li>EducationalOrganization</li>
+                                <li>GovernmentOrganization</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Content Types</h4>
+                            <ul>
+                                <li>Article</li>
+                                <li>BlogPosting</li>
+                                <li>NewsArticle</li>
+                                <li>Recipe</li>
+                                <li>Review</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Products & Services</h4>
+                            <ul>
+                                <li>Product</li>
+                                <li>Service</li>
+                                <li>Offer</li>
+                                <li>AggregateOffer</li>
+                                <li>Brand</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Events & Places</h4>
+                            <ul>
+                                <li>Event</li>
+                                <li>Place</li>
+                                <li>PostalAddress</li>
+                                <li>GeoCoordinates</li>
+                                <li>OpeningHoursSpecification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Use Schema.org vocabulary for consistency</li>
+                                <li>Test markup with Google's Rich Results Test</li>
+                                <li>Include all required properties for schema types</li>
+                                <li>Use specific schema types when available</li>
+                                <li>Keep structured data synchronized with visible content</li>
+                                <li>Validate markup regularly</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Adding markup for content not visible to users</li>
+                                <li>Using incorrect schema types</li>
+                                <li>Including false or misleading information</li>
+                                <li>Over-marking content unnecessarily</li>
+                                <li>Using deprecated schema properties</li>
+                                <li>Ignoring schema validation errors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="entities.html" class="nav-button prev">
+                        ← Previous: Entities
+                    </a>
+                    <a href="web-components.html" class="nav-button next">
+                        Next: Web Components →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Accessibility - CodeMaster Academy</title>
+    <meta name="description" content="Learn web accessibility principles and HTML techniques to create inclusive experiences for all users">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html" class="active">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Accessibility</h1>
+                    <p class="topic-description">
+                        Master web accessibility principles to create inclusive experiences that work for all users, regardless of their abilities or assistive technologies.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding Web Accessibility</h2>
+                    <p>
+                        Web accessibility ensures that websites and applications are usable by people with disabilities, including those who use assistive technologies like screen readers, keyboard navigation, or voice recognition software. It's not just a legal requirement in many jurisdictions—it's about creating inclusive digital experiences for everyone.
+                    </p>
+                    <p>
+                        Accessible HTML provides the foundation for assistive technologies to understand and navigate your content effectively. When implemented correctly, accessibility features benefit all users, not just those with disabilities.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>♿ Key Concept</h4>
+                        <p>Accessibility is about removing barriers and ensuring equal access to information and functionality for all users, regardless of their physical or cognitive abilities.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Semantic HTML for Accessibility</h2>
+                    <p>
+                        Using semantic HTML elements provides meaning and structure that assistive technologies can interpret:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Accessible page structure --&gt;</span>
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr">lang=</span><span class="string">"en"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>Accessible Web Page - Company Name<span class="tag">&lt;/title&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"description"</span> <span class="attr">content=</span><span class="string">"Clear description of page content"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+    <span class="comment">&lt;!-- Skip to main content link --&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#main-content"</span> <span class="attr">class=</span><span class="string">"skip-link"</span><span class="tag">&gt;</span>Skip to main content<span class="tag">&lt;/a&gt;</span>
+    
+    <span class="comment">&lt;!-- Main header with navigation --&gt;</span>
+    <span class="tag">&lt;header</span> <span class="attr">role=</span><span class="string">"banner"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Website Name<span class="tag">&lt;/h1&gt;</span>
+        <span class="tag">&lt;nav</span> <span class="attr">role=</span><span class="string">"navigation"</span> <span class="attr">aria-label=</span><span class="string">"Main navigation"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;ul&gt;</span>
+                <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"/home"</span> <span class="attr">aria-current=</span><span class="string">"page"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"/about"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"/contact"</span><span class="tag">&gt;</span>Contact<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="tag">&lt;/ul&gt;</span>
+        <span class="tag">&lt;/nav&gt;</span>
+    <span class="tag">&lt;/header&gt;</span>
+    
+    <span class="comment">&lt;!-- Main content area --&gt;</span>
+    <span class="tag">&lt;main</span> <span class="attr">id=</span><span class="string">"main-content"</span> <span class="attr">role=</span><span class="string">"main"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Page Title<span class="tag">&lt;/h1&gt;</span>
+        
+        <span class="tag">&lt;section</span> <span class="attr">aria-labelledby=</span><span class="string">"section-heading"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;h2</span> <span class="attr">id=</span><span class="string">"section-heading"</span><span class="tag">&gt;</span>Section Title<span class="tag">&lt;/h2&gt;</span>
+            <span class="tag">&lt;p&gt;</span>Content that's properly structured for screen readers.<span class="tag">&lt;/p&gt;</span>
+        <span class="tag">&lt;/section&gt;</span>
+    <span class="tag">&lt;/main&gt;</span>
+    
+    <span class="comment">&lt;!-- Sidebar with complementary content --&gt;</span>
+    <span class="tag">&lt;aside</span> <span class="attr">role=</span><span class="string">"complementary"</span> <span class="attr">aria-label=</span><span class="string">"Related information"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h2&gt;</span>Related Links<span class="tag">&lt;/h2&gt;</span>
+        <span class="tag">&lt;ul&gt;</span>
+            <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"/related-page"</span><span class="tag">&gt;</span>Related Topic<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;/aside&gt;</span>
+    
+    <span class="comment">&lt;!-- Footer --&gt;</span>
+    <span class="tag">&lt;footer</span> <span class="attr">role=</span><span class="string">"contentinfo"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;p&gt;</span>&copy; 2025 Company Name. All rights reserved.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/footer&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Key Accessibility Elements:</div>
+                        <ul>
+                            <li>Skip links for keyboard navigation</li>
+                            <li>Proper heading hierarchy (h1, h2, h3...)</li>
+                            <li>Semantic HTML elements (nav, main, aside)</li>
+                            <li>ARIA labels and roles for clarity</li>
+                            <li>Language declarations</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>ARIA Attributes</h2>
+                    <p>
+                        ARIA (Accessible Rich Internet Applications) attributes provide additional semantic information:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ARIA roles --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">role=</span><span class="string">"button"</span> <span class="attr">tabindex=</span><span class="string">"0"</span> <span class="attr">onclick=</span><span class="string">"handleClick()"</span><span class="tag">&gt;</span>
+    Custom Button
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="tag">&lt;nav</span> <span class="attr">role=</span><span class="string">"navigation"</span> <span class="attr">aria-label=</span><span class="string">"Breadcrumb navigation"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;ol&gt;</span>
+        <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"/home"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"/products"</span><span class="tag">&gt;</span>Products<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="tag">&lt;li</span> <span class="attr">aria-current=</span><span class="string">"page"</span><span class="tag">&gt;</span>Current Product<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ol&gt;</span>
+<span class="tag">&lt;/nav&gt;</span>
+
+<span class="comment">&lt;!-- ARIA states and properties --&gt;</span>
+<span class="tag">&lt;button</span> <span class="attr">aria-expanded=</span><span class="string">"false"</span> 
+        <span class="attr">aria-controls=</span><span class="string">"menu"</span> 
+        <span class="attr">onclick=</span><span class="string">"toggleMenu()"</span><span class="tag">&gt;</span>
+    Menu
+<span class="tag">&lt;/button&gt;</span>
+
+<span class="tag">&lt;ul</span> <span class="attr">id=</span><span class="string">"menu"</span> <span class="attr">aria-hidden=</span><span class="string">"true"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"/option1"</span><span class="tag">&gt;</span>Option 1<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"/option2"</span><span class="tag">&gt;</span>Option 2<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- Live regions for dynamic content --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">aria-live=</span><span class="string">"polite"</span> <span class="attr">id=</span><span class="string">"status-message"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Status updates will be announced --&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="tag">&lt;div</span> <span class="attr">aria-live=</span><span class="string">"assertive"</span> <span class="attr">id=</span><span class="string">"error-message"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Critical updates will interrupt screen reader --&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Descriptions and labels --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"password"</span> 
+       <span class="attr">id=</span><span class="string">"password"</span> 
+       <span class="attr">aria-describedby=</span><span class="string">"password-help"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"password-help"</span><span class="tag">&gt;</span>
+    Password must be at least 8 characters long
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="tag">&lt;fieldset&gt;</span>
+    <span class="tag">&lt;legend&gt;</span>Shipping Address<span class="tag">&lt;/legend&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">role=</span><span class="string">"group"</span> <span class="attr">aria-labelledby=</span><span class="string">"name-group-label"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;span</span> <span class="attr">id=</span><span class="string">"name-group-label"</span><span class="tag">&gt;</span>Full Name<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">aria-label=</span><span class="string">"First name"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">aria-label=</span><span class="string">"Last name"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/fieldset&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Accessible Forms</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Comprehensive accessible form --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">action=</span><span class="string">"/submit"</span> <span class="attr">method=</span><span class="string">"POST"</span> <span class="attr">novalidate</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;fieldset&gt;</span>
+        <span class="tag">&lt;legend&gt;</span>Personal Information<span class="tag">&lt;/legend&gt;</span>
+        
+        <span class="comment">&lt;!-- Required field with proper labeling --&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"full-name"</span><span class="tag">&gt;</span>
+                Full Name 
+                <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"required"</span> <span class="attr">aria-label=</span><span class="string">"required"</span><span class="tag">&gt;</span>*<span class="tag">&lt;/span&gt;</span>
+            <span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> 
+                   <span class="attr">id=</span><span class="string">"full-name"</span> 
+                   <span class="attr">name=</span><span class="string">"fullName"</span>
+                   <span class="attr">required</span> 
+                   <span class="attr">aria-invalid=</span><span class="string">"false"</span>
+                   <span class="attr">aria-describedby=</span><span class="string">"name-error"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"name-error"</span> <span class="attr">class=</span><span class="string">"error-message"</span> <span class="attr">aria-hidden=</span><span class="string">"true"</span><span class="tag">&gt;</span>
+                <span class="comment">&lt;!-- Error message appears here --&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+        
+        <span class="comment">&lt;!-- Email with validation --&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"email"</span><span class="tag">&gt;</span>Email Address *<span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"email"</span> 
+                   <span class="attr">id=</span><span class="string">"email"</span> 
+                   <span class="attr">name=</span><span class="string">"email"</span>
+                   <span class="attr">required</span>
+                   <span class="attr">autocomplete=</span><span class="string">"email"</span>
+                   <span class="attr">aria-describedby=</span><span class="string">"email-help email-error"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"email-help"</span> <span class="attr">class=</span><span class="string">"help-text"</span><span class="tag">&gt;</span>
+                We'll use this to send you updates
+            <span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"email-error"</span> <span class="attr">class=</span><span class="string">"error-message"</span> <span class="attr">aria-hidden=</span><span class="string">"true"</span><span class="tag">&gt;</span>
+                <span class="comment">&lt;!-- Error message appears here --&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/fieldset&gt;</span>
+    
+    <span class="tag">&lt;fieldset&gt;</span>
+        <span class="tag">&lt;legend&gt;</span>Preferences<span class="tag">&lt;/legend&gt;</span>
+        
+        <span class="comment">&lt;!-- Radio buttons with proper grouping --&gt;</span>
+        <span class="tag">&lt;fieldset&gt;</span>
+            <span class="tag">&lt;legend&gt;</span>Preferred Contact Method<span class="tag">&lt;/legend&gt;</span>
+            <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"radio-group"</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"radio"</span> <span class="attr">id=</span><span class="string">"contact-email"</span> 
+                       <span class="attr">name=</span><span class="string">"contactMethod"</span> <span class="attr">value=</span><span class="string">"email"</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"contact-email"</span><span class="tag">&gt;</span>Email<span class="tag">&lt;/label&gt;</span>
+                
+                <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"radio"</span> <span class="attr">id=</span><span class="string">"contact-phone"</span> 
+                       <span class="attr">name=</span><span class="string">"contactMethod"</span> <span class="attr">value=</span><span class="string">"phone"</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"contact-phone"</span><span class="tag">&gt;</span>Phone<span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+        <span class="tag">&lt;/fieldset&gt;</span>
+        
+        <span class="comment">&lt;!-- Checkboxes --&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"checkbox"</span> 
+                   <span class="attr">id=</span><span class="string">"newsletter"</span> 
+                   <span class="attr">name=</span><span class="string">"newsletter"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"newsletter"</span><span class="tag">&gt;</span>
+                Subscribe to newsletter
+            <span class="tag">&lt;/label&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/fieldset&gt;</span>
+    
+    <span class="comment">&lt;!-- Submit button --&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-actions"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"submit"</span><span class="tag">&gt;</span>Submit Form<span class="tag">&lt;/button&gt;</span>
+        <span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"reset"</span><span class="tag">&gt;</span>Clear Form<span class="tag">&lt;/button&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Images and Media Accessibility</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Informative images --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"chart-sales-2025.png"</span> 
+     <span class="attr">alt=</span><span class="string">"Sales increased 40% from January to March 2025, reaching $150,000 in Q1"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Decorative images --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"decorative-border.png"</span> 
+     <span class="attr">alt=</span><span class="string">""</span> 
+     <span class="attr">role=</span><span class="string">"presentation"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Complex images with descriptions --&gt;</span>
+<span class="tag">&lt;figure&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"complex-diagram.png"</span> 
+         <span class="attr">alt=</span><span class="string">"Process flow diagram"</span>
+         <span class="attr">aria-describedby=</span><span class="string">"diagram-description"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;figcaption</span> <span class="attr">id=</span><span class="string">"diagram-description"</span><span class="tag">&gt;</span>
+        The diagram shows three stages: Input processing (blue box), 
+        Data validation (green box), and Output generation (orange box). 
+        Arrows connect each stage sequentially.
+    <span class="tag">&lt;/figcaption&gt;</span>
+<span class="tag">&lt;/figure&gt;</span>
+
+<span class="comment">&lt;!-- Video with captions and descriptions --&gt;</span>
+<span class="tag">&lt;video</span> <span class="attr">controls</span> 
+       <span class="attr">aria-label=</span><span class="string">"Tutorial: How to use the contact form"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="string">"tutorial.mp4"</span> <span class="attr">type=</span><span class="string">"video/mp4"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Captions for hearing accessibility --&gt;</span>
+    <span class="tag">&lt;track</span> <span class="attr">src=</span><span class="string">"captions.vtt"</span> 
+           <span class="attr">kind=</span><span class="string">"captions"</span> 
+           <span class="attr">srclang=</span><span class="string">"en"</span> 
+           <span class="attr">label=</span><span class="string">"English"</span> 
+           <span class="attr">default</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Audio descriptions for visual accessibility --&gt;</span>
+    <span class="tag">&lt;track</span> <span class="attr">src=</span><span class="string">"descriptions.vtt"</span> 
+           <span class="attr">kind=</span><span class="string">"descriptions"</span> 
+           <span class="attr">srclang=</span><span class="string">"en"</span> 
+           <span class="attr">label=</span><span class="string">"Audio descriptions"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Fallback content --&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This tutorial shows how to fill out our contact form. 
+       <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"tutorial-transcript.html"</span><span class="tag">&gt;</span>Read the full transcript<span class="tag">&lt;/a&gt;</span>.
+    <span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/video&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Keyboard Navigation</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Skip links for keyboard users --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#main-content"</span> <span class="attr">class=</span><span class="string">"skip-link"</span><span class="tag">&gt;</span>Skip to main content<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#navigation"</span> <span class="attr">class=</span><span class="string">"skip-link"</span><span class="tag">&gt;</span>Skip to navigation<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Custom interactive elements with keyboard support --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">role=</span><span class="string">"button"</span> 
+     <span class="attr">tabindex=</span><span class="string">"0"</span>
+     <span class="attr">onclick=</span><span class="string">"handleClick()"</span>
+     <span class="attr">onkeydown=</span><span class="string">"handleKeydown(event)"</span>
+     <span class="attr">aria-pressed=</span><span class="string">"false"</span><span class="tag">&gt;</span>
+    Toggle Button
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Dropdown menu with keyboard navigation --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"dropdown"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"button"</span> 
+            <span class="attr">aria-haspopup=</span><span class="string">"true"</span>
+            <span class="attr">aria-expanded=</span><span class="string">"false"</span>
+            <span class="attr">aria-controls=</span><span class="string">"dropdown-menu"</span>
+            <span class="attr">onclick=</span><span class="string">"toggleDropdown()"</span><span class="tag">&gt;</span>
+        Options Menu
+    <span class="tag">&lt;/button&gt;</span>
+    
+    <span class="tag">&lt;ul</span> <span class="attr">id=</span><span class="string">"dropdown-menu"</span> 
+        <span class="attr">role=</span><span class="string">"menu"</span>
+        <span class="attr">aria-hidden=</span><span class="string">"true"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;li</span> <span class="attr">role=</span><span class="string">"menuitem"</span> <span class="attr">tabindex=</span><span class="string">"-1"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/option1"</span><span class="tag">&gt;</span>Option 1<span class="tag">&lt;/a&gt;</span>
+        <span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li</span> <span class="attr">role=</span><span class="string">"menuitem"</span> <span class="attr">tabindex=</span><span class="string">"-1"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/option2"</span><span class="tag">&gt;</span>Option 2<span class="tag">&lt;/a&gt;</span>
+        <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Focus management JavaScript --&gt;</span>
+<span class="tag">&lt;script&gt;</span>
+<span class="keyword">function</span> handleKeydown(event) {
+    <span class="comment">// Handle Enter and Space keys for custom buttons</span>
+    <span class="keyword">if</span> (event.key === <span class="string">'Enter'</span> || event.key === <span class="string">' '</span>) {
+        event.preventDefault();
+        handleClick();
+    }
+}
+
+<span class="keyword">function</span> trapFocus(element) {
+    <span class="keyword">const</span> focusableElements = element.querySelectorAll(
+        <span class="string">'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'</span>
+    );
+    
+    <span class="keyword">const</span> firstElement = focusableElements[<span class="number">0</span>];
+    <span class="keyword">const</span> lastElement = focusableElements[focusableElements.length - <span class="number">1</span>];
+    
+    element.addEventListener(<span class="string">'keydown'</span>, (e) =&gt; {
+        <span class="keyword">if</span> (e.key === <span class="string">'Tab'</span>) {
+            <span class="keyword">if</span> (e.shiftKey) {
+                <span class="keyword">if</span> (document.activeElement === firstElement) {
+                    e.preventDefault();
+                    lastElement.focus();
+                }
+            } <span class="keyword">else</span> {
+                <span class="keyword">if</span> (document.activeElement === lastElement) {
+                    e.preventDefault();
+                    firstElement.focus();
+                }
+            }
+        }
+    });
+}
+<span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Testing and Validation</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Automated Testing Tools</h4>
+                            <ul>
+                                <li>WAVE (Web Accessibility Evaluation Tool)</li>
+                                <li>axe-core accessibility engine</li>
+                                <li>Lighthouse accessibility audit</li>
+                                <li>Pa11y command line tool</li>
+                                <li>AccessiBe accessibility checker</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Manual Testing Methods</h4>
+                            <ul>
+                                <li>Keyboard-only navigation</li>
+                                <li>Screen reader testing (NVDA, JAWS, VoiceOver)</li>
+                                <li>High contrast mode testing</li>
+                                <li>Zoom testing (up to 200%)</li>
+                                <li>Color blindness simulation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>WCAG Guidelines Summary</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Perceivable</h4>
+                            <ul>
+                                <li>Provide text alternatives for images</li>
+                                <li>Offer captions for videos</li>
+                                <li>Ensure sufficient color contrast</li>
+                                <li>Make content adaptable to different presentations</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Operable</h4>
+                            <ul>
+                                <li>Make all functionality keyboard accessible</li>
+                                <li>Give users enough time to read content</li>
+                                <li>Don't use content that causes seizures</li>
+                                <li>Help users navigate and find content</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Understandable</h4>
+                            <ul>
+                                <li>Make text readable and understandable</li>
+                                <li>Make content appear and operate predictably</li>
+                                <li>Help users avoid and correct mistakes</li>
+                                <li>Use clear and simple language</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Robust</h4>
+                            <ul>
+                                <li>Maximize compatibility with assistive technologies</li>
+                                <li>Use valid, semantic HTML</li>
+                                <li>Ensure content works across different browsers</li>
+                                <li>Follow web standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Use semantic HTML elements appropriately</li>
+                                <li>Provide meaningful alt text for images</li>
+                                <li>Ensure proper heading hierarchy</li>
+                                <li>Test with keyboard navigation only</li>
+                                <li>Include focus indicators for interactive elements</li>
+                                <li>Use ARIA attributes correctly</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Relying solely on color to convey information</li>
+                                <li>Using placeholder text as labels</li>
+                                <li>Creating keyboard traps</li>
+                                <li>Removing focus indicators</li>
+                                <li>Using generic link text like "click here"</li>
+                                <li>Ignoring error message accessibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="iframes.html" class="nav-button prev">
+                        ← Previous: Iframes
+                    </a>
+                    <a href="validation.html" class="nav-button next">
+                        Next: Validation →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

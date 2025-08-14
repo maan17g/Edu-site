@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframes - CodeMaster Academy</title>
+    <meta name="description" content="Learn to embed external content using HTML iframes with security considerations and best practices">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html" class="active">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Iframes</h1>
+                    <p class="topic-description">
+                        Learn to safely embed external content using HTML iframes with proper security considerations and responsive design techniques.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding HTML Iframes</h2>
+                    <p>
+                        The HTML <code>&lt;iframe&gt;</code> (inline frame) element allows you to embed another HTML document within the current page. Iframes create a separate browsing context, enabling you to display external content like videos, maps, social media widgets, or entire web pages while maintaining security boundaries.
+                    </p>
+                    <p>
+                        While powerful for content integration, iframes require careful consideration of security, accessibility, and performance implications. Modern web development emphasizes secure iframe practices to prevent vulnerabilities while maintaining functionality.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🖼️ Key Concept</h4>
+                        <p>Iframes are like windows within your webpage that can display content from any URL, but they operate in their own isolated environment for security.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Basic Iframe Syntax</h2>
+                    <p>
+                        Basic iframe implementation with essential attributes:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Simple iframe --&gt;</span>
+<span class="tag">&lt;iframe</span> <span class="attr">src=</span><span class="string">"https://example.com"</span>
+        <span class="attr">width=</span><span class="string">"600"</span>
+        <span class="attr">height=</span><span class="string">"400"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Fallback content for browsers that don't support iframes --&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Your browser does not support iframes. 
+       <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://example.com"</span> <span class="attr">target=</span><span class="string">"_blank"</span><span class="tag">&gt;</span>Visit the page directly<span class="tag">&lt;/a&gt;</span>.
+    <span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/iframe&gt;</span>
+
+<span class="comment">&lt;!-- Iframe with comprehensive attributes --&gt;</span>
+<span class="tag">&lt;iframe</span> 
+    <span class="attr">src=</span><span class="string">"https://trusted-site.com/content"</span>
+    <span class="attr">width=</span><span class="string">"800"</span>
+    <span class="attr">height=</span><span class="string">"600"</span>
+    <span class="attr">title=</span><span class="string">"External Content Frame"</span>
+    <span class="attr">loading=</span><span class="string">"lazy"</span>
+    <span class="attr">sandbox=</span><span class="string">"allow-scripts allow-same-origin"</span>
+    <span class="attr">allow=</span><span class="string">"accelerometer; camera; geolocation"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/iframe&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Essential Iframe Attributes:</div>
+                        <ul>
+                            <li><code>src</code> - URL of the page to embed</li>
+                            <li><code>width/height</code> - Frame dimensions</li>
+                            <li><code>title</code> - Descriptive title for accessibility</li>
+                            <li><code>loading</code> - Lazy loading behavior</li>
+                            <li><code>sandbox</code> - Security restrictions</li>
+                            <li><code>allow</code> - Feature policy permissions</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Security with Sandbox Attribute</h2>
+                    <p>
+                        The sandbox attribute provides granular security control over iframe content:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Most restrictive: completely sandboxed --&gt;</span>
+<span class="tag">&lt;iframe</span> <span class="attr">src=</span><span class="string">"untrusted-content.html"</span> <span class="attr">sandbox</span><span class="tag">&gt;&lt;/iframe&gt;</span>
+
+<span class="comment">&lt;!-- Allow scripts but block forms and navigation --&gt;</span>
+<span class="tag">&lt;iframe</span> <span class="attr">src=</span><span class="string">"widget.html"</span> 
+        <span class="attr">sandbox=</span><span class="string">"allow-scripts"</span><span class="tag">&gt;&lt;/iframe&gt;</span>
+
+<span class="comment">&lt;!-- Allow scripts and same-origin access --&gt;</span>
+<span class="tag">&lt;iframe</span> <span class="attr">src=</span><span class="string">"trusted-app.html"</span> 
+        <span class="attr">sandbox=</span><span class="string">"allow-scripts allow-same-origin"</span><span class="tag">&gt;&lt;/iframe&gt;</span>
+
+<span class="comment">&lt;!-- Full-featured iframe with specific permissions --&gt;</span>
+<span class="tag">&lt;iframe</span> <span class="attr">src=</span><span class="string">"interactive-content.html"</span>
+        <span class="attr">sandbox=</span><span class="string">"allow-scripts 
+                 allow-same-origin 
+                 allow-forms 
+                 allow-popups 
+                 allow-navigation"</span><span class="tag">&gt;&lt;/iframe&gt;</span>
+
+<span class="comment">&lt;!-- Social media embed with restrictions --&gt;</span>
+<span class="tag">&lt;iframe</span> <span class="attr">src=</span><span class="string">"https://platform.twitter.com/widgets.js"</span>
+        <span class="attr">sandbox=</span><span class="string">"allow-scripts allow-same-origin allow-popups"</span>
+        <span class="attr">width=</span><span class="string">"500"</span> <span class="attr">height=</span><span class="string">"300"</span><span class="tag">&gt;&lt;/iframe&gt;</span></pre>
+                    </div>
+                    
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Sandbox Values</h4>
+                            <ul>
+                                <li><code>allow-scripts</code> - Enable JavaScript</li>
+                                <li><code>allow-same-origin</code> - Same domain access</li>
+                                <li><code>allow-forms</code> - Form submissions</li>
+                                <li><code>allow-popups</code> - Open new windows</li>
+                                <li><code>allow-navigation</code> - Navigate parent</li>
+                                <li><code>allow-downloads</code> - File downloads</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Security Levels</h4>
+                            <ul>
+                                <li><strong>Strict:</strong> <code>sandbox</code> only</li>
+                                <li><strong>Moderate:</strong> Scripts allowed</li>
+                                <li><strong>Trusted:</strong> Same-origin access</li>
+                                <li><strong>Interactive:</strong> Forms and popups</li>
+                                <li><strong>Full:</strong> All permissions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Responsive Iframes</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Responsive iframe container --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"iframe-container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;iframe</span> <span class="attr">src=</span><span class="string">"https://example.com"</span> 
+            <span class="attr">title=</span><span class="string">"Responsive Content"</span>
+            <span class="attr">loading=</span><span class="string">"lazy"</span><span class="tag">&gt;&lt;/iframe&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- CSS for responsive iframes --&gt;</span>
+<span class="tag">&lt;style&gt;</span>
+<span class="comment">/* Aspect ratio container for responsive iframe */</span>
+<span class="selector">.iframe-container</span> {
+    <span class="property">position</span>: <span class="value">relative</span>;
+    <span class="property">width</span>: <span class="value">100%</span>;
+    <span class="property">max-width</span>: <span class="value">800px</span>;
+    <span class="property">margin</span>: <span class="value">0 auto</span>;
+}
+
+<span class="comment">/* 16:9 aspect ratio */</span>
+<span class="selector">.iframe-container::before</span> {
+    <span class="property">content</span>: <span class="value">""</span>;
+    <span class="property">display</span>: <span class="value">block</span>;
+    <span class="property">padding-top</span>: <span class="value">56.25%</span>; <span class="comment">/* 9/16 * 100% = 56.25% */</span>
+}
+
+<span class="selector">.iframe-container iframe</span> {
+    <span class="property">position</span>: <span class="value">absolute</span>;
+    <span class="property">top</span>: <span class="value">0</span>;
+    <span class="property">left</span>: <span class="value">0</span>;
+    <span class="property">width</span>: <span class="value">100%</span>;
+    <span class="property">height</span>: <span class="value">100%</span>;
+    <span class="property">border</span>: <span class="value">none</span>;
+}
+
+<span class="comment">/* Alternative: 4:3 aspect ratio */</span>
+<span class="selector">.iframe-4-3::before</span> {
+    <span class="property">padding-top</span>: <span class="value">75%</span>; <span class="comment">/* 3/4 * 100% = 75% */</span>
+}
+
+<span class="comment">/* Square aspect ratio */</span>
+<span class="selector">.iframe-square::before</span> {
+    <span class="property">padding-top</span>: <span class="value">100%</span>;
+}
+<span class="tag">&lt;/style&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common Iframe Use Cases</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- YouTube video embed --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"iframe-container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;iframe</span> 
+        <span class="attr">src=</span><span class="string">"https://www.youtube.com/embed/VIDEO_ID"</span> 
+        <span class="attr">title=</span><span class="string">"YouTube video player"</span>
+        <span class="attr">allow=</span><span class="string">"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"</span> 
+        <span class="attr">allowfullscreen</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/iframe&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Google Maps embed --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"iframe-container iframe-4-3"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;iframe</span> 
+        <span class="attr">src=</span><span class="string">"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..."</span>
+        <span class="attr">title=</span><span class="string">"Google Maps Location"</span>
+        <span class="attr">style=</span><span class="string">"border:0;"</span> 
+        <span class="attr">allowfullscreen=""</span> 
+        <span class="attr">loading=</span><span class="string">"lazy"</span>
+        <span class="attr">referrerpolicy=</span><span class="string">"no-referrer-when-downgrade"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/iframe&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- CodePen embed --&gt;</span>
+<span class="tag">&lt;iframe</span> 
+    <span class="attr">height=</span><span class="string">"400"</span> 
+    <span class="attr">style=</span><span class="string">"width: 100%;"</span> 
+    <span class="attr">scrolling=</span><span class="string">"no"</span> 
+    <span class="attr">title=</span><span class="string">"CSS Animation Demo"</span> 
+    <span class="attr">src=</span><span class="string">"https://codepen.io/username/embed/pen-id?default-tab=html%2Cresult"</span> 
+    <span class="attr">loading=</span><span class="string">"lazy"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/iframe&gt;</span>
+
+<span class="comment">&lt;!-- Contact form in iframe --&gt;</span>
+<span class="tag">&lt;iframe</span> 
+    <span class="attr">src=</span><span class="string">"contact-form.html"</span>
+    <span class="attr">width=</span><span class="string">"100%"</span>
+    <span class="attr">height=</span><span class="string">"500"</span>
+    <span class="attr">title=</span><span class="string">"Contact Form"</span>
+    <span class="attr">sandbox=</span><span class="string">"allow-scripts allow-same-origin allow-forms"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/iframe&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Cross-Origin Communication</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Parent page with iframe --&gt;</span>
+<span class="tag">&lt;iframe</span> <span class="attr">id=</span><span class="string">"communicatingFrame"</span> 
+        <span class="attr">src=</span><span class="string">"child-page.html"</span>
+        <span class="attr">width=</span><span class="string">"600"</span> 
+        <span class="attr">height=</span><span class="string">"400"</span><span class="tag">&gt;&lt;/iframe&gt;</span>
+
+<span class="tag">&lt;button</span> <span class="attr">onclick=</span><span class="string">"sendMessageToFrame()"</span><span class="tag">&gt;</span>Send Message to Frame<span class="tag">&lt;/button&gt;</span>
+
+<span class="tag">&lt;script&gt;</span>
+    <span class="comment">// Send message to iframe</span>
+    <span class="keyword">function</span> sendMessageToFrame() {
+        <span class="keyword">const</span> iframe = document.getElementById(<span class="string">'communicatingFrame'</span>);
+        <span class="keyword">const</span> message = {
+            <span class="property">type</span>: <span class="string">'greeting'</span>,
+            <span class="property">data</span>: <span class="string">'Hello from parent!'</span>,
+            <span class="property">timestamp</span>: Date.now()
+        };
+        
+        <span class="comment">// Send message to iframe content</span>
+        iframe.contentWindow.postMessage(message, <span class="string">'*'</span>);
+    }
+    
+    <span class="comment">// Listen for messages from iframe</span>
+    window.addEventListener(<span class="string">'message'</span>, <span class="keyword">function</span>(event) {
+        <span class="comment">// Verify origin for security</span>
+        <span class="keyword">if</span> (event.origin !== window.location.origin) {
+            <span class="keyword">return</span>; <span class="comment">// Ignore messages from unknown origins</span>
+        }
+        
+        <span class="keyword">if</span> (event.data.type === <span class="string">'response'</span>) {
+            console.log(<span class="string">'Received from iframe:'</span>, event.data.message);
+        }
+    });
+<span class="tag">&lt;/script&gt;</span>
+
+<span class="comment">&lt;!-- Child page (inside iframe) JavaScript --&gt;</span>
+<span class="tag">&lt;script&gt;</span>
+    <span class="comment">// Listen for messages from parent</span>
+    window.addEventListener(<span class="string">'message'</span>, <span class="keyword">function</span>(event) {
+        <span class="comment">// Security: verify origin</span>
+        <span class="keyword">if</span> (event.origin !== window.location.origin) {
+            <span class="keyword">return</span>;
+        }
+        
+        <span class="keyword">if</span> (event.data.type === <span class="string">'greeting'</span>) {
+            console.log(<span class="string">'Received message:'</span>, event.data.data);
+            
+            <span class="comment">// Send response back to parent</span>
+            <span class="keyword">const</span> response = {
+                <span class="property">type</span>: <span class="string">'response'</span>,
+                <span class="property">message</span>: <span class="string">'Hello from iframe!'</span>
+            };
+            
+            parent.postMessage(response, <span class="string">'*'</span>);
+        }
+    });
+    
+    <span class="comment">// Send initial message to parent</span>
+    window.addEventListener(<span class="string">'load'</span>, <span class="keyword">function</span>() {
+        parent.postMessage({
+            <span class="property">type</span>: <span class="string">'loaded'</span>,
+            <span class="property">message</span>: <span class="string">'Iframe content loaded'</span>
+        }, <span class="string">'*'</span>);
+    });
+<span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Iframe Alternatives</h2>
+                    <p>
+                        Modern alternatives to iframes for specific use cases:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Web Components as iframe alternative --&gt;</span>
+<span class="tag">&lt;script</span> <span class="attr">type=</span><span class="string">"module"</span><span class="tag">&gt;</span>
+    <span class="comment">// Custom element that loads external content</span>
+    <span class="keyword">class</span> ExternalContent <span class="keyword">extends</span> HTMLElement {
+        <span class="keyword">async</span> connectedCallback() {
+            <span class="keyword">const</span> url = <span class="keyword">this</span>.getAttribute(<span class="string">'src'</span>);
+            <span class="keyword">try</span> {
+                <span class="keyword">const</span> response = <span class="keyword">await</span> fetch(url);
+                <span class="keyword">const</span> content = <span class="keyword">await</span> response.text();
+                <span class="keyword">this</span>.innerHTML = content;
+            } <span class="keyword">catch</span> (error) {
+                <span class="keyword">this</span>.innerHTML = <span class="string">'&lt;p&gt;Failed to load content&lt;/p&gt;'</span>;
+            }
+        }
+    }
+    
+    customElements.define(<span class="string">'external-content'</span>, ExternalContent);
+<span class="tag">&lt;/script&gt;</span>
+
+<span class="comment">&lt;!-- Usage --&gt;</span>
+<span class="tag">&lt;external-content</span> <span class="attr">src=</span><span class="string">"external-snippet.html"</span><span class="tag">&gt;&lt;/external-content&gt;</span>
+
+<span class="comment">&lt;!-- Object element for certain content types --&gt;</span>
+<span class="tag">&lt;object</span> <span class="attr">data=</span><span class="string">"document.pdf"</span> 
+        <span class="attr">type=</span><span class="string">"application/pdf"</span> 
+        <span class="attr">width=</span><span class="string">"100%"</span> 
+        <span class="attr">height=</span><span class="string">"600"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Alternative content for browsers that cannot display PDF.
+       <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"document.pdf"</span><span class="tag">&gt;</span>Download PDF<span class="tag">&lt;/a&gt;</span>
+    <span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/object&gt;</span>
+
+<span class="comment">&lt;!-- Embed element for multimedia --&gt;</span>
+<span class="tag">&lt;embed</span> <span class="attr">src=</span><span class="string">"interactive-widget.swf"</span> 
+       <span class="attr">type=</span><span class="string">"application/x-shockwave-flash"</span> 
+       <span class="attr">width=</span><span class="string">"400"</span> 
+       <span class="attr">height=</span><span class="string">"300"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Performance and SEO Considerations</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Performance Tips</h4>
+                            <ul>
+                                <li>Use <code>loading="lazy"</code> for off-screen iframes</li>
+                                <li>Set explicit width and height to prevent layout shifts</li>
+                                <li>Minimize the number of iframes per page</li>
+                                <li>Consider intersection observer for dynamic loading</li>
+                                <li>Use <code>srcdoc</code> for small HTML content</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>SEO Impact</h4>
+                            <ul>
+                                <li>Content inside iframes is not indexed</li>
+                                <li>Iframes can slow page loading</li>
+                                <li>Use meaningful title attributes</li>
+                                <li>Provide alternative content for crawlers</li>
+                                <li>Consider server-side inclusion for critical content</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Always use the sandbox attribute for security</li>
+                                <li>Provide meaningful title attributes</li>
+                                <li>Include fallback content inside iframe tags</li>
+                                <li>Use lazy loading for performance</li>
+                                <li>Implement proper cross-origin messaging</li>
+                                <li>Validate iframe origins in postMessage handlers</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Embedding untrusted content without sandboxing</li>
+                                <li>Using iframes for content that could be included directly</li>
+                                <li>Ignoring accessibility requirements</li>
+                                <li>Creating infinite iframe loops</li>
+                                <li>Using iframes just for styling purposes</li>
+                                <li>Loading multiple heavy iframes simultaneously</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="svg.html" class="nav-button prev">
+                        ← Previous: SVG
+                    </a>
+                    <a href="accessibility.html" class="nav-button next">
+                        Next: Accessibility →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

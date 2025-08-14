@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas - CodeMaster Academy</title>
+    <meta name="description" content="Master HTML5 Canvas for dynamic graphics, animations, and interactive visualizations">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html" class="active">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Canvas</h1>
+                    <p class="topic-description">
+                        Explore HTML5 Canvas for creating dynamic graphics, animations, data visualizations, and interactive digital art using JavaScript.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Introduction to HTML5 Canvas</h2>
+                    <p>
+                        The HTML5 <code>&lt;canvas&gt;</code> element provides a powerful drawing surface for creating dynamic graphics, animations, games, and data visualizations directly in the browser. Unlike static images, canvas content is generated programmatically using JavaScript, enabling interactive and responsive graphics.
+                    </p>
+                    <p>
+                        Canvas operates as a bitmap that can be manipulated pixel by pixel, making it ideal for complex graphics operations, image processing, and real-time visual effects that would be impossible with traditional HTML and CSS alone.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🎨 Key Concept</h4>
+                        <p>Canvas is like a digital drawing board that JavaScript can paint on, creating everything from simple shapes to complex interactive graphics and animations.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Canvas Element Basics</h2>
+                    <p>
+                        Setting up and accessing the canvas drawing context:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- HTML Canvas element --&gt;</span>
+<span class="tag">&lt;canvas</span> 
+    <span class="attr">id=</span><span class="string">"myCanvas"</span> 
+    <span class="attr">width=</span><span class="string">"600"</span> 
+    <span class="attr">height=</span><span class="string">"400"</span>
+    <span class="attr">style=</span><span class="string">"border: 1px solid #ccc;"</span><span class="tag">&gt;</span>
+    Your browser does not support the HTML5 Canvas element.
+<span class="tag">&lt;/canvas&gt;</span>
+
+<span class="tag">&lt;script&gt;</span>
+    <span class="comment">// Get canvas element and 2D rendering context</span>
+    <span class="keyword">const</span> canvas = document.getElementById(<span class="string">'myCanvas'</span>);
+    <span class="keyword">const</span> ctx = canvas.getContext(<span class="string">'2d'</span>);
+    
+    <span class="comment">// Check if Canvas is supported</span>
+    <span class="keyword">if</span> (ctx) {
+        <span class="comment">// Canvas is supported, start drawing</span>
+        ctx.fillStyle = <span class="string">'#007bff'</span>;
+        ctx.fillRect(<span class="number">50</span>, <span class="number">50</span>, <span class="number">200</span>, <span class="number">100</span>);
+    } <span class="keyword">else</span> {
+        <span class="comment">// Canvas not supported</span>
+        console.log(<span class="string">'Canvas is not supported'</span>);
+    }
+<span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Canvas Setup Considerations:</div>
+                        <ul>
+                            <li>Set <code>width</code> and <code>height</code> attributes in HTML, not CSS</li>
+                            <li>CSS sizing stretches the canvas like an image</li>
+                            <li>Always provide fallback content for unsupported browsers</li>
+                            <li>Use <code>getContext('2d')</code> for 2D graphics</li>
+                            <li>Check context availability before drawing</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Drawing Shapes and Paths</h2>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;canvas</span> <span class="attr">id=</span><span class="string">"shapes"</span> <span class="attr">width=</span><span class="string">"500"</span> <span class="attr">height=</span><span class="string">"400"</span><span class="tag">&gt;&lt;/canvas&gt;</span>
+
+<span class="tag">&lt;script&gt;</span>
+    <span class="keyword">const</span> canvas = document.getElementById(<span class="string">'shapes'</span>);
+    <span class="keyword">const</span> ctx = canvas.getContext(<span class="string">'2d'</span>);
+    
+    <span class="comment">// Rectangle methods</span>
+    ctx.fillStyle = <span class="string">'#ff6b6b'</span>;
+    ctx.fillRect(<span class="number">20</span>, <span class="number">20</span>, <span class="number">100</span>, <span class="number">80</span>); <span class="comment">// Filled rectangle</span>
+    
+    ctx.strokeStyle = <span class="string">'#4ecdc4'</span>;
+    ctx.lineWidth = <span class="number">3</span>;
+    ctx.strokeRect(<span class="number">140</span>, <span class="number">20</span>, <span class="number">100</span>, <span class="number">80</span>); <span class="comment">// Rectangle outline</span>
+    
+    ctx.clearRect(<span class="number">260</span>, <span class="number">20</span>, <span class="number">100</span>, <span class="number">80</span>); <span class="comment">// Clear rectangle area</span>
+    
+    <span class="comment">// Drawing paths</span>
+    ctx.beginPath();
+    ctx.moveTo(<span class="number">50</span>, <span class="number">150</span>); <span class="comment">// Start point</span>
+    ctx.lineTo(<span class="number">150</span>, <span class="number">150</span>); <span class="comment">// Line to</span>
+    ctx.lineTo(<span class="number">100</span>, <span class="number">200</span>); <span class="comment">// Line to</span>
+    ctx.closePath(); <span class="comment">// Close path</span>
+    ctx.fillStyle = <span class="string">'#45b7d1'</span>;
+    ctx.fill(); <span class="comment">// Fill the triangle</span>
+    
+    <span class="comment">// Circles and arcs</span>
+    ctx.beginPath();
+    ctx.arc(<span class="number">300</span>, <span class="number">175</span>, <span class="number">40</span>, <span class="number">0</span>, <span class="number">2</span> * Math.PI); <span class="comment">// Full circle</span>
+    ctx.fillStyle = <span class="string">'#f7b731'</span>;
+    ctx.fill();
+    ctx.strokeStyle = <span class="string">'#333'</span>;
+    ctx.stroke();
+    
+    <span class="comment">// Arc (partial circle)</span>
+    ctx.beginPath();
+    ctx.arc(<span class="number">400</span>, <span class="number">175</span>, <span class="number">30</span>, <span class="number">0</span>, Math.PI); <span class="comment">// Half circle</span>
+    ctx.fillStyle = <span class="string">'#5f27cd'</span>;
+    ctx.fill();
+    
+    <span class="comment">// Bezier curves</span>
+    ctx.beginPath();
+    ctx.moveTo(<span class="number">50</span>, <span class="number">270</span>);
+    ctx.quadraticCurveTo(<span class="number">100</span>, <span class="number">220</span>, <span class="number">150</span>, <span class="number">270</span>); <span class="comment">// Quadratic curve</span>
+    ctx.strokeStyle = <span class="string">'#ff9ff3'</span>;
+    ctx.lineWidth = <span class="number">4</span>;
+    ctx.stroke();
+    
+    <span class="comment">// Cubic Bezier curve</span>
+    ctx.beginPath();
+    ctx.moveTo(<span class="number">200</span>, <span class="number">270</span>);
+    ctx.bezierCurveTo(<span class="number">220</span>, <span class="number">220</span>, <span class="number">280</span>, <span class="number">220</span>, <span class="number">300</span>, <span class="number">270</span>);
+    ctx.strokeStyle = <span class="string">'#54a0ff'</span>;
+    ctx.stroke();
+<span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Text and Styling</h2>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;canvas</span> <span class="attr">id=</span><span class="string">"text"</span> <span class="attr">width=</span><span class="string">"600"</span> <span class="attr">height=</span><span class="string">"300"</span><span class="tag">&gt;&lt;/canvas&gt;</span>
+
+<span class="tag">&lt;script&gt;</span>
+    <span class="keyword">const</span> canvas = document.getElementById(<span class="string">'text'</span>);
+    <span class="keyword">const</span> ctx = canvas.getContext(<span class="string">'2d'</span>);
+    
+    <span class="comment">// Text styling</span>
+    ctx.font = <span class="string">'30px Arial'</span>;
+    ctx.fillStyle = <span class="string">'#333'</span>;
+    ctx.textAlign = <span class="string">'center'</span>; <span class="comment">// left, right, center, start, end</span>
+    ctx.textBaseline = <span class="string">'middle'</span>; <span class="comment">// top, bottom, middle, alphabetic</span>
+    
+    <span class="comment">// Filled text</span>
+    ctx.fillText(<span class="string">'HTML5 Canvas'</span>, <span class="number">300</span>, <span class="number">60</span>);
+    
+    <span class="comment">// Outlined text</span>
+    ctx.strokeStyle = <span class="string">'#007bff'</span>;
+    ctx.lineWidth = <span class="number">2</span>;
+    ctx.strokeText(<span class="string">'Outlined Text'</span>, <span class="number">300</span>, <span class="number">120</span>);
+    
+    <span class="comment">// Combined fill and stroke</span>
+    ctx.fillStyle = <span class="string">'#ff6b6b'</span>;
+    ctx.fillText(<span class="string">'Combined Style'</span>, <span class="number">300</span>, <span class="number">180</span>);
+    ctx.strokeText(<span class="string">'Combined Style'</span>, <span class="number">300</span>, <span class="number">180</span>);
+    
+    <span class="comment">// Measure text dimensions</span>
+    <span class="keyword">const</span> textMetrics = ctx.measureText(<span class="string">'Measured Text'</span>);
+    console.log(<span class="string">'Text width:'</span>, textMetrics.width);
+    
+    <span class="comment">// Gradients and patterns</span>
+    <span class="keyword">const</span> gradient = ctx.createLinearGradient(<span class="number">200</span>, <span class="number">240</span>, <span class="number">400</span>, <span class="number">240</span>);
+    gradient.addColorStop(<span class="number">0</span>, <span class="string">'#ff6b6b'</span>);
+    gradient.addColorStop(<span class="number">0.5</span>, <span class="string">'#4ecdc4'</span>);
+    gradient.addColorStop(<span class="number">1</span>, <span class="string">'#45b7d1'</span>);
+    
+    ctx.fillStyle = gradient;
+    ctx.font = <span class="string">'25px bold Arial'</span>;
+    ctx.fillText(<span class="string">'Gradient Text'</span>, <span class="number">300</span>, <span class="number">240</span>);
+<span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Images and Transformations</h2>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;canvas</span> <span class="attr">id=</span><span class="string">"images"</span> <span class="attr">width=</span><span class="string">"600"</span> <span class="attr">height=</span><span class="string">"400"</span><span class="tag">&gt;&lt;/canvas&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">id=</span><span class="string">"sourceImage"</span> <span class="attr">src=</span><span class="string">"logo.png"</span> <span class="attr">style=</span><span class="string">"display: none;"</span><span class="tag">&gt;</span>
+
+<span class="tag">&lt;script&gt;</span>
+    <span class="keyword">const</span> canvas = document.getElementById(<span class="string">'images'</span>);
+    <span class="keyword">const</span> ctx = canvas.getContext(<span class="string">'2d'</span>);
+    <span class="keyword">const</span> img = document.getElementById(<span class="string">'sourceImage'</span>);
+    
+    img.onload = <span class="keyword">function</span>() {
+        <span class="comment">// Draw image at original size</span>
+        ctx.drawImage(img, <span class="number">50</span>, <span class="number">50</span>);
+        
+        <span class="comment">// Draw image with custom size</span>
+        ctx.drawImage(img, <span class="number">200</span>, <span class="number">50</span>, <span class="number">100</span>, <span class="number">80</span>);
+        
+        <span class="comment">// Draw part of image (source clipping)</span>
+        ctx.drawImage(
+            img, 
+            <span class="number">0</span>, <span class="number">0</span>, <span class="number">50</span>, <span class="number">50</span>, <span class="comment">// source rectangle</span>
+            <span class="number">350</span>, <span class="number">50</span>, <span class="number">100</span>, <span class="number">100</span> <span class="comment">// destination rectangle</span>
+        );
+        
+        <span class="comment">// Transformations</span>
+        ctx.save(); <span class="comment">// Save current state</span>
+        
+        <span class="comment">// Translation</span>
+        ctx.translate(<span class="number">150</span>, <span class="number">200</span>);
+        ctx.fillStyle = <span class="string">'#ff6b6b'</span>;
+        ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">50</span>, <span class="number">50</span>);
+        
+        <span class="comment">// Rotation (around translated origin)</span>
+        ctx.rotate(Math.PI / <span class="number">4</span>); <span class="comment">// 45 degrees</span>
+        ctx.fillStyle = <span class="string">'#4ecdc4'</span>;
+        ctx.fillRect(<span class="number">60</span>, <span class="number">0</span>, <span class="number">50</span>, <span class="number">50</span>);
+        
+        <span class="comment">// Scale</span>
+        ctx.scale(<span class="number">1.5</span>, <span class="number">0.5</span>); <span class="comment">// Width 1.5x, height 0.5x</span>
+        ctx.fillStyle = <span class="string">'#45b7d1'</span>;
+        ctx.fillRect(<span class="number">80</span>, <span class="number">20</span>, <span class="number">50</span>, <span class="number">50</span>);
+        
+        ctx.restore(); <span class="comment">// Restore previous state</span>
+        
+        <span class="comment">// Matrix transformation</span>
+        ctx.setTransform(<span class="number">1</span>, <span class="number">0.2</span>, <span class="number">0.3</span>, <span class="number">1</span>, <span class="number">400</span>, <span class="number">200</span>);
+        ctx.fillStyle = <span class="string">'#f7b731'</span>;
+        ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, <span class="number">80</span>, <span class="number">60</span>);
+        
+        <span class="comment">// Reset transformation</span>
+        ctx.setTransform(<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>);
+    };
+<span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Animation Example</h2>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;canvas</span> <span class="attr">id=</span><span class="string">"animation"</span> <span class="attr">width=</span><span class="string">"600"</span> <span class="attr">height=</span><span class="string">"300"</span><span class="tag">&gt;&lt;/canvas&gt;</span>
+<span class="tag">&lt;button</span> <span class="attr">onclick=</span><span class="string">"startAnimation()"</span><span class="tag">&gt;</span>Start Animation<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;button</span> <span class="attr">onclick=</span><span class="string">"stopAnimation()"</span><span class="tag">&gt;</span>Stop Animation<span class="tag">&lt;/button&gt;</span>
+
+<span class="tag">&lt;script&gt;</span>
+    <span class="keyword">const</span> canvas = document.getElementById(<span class="string">'animation'</span>);
+    <span class="keyword">const</span> ctx = canvas.getContext(<span class="string">'2d'</span>);
+    
+    <span class="keyword">let</span> animationId;
+    <span class="keyword">let</span> balls = [];
+    
+    <span class="comment">// Ball object constructor</span>
+    <span class="keyword">function</span> Ball(x, y, dx, dy, radius, color) {
+        <span class="keyword">this</span>.x = x;
+        <span class="keyword">this</span>.y = y;
+        <span class="keyword">this</span>.dx = dx; <span class="comment">// velocity x</span>
+        <span class="keyword">this</span>.dy = dy; <span class="comment">// velocity y</span>
+        <span class="keyword">this</span>.radius = radius;
+        <span class="keyword">this</span>.color = color;
+        
+        <span class="keyword">this</span>.draw = <span class="keyword">function</span>() {
+            ctx.beginPath();
+            ctx.arc(<span class="keyword">this</span>.x, <span class="keyword">this</span>.y, <span class="keyword">this</span>.radius, <span class="number">0</span>, <span class="number">2</span> * Math.PI);
+            ctx.fillStyle = <span class="keyword">this</span>.color;
+            ctx.fill();
+        };
+        
+        <span class="keyword">this</span>.update = <span class="keyword">function</span>() {
+            <span class="comment">// Bounce off walls</span>
+            <span class="keyword">if</span> (<span class="keyword">this</span>.x + <span class="keyword">this</span>.radius > canvas.width || <span class="keyword">this</span>.x - <span class="keyword">this</span>.radius < <span class="number">0</span>) {
+                <span class="keyword">this</span>.dx = -<span class="keyword">this</span>.dx;
+            }
+            <span class="keyword">if</span> (<span class="keyword">this</span>.y + <span class="keyword">this</span>.radius > canvas.height || <span class="keyword">this</span>.y - <span class="keyword">this</span>.radius < <span class="number">0</span>) {
+                <span class="keyword">this</span>.dy = -<span class="keyword">this</span>.dy;
+            }
+            
+            <span class="comment">// Update position</span>
+            <span class="keyword">this</span>.x += <span class="keyword">this</span>.dx;
+            <span class="keyword">this</span>.y += <span class="keyword">this</span>.dy;
+            
+            <span class="keyword">this</span>.draw();
+        };
+    }
+    
+    <span class="comment">// Create balls</span>
+    <span class="keyword">function</span> initBalls() {
+        balls = [];
+        <span class="keyword">const</span> colors = [<span class="string">'#ff6b6b'</span>, <span class="string">'#4ecdc4'</span>, <span class="string">'#45b7d1'</span>, <span class="string">'#f7b731'</span>, <span class="string">'#5f27cd'</span>];
+        
+        <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i < <span class="number">5</span>; i++) {
+            <span class="keyword">const</span> radius = Math.random() * <span class="number">20</span> + <span class="number">10</span>;
+            <span class="keyword">const</span> x = Math.random() * (canvas.width - radius * <span class="number">2</span>) + radius;
+            <span class="keyword">const</span> y = Math.random() * (canvas.height - radius * <span class="number">2</span>) + radius;
+            <span class="keyword">const</span> dx = (Math.random() - <span class="number">0.5</span>) * <span class="number">4</span>;
+            <span class="keyword">const</span> dy = (Math.random() - <span class="number">0.5</span>) * <span class="number">4</span>;
+            <span class="keyword">const</span> color = colors[Math.floor(Math.random() * colors.length)];
+            
+            balls.push(<span class="keyword">new</span> Ball(x, y, dx, dy, radius, color));
+        }
+    }
+    
+    <span class="comment">// Animation loop</span>
+    <span class="keyword">function</span> animate() {
+        <span class="comment">// Clear canvas</span>
+        ctx.clearRect(<span class="number">0</span>, <span class="number">0</span>, canvas.width, canvas.height);
+        
+        <span class="comment">// Update and draw balls</span>
+        balls.forEach(ball => ball.update());
+        
+        <span class="comment">// Continue animation</span>
+        animationId = requestAnimationFrame(animate);
+    }
+    
+    <span class="keyword">function</span> startAnimation() {
+        initBalls();
+        animate();
+    }
+    
+    <span class="keyword">function</span> stopAnimation() {
+        cancelAnimationFrame(animationId);
+    }
+<span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Canvas Applications</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Graphics & Art</h4>
+                            <ul>
+                                <li>Digital painting applications</li>
+                                <li>Interactive drawing tools</li>
+                                <li>Image filters and effects</li>
+                                <li>Photo editing interfaces</li>
+                                <li>Generative art and patterns</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Data Visualization</h4>
+                            <ul>
+                                <li>Custom charts and graphs</li>
+                                <li>Interactive dashboards</li>
+                                <li>Real-time data displays</li>
+                                <li>Network diagrams</li>
+                                <li>Scientific visualizations</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Games & Animation</h4>
+                            <ul>
+                                <li>2D games and sprites</li>
+                                <li>Particle systems</li>
+                                <li>Physics simulations</li>
+                                <li>Interactive animations</li>
+                                <li>Game UI elements</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Utilities & Tools</h4>
+                            <ul>
+                                <li>Image processing</li>
+                                <li>QR code generators</li>
+                                <li>Digital signatures</li>
+                                <li>Color pickers</li>
+                                <li>Drawing tablets integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Set canvas size in HTML attributes</li>
+                                <li>Use requestAnimationFrame for smooth animations</li>
+                                <li>Save and restore context state when needed</li>
+                                <li>Optimize drawing operations for performance</li>
+                                <li>Provide fallback content for accessibility</li>
+                                <li>Use off-screen canvas for complex compositions</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Excessive redrawing in animations</li>
+                                <li>Drawing outside the canvas bounds</li>
+                                <li>Ignoring high-DPI display scaling</li>
+                                <li>Complex operations in animation loops</li>
+                                <li>Memory leaks from event listeners</li>
+                                <li>Blocking the main thread with heavy operations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="audio-and-video.html" class="nav-button prev">
+                        ← Previous: Audio and Video
+                    </a>
+                    <a href="svg.html" class="nav-button next">
+                        Next: SVG →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

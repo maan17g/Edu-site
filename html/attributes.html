@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Attributes - CodeMaster Academy</title>
+    <meta name="description" content="Master HTML attributes to add functionality, styling hooks, and metadata to your elements">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html" class="active">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Attributes</h1>
+                    <p class="topic-description">
+                        Discover how HTML attributes provide additional information, functionality, and styling hooks to your HTML elements.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding HTML Attributes</h2>
+                    <p>
+                        HTML attributes are name-value pairs that provide additional information about HTML elements. They modify the default behavior of elements, add functionality, provide styling hooks, and improve accessibility. Every HTML element can have attributes that enhance its purpose and presentation.
+                    </p>
+                    <p>
+                        Attributes are always specified in the opening tag and consist of a name and value separated by an equals sign. They're fundamental to creating interactive, accessible, and well-structured web pages.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🔧 Key Concept</h4>
+                        <p>Attributes extend HTML elements with additional properties, behaviors, and metadata that browsers and other tools can use to render and interact with the content.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Attribute Syntax</h2>
+                    <p>
+                        HTML attributes follow a specific syntax pattern and have rules for proper usage:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic attribute syntax --&gt;</span>
+<span class="tag">&lt;element</span> <span class="attr">attribute-name=</span><span class="string">"attribute-value"</span><span class="tag">&gt;</span>Content<span class="tag">&lt;/element&gt;</span>
+
+<span class="comment">&lt;!-- Multiple attributes --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"image.jpg"</span> 
+     <span class="attr">alt=</span><span class="string">"Description"</span> 
+     <span class="attr">width=</span><span class="string">"300"</span> 
+     <span class="attr">height=</span><span class="string">"200"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Boolean attributes --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"checkbox"</span> <span class="attr">checked</span><span class="tag">&gt;</span>
+<span class="tag">&lt;script</span> <span class="attr">src=</span><span class="string">"script.js"</span> <span class="attr">defer</span><span class="tag">&gt;&lt;/script&gt;</span>
+
+<span class="comment">&lt;!-- Quotes are recommended but optional for simple values --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">simple-id</span><span class="tag">&gt;&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"multi word class"</span><span class="tag">&gt;&lt;/div&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Attribute Syntax Rules:</div>
+                        <ul>
+                            <li>Attribute names are case-insensitive (but lowercase is recommended)</li>
+                            <li>Values should be enclosed in quotes (single or double)</li>
+                            <li>Boolean attributes don't need values (their presence indicates true)</li>
+                            <li>Multiple attributes are separated by spaces</li>
+                            <li>Order of attributes doesn't matter</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Global Attributes</h2>
+                    <p>
+                        Global attributes can be used on any HTML element. They provide universal functionality:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Essential global attributes --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"unique-identifier"</span> 
+     <span class="attr">class=</span><span class="string">"css-class-names"</span>
+     <span class="attr">title=</span><span class="string">"Tooltip text"</span>
+     <span class="attr">lang=</span><span class="string">"en"</span>
+     <span class="attr">style=</span><span class="string">"color: blue;"</span><span class="tag">&gt;</span>
+    Content with global attributes
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Data attributes for custom data --&gt;</span>
+<span class="tag">&lt;button</span> <span class="attr">data-action=</span><span class="string">"save"</span> 
+        <span class="attr">data-user-id=</span><span class="string">"12345"</span>
+        <span class="attr">data-confirm-message=</span><span class="string">"Are you sure?"</span><span class="tag">&gt;</span>
+    Save Changes
+<span class="tag">&lt;/button&gt;</span>
+
+<span class="comment">&lt;!-- Accessibility attributes --&gt;</span>
+<span class="tag">&lt;section</span> <span class="attr">role=</span><span class="string">"banner"</span> 
+         <span class="attr">aria-label=</span><span class="string">"Main navigation"</span>
+         <span class="attr">tabindex=</span><span class="string">"0"</span><span class="tag">&gt;</span>
+    Navigation content
+<span class="tag">&lt;/section&gt;</span></pre>
+                    </div>
+                    
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Common Global Attributes</h4>
+                            <ul>
+                                <li><code>id</code> - Unique identifier</li>
+                                <li><code>class</code> - CSS class names</li>
+                                <li><code>style</code> - Inline CSS styles</li>
+                                <li><code>title</code> - Tooltip text</li>
+                                <li><code>lang</code> - Language specification</li>
+                                <li><code>hidden</code> - Hide element</li>
+                                <li><code>contenteditable</code> - Make editable</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Data & Accessibility</h4>
+                            <ul>
+                                <li><code>data-*</code> - Custom data attributes</li>
+                                <li><code>aria-*</code> - Accessibility attributes</li>
+                                <li><code>role</code> - Element purpose</li>
+                                <li><code>tabindex</code> - Tab order</li>
+                                <li><code>draggable</code> - Drag and drop</li>
+                                <li><code>spellcheck</code> - Spell checking</li>
+                                <li><code>translate</code> - Translation hint</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Element-Specific Attributes</h2>
+                    <p>
+                        Many attributes are specific to certain elements and provide specialized functionality:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Link attributes --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"https://example.com"</span>
+   <span class="attr">target=</span><span class="string">"_blank"</span>
+   <span class="attr">rel=</span><span class="string">"noopener noreferrer"</span>
+   <span class="attr">download=</span><span class="string">"filename.pdf"</span><span class="tag">&gt;</span>
+    Download Link
+<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- Image attributes --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"image.jpg"</span>
+     <span class="attr">alt=</span><span class="string">"Descriptive text"</span>
+     <span class="attr">width=</span><span class="string">"400"</span>
+     <span class="attr">height=</span><span class="string">"300"</span>
+     <span class="attr">loading=</span><span class="string">"lazy"</span>
+     <span class="attr">srcset=</span><span class="string">"image-2x.jpg 2x"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Form input attributes --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"email"</span>
+       <span class="attr">name=</span><span class="string">"user-email"</span>
+       <span class="attr">placeholder=</span><span class="string">"Enter your email"</span>
+       <span class="attr">required</span>
+       <span class="attr">autocomplete=</span><span class="string">"email"</span>
+       <span class="attr">pattern=</span><span class="string">"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- Table attributes --&gt;</span>
+<span class="tag">&lt;table</span> <span class="attr">border=</span><span class="string">"1"</span> <span class="attr">cellpadding=</span><span class="string">"10"</span> <span class="attr">cellspacing=</span><span class="string">"0"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;th</span> <span class="attr">colspan=</span><span class="string">"2"</span> <span class="attr">scope=</span><span class="string">"col"</span><span class="tag">&gt;</span>Header<span class="tag">&lt;/th&gt;</span>
+<span class="tag">&lt;/table&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Practical Examples</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Complete navigation example --&gt;</span>
+<span class="tag">&lt;nav</span> <span class="attr">role=</span><span class="string">"navigation"</span> <span class="attr">aria-label=</span><span class="string">"Main menu"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;ul</span> <span class="attr">class=</span><span class="string">"menu-list"</span> <span class="attr">id=</span><span class="string">"main-menu"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;li&gt;</span>
+            <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/home"</span> 
+               <span class="attr">class=</span><span class="string">"menu-link active"</span>
+               <span class="attr">aria-current=</span><span class="string">"page"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;</span>
+        <span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>
+            <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"/about"</span> 
+               <span class="attr">class=</span><span class="string">"menu-link"</span>
+               <span class="attr">title=</span><span class="string">"Learn about our company"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;</span>
+        <span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/nav&gt;</span>
+
+<span class="comment">&lt;!-- Interactive form with attributes --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">action=</span><span class="string">"/submit"</span> 
+      <span class="attr">method=</span><span class="string">"POST"</span>
+      <span class="attr">novalidate</span>
+      <span class="attr">data-form-type=</span><span class="string">"contact"</span><span class="tag">&gt;</span>
+      
+    <span class="tag">&lt;fieldset</span> <span class="attr">disabled=</span><span class="string">"false"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;legend&gt;</span>Contact Information<span class="tag">&lt;/legend&gt;</span>
+        
+        <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"name"</span> <span class="attr">class=</span><span class="string">"required"</span><span class="tag">&gt;</span>Name<span class="tag">&lt;/label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span>
+               <span class="attr">id=</span><span class="string">"name"</span>
+               <span class="attr">name=</span><span class="string">"fullName"</span>
+               <span class="attr">required</span>
+               <span class="attr">minlength=</span><span class="string">"2"</span>
+               <span class="attr">maxlength=</span><span class="string">"50"</span>
+               <span class="attr">autocomplete=</span><span class="string">"name"</span>
+               <span class="attr">aria-describedby=</span><span class="string">"name-help"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;small</span> <span class="attr">id=</span><span class="string">"name-help"</span><span class="tag">&gt;</span>Enter your full name<span class="tag">&lt;/small&gt;</span>
+    <span class="tag">&lt;/fieldset&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Always quote attribute values</li>
+                                <li>Use lowercase for attribute names</li>
+                                <li>Provide meaningful alt text for images</li>
+                                <li>Use semantic attributes (aria-*, role)</li>
+                                <li>Validate HTML to catch attribute errors</li>
+                                <li>Use data-* for custom data</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Mixing single and double quotes</li>
+                                <li>Using deprecated attributes</li>
+                                <li>Inline styles when external CSS is better</li>
+                                <li>Missing required attributes (alt, href)</li>
+                                <li>Duplicate id values on the same page</li>
+                                <li>Non-standard attribute names</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="divs-and-spans.html" class="nav-button prev">
+                        ← Previous: Divs and Spans
+                    </a>
+                    <a href="classes-and-ids.html" class="nav-button next">
+                        Next: Classes and IDs →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

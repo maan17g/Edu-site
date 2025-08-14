@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Divs and Spans - CodeMaster Academy</title>
+    <meta name="description" content="Master HTML div and span elements for structure and styling">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html" class="active">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Divs and Spans</h1>
+                    <p class="topic-description">
+                        Learn to use div and span elements for creating flexible layouts and applying precise styling in your HTML documents.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding Div and Span Elements</h2>
+                    <p>
+                        The <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> elements are generic containers that serve as building blocks for web layouts and styling. While they don't have any inherent semantic meaning, they provide essential structure for organizing content and applying CSS styles with precision.
+                    </p>
+                    <p>
+                        These elements are fundamental to modern web development, enabling developers to create complex layouts, apply specific styling, and organize content logically. Understanding when and how to use them effectively is crucial for creating maintainable and flexible web pages.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🎯 Key Concept</h4>
+                        <p>Div is a block-level container for grouping elements, while span is an inline container for styling specific portions of text or content within other elements.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>The DIV Element</h2>
+                    <p>
+                        The <code>&lt;div&gt;</code> (division) element is a block-level container that groups other HTML elements together. It's commonly used for layout purposes and as a styling hook:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic div structure --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>Section Title<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This content is grouped inside a div element.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;ul&gt;</span>
+        <span class="tag">&lt;li&gt;</span>List item 1<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;</span>List item 2<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Div for layout purposes --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"header"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"logo"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>My Website<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"navigation"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;nav&gt;</span>
+            <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;</span>
+            <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;</span>
+        <span class="tag">&lt;/nav&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Common DIV Use Cases:</div>
+                        <ul>
+                            <li>Creating layout containers and sections</li>
+                            <li>Grouping related elements for styling</li>
+                            <li>Building complex page structures</li>
+                            <li>Implementing responsive grid systems</li>
+                            <li>Creating modular components</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>The SPAN Element</h2>
+                    <p>
+                        The <code>&lt;span&gt;</code> element is an inline container used to apply styles to specific portions of text or content within other elements:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Styling specific text portions --&gt;</span>
+<span class="tag">&lt;p&gt;</span>
+    The <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"highlight"</span><span class="tag">&gt;</span>most important<span class="tag">&lt;/span&gt;</span> part of this 
+    sentence is highlighted, while <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"emphasis"</span><span class="tag">&gt;</span>this part<span class="tag">&lt;/span&gt;</span> 
+    has different emphasis.
+<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- Applying inline styles --&gt;</span>
+<span class="tag">&lt;h3&gt;</span>
+    Product Price: <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"price"</span><span class="tag">&gt;</span>$99.99<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;/h3&gt;</span>
+
+<span class="comment">&lt;!-- Multiple spans in one element --&gt;</span>
+<span class="tag">&lt;address&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"name"</span><span class="tag">&gt;</span>John Doe<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;br&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"street"</span><span class="tag">&gt;</span>123 Main Street<span class="tag">&lt;/span&gt;</span><span class="tag">&lt;br&gt;</span>
+    <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"city"</span><span class="tag">&gt;</span>New York<span class="tag">&lt;/span&gt;</span>, 
+    <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"zip"</span><span class="tag">&gt;</span>10001<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;/address&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Block vs Inline Behavior</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>DIV (Block Element)</h4>
+                            <ul>
+                                <li>Takes full width available</li>
+                                <li>Starts on a new line</li>
+                                <li>Can contain other block and inline elements</li>
+                                <li>Height and width can be set</li>
+                                <li>Margins and padding work on all sides</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>SPAN (Inline Element)</h4>
+                            <ul>
+                                <li>Takes only necessary width</li>
+                                <li>Stays on the same line</li>
+                                <li>Can only contain other inline elements</li>
+                                <li>Height and width cannot be set</li>
+                                <li>Vertical margins/padding don't affect layout</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Practical Layout Example</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Card-based layout using divs --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"card-container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"card"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"card-header"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;h3&gt;</span>Article Title<span class="tag">&lt;/h3&gt;</span>
+            <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"date"</span><span class="tag">&gt;</span>January 15, 2025<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+        
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"card-body"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;p&gt;</span>
+                This article discusses 
+                <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"keyword"</span><span class="tag">&gt;</span>important concepts<span class="tag">&lt;/span&gt;</span> 
+                in web development and provides 
+                <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"highlight"</span><span class="tag">&gt;</span>practical examples<span class="tag">&lt;/span&gt;</span>.
+            <span class="tag">&lt;/p&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+        
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"card-footer"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"author"</span><span class="tag">&gt;</span>By Jane Smith<span class="tag">&lt;/span&gt;</span>
+            <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"read-time"</span><span class="tag">&gt;</span>5 min read<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Use semantic elements first (header, main, section, etc.)</li>
+                                <li>Use divs for layout when semantic elements don't apply</li>
+                                <li>Use spans for inline styling only</li>
+                                <li>Give meaningful class names</li>
+                                <li>Keep nesting levels reasonable</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Excessive div nesting ("div soup")</li>
+                                <li>Using divs when semantic elements exist</li>
+                                <li>Using spans for block-level content</li>
+                                <li>Generic class names like "div1" or "content"</li>
+                                <li>Empty divs just for styling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="semantic-elements.html" class="nav-button prev">
+                        ← Previous: Semantic Elements
+                    </a>
+                    <a href="attributes.html" class="nav-button next">
+                        Next: Attributes →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Validation - CodeMaster Academy</title>
+    <meta name="description" content="Learn HTML validation techniques to ensure clean, standards-compliant, and error-free web code">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html" class="active">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Validation</h1>
+                    <p class="topic-description">
+                        Learn to validate HTML code for standards compliance, better performance, and improved accessibility across all browsers and devices.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Why HTML Validation Matters</h2>
+                    <p>
+                        HTML validation ensures your code follows web standards, improves browser compatibility, enhances accessibility, and helps prevent rendering issues. Valid HTML is more likely to display consistently across different browsers and devices, while also being more accessible to assistive technologies.
+                    </p>
+                    <p>
+                        Beyond technical benefits, validation helps you write cleaner, more maintainable code and catch errors early in the development process. It's an essential quality assurance step for professional web development.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>✓ Key Concept</h4>
+                        <p>HTML validation is like proofreading your code—it catches errors, ensures standards compliance, and improves the overall quality of your web pages.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>HTML Validation Tools</h2>
+                    <p>
+                        Several tools can help validate your HTML code for errors and standards compliance:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- W3C Markup Validator --&gt;</span>
+<span class="comment">Online: https://validator.w3.org/</span>
+<span class="comment">Upload file, enter URL, or paste HTML directly</span>
+
+<span class="comment">&lt;!-- Browser Developer Tools --&gt;</span>
+<span class="comment">Chrome DevTools: F12 &gt; Console (shows HTML errors)
+Firefox Developer Tools: F12 &gt; Console 
+Safari Web Inspector: Cmd+Option+I &gt; Console</span>
+
+<span class="comment">&lt;!-- Command Line Tools --&gt;</span>
+<span class="comment"># Install HTML5 Validator (Nu Html Checker)
+npm install -g vnu-jar
+
+# Validate single file
+java -jar vnu.jar index.html
+
+# Validate multiple files
+java -jar vnu.jar *.html
+
+# Validate with specific options
+java -jar vnu.jar --errors-only --format text index.html</span>
+
+<span class="comment">&lt;!-- VS Code Extensions --&gt;</span>
+<span class="comment">- HTMLHint: Real-time HTML validation
+- W3C Validator: Direct W3C validation in editor
+- HTML Validator: Comprehensive HTML checking
+- Auto Close Tag: Prevents unclosed tag errors</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Popular Validation Tools:</div>
+                        <ul>
+                            <li><strong>W3C Markup Validator:</strong> Official HTML validation service</li>
+                            <li><strong>Nu Html Checker:</strong> Modern HTML5 validator</li>
+                            <li><strong>HTMLHint:</strong> Fast, lightweight HTML linter</li>
+                            <li><strong>Tidy:</strong> HTML syntax checker and cleaner</li>
+                            <li><strong>Browser DevTools:</strong> Built-in validation features</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Common HTML Errors</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- COMMON ERROR #1: Unclosed tags --&gt;</span>
+<span class="error">&lt;!-- ❌ WRONG: Missing closing tag --&gt;</span>
+<span class="tag">&lt;div&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This paragraph is not closed properly
+    <span class="tag">&lt;span&gt;</span>This span is also unclosed
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="success">&lt;!-- ✅ CORRECT: Properly closed tags --&gt;</span>
+<span class="tag">&lt;div&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This paragraph is properly closed<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;span&gt;</span>This span is properly closed<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- COMMON ERROR #2: Improperly nested tags --&gt;</span>
+<span class="error">&lt;!-- ❌ WRONG: Overlapping tags --&gt;</span>
+<span class="tag">&lt;p&gt;</span>This is <span class="tag">&lt;strong&gt;</span>bold and <span class="tag">&lt;em&gt;</span>italic<span class="tag">&lt;/strong&gt;</span> text<span class="tag">&lt;/em&gt;&lt;/p&gt;</span>
+
+<span class="success">&lt;!-- ✅ CORRECT: Properly nested tags --&gt;</span>
+<span class="tag">&lt;p&gt;</span>This is <span class="tag">&lt;strong&gt;</span>bold and <span class="tag">&lt;em&gt;</span>italic<span class="tag">&lt;/em&gt;&lt;/strong&gt;</span> text<span class="tag">&lt;/p&gt;</span>
+
+<span class="comment">&lt;!-- COMMON ERROR #3: Duplicate IDs --&gt;</span>
+<span class="error">&lt;!-- ❌ WRONG: Same ID used multiple times --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"header"</span><span class="tag">&gt;</span>First header<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"header"</span><span class="tag">&gt;</span>Second header<span class="tag">&lt;/div&gt;</span>
+
+<span class="success">&lt;!-- ✅ CORRECT: Unique IDs --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"main-header"</span><span class="tag">&gt;</span>First header<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"secondary-header"</span><span class="tag">&gt;</span>Second header<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- COMMON ERROR #4: Missing required attributes --&gt;</span>
+<span class="error">&lt;!-- ❌ WRONG: Image without alt attribute --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"photo.jpg"</span><span class="tag">&gt;</span>
+
+<span class="success">&lt;!-- ✅ CORRECT: Image with alt attribute --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"photo.jpg"</span> <span class="attr">alt=</span><span class="string">"Description of the photo"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- COMMON ERROR #5: Invalid attribute values --&gt;</span>
+<span class="error">&lt;!-- ❌ WRONG: Invalid input type --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"invalid-type"</span><span class="tag">&gt;</span>
+
+<span class="success">&lt;!-- ✅ CORRECT: Valid input type --&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- COMMON ERROR #6: Incorrect DOCTYPE --&gt;</span>
+<span class="error">&lt;!-- ❌ WRONG: Missing or incorrect DOCTYPE --&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+
+<span class="success">&lt;!-- ✅ CORRECT: Proper HTML5 DOCTYPE --&gt;</span>
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr">lang=</span><span class="string">"en"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Form Validation</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- HTML5 built-in form validation --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">action=</span><span class="string">"/submit"</span> <span class="attr">method=</span><span class="string">"POST"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Required field validation --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"name"</span><span class="tag">&gt;</span>Full Name (Required)<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> 
+           <span class="attr">id=</span><span class="string">"name"</span> 
+           <span class="attr">name=</span><span class="string">"name"</span>
+           <span class="attr">required</span>
+           <span class="attr">aria-invalid=</span><span class="string">"false"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Email validation --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"email"</span><span class="tag">&gt;</span>Email Address<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"email"</span> 
+           <span class="attr">id=</span><span class="string">"email"</span> 
+           <span class="attr">name=</span><span class="string">"email"</span>
+           <span class="attr">required</span>
+           <span class="attr">placeholder=</span><span class="string">"user@example.com"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Pattern validation --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"phone"</span><span class="tag">&gt;</span>Phone Number<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"tel"</span> 
+           <span class="attr">id=</span><span class="string">"phone"</span> 
+           <span class="attr">name=</span><span class="string">"phone"</span>
+           <span class="attr">pattern=</span><span class="string">"[0-9]{3}-[0-9]{3}-[0-9]{4}"</span>
+           <span class="attr">placeholder=</span><span class="string">"123-456-7890"</span>
+           <span class="attr">title=</span><span class="string">"Please enter phone number in format: 123-456-7890"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Length validation --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"password"</span><span class="tag">&gt;</span>Password<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"password"</span> 
+           <span class="attr">id=</span><span class="string">"password"</span> 
+           <span class="attr">name=</span><span class="string">"password"</span>
+           <span class="attr">minlength=</span><span class="string">"8"</span>
+           <span class="attr">maxlength=</span><span class="string">"128"</span>
+           <span class="attr">required</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Number range validation --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"age"</span><span class="tag">&gt;</span>Age<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"number"</span> 
+           <span class="attr">id=</span><span class="string">"age"</span> 
+           <span class="attr">name=</span><span class="string">"age"</span>
+           <span class="attr">min=</span><span class="string">"18"</span> 
+           <span class="attr">max=</span><span class="string">"120"</span>
+           <span class="attr">step=</span><span class="string">"1"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Custom validation with JavaScript --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"confirm-password"</span><span class="tag">&gt;</span>Confirm Password<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"password"</span> 
+           <span class="attr">id=</span><span class="string">"confirm-password"</span> 
+           <span class="attr">name=</span><span class="string">"confirmPassword"</span>
+           <span class="attr">oninput=</span><span class="string">"validatePasswordMatch()"</span><span class="tag">&gt;</span>
+    
+    <span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"submit"</span><span class="tag">&gt;</span>Submit Form<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/form&gt;</span>
+
+<span class="tag">&lt;script&gt;</span>
+<span class="keyword">function</span> validatePasswordMatch() {
+    <span class="keyword">const</span> password = document.getElementById(<span class="string">'password'</span>).value;
+    <span class="keyword">const</span> confirmPassword = document.getElementById(<span class="string">'confirm-password'</span>);
+    
+    <span class="keyword">if</span> (password !== confirmPassword.value) {
+        confirmPassword.setCustomValidity(<span class="string">'Passwords do not match'</span>);
+    } <span class="keyword">else</span> {
+        confirmPassword.setCustomValidity(<span class="string">''</span>);
+    }
+}
+<span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Accessibility Validation</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Accessibility validation checklist --&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Valid: Proper heading hierarchy --&gt;</span>
+<span class="tag">&lt;h1&gt;</span>Main Page Title<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;h2&gt;</span>Section Title<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;h3&gt;</span>Subsection Title<span class="tag">&lt;/h3&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Valid: Images with alt text --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"chart.png"</span> 
+     <span class="attr">alt=</span><span class="string">"Sales chart showing 20% increase from Q1 to Q2"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Valid: Form labels properly associated --&gt;</span>
+<span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"username"</span><span class="tag">&gt;</span>Username<span class="tag">&lt;/label&gt;</span>
+<span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">id=</span><span class="string">"username"</span> <span class="attr">name=</span><span class="string">"username"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Valid: Proper ARIA usage --&gt;</span>
+<span class="tag">&lt;button</span> <span class="attr">aria-expanded=</span><span class="string">"false"</span> 
+        <span class="attr">aria-controls=</span><span class="string">"dropdown-menu"</span>
+        <span class="attr">onclick=</span><span class="string">"toggleDropdown()"</span><span class="tag">&gt;</span>
+    Options
+<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;ul</span> <span class="attr">id=</span><span class="string">"dropdown-menu"</span> <span class="attr">aria-hidden=</span><span class="string">"true"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Option 1<span class="tag">&lt;/li&gt;</span>
+    <span class="tag">&lt;li&gt;</span>Option 2<span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Valid: Color contrast and focus indicators --&gt;</span>
+<span class="tag">&lt;style&gt;</span>
+<span class="selector">.button</span> {
+    <span class="property">background-color</span>: <span class="value">#007bff</span>;
+    <span class="property">color</span>: <span class="value">white</span>; <span class="comment">/* Good contrast ratio */</span>
+    <span class="property">border</span>: <span class="value">none</span>;
+    <span class="property">padding</span>: <span class="value">10px 20px</span>;
+}
+
+<span class="selector">.button:focus</span> {
+    <span class="property">outline</span>: <span class="value">2px solid #0056b3</span>;
+    <span class="property">outline-offset</span>: <span class="value">2px</span>;
+}
+<span class="tag">&lt;/style&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Performance Validation</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Performance optimization validation --&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Valid: Optimized images --&gt;</span>
+<span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"hero-image.webp"</span> 
+     <span class="attr">alt=</span><span class="string">"Hero banner"</span>
+     <span class="attr">width=</span><span class="string">"1200"</span> 
+     <span class="attr">height=</span><span class="string">"600"</span>
+     <span class="attr">loading=</span><span class="string">"lazy"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Valid: Efficient resource loading --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"preconnect"</span> <span class="attr">href=</span><span class="string">"https://fonts.googleapis.com"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"preload"</span> <span class="attr">href=</span><span class="string">"critical.css"</span> <span class="attr">as=</span><span class="string">"style"</span><span class="tag">&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Valid: Responsive images --&gt;</span>
+<span class="tag">&lt;picture&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">media=</span><span class="string">"(min-width: 800px)"</span> <span class="attr">srcset=</span><span class="string">"large.webp"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">media=</span><span class="string">"(min-width: 400px)"</span> <span class="attr">srcset=</span><span class="string">"medium.webp"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"small.webp"</span> <span class="attr">alt=</span><span class="string">"Responsive image"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/picture&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Valid: Minified and compressed resources --&gt;</span>
+<span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"stylesheet"</span> <span class="attr">href=</span><span class="string">"styles.min.css"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;script</span> <span class="attr">src=</span><span class="string">"script.min.js"</span> <span class="attr">defer</span><span class="tag">&gt;&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Automated Validation Workflow</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Package.json scripts for validation */</span>
+{
+  <span class="string">"scripts"</span>: {
+    <span class="string">"validate:html"</span>: <span class="string">"java -jar vnu.jar src/*.html"</span>,
+    <span class="string">"validate:accessibility"</span>: <span class="string">"pa11y-ci --sitemap http://localhost:3000/sitemap.xml"</span>,
+    <span class="string">"validate:lighthouse"</span>: <span class="string">"lighthouse http://localhost:3000 --output=json"</span>,
+    <span class="string">"validate:all"</span>: <span class="string">"npm run validate:html && npm run validate:accessibility"</span>
+  }
+}
+
+<span class="comment">/* GitHub Actions workflow for automated validation */</span>
+name: HTML Validation
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Validate HTML
+        run: |
+          curl -H <span class="string">"Content-Type: text/html; charset=utf-8"</span> \
+               --data-binary @index.html \
+               https://validator.w3.org/nu/?out=gnu
+      
+      - name: Run accessibility tests
+        run: |
+          npm install -g pa11y
+          pa11y http://localhost:3000
+
+<span class="comment">/* ESLint configuration for HTML validation */</span>
+{
+  <span class="string">"extends"</span>: [<span class="string">"@html-eslint/recommended"</span>],
+  <span class="string">"parser"</span>: <span class="string">"@html-eslint/parser"</span>,
+  <span class="string">"rules"</span>: {
+    <span class="string">"@html-eslint/require-doctype"</span>: <span class="string">"error"</span>,
+    <span class="string">"@html-eslint/require-lang"</span>: <span class="string">"error"</span>,
+    <span class="string">"@html-eslint/require-closing-tags"</span>: <span class="string">"error"</span>,
+    <span class="string">"@html-eslint/no-duplicate-id"</span>: <span class="string">"error"</span>
+  }
+}</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Validation Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Validate HTML regularly during development</li>
+                                <li>Fix validation errors before deployment</li>
+                                <li>Use automated validation tools in CI/CD pipelines</li>
+                                <li>Test across multiple browsers and devices</li>
+                                <li>Validate both markup and accessibility</li>
+                                <li>Use semantic HTML elements correctly</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Ignoring validation warnings</li>
+                                <li>Using outdated HTML practices</li>
+                                <li>Skipping accessibility validation</li>
+                                <li>Validating only in one browser</li>
+                                <li>Mixing HTML versions inconsistently</li>
+                                <li>Using non-standard attributes without data- prefix</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Validation Error Types</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Syntax Errors</h4>
+                            <ul>
+                                <li>Unclosed tags</li>
+                                <li>Improperly nested elements</li>
+                                <li>Missing quotes around attributes</li>
+                                <li>Invalid attribute names</li>
+                                <li>Missing DOCTYPE declaration</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Semantic Errors</h4>
+                            <ul>
+                                <li>Inappropriate element usage</li>
+                                <li>Missing required attributes</li>
+                                <li>Invalid attribute values</li>
+                                <li>Duplicate IDs</li>
+                                <li>Accessibility violations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="accessibility.html" class="nav-button prev">
+                        ← Previous: Accessibility
+                    </a>
+                    <a href="entities.html" class="nav-button next">
+                        Next: Entities →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

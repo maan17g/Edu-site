@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features - CodeMaster Academy</title>
+    <meta name="description" content="Discover HTML5's powerful new features including semantic elements, multimedia support, and modern web APIs">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html" class="active">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML5 Features</h1>
+                    <p class="topic-description">
+                        Explore HTML5's revolutionary features that transformed web development with semantic elements, multimedia support, and powerful APIs.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Introduction to HTML5</h2>
+                    <p>
+                        HTML5 represents a major evolution in web technology, introducing semantic elements, native multimedia support, enhanced form controls, and powerful APIs that enable rich, interactive web applications without relying on external plugins like Flash or Silverlight.
+                    </p>
+                    <p>
+                        This modern standard emphasizes semantic markup, accessibility, cross-platform compatibility, and performance, making it the foundation for contemporary web development and mobile applications.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🚀 Key Concept</h4>
+                        <p>HTML5 transformed the web from static documents to dynamic, app-like experiences with native support for multimedia, graphics, and complex interactions.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>New Semantic Elements</h2>
+                    <p>
+                        HTML5 introduced semantic elements that provide meaning to document structure:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- HTML5 semantic document structure --&gt;</span>
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr">lang=</span><span class="string">"en"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">charset=</span><span class="string">"UTF-8"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;title&gt;</span>HTML5 Semantic Structure<span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+    <span class="comment">&lt;!-- Main page header --&gt;</span>
+    <span class="tag">&lt;header&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Website Title<span class="tag">&lt;/h1&gt;</span>
+        <span class="tag">&lt;nav&gt;</span>
+            <span class="tag">&lt;ul&gt;</span>
+                <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"#home"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"#about"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="tag">&lt;/ul&gt;</span>
+        <span class="tag">&lt;/nav&gt;</span>
+    <span class="tag">&lt;/header&gt;</span>
+    
+    <span class="comment">&lt;!-- Main content area --&gt;</span>
+    <span class="tag">&lt;main&gt;</span>
+        <span class="tag">&lt;article&gt;</span>
+            <span class="tag">&lt;header&gt;</span>
+                <span class="tag">&lt;h2&gt;</span>Article Title<span class="tag">&lt;/h2&gt;</span>
+                <span class="tag">&lt;time</span> <span class="attr">datetime=</span><span class="string">"2025-01-15"</span><span class="tag">&gt;</span>January 15, 2025<span class="tag">&lt;/time&gt;</span>
+            <span class="tag">&lt;/header&gt;</span>
+            
+            <span class="tag">&lt;section&gt;</span>
+                <span class="tag">&lt;h3&gt;</span>Introduction<span class="tag">&lt;/h3&gt;</span>
+                <span class="tag">&lt;p&gt;</span>Article content here...<span class="tag">&lt;/p&gt;</span>
+            <span class="tag">&lt;/section&gt;</span>
+            
+            <span class="tag">&lt;aside&gt;</span>
+                <span class="tag">&lt;h4&gt;</span>Related Information<span class="tag">&lt;/h4&gt;</span>
+                <span class="tag">&lt;p&gt;</span>Sidebar content...<span class="tag">&lt;/p&gt;</span>
+            <span class="tag">&lt;/aside&gt;</span>
+            
+            <span class="tag">&lt;footer&gt;</span>
+                <span class="tag">&lt;p&gt;</span>Author: <span class="tag">&lt;strong&gt;</span>John Doe<span class="tag">&lt;/strong&gt;</span><span class="tag">&lt;/p&gt;</span>
+            <span class="tag">&lt;/footer&gt;</span>
+        <span class="tag">&lt;/article&gt;</span>
+    <span class="tag">&lt;/main&gt;</span>
+    
+    <span class="comment">&lt;!-- Page footer --&gt;</span>
+    <span class="tag">&lt;footer&gt;</span>
+        <span class="tag">&lt;p&gt;</span>&copy; 2025 Website Name. All rights reserved.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/footer&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">HTML5 Semantic Elements:</div>
+                        <ul>
+                            <li><code>&lt;header&gt;</code> - Page or section header</li>
+                            <li><code>&lt;nav&gt;</code> - Navigation links</li>
+                            <li><code>&lt;main&gt;</code> - Primary content</li>
+                            <li><code>&lt;article&gt;</code> - Standalone content</li>
+                            <li><code>&lt;section&gt;</code> - Thematic content group</li>
+                            <li><code>&lt;aside&gt;</code> - Sidebar content</li>
+                            <li><code>&lt;footer&gt;</code> - Page or section footer</li>
+                            <li><code>&lt;figure&gt;</code> - Self-contained content</li>
+                            <li><code>&lt;time&gt;</code> - Dates and times</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Enhanced Form Controls</h2>
+                    <p>
+                        HTML5 introduced new input types and form attributes for better user experience:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- HTML5 form with new input types --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">action=</span><span class="string">"/submit"</span> <span class="attr">method=</span><span class="string">"POST"</span> <span class="attr">novalidate</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Email input with validation --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"email"</span><span class="tag">&gt;</span>Email:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"email"</span> <span class="attr">id=</span><span class="string">"email"</span> <span class="attr">name=</span><span class="string">"email"</span> 
+           <span class="attr">placeholder=</span><span class="string">"user@example.com"</span> <span class="attr">required</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- URL input --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"website"</span><span class="tag">&gt;</span>Website:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"url"</span> <span class="attr">id=</span><span class="string">"website"</span> <span class="attr">name=</span><span class="string">"website"</span>
+           <span class="attr">placeholder=</span><span class="string">"https://example.com"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Number input with constraints --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"age"</span><span class="tag">&gt;</span>Age:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"number"</span> <span class="attr">id=</span><span class="string">"age"</span> <span class="attr">name=</span><span class="string">"age"</span>
+           <span class="attr">min=</span><span class="string">"18"</span> <span class="attr">max=</span><span class="string">"100"</span> <span class="attr">step=</span><span class="string">"1"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Date and time inputs --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"birthday"</span><span class="tag">&gt;</span>Birthday:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"date"</span> <span class="attr">id=</span><span class="string">"birthday"</span> <span class="attr">name=</span><span class="string">"birthday"</span><span class="tag">&gt;</span>
+    
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"appointment"</span><span class="tag">&gt;</span>Appointment:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"datetime-local"</span> <span class="attr">id=</span><span class="string">"appointment"</span> <span class="attr">name=</span><span class="string">"appointment"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Color picker --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"color"</span><span class="tag">&gt;</span>Favorite Color:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"color"</span> <span class="attr">id=</span><span class="string">"color"</span> <span class="attr">name=</span><span class="string">"color"</span> <span class="attr">value=</span><span class="string">"#007bff"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Range slider --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"volume"</span><span class="tag">&gt;</span>Volume:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"range"</span> <span class="attr">id=</span><span class="string">"volume"</span> <span class="attr">name=</span><span class="string">"volume"</span>
+           <span class="attr">min=</span><span class="string">"0"</span> <span class="attr">max=</span><span class="string">"100"</span> <span class="attr">value=</span><span class="string">"50"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Datalist for autocomplete --&gt;</span>
+    <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"browser"</span><span class="tag">&gt;</span>Choose Browser:<span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">id=</span><span class="string">"browser"</span> <span class="attr">name=</span><span class="string">"browser"</span> <span class="attr">list=</span><span class="string">"browsers"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;datalist</span> <span class="attr">id=</span><span class="string">"browsers"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;option</span> <span class="attr">value=</span><span class="string">"Chrome"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;option</span> <span class="attr">value=</span><span class="string">"Firefox"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;option</span> <span class="attr">value=</span><span class="string">"Safari"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;option</span> <span class="attr">value=</span><span class="string">"Edge"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/datalist&gt;</span>
+    
+    <span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"submit"</span><span class="tag">&gt;</span>Submit<span class="tag">&lt;/button&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Multimedia Support</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Native audio support --&gt;</span>
+<span class="tag">&lt;audio</span> <span class="attr">controls</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="string">"audio.mp3"</span> <span class="attr">type=</span><span class="string">"audio/mpeg"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="string">"audio.ogg"</span> <span class="attr">type=</span><span class="string">"audio/ogg"</span><span class="tag">&gt;</span>
+    Your browser does not support audio playback.
+<span class="tag">&lt;/audio&gt;</span>
+
+<span class="comment">&lt;!-- Native video support --&gt;</span>
+<span class="tag">&lt;video</span> <span class="attr">width=</span><span class="string">"640"</span> <span class="attr">height=</span><span class="string">"480"</span> <span class="attr">controls</span> <span class="attr">poster=</span><span class="string">"thumbnail.jpg"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="string">"video.mp4"</span> <span class="attr">type=</span><span class="string">"video/mp4"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="string">"video.webm"</span> <span class="attr">type=</span><span class="string">"video/webm"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;track</span> <span class="attr">src=</span><span class="string">"subtitles.vtt"</span> <span class="attr">kind=</span><span class="string">"subtitles"</span> <span class="attr">srclang=</span><span class="string">"en"</span> <span class="attr">label=</span><span class="string">"English"</span><span class="tag">&gt;</span>
+    Your browser does not support video playback.
+<span class="tag">&lt;/video&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Graphics and Visualization</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Canvas for dynamic graphics --&gt;</span>
+<span class="tag">&lt;canvas</span> <span class="attr">id=</span><span class="string">"myCanvas"</span> <span class="attr">width=</span><span class="string">"400"</span> <span class="attr">height=</span><span class="string">"300"</span><span class="tag">&gt;</span>
+    Your browser does not support Canvas.
+<span class="tag">&lt;/canvas&gt;</span>
+
+<span class="comment">&lt;!-- SVG for scalable vector graphics --&gt;</span>
+<span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"200"</span> <span class="attr">height=</span><span class="string">"200"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;circle</span> <span class="attr">cx=</span><span class="string">"100"</span> <span class="attr">cy=</span><span class="string">"100"</span> <span class="attr">r=</span><span class="string">"50"</span> 
+            <span class="attr">fill=</span><span class="string">"#007bff"</span> <span class="attr">stroke=</span><span class="string">"#333"</span> <span class="attr">stroke-width=</span><span class="string">"2"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/circle&gt;</span>
+    <span class="tag">&lt;text</span> <span class="attr">x=</span><span class="string">"100"</span> <span class="attr">y=</span><span class="string">"105"</span> <span class="attr">text-anchor=</span><span class="string">"middle"</span> <span class="attr">fill=</span><span class="string">"white"</span><span class="tag">&gt;</span>SVG<span class="tag">&lt;/text&gt;</span>
+<span class="tag">&lt;/svg&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>HTML5 APIs and Features</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Storage APIs</h4>
+                            <ul>
+                                <li>Local Storage - Persistent data</li>
+                                <li>Session Storage - Session data</li>
+                                <li>IndexedDB - Database storage</li>
+                                <li>Application Cache - Offline support</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Multimedia APIs</h4>
+                            <ul>
+                                <li>Web Audio API - Advanced audio</li>
+                                <li>WebRTC - Real-time communication</li>
+                                <li>Media Stream API - Camera/microphone</li>
+                                <li>Fullscreen API - Fullscreen mode</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Graphics APIs</h4>
+                            <ul>
+                                <li>Canvas 2D - 2D graphics</li>
+                                <li>WebGL - 3D graphics</li>
+                                <li>SVG - Vector graphics</li>
+                                <li>CSS3 - Advanced styling</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Device APIs</h4>
+                            <ul>
+                                <li>Geolocation - Location services</li>
+                                <li>Device Orientation - Motion sensing</li>
+                                <li>Battery API - Battery status</li>
+                                <li>Vibration API - Device vibration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Modern HTML5 Example</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Complete HTML5 application structure --&gt;</span>
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr">lang=</span><span class="string">"en"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">charset=</span><span class="string">"UTF-8"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"viewport"</span> <span class="attr">content=</span><span class="string">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;title&gt;</span>HTML5 Media Gallery<span class="tag">&lt;/title&gt;</span>
+    <span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"manifest"</span> <span class="attr">href=</span><span class="string">"/manifest.json"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;header&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>HTML5 Media Gallery<span class="tag">&lt;/h1&gt;</span>
+        <span class="tag">&lt;nav&gt;</span>
+            <span class="tag">&lt;ul&gt;</span>
+                <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"#photos"</span><span class="tag">&gt;</span>Photos<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"#videos"</span><span class="tag">&gt;</span>Videos<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="tag">&lt;/ul&gt;</span>
+        <span class="tag">&lt;/nav&gt;</span>
+    <span class="tag">&lt;/header&gt;</span>
+    
+    <span class="tag">&lt;main&gt;</span>
+        <span class="tag">&lt;section</span> <span class="attr">id=</span><span class="string">"photos"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;header&gt;</span>
+                <span class="tag">&lt;h2&gt;</span>Photo Gallery<span class="tag">&lt;/h2&gt;</span>
+            <span class="tag">&lt;/header&gt;</span>
+            
+            <span class="tag">&lt;article&gt;</span>
+                <span class="tag">&lt;figure&gt;</span>
+                    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"photo1.jpg"</span> <span class="attr">alt=</span><span class="string">"Beautiful landscape"</span> 
+                         <span class="attr">loading=</span><span class="string">"lazy"</span><span class="tag">&gt;</span>
+                    <span class="tag">&lt;figcaption&gt;</span>
+                        <span class="tag">&lt;h3&gt;</span>Mountain View<span class="tag">&lt;/h3&gt;</span>
+                        <span class="tag">&lt;p&gt;</span>Taken at sunrise in the Rocky Mountains<span class="tag">&lt;/p&gt;</span>
+                        <span class="tag">&lt;time</span> <span class="attr">datetime=</span><span class="string">"2025-01-10"</span><span class="tag">&gt;</span>January 10, 2025<span class="tag">&lt;/time&gt;</span>
+                    <span class="tag">&lt;/figcaption&gt;</span>
+                <span class="tag">&lt;/figure&gt;</span>
+            <span class="tag">&lt;/article&gt;</span>
+        <span class="tag">&lt;/section&gt;</span>
+        
+        <span class="tag">&lt;section</span> <span class="attr">id=</span><span class="string">"videos"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;header&gt;</span>
+                <span class="tag">&lt;h2&gt;</span>Video Gallery<span class="tag">&lt;/h2&gt;</span>
+            <span class="tag">&lt;/header&gt;</span>
+            
+            <span class="tag">&lt;article&gt;</span>
+                <span class="tag">&lt;header&gt;</span>
+                    <span class="tag">&lt;h3&gt;</span>Nature Documentary<span class="tag">&lt;/h3&gt;</span>
+                <span class="tag">&lt;/header&gt;</span>
+                
+                <span class="tag">&lt;video</span> <span class="attr">controls</span> <span class="attr">preload=</span><span class="string">"metadata"</span><span class="tag">&gt;</span>
+                    <span class="tag">&lt;source</span> <span class="attr">src=</span><span class="string">"nature.mp4"</span> <span class="attr">type=</span><span class="string">"video/mp4"</span><span class="tag">&gt;</span>
+                    <span class="tag">&lt;track</span> <span class="attr">src=</span><span class="string">"captions.vtt"</span> <span class="attr">kind=</span><span class="string">"captions"</span> 
+                           <span class="attr">srclang=</span><span class="string">"en"</span> <span class="attr">label=</span><span class="string">"English Captions"</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;/video&gt;</span>
+                
+                <span class="tag">&lt;details&gt;</span>
+                    <span class="tag">&lt;summary&gt;</span>Video Details<span class="tag">&lt;/summary&gt;</span>
+                    <span class="tag">&lt;p&gt;</span>This documentary explores wildlife in their natural habitat.<span class="tag">&lt;/p&gt;</span>
+                    <span class="tag">&lt;dl&gt;</span>
+                        <span class="tag">&lt;dt&gt;</span>Duration:<span class="tag">&lt;/dt&gt;</span>
+                        <span class="tag">&lt;dd&gt;</span>45 minutes<span class="tag">&lt;/dd&gt;</span>
+                        <span class="tag">&lt;dt&gt;</span>Resolution:<span class="tag">&lt;/dt&gt;</span>
+                        <span class="tag">&lt;dd&gt;</span>1080p HD<span class="tag">&lt;/dd&gt;</span>
+                    <span class="tag">&lt;/dl&gt;</span>
+                <span class="tag">&lt;/details&gt;</span>
+            <span class="tag">&lt;/article&gt;</span>
+        <span class="tag">&lt;/section&gt;</span>
+    <span class="tag">&lt;/main&gt;</span>
+    
+    <span class="tag">&lt;footer&gt;</span>
+        <span class="tag">&lt;p&gt;</span>&copy; 2025 Media Gallery. Built with HTML5.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;/footer&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Use semantic elements for proper structure</li>
+                                <li>Provide fallbacks for multimedia content</li>
+                                <li>Include proper accessibility attributes</li>
+                                <li>Validate HTML5 markup</li>
+                                <li>Use progressive enhancement</li>
+                                <li>Optimize for mobile devices</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Using semantic elements incorrectly</li>
+                                <li>Overusing div elements when semantic elements exist</li>
+                                <li>Missing alternative content for media</li>
+                                <li>Ignoring browser compatibility</li>
+                                <li>Complex nested structures</li>
+                                <li>Missing metadata for multimedia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="meta-tags.html" class="nav-button prev">
+                        ← Previous: Meta Tags
+                    </a>
+                    <a href="audio-and-video.html" class="nav-button next">
+                        Next: Audio and Video →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

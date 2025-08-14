@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Comments - CodeMaster Academy</title>
+    <meta name="description" content="Learn to use HTML comments for documentation, debugging, and code organization">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html" class="active">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Comments</h1>
+                    <p class="topic-description">
+                        Master HTML comments for better code documentation, debugging, and team collaboration.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding HTML Comments</h2>
+                    <p>
+                        HTML comments are annotations within your code that are not displayed in the browser but remain visible in the source code. They serve as documentation, explanations, and temporary placeholders that help developers understand, maintain, and debug web pages more effectively.
+                    </p>
+                    <p>
+                        Comments are essential for professional web development, enabling clear communication between team members and providing context for complex code sections. They're also invaluable for debugging and temporarily disabling code without deleting it.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>📝 Key Concept</h4>
+                        <p>HTML comments are invisible to website visitors but visible to developers, making them perfect for documentation and code organization.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Comment Syntax</h2>
+                    <p>
+                        HTML comments use a specific syntax that browsers recognize and ignore during rendering:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- This is a single-line comment --&gt;</span>
+
+<span class="comment">&lt;!-- 
+This is a multi-line comment
+that spans several lines
+and can contain detailed explanations
+--&gt;</span>
+
+<span class="comment">&lt;!-- Comments can appear anywhere in HTML --&gt;</span>
+<span class="tag">&lt;html&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+    <span class="comment">&lt;!-- Meta information and stylesheets go here --&gt;</span>
+    <span class="tag">&lt;title&gt;</span>My Website<span class="tag">&lt;/title&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+    <span class="comment">&lt;!-- Main content starts here --&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>Welcome to My Site<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Comment Syntax Rules:</div>
+                        <ul>
+                            <li>Start with <code>&lt;!--</code></li>
+                            <li>End with <code>--&gt;</code></li>
+                            <li>Can span multiple lines</li>
+                            <li>Cannot be nested inside other comments</li>
+                            <li>Should not contain double hyphens (--) within the content</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Documentation Comments</h2>
+                    <p>
+                        Use comments to document your code structure, explain complex sections, and provide context:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ========================================
+     WEBSITE HEADER SECTION
+     Contains logo, navigation, and user menu
+     Updated: January 2025
+     ======================================== --&gt;</span>
+<span class="tag">&lt;header</span> <span class="attr">class=</span><span class="string">"site-header"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Company logo --&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"logo"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"logo.png"</span> <span class="attr">alt=</span><span class="string">"Company Logo"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="comment">&lt;!-- Primary navigation menu --&gt;</span>
+    <span class="tag">&lt;nav</span> <span class="attr">class=</span><span class="string">"main-nav"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;ul&gt;</span>
+            <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"/home"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"/about"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="comment">&lt;!-- More menu items can be added here --&gt;</span>
+        <span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;/nav&gt;</span>
+<span class="tag">&lt;/header&gt;</span>
+
+<span class="comment">&lt;!-- MAIN CONTENT AREA --&gt;</span>
+<span class="tag">&lt;main</span> <span class="attr">role=</span><span class="string">"main"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Hero section with call-to-action --&gt;</span>
+    <span class="tag">&lt;section</span> <span class="attr">class=</span><span class="string">"hero"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>Welcome to Our Service<span class="tag">&lt;/h1&gt;</span>
+        <span class="comment">&lt;!-- TODO: Add hero image background --&gt;</span>
+        <span class="tag">&lt;button</span> <span class="attr">class=</span><span class="string">"cta-button"</span><span class="tag">&gt;</span>Get Started<span class="tag">&lt;/button&gt;</span>
+    <span class="tag">&lt;/section&gt;</span>
+<span class="tag">&lt;/main&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Debugging and Development Comments</h2>
+                    <p>
+                        Comments are invaluable for debugging, testing, and development workflows:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- DEVELOPMENT VERSION - Remove before production --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"debug-info"</span><span class="attr">style=</span><span class="string">"background: red; padding: 10px;"</span><span class="tag">&gt;</span>
+    Debug mode active
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- Temporarily disabled until CSS is fixed
+&lt;div class="broken-feature"&gt;
+    &lt;h3&gt;Feature Under Development&lt;/h3&gt;
+    &lt;p&gt;This section needs CSS updates before activation.&lt;/p&gt;
+&lt;/div&gt;
+--&gt;</span>
+
+<span class="comment">&lt;!-- Alternative version for A/B testing --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"version-a"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>Version A Headline<span class="tag">&lt;/h2&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- 
+&lt;div class="version-b"&gt;
+    &lt;h2&gt;Version B Headline&lt;/h2&gt;
+&lt;/div&gt;
+--&gt;</span>
+
+<span class="comment">&lt;!-- FIXME: This form doesn't submit properly on mobile devices --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">action=</span><span class="string">"/submit"</span> <span class="attr">method=</span><span class="string">"POST"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Form fields here --&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Conditional Comments (Historical)</h2>
+                    <p>
+                        While no longer needed for modern development, conditional comments were historically used for Internet Explorer compatibility:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Historical example - Not needed for modern browsers --&gt;</span>
+
+<span class="comment">&lt;!--[if IE]&gt;
+    &lt;link rel="stylesheet" href="ie-specific.css"&gt;
+&lt;![endif]--&gt;</span>
+
+<span class="comment">&lt;!--[if lt IE 9]&gt;
+    &lt;script src="html5shiv.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;</span>
+
+<span class="comment">&lt;!-- Modern approach: Use feature detection instead --&gt;</span>
+<span class="tag">&lt;script&gt;</span>
+    <span class="comment">// Modern feature detection</span>
+    if (!document.querySelector) {
+        <span class="comment">// Load polyfill</span>
+    }
+<span class="tag">&lt;/script&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Practical Examples</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ====================================
+     E-COMMERCE PRODUCT PAGE TEMPLATE
+     Author: Development Team
+     Last Modified: January 15, 2025
+     ==================================== --&gt;</span>
+
+<span class="tag">&lt;article</span> <span class="attr">class=</span><span class="string">"product"</span> <span class="attr">itemscope</span> <span class="attr">itemtype=</span><span class="string">"https://schema.org/Product"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Product image gallery --&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"product-images"</span><span class="tag">&gt;</span>
+        <span class="comment">&lt;!-- Main product image --&gt;</span>
+        <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"product-main.jpg"</span> 
+             <span class="attr">alt=</span><span class="string">"Product Name"</span>
+             <span class="attr">itemprop=</span><span class="string">"image"</span><span class="tag">&gt;</span>
+        
+        <span class="comment">&lt;!-- Thumbnail gallery --&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"thumbnails"</span><span class="tag">&gt;</span>
+            <span class="comment">&lt;!-- Additional product images --&gt;</span>
+            <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"thumb1.jpg"</span> <span class="attr">alt=</span><span class="string">"View 1"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"thumb2.jpg"</span> <span class="attr">alt=</span><span class="string">"View 2"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="comment">&lt;!-- Product information --&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"product-info"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h1</span> <span class="attr">itemprop=</span><span class="string">"name"</span><span class="tag">&gt;</span>Premium Wireless Headphones<span class="tag">&lt;/h1&gt;</span>
+        
+        <span class="comment">&lt;!-- Pricing information --&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"price-section"</span><span class="tag">&gt;</span>
+            <span class="comment">&lt;!-- Current price --&gt;</span>
+            <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"current-price"</span> <span class="attr">itemprop=</span><span class="string">"price"</span><span class="tag">&gt;</span>$149.99<span class="tag">&lt;/span&gt;</span>
+            
+            <span class="comment">&lt;!-- Original price (if on sale) --&gt;</span>
+            <span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"original-price"</span><span class="tag">&gt;</span>$199.99<span class="tag">&lt;/span&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+        
+        <span class="comment">&lt;!-- Product description --&gt;</span>
+        <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"description"</span> <span class="attr">itemprop=</span><span class="string">"description"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;p&gt;</span>Experience superior sound quality with our premium wireless headphones.<span class="tag">&lt;/p&gt;</span>
+            <span class="comment">&lt;!-- More description content here --&gt;</span>
+        <span class="tag">&lt;/div&gt;</span>
+        
+        <span class="comment">&lt;!-- Purchase options --&gt;</span>
+        <span class="tag">&lt;form</span> <span class="attr">class=</span><span class="string">"add-to-cart"</span><span class="tag">&gt;</span>
+            <span class="comment">&lt;!-- Quantity selector --&gt;</span>
+            <span class="tag">&lt;label</span> <span class="attr">for=</span><span class="string">"quantity"</span><span class="tag">&gt;</span>Quantity:<span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;select</span> <span class="attr">id=</span><span class="string">"quantity"</span> <span class="attr">name=</span><span class="string">"qty"</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;option</span> <span class="attr">value=</span><span class="string">"1"</span><span class="tag">&gt;</span>1<span class="tag">&lt;/option&gt;</span>
+                <span class="tag">&lt;option</span> <span class="attr">value=</span><span class="string">"2"</span><span class="tag">&gt;</span>2<span class="tag">&lt;/option&gt;</span>
+            <span class="tag">&lt;/select&gt;</span>
+            
+            <span class="comment">&lt;!-- Add to cart button --&gt;</span>
+            <span class="tag">&lt;button</span> <span class="attr">type=</span><span class="string">"submit"</span> <span class="attr">class=</span><span class="string">"btn-add-cart"</span><span class="tag">&gt;</span>
+                Add to Cart
+            <span class="tag">&lt;/button&gt;</span>
+        <span class="tag">&lt;/form&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/article&gt;</span>
+
+<span class="comment">&lt;!-- Related products section --&gt;</span>
+<span class="tag">&lt;section</span> <span class="attr">class=</span><span class="string">"related-products"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2&gt;</span>You May Also Like<span class="tag">&lt;/h2&gt;</span>
+    <span class="comment">&lt;!-- Product grid will be populated by JavaScript --&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">id=</span><span class="string">"related-grid"</span><span class="tag">&gt;&lt;/div&gt;</span>
+<span class="tag">&lt;/section&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Document complex code sections</li>
+                                <li>Use comments for TODO items and bugs</li>
+                                <li>Explain why, not just what</li>
+                                <li>Keep comments up-to-date</li>
+                                <li>Use consistent comment formatting</li>
+                                <li>Comment unusual or clever solutions</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Over-commenting obvious code</li>
+                                <li>Leaving sensitive information in comments</li>
+                                <li>Using comments to hide bad code</li>
+                                <li>Outdated or misleading comments</li>
+                                <li>Comments that repeat the code</li>
+                                <li>Nested comments (unsupported)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="classes-and-ids.html" class="nav-button prev">
+                        ← Previous: Classes and IDs
+                    </a>
+                    <a href="meta-tags.html" class="nav-button next">
+                        Next: Meta Tags →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

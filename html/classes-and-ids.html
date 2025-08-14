@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Classes and IDs - CodeMaster Academy</title>
+    <meta name="description" content="Learn the difference between HTML classes and IDs, and when to use each for styling and functionality">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html" class="active">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML Classes and IDs</h1>
+                    <p class="topic-description">
+                        Master the distinction between classes and IDs, and learn when to use each for optimal HTML structure and CSS styling.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding Classes and IDs</h2>
+                    <p>
+                        Classes and IDs are fundamental HTML attributes that serve as selectors for CSS styling and JavaScript functionality. While both provide ways to target specific elements, they have distinct purposes and usage patterns that every web developer must understand.
+                    </p>
+                    <p>
+                        The key difference lies in uniqueness and reusability: IDs must be unique on a page and identify single elements, while classes can be reused across multiple elements to apply consistent styling or behavior.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>🎯 Key Concept</h4>
+                        <p>IDs are for unique identification (like a social security number), while classes are for grouping elements with shared characteristics (like a club membership).</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>HTML ID Attribute</h2>
+                    <p>
+                        The ID attribute provides a unique identifier for a single element on the page:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Unique identification --&gt;</span>
+<span class="tag">&lt;header</span> <span class="attr">id=</span><span class="string">"main-header"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>Website Title<span class="tag">&lt;/h1&gt;</span>
+<span class="tag">&lt;/header&gt;</span>
+
+<span class="tag">&lt;nav</span> <span class="attr">id=</span><span class="string">"primary-navigation"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;ul&gt;</span>
+        <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"#home"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="tag">&lt;li&gt;&lt;a</span> <span class="attr">href=</span><span class="string">"#about"</span><span class="tag">&gt;</span>About<span class="tag">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/nav&gt;</span>
+
+<span class="tag">&lt;main</span> <span class="attr">id=</span><span class="string">"content"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;section</span> <span class="attr">id=</span><span class="string">"home"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h2&gt;</span>Home Section<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;/section&gt;</span>
+    
+    <span class="tag">&lt;section</span> <span class="attr">id=</span><span class="string">"about"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h2&gt;</span>About Section<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;/section&gt;</span>
+<span class="tag">&lt;/main&gt;</span>
+
+<span class="tag">&lt;footer</span> <span class="attr">id=</span><span class="string">"site-footer"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;p&gt;</span>Copyright information<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/footer&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">ID Usage Rules:</div>
+                        <ul>
+                            <li>Must be unique per page (only one element per ID)</li>
+                            <li>Case-sensitive</li>
+                            <li>Cannot contain spaces</li>
+                            <li>Must start with a letter (a-z, A-Z)</li>
+                            <li>Can contain letters, digits, hyphens, and underscores</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>HTML Class Attribute</h2>
+                    <p>
+                        The class attribute groups elements that share common styling or functionality:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Multiple elements with same class --&gt;</span>
+<span class="tag">&lt;article</span> <span class="attr">class=</span><span class="string">"blog-post featured"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2</span> <span class="attr">class=</span><span class="string">"post-title"</span><span class="tag">&gt;</span>First Post<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;p</span> <span class="attr">class=</span><span class="string">"post-excerpt"</span><span class="tag">&gt;</span>This is the excerpt...<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#"</span> <span class="attr">class=</span><span class="string">"btn btn-primary"</span><span class="tag">&gt;</span>Read More<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;/article&gt;</span>
+
+<span class="tag">&lt;article</span> <span class="attr">class=</span><span class="string">"blog-post"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;h2</span> <span class="attr">class=</span><span class="string">"post-title"</span><span class="tag">&gt;</span>Second Post<span class="tag">&lt;/h2&gt;</span>
+    <span class="tag">&lt;p</span> <span class="attr">class=</span><span class="string">"post-excerpt"</span><span class="tag">&gt;</span>Another excerpt...<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;a</span> <span class="attr">href=</span><span class="string">"#"</span> <span class="attr">class=</span><span class="string">"btn btn-secondary"</span><span class="tag">&gt;</span>Read More<span class="tag">&lt;/a&gt;</span>
+<span class="tag">&lt;/article&gt;</span>
+
+<span class="comment">&lt;!-- Form elements with classes --&gt;</span>
+<span class="tag">&lt;form</span> <span class="attr">class=</span><span class="string">"contact-form"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;label</span> <span class="attr">class=</span><span class="string">"form-label required"</span><span class="tag">&gt;</span>Name<span class="tag">&lt;/label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"text"</span> <span class="attr">class=</span><span class="string">"form-input"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+    
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"form-group"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;label</span> <span class="attr">class=</span><span class="string">"form-label"</span><span class="tag">&gt;</span>Email<span class="tag">&lt;/label&gt;</span>
+        <span class="tag">&lt;input</span> <span class="attr">type=</span><span class="string">"email"</span> <span class="attr">class=</span><span class="string">"form-input"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/form&gt;</span></pre>
+                    </div>
+                    
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Single Class</h4>
+                            <code>class="primary-button"</code>
+                            <p>Simple styling for one purpose</p>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Multiple Classes</h4>
+                            <code>class="btn btn-large btn-primary"</code>
+                            <p>Modular approach for complex styling</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>CSS Targeting</h2>
+                    <p>
+                        Understanding how to target classes and IDs in CSS is crucial for effective styling:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">/* CSS targeting examples */</span>
+
+<span class="comment">/* Target ID with # */</span>
+<span class="selector">#main-header</span> {
+    <span class="property">background-color</span>: <span class="value">#333</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+    <span class="property">padding</span>: <span class="value">20px</span>;
+}
+
+<span class="comment">/* Target class with . */</span>
+<span class="selector">.blog-post</span> {
+    <span class="property">margin-bottom</span>: <span class="value">30px</span>;
+    <span class="property">padding</span>: <span class="value">20px</span>;
+    <span class="property">border</span>: <span class="value">1px solid #ddd</span>;
+}
+
+<span class="comment">/* Target multiple classes */</span>
+<span class="selector">.btn.btn-primary</span> {
+    <span class="property">background-color</span>: <span class="value">#007bff</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+}
+
+<span class="comment">/* Combine ID and class targeting */</span>
+<span class="selector">#content .featured</span> {
+    <span class="property">border-left</span>: <span class="value">4px solid #ff6b6b</span>;
+}
+
+<span class="comment">/* Target elements within an ID */</span>
+<span class="selector">#primary-navigation ul li a</span> {
+    <span class="property">text-decoration</span>: <span class="value">none</span>;
+    <span class="property">display</span>: <span class="value">block</span>;
+    <span class="property">padding</span>: <span class="value">10px 15px</span>;
+}</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Practical Implementation</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Complete page structure example --&gt;</span>
+<span class="tag">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;html</span> <span class="attr">lang=</span><span class="string">"en"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>Classes and IDs Example<span class="tag">&lt;/title&gt;</span>
+    <span class="tag">&lt;style&gt;</span>
+        <span class="comment">/* ID styles */</span>
+        <span class="selector">#page-header</span> { <span class="property">background</span>: <span class="value">#333</span>; <span class="property">color</span>: <span class="value">white</span>; }
+        <span class="selector">#sidebar</span> { <span class="property">width</span>: <span class="value">250px</span>; <span class="property">float</span>: <span class="value">left</span>; }
+        
+        <span class="comment">/* Class styles */</span>
+        <span class="selector">.card</span> { <span class="property">border</span>: <span class="value">1px solid #ddd</span>; <span class="property">padding</span>: <span class="value">15px</span>; }
+        <span class="selector">.highlight</span> { <span class="property">background-color</span>: <span class="value">yellow</span>; }
+        <span class="selector">.text-center</span> { <span class="property">text-align</span>: <span class="value">center</span>; }
+    <span class="tag">&lt;/style&gt;</span>
+<span class="tag">&lt;/head&gt;</span>
+<span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;header</span> <span class="attr">id=</span><span class="string">"page-header"</span> <span class="attr">class=</span><span class="string">"text-center"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h1&gt;</span>My Website<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;/header&gt;</span>
+    
+    <span class="tag">&lt;aside</span> <span class="attr">id=</span><span class="string">"sidebar"</span> <span class="attr">class=</span><span class="string">"card"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;h3&gt;</span>Navigation<span class="tag">&lt;/h3&gt;</span>
+        <span class="tag">&lt;ul&gt;</span>
+            <span class="tag">&lt;li&gt;</span>Home<span class="tag">&lt;/li&gt;</span>
+            <span class="tag">&lt;li&gt;</span>About<span class="tag">&lt;/li&gt;</span>
+        <span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;/aside&gt;</span>
+    
+    <span class="tag">&lt;main</span> <span class="attr">id=</span><span class="string">"main-content"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;article</span> <span class="attr">class=</span><span class="string">"card highlight"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;h2&gt;</span>Important Article<span class="tag">&lt;/h2&gt;</span>
+            <span class="tag">&lt;p&gt;</span>This content is highlighted and styled as a card.<span class="tag">&lt;/p&gt;</span>
+        <span class="tag">&lt;/article&gt;</span>
+        
+        <span class="tag">&lt;article</span> <span class="attr">class=</span><span class="string">"card"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;h2&gt;</span>Regular Article<span class="tag">&lt;/h2&gt;</span>
+            <span class="tag">&lt;p&gt;</span>This content uses only the card class.<span class="tag">&lt;/p&gt;</span>
+        <span class="tag">&lt;/article&gt;</span>
+    <span class="tag">&lt;/main&gt;</span>
+<span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>When to Use Classes vs IDs</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>Use IDs For:</h4>
+                            <ul>
+                                <li>Unique page sections (header, footer, nav)</li>
+                                <li>JavaScript targeting</li>
+                                <li>Form labels and inputs</li>
+                                <li>Internal page links (anchors)</li>
+                                <li>Specific styling overrides</li>
+                                <li>Modal dialogs and popups</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>Use Classes For:</h4>
+                            <ul>
+                                <li>Reusable styling patterns</li>
+                                <li>Component-based design</li>
+                                <li>Utility classes (text-center, hidden)</li>
+                                <li>State classes (active, disabled)</li>
+                                <li>Responsive design modifiers</li>
+                                <li>Theme variations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Use semantic, descriptive names</li>
+                                <li>Follow consistent naming conventions</li>
+                                <li>Use hyphens to separate words</li>
+                                <li>Keep names readable and meaningful</li>
+                                <li>Use classes for styling, IDs for unique identification</li>
+                                <li>Combine classes for modular design</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Duplicate IDs on the same page</li>
+                                <li>Names based on appearance (red-text, big-box)</li>
+                                <li>Special characters except hyphens and underscores</li>
+                                <li>Starting with numbers or special characters</li>
+                                <li>Overly generic names (content, text, box)</li>
+                                <li>Using IDs for repeated elements</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="attributes.html" class="nav-button prev">
+                        ← Previous: Attributes
+                    </a>
+                    <a href="comments.html" class="nav-button next">
+                        Next: Comments →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

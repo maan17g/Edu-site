@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML SVG - CodeMaster Academy</title>
+    <meta name="description" content="Master SVG (Scalable Vector Graphics) for creating crisp, scalable graphics and icons in HTML">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html" class="active">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">HTML SVG</h1>
+                    <p class="topic-description">
+                        Learn SVG (Scalable Vector Graphics) for creating crisp, scalable graphics, icons, and illustrations that look perfect at any size.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Introduction to SVG</h2>
+                    <p>
+                        SVG (Scalable Vector Graphics) is an XML-based vector image format that creates graphics using mathematical descriptions of shapes, paths, and colors. Unlike bitmap images, SVG graphics are infinitely scalable without quality loss and can be styled with CSS and animated with JavaScript.
+                    </p>
+                    <p>
+                        SVG is perfect for logos, icons, simple illustrations, and graphics that need to look crisp on high-resolution displays and at various sizes. It integrates seamlessly with HTML and can be manipulated like any other DOM element.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>📐 Key Concept</h4>
+                        <p>SVG creates graphics using math-based shapes and paths, making them infinitely scalable and perfect for responsive web design and high-DPI displays.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Basic SVG Structure</h2>
+                    <p>
+                        SVG graphics are defined within the <code>&lt;svg&gt;</code> element with coordinate system and viewBox:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Basic SVG container --&gt;</span>
+<span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"200"</span> <span class="attr">height=</span><span class="string">"200"</span> <span class="attr">viewBox=</span><span class="string">"0 0 200 200"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- SVG content goes here --&gt;</span>
+<span class="tag">&lt;/svg&gt;</span>
+
+<span class="comment">&lt;!-- SVG with namespace (recommended for standalone files) --&gt;</span>
+<span class="tag">&lt;svg</span> <span class="attr">xmlns=</span><span class="string">"http://www.w3.org/2000/svg"</span> 
+     <span class="attr">width=</span><span class="string">"100"</span> <span class="attr">height=</span><span class="string">"100"</span> 
+     <span class="attr">viewBox=</span><span class="string">"0 0 100 100"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Simple circle --&gt;</span>
+    <span class="tag">&lt;circle</span> <span class="attr">cx=</span><span class="string">"50"</span> <span class="attr">cy=</span><span class="string">"50"</span> <span class="attr">r=</span><span class="string">"40"</span> 
+            <span class="attr">fill=</span><span class="string">"#007bff"</span> <span class="attr">stroke=</span><span class="string">"#333"</span> <span class="attr">stroke-width=</span><span class="string">"2"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/circle&gt;</span>
+<span class="tag">&lt;/svg&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">SVG Coordinate System:</div>
+                        <ul>
+                            <li>Origin (0,0) is at top-left corner</li>
+                            <li>X-axis increases rightward</li>
+                            <li>Y-axis increases downward</li>
+                            <li><code>viewBox</code> defines the coordinate system</li>
+                            <li><code>width/height</code> set display dimensions</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Basic SVG Shapes</h2>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"500"</span> <span class="attr">height=</span><span class="string">"300"</span> <span class="attr">viewBox=</span><span class="string">"0 0 500 300"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Rectangle --&gt;</span>
+    <span class="tag">&lt;rect</span> <span class="attr">x=</span><span class="string">"20"</span> <span class="attr">y=</span><span class="string">"20"</span> <span class="attr">width=</span><span class="string">"100"</span> <span class="attr">height=</span><span class="string">"80"</span>
+          <span class="attr">fill=</span><span class="string">"#ff6b6b"</span> <span class="attr">stroke=</span><span class="string">"#333"</span> <span class="attr">stroke-width=</span><span class="string">"2"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/rect&gt;</span>
+    
+    <span class="comment">&lt;!-- Rounded rectangle --&gt;</span>
+    <span class="tag">&lt;rect</span> <span class="attr">x=</span><span class="string">"140"</span> <span class="attr">y=</span><span class="string">"20"</span> <span class="attr">width=</span><span class="string">"100"</span> <span class="attr">height=</span><span class="string">"80"</span>
+          <span class="attr">rx=</span><span class="string">"15"</span> <span class="attr">ry=</span><span class="string">"15"</span>
+          <span class="attr">fill=</span><span class="string">"#4ecdc4"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/rect&gt;</span>
+    
+    <span class="comment">&lt;!-- Circle --&gt;</span>
+    <span class="tag">&lt;circle</span> <span class="attr">cx=</span><span class="string">"320"</span> <span class="attr">cy=</span><span class="string">"60"</span> <span class="attr">r=</span><span class="string">"40"</span>
+            <span class="attr">fill=</span><span class="string">"#45b7d1"</span> <span class="attr">stroke=</span><span class="string">"#333"</span> <span class="attr">stroke-width=</span><span class="string">"3"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/circle&gt;</span>
+    
+    <span class="comment">&lt;!-- Ellipse --&gt;</span>
+    <span class="tag">&lt;ellipse</span> <span class="attr">cx=</span><span class="string">"430"</span> <span class="attr">cy=</span><span class="string">"60"</span> <span class="attr">rx=</span><span class="string">"30"</span> <span class="attr">ry=</span><span class="string">"50"</span>
+             <span class="attr">fill=</span><span class="string">"#f7b731"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/ellipse&gt;</span>
+    
+    <span class="comment">&lt;!-- Line --&gt;</span>
+    <span class="tag">&lt;line</span> <span class="attr">x1=</span><span class="string">"20"</span> <span class="attr">y1=</span><span class="string">"150"</span> <span class="attr">x2=</span><span class="string">"120"</span> <span class="attr">y2=</span><span class="string">"200"</span>
+          <span class="attr">stroke=</span><span class="string">"#5f27cd"</span> <span class="attr">stroke-width=</span><span class="string">"4"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/line&gt;</span>
+    
+    <span class="comment">&lt;!-- Polyline (connected lines) --&gt;</span>
+    <span class="tag">&lt;polyline</span> <span class="attr">points=</span><span class="string">"150,150 200,120 250,180 300,140"</span>
+              <span class="attr">fill=</span><span class="string">"none"</span> <span class="attr">stroke=</span><span class="string">"#ff9ff3"</span> <span class="attr">stroke-width=</span><span class="string">"3"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/polyline&gt;</span>
+    
+    <span class="comment">&lt;!-- Polygon (closed shape) --&gt;</span>
+    <span class="tag">&lt;polygon</span> <span class="attr">points=</span><span class="string">"350,150 400,120 450,150 430,200 370,200"</span>
+             <span class="attr">fill=</span><span class="string">"#54a0ff"</span> <span class="attr">stroke=</span><span class="string">"#333"</span> <span class="attr">stroke-width=</span><span class="string">"2"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/polygon&gt;</span>
+<span class="tag">&lt;/svg&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>SVG Paths</h2>
+                    <p>
+                        Paths are the most powerful SVG element, allowing complex shapes using drawing commands:
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"400"</span> <span class="attr">height=</span><span class="string">"300"</span> <span class="attr">viewBox=</span><span class="string">"0 0 400 300"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Simple path with move and line commands --&gt;</span>
+    <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"M 50 50 L 150 50 L 100 150 Z"</span>
+          <span class="attr">fill=</span><span class="string">"#ff6b6b"</span> <span class="attr">stroke=</span><span class="string">"#333"</span> <span class="attr">stroke-width=</span><span class="string">"2"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/path&gt;</span>
+    
+    <span class="comment">&lt;!-- Curved path with quadratic Bezier --&gt;</span>
+    <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"M 200 50 Q 250 20 300 50 T 350 80"</span>
+          <span class="attr">fill=</span><span class="string">"none"</span> <span class="attr">stroke=</span><span class="string">"#4ecdc4"</span> <span class="attr">stroke-width=</span><span class="string">"3"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/path&gt;</span>
+    
+    <span class="comment">&lt;!-- Cubic Bezier curve --&gt;</span>
+    <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"M 50 150 C 75 100, 125 200, 150 150"</span>
+          <span class="attr">fill=</span><span class="string">"none"</span> <span class="attr">stroke=</span><span class="string">"#45b7d1"</span> <span class="attr">stroke-width=</span><span class="string">"4"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/path&gt;</span>
+    
+    <span class="comment">&lt;!-- Arc path --&gt;</span>
+    <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"M 200 150 A 50 30 0 1 1 300 150"</span>
+          <span class="attr">fill=</span><span class="string">"none"</span> <span class="attr">stroke=</span><span class="string">"#f7b731"</span> <span class="attr">stroke-width=</span><span class="string">"3"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/path&gt;</span>
+    
+    <span class="comment">&lt;!-- Complex shape --&gt;</span>
+    <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"M 50 220 
+             L 80 200 
+             Q 110 180 140 200 
+             L 170 220 
+             C 180 240, 160 260, 140 250
+             Q 110 240 80 250
+             C 60 260, 40 240, 50 220 Z"</span>
+          <span class="attr">fill=</span><span class="string">"#5f27cd"</span> <span class="attr">stroke=</span><span class="string">"#333"</span> <span class="attr">stroke-width=</span><span class="string">"2"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/path&gt;</span>
+<span class="tag">&lt;/svg&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Path Commands:</div>
+                        <ul>
+                            <li><code>M</code> - Move to (start new path)</li>
+                            <li><code>L</code> - Line to</li>
+                            <li><code>H</code> - Horizontal line</li>
+                            <li><code>V</code> - Vertical line</li>
+                            <li><code>Q</code> - Quadratic Bezier curve</li>
+                            <li><code>C</code> - Cubic Bezier curve</li>
+                            <li><code>A</code> - Arc</li>
+                            <li><code>Z</code> - Close path</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>SVG Text and Styling</h2>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"500"</span> <span class="attr">height=</span><span class="string">"200"</span> <span class="attr">viewBox=</span><span class="string">"0 0 500 200"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Basic text --&gt;</span>
+    <span class="tag">&lt;text</span> <span class="attr">x=</span><span class="string">"50"</span> <span class="attr">y=</span><span class="string">"50"</span> 
+          <span class="attr">font-family=</span><span class="string">"Arial, sans-serif"</span> 
+          <span class="attr">font-size=</span><span class="string">"24"</span> 
+          <span class="attr">fill=</span><span class="string">"#333"</span><span class="tag">&gt;</span>
+        SVG Text
+    <span class="tag">&lt;/text&gt;</span>
+    
+    <span class="comment">&lt;!-- Styled text --&gt;</span>
+    <span class="tag">&lt;text</span> <span class="attr">x=</span><span class="string">"200"</span> <span class="attr">y=</span><span class="string">"50"</span> 
+          <span class="attr">font-family=</span><span class="string">"Arial, sans-serif"</span> 
+          <span class="attr">font-size=</span><span class="string">"20"</span> 
+          <span class="attr">font-weight=</span><span class="string">"bold"</span>
+          <span class="attr">fill=</span><span class="string">"#007bff"</span> 
+          <span class="attr">stroke=</span><span class="string">"#333"</span> 
+          <span class="attr">stroke-width=</span><span class="string">"1"</span><span class="tag">&gt;</span>
+        Styled Text
+    <span class="tag">&lt;/text&gt;</span>
+    
+    <span class="comment">&lt;!-- Text along a path --&gt;</span>
+    <span class="tag">&lt;defs&gt;</span>
+        <span class="tag">&lt;path</span> <span class="attr">id=</span><span class="string">"textPath"</span> 
+              <span class="attr">d=</span><span class="string">"M 50 100 Q 150 50 250 100 T 450 100"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;/path&gt;</span>
+    <span class="tag">&lt;/defs&gt;</span>
+    
+    <span class="tag">&lt;text</span> <span class="attr">font-family=</span><span class="string">"Arial"</span> <span class="attr">font-size=</span><span class="string">"18"</span> <span class="attr">fill=</span><span class="string">"#ff6b6b"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;textPath</span> <span class="attr">href=</span><span class="string">"#textPath"</span><span class="tag">&gt;</span>
+            Text Following a Curved Path
+        <span class="tag">&lt;/textPath&gt;</span>
+    <span class="tag">&lt;/text&gt;</span>
+    
+    <span class="comment">&lt;!-- Multi-line text with tspan --&gt;</span>
+    <span class="tag">&lt;text</span> <span class="attr">x=</span><span class="string">"50"</span> <span class="attr">y=</span><span class="string">"150"</span> <span class="attr">font-family=</span><span class="string">"Arial"</span> <span class="attr">font-size=</span><span class="string">"16"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;tspan</span> <span class="attr">x=</span><span class="string">"50"</span> <span class="attr">dy=</span><span class="string">"0"</span> <span class="attr">fill=</span><span class="string">"#4ecdc4"</span><span class="tag">&gt;</span>Line 1<span class="tag">&lt;/tspan&gt;</span>
+        <span class="tag">&lt;tspan</span> <span class="attr">x=</span><span class="string">"50"</span> <span class="attr">dy=</span><span class="string">"20"</span> <span class="attr">fill=</span><span class="string">"#45b7d1"</span><span class="tag">&gt;</span>Line 2<span class="tag">&lt;/tspan&gt;</span>
+        <span class="tag">&lt;tspan</span> <span class="attr">x=</span><span class="string">"50"</span> <span class="attr">dy=</span><span class="string">"20"</span> <span class="attr">fill=</span><span class="string">"#f7b731"</span><span class="tag">&gt;</span>Line 3<span class="tag">&lt;/tspan&gt;</span>
+    <span class="tag">&lt;/text&gt;</span>
+<span class="tag">&lt;/svg&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Gradients and Patterns</h2>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"400"</span> <span class="attr">height=</span><span class="string">"300"</span> <span class="attr">viewBox=</span><span class="string">"0 0 400 300"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;defs&gt;</span>
+        <span class="comment">&lt;!-- Linear gradient --&gt;</span>
+        <span class="tag">&lt;linearGradient</span> <span class="attr">id=</span><span class="string">"linearGrad"</span> <span class="attr">x1=</span><span class="string">"0%"</span> <span class="attr">y1=</span><span class="string">"0%"</span> <span class="attr">x2=</span><span class="string">"100%"</span> <span class="attr">y2=</span><span class="string">"0%"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;stop</span> <span class="attr">offset=</span><span class="string">"0%"</span> <span class="attr">stop-color=</span><span class="string">"#ff6b6b"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;stop</span> <span class="attr">offset=</span><span class="string">"100%"</span> <span class="attr">stop-color=</span><span class="string">"#4ecdc4"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;/linearGradient&gt;</span>
+        
+        <span class="comment">&lt;!-- Radial gradient --&gt;</span>
+        <span class="tag">&lt;radialGradient</span> <span class="attr">id=</span><span class="string">"radialGrad"</span> <span class="attr">cx=</span><span class="string">"50%"</span> <span class="attr">cy=</span><span class="string">"50%"</span> <span class="attr">r=</span><span class="string">"50%"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;stop</span> <span class="attr">offset=</span><span class="string">"0%"</span> <span class="attr">stop-color=</span><span class="string">"#f7b731"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;stop</span> <span class="attr">offset=</span><span class="string">"100%"</span> <span class="attr">stop-color=</span><span class="string">"#5f27cd"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;/radialGradient&gt;</span>
+        
+        <span class="comment">&lt;!-- Pattern --&gt;</span>
+        <span class="tag">&lt;pattern</span> <span class="attr">id=</span><span class="string">"dotPattern"</span> <span class="attr">x=</span><span class="string">"0"</span> <span class="attr">y=</span><span class="string">"0"</span> <span class="attr">width=</span><span class="string">"20"</span> <span class="attr">height=</span><span class="string">"20"</span> 
+                 <span class="attr">patternUnits=</span><span class="string">"userSpaceOnUse"</span><span class="tag">&gt;</span>
+            <span class="tag">&lt;circle</span> <span class="attr">cx=</span><span class="string">"10"</span> <span class="attr">cy=</span><span class="string">"10"</span> <span class="attr">r=</span><span class="string">"5"</span> <span class="attr">fill=</span><span class="string">"#45b7d1"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;/pattern&gt;</span>
+    <span class="tag">&lt;/defs&gt;</span>
+    
+    <span class="comment">&lt;!-- Rectangle with linear gradient --&gt;</span>
+    <span class="tag">&lt;rect</span> <span class="attr">x=</span><span class="string">"50"</span> <span class="attr">y=</span><span class="string">"50"</span> <span class="attr">width=</span><span class="string">"120"</span> <span class="attr">height=</span><span class="string">"80"</span> 
+          <span class="attr">fill=</span><span class="string">"url(#linearGrad)"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Circle with radial gradient --&gt;</span>
+    <span class="tag">&lt;circle</span> <span class="attr">cx=</span><span class="string">"280"</span> <span class="attr">cy=</span><span class="string">"90"</span> <span class="attr">r=</span><span class="string">"50"</span> 
+            <span class="attr">fill=</span><span class="string">"url(#radialGrad)"</span><span class="tag">&gt;</span>
+    
+    <span class="comment">&lt;!-- Rectangle with pattern --&gt;</span>
+    <span class="tag">&lt;rect</span> <span class="attr">x=</span><span class="string">"50"</span> <span class="attr">y=</span><span class="string">"180"</span> <span class="attr">width=</span><span class="string">"200"</span> <span class="attr">height=</span><span class="string">"80"</span> 
+          <span class="attr">fill=</span><span class="string">"url(#dotPattern)"</span> 
+          <span class="attr">stroke=</span><span class="string">"#333"</span> <span class="attr">stroke-width=</span><span class="string">"2"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/svg&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>SVG Icons Example</h2>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Icon library using SVG --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"icon-gallery"</span><span class="tag">&gt;</span>
+    <span class="comment">&lt;!-- Home icon --&gt;</span>
+    <span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"32"</span> <span class="attr">height=</span><span class="string">"32"</span> <span class="attr">viewBox=</span><span class="string">"0 0 24 24"</span> <span class="attr">fill=</span><span class="string">"currentColor"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"M12 2L2 7v10c0 5.55 3.84 10 9 11 5.16-1 9-5.45 9-11V7l-10-5z"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"M12 2l-8 5v8l8 5 8-5v-8l-8-5zm6 11l-6 3.5L6 13V9l6-3.5L18 9v4z"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/svg&gt;</span>
+    
+    <span class="comment">&lt;!-- User icon --&gt;</span>
+    <span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"32"</span> <span class="attr">height=</span><span class="string">"32"</span> <span class="attr">viewBox=</span><span class="string">"0 0 24 24"</span> <span class="attr">fill=</span><span class="string">"none"</span> 
+         <span class="attr">stroke=</span><span class="string">"currentColor"</span> <span class="attr">stroke-width=</span><span class="string">"2"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;circle</span> <span class="attr">cx=</span><span class="string">"12"</span> <span class="attr">cy=</span><span class="string">"7"</span> <span class="attr">r=</span><span class="string">"4"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/svg&gt;</span>
+    
+    <span class="comment">&lt;!-- Settings icon --&gt;</span>
+    <span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"32"</span> <span class="attr">height=</span><span class="string">"32"</span> <span class="attr">viewBox=</span><span class="string">"0 0 24 24"</span> <span class="attr">fill=</span><span class="string">"none"</span>
+         <span class="attr">stroke=</span><span class="string">"currentColor"</span> <span class="attr">stroke-width=</span><span class="string">"2"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;circle</span> <span class="attr">cx=</span><span class="string">"12"</span> <span class="attr">cy=</span><span class="string">"12"</span> <span class="attr">r=</span><span class="string">"3"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"m12 1 4.5 2.8L21 1v6l-2.5 4.5L21 16v6l-4.5-2.8L12 23l-4.5-2.8L3 23v-6l2.5-4.5L3 8V2l4.5 2.8L12 1z"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/svg&gt;</span>
+    
+    <span class="comment">&lt;!-- Heart icon --&gt;</span>
+    <span class="tag">&lt;svg</span> <span class="attr">width=</span><span class="string">"32"</span> <span class="attr">height=</span><span class="string">"32"</span> <span class="attr">viewBox=</span><span class="string">"0 0 24 24"</span> <span class="attr">fill=</span><span class="string">"#ff6b6b"</span><span class="tag">&gt;</span>
+        <span class="tag">&lt;path</span> <span class="attr">d=</span><span class="string">"M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;/svg&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- CSS styling for icons --&gt;</span>
+<span class="tag">&lt;style&gt;</span>
+<span class="selector">.icon-gallery</span> {
+    <span class="property">display</span>: <span class="value">flex</span>;
+    <span class="property">gap</span>: <span class="value">20px</span>;
+    <span class="property">align-items</span>: <span class="value">center</span>;
+    <span class="property">padding</span>: <span class="value">20px</span>;
+}
+
+<span class="selector">.icon-gallery svg</span> {
+    <span class="property">color</span>: <span class="value">#333</span>;
+    <span class="property">cursor</span>: <span class="value">pointer</span>;
+    <span class="property">transition</span>: <span class="value">transform 0.2s ease</span>;
+}
+
+<span class="selector">.icon-gallery svg:hover</span> {
+    <span class="property">transform</span>: <span class="value">scale(1.1)</span>;
+    <span class="property">color</span>: <span class="value">#007bff</span>;
+}
+<span class="tag">&lt;/style&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>SVG vs Other Graphics</h2>
+                    <div class="comparison-grid">
+                        <div class="comparison-item">
+                            <h4>SVG Advantages</h4>
+                            <ul>
+                                <li>Infinitely scalable without quality loss</li>
+                                <li>Small file sizes for simple graphics</li>
+                                <li>Can be styled with CSS</li>
+                                <li>Interactive with JavaScript</li>
+                                <li>Searchable and accessible text</li>
+                                <li>Works in all modern browsers</li>
+                            </ul>
+                        </div>
+                        <div class="comparison-item">
+                            <h4>When to Use SVG</h4>
+                            <ul>
+                                <li>Icons and logos</li>
+                                <li>Simple illustrations</li>
+                                <li>Data visualizations</li>
+                                <li>Interactive graphics</li>
+                                <li>Print-quality graphics</li>
+                                <li>Responsive images</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Best Practices</h2>
+                    <div class="best-practices-grid">
+                        <div class="practice-card">
+                            <h4>✅ Do</h4>
+                            <ul>
+                                <li>Use viewBox for scalable graphics</li>
+                                <li>Optimize SVG files for web delivery</li>
+                                <li>Use semantic naming for IDs and classes</li>
+                                <li>Include title and desc elements for accessibility</li>
+                                <li>Group related elements with &lt;g&gt;</li>
+                                <li>Use CSS for styling when possible</li>
+                            </ul>
+                        </div>
+                        <div class="practice-card">
+                            <h4>❌ Avoid</h4>
+                            <ul>
+                                <li>Using SVG for complex photographs</li>
+                                <li>Inline SVG for large graphics</li>
+                                <li>Excessive decimal precision in coordinates</li>
+                                <li>Unused gradients and patterns</li>
+                                <li>Missing fallbacks for older browsers</li>
+                                <li>Complex animations in critical rendering paths</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-section">
+                    <a href="canvas.html" class="nav-button prev">
+                        ← Previous: Canvas
+                    </a>
+                    <a href="iframes.html" class="nav-button next">
+                        Next: Iframes →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <!-- Overlay for mobile -->
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>
