@@ -1,317 +1,308 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://www.luxe4u.store/</loc>
-  <lastmod>2025-08-15T03:17:35+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://www.luxe4u.store/</loc>
+<lastmod>2025-08-15T06:45:01+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/introduction-to-html.html</loc>
-  <lastmod>2025-08-15T03:54:30+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/introduction-to-html.html</loc>
+<lastmod>2025-08-15T06:45:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/html-structure.html</loc>
-  <lastmod>2025-08-15T03:54:30+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/html-structure.html</loc>
+<lastmod>2025-08-15T06:45:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/head-element.html</loc>
-  <lastmod>2025-08-15T03:54:30+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/head-element.html</loc>
+<lastmod>2025-08-15T06:45:01+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/body-element.html</loc>
-  <lastmod>2025-08-15T03:54:30+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/body-element.html</loc>
+<lastmod>2025-08-15T06:45:02+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/headings.html</loc>
-  <lastmod>2025-08-15T03:54:30+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/headings.html</loc>
+<lastmod>2025-08-15T06:45:02+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/paragraphs.html</loc>
-  <lastmod>2025-08-15T03:54:31+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/paragraphs.html</loc>
+<lastmod>2025-08-15T06:45:02+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/links.html</loc>
-  <lastmod>2025-08-15T03:54:31+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/links.html</loc>
+<lastmod>2025-08-15T06:45:02+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/images.html</loc>
-  <lastmod>2025-08-15T03:54:31+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/images.html</loc>
+<lastmod>2025-08-15T06:45:02+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/lists.html</loc>
-  <lastmod>2025-08-15T03:54:31+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/lists.html</loc>
+<lastmod>2025-08-15T06:45:02+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/tables.html</loc>
-  <lastmod>2025-08-15T03:54:31+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/tables.html</loc>
+<lastmod>2025-08-15T06:45:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/forms.html</loc>
-  <lastmod>2025-08-15T03:54:32+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/forms.html</loc>
+<lastmod>2025-08-15T06:45:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/input-types.html</loc>
-  <lastmod>2025-08-15T03:54:32+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/input-types.html</loc>
+<lastmod>2025-08-15T06:45:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/semantic-elements.html</loc>
-  <lastmod>2025-08-15T03:54:32+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/semantic-elements.html</loc>
+<lastmod>2025-08-15T06:45:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/divs-and-spans.html</loc>
-  <lastmod>2025-08-15T03:54:32+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/divs-and-spans.html</loc>
+<lastmod>2025-08-15T06:45:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/attributes.html</loc>
-  <lastmod>2025-08-15T03:54:32+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/attributes.html</loc>
+<lastmod>2025-08-15T06:45:03+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/classes-and-ids.html</loc>
-  <lastmod>2025-08-15T03:54:32+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/classes-and-ids.html</loc>
+<lastmod>2025-08-15T06:45:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/comments.html</loc>
-  <lastmod>2025-08-15T03:54:33+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/comments.html</loc>
+<lastmod>2025-08-15T06:45:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/meta-tags.html</loc>
-  <lastmod>2025-08-15T03:54:33+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/meta-tags.html</loc>
+<lastmod>2025-08-15T06:45:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/html5-features.html</loc>
-  <lastmod>2025-08-15T03:54:33+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/html5-features.html</loc>
+<lastmod>2025-08-15T06:45:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/audio-and-video.html</loc>
-  <lastmod>2025-08-15T03:54:33+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/audio-and-video.html</loc>
+<lastmod>2025-08-15T06:45:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/canvas.html</loc>
-  <lastmod>2025-08-15T03:54:33+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/canvas.html</loc>
+<lastmod>2025-08-15T06:45:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/svg.html</loc>
-  <lastmod>2025-08-15T03:54:33+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/svg.html</loc>
+<lastmod>2025-08-15T06:45:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/iframes.html</loc>
-  <lastmod>2025-08-15T03:54:34+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/iframes.html</loc>
+<lastmod>2025-08-15T06:45:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/accessibility.html</loc>
-  <lastmod>2025-08-15T03:54:34+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/accessibility.html</loc>
+<lastmod>2025-08-15T06:45:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/validation.html</loc>
-  <lastmod>2025-08-15T03:54:34+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/validation.html</loc>
+<lastmod>2025-08-15T06:45:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/entities.html</loc>
-  <lastmod>2025-08-15T03:54:34+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/entities.html</loc>
+<lastmod>2025-08-15T06:45:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/microdata.html</loc>
-  <lastmod>2025-08-15T03:54:34+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/microdata.html</loc>
+<lastmod>2025-08-15T06:45:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/web-components.html</loc>
-  <lastmod>2025-08-15T03:54:34+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/web-components.html</loc>
+<lastmod>2025-08-15T06:45:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/html/best-practices.html</loc>
-  <lastmod>2025-08-15T03:54:35+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/html/best-practices.html</loc>
+<lastmod>2025-08-15T06:45:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/introduction-to-css.html</loc>
-  <lastmod>2025-08-15T03:54:35+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/introduction-to-css.html</loc>
+<lastmod>2025-08-15T06:45:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/css-syntax.html</loc>
-  <lastmod>2025-08-15T03:54:35+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/css-syntax.html</loc>
+<lastmod>2025-08-15T06:45:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/selectors.html</loc>
-  <lastmod>2025-08-15T03:54:35+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/selectors.html</loc>
+<lastmod>2025-08-15T06:45:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/colors.html</loc>
-  <lastmod>2025-08-15T03:54:35+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/colors.html</loc>
+<lastmod>2025-08-15T06:45:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/typography.html</loc>
-  <lastmod>2025-08-15T03:54:35+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/typography.html</loc>
+<lastmod>2025-08-15T06:45:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/box-model.html</loc>
-  <lastmod>2025-08-15T03:54:35+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/box-model.html</loc>
+<lastmod>2025-08-15T06:45:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/display.html</loc>
-  <lastmod>2025-08-15T03:54:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/display.html</loc>
+<lastmod>2025-08-15T06:45:08+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/positioning.html</loc>
-  <lastmod>2025-08-15T03:54:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/positioning.html</loc>
+<lastmod>2025-08-15T06:45:08+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/flexbox.html</loc>
-  <lastmod>2025-08-15T03:54:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/flexbox.html</loc>
+<lastmod>2025-08-15T06:45:08+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/grid.html</loc>
-  <lastmod>2025-08-15T03:54:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/grid.html</loc>
+<lastmod>2025-08-15T06:45:08+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/floats.html</loc>
-  <lastmod>2025-08-15T03:54:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/floats.html</loc>
+<lastmod>2025-08-15T06:45:08+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/margins-and-padding.html</loc>
-  <lastmod>2025-08-15T03:54:36+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/margins-and-padding.html</loc>
+<lastmod>2025-08-15T06:45:08+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/borders.html</loc>
-  <lastmod>2025-08-15T03:54:37+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/borders.html</loc>
+<lastmod>2025-08-15T06:45:09+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/backgrounds.html</loc>
-  <lastmod>2025-08-15T03:54:37+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/backgrounds.html</loc>
+<lastmod>2025-08-15T06:45:09+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/gradients.html</loc>
-  <lastmod>2025-08-15T03:54:37+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/gradients.html</loc>
+<lastmod>2025-08-15T06:45:09+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/shadows.html</loc>
-  <lastmod>2025-08-15T03:54:37+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/shadows.html</loc>
+<lastmod>2025-08-15T06:45:09+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/transforms.html</loc>
-  <lastmod>2025-08-15T03:54:37+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/transforms.html</loc>
+<lastmod>2025-08-15T06:45:09+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/transitions.html</loc>
-  <lastmod>2025-08-15T03:54:37+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/transitions.html</loc>
+<lastmod>2025-08-15T06:45:09+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/animations.html</loc>
-  <lastmod>2025-08-15T03:54:37+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/animations.html</loc>
+<lastmod>2025-08-15T06:45:09+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/pseudo-classes.html</loc>
-  <lastmod>2025-08-15T03:54:38+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/pseudo-classes.html</loc>
+<lastmod>2025-08-15T06:45:10+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/pseudo-elements.html</loc>
-  <lastmod>2025-08-15T03:54:38+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/pseudo-elements.html</loc>
+<lastmod>2025-08-15T06:45:10+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/media-queries.html</loc>
-  <lastmod>2025-08-15T03:54:38+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/media-queries.html</loc>
+<lastmod>2025-08-15T06:45:10+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/responsive-design.html</loc>
-  <lastmod>2025-08-15T03:54:38+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/responsive-design.html</loc>
+<lastmod>2025-08-15T06:45:10+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/variables.html</loc>
-  <lastmod>2025-08-15T03:54:38+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/variables.html</loc>
+<lastmod>2025-08-15T06:45:10+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/units.html</loc>
-  <lastmod>2025-08-15T03:54:38+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/units.html</loc>
+<lastmod>2025-08-15T06:45:10+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/z-index.html</loc>
-  <lastmod>2025-08-15T03:54:38+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/z-index.html</loc>
+<lastmod>2025-08-15T06:45:11+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/overflow.html</loc>
-  <lastmod>2025-08-15T03:54:39+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/overflow.html</loc>
+<lastmod>2025-08-15T06:45:11+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/filters.html</loc>
-  <lastmod>2025-08-15T03:54:39+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/filters.html</loc>
+<lastmod>2025-08-15T06:45:11+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/blend-modes.html</loc>
-  <lastmod>2025-08-15T03:54:39+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/blend-modes.html</loc>
+<lastmod>2025-08-15T06:45:11+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/css/best-practices.html</loc>
-  <lastmod>2025-08-15T03:54:39+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.luxe4u.store/css/best-practices.html</loc>
+<lastmod>2025-08-15T06:45:11+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.luxe4u.store/index.html</loc>
-  <lastmod>2025-08-15T03:54:39+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.luxe4u.store/index.html</loc>
+<lastmod>2025-08-15T06:45:11+00:00</lastmod>
+<priority>0.64</priority>
 </url>
-
-
 </urlset>
