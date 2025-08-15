@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property - CodeMaster Academy</title>
+    <meta name="description" content="Understand the CSS display property and how it affects element layout and behavior.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html" class="active">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Display Property</h1>
+                    <p class="topic-description">
+                        Learn about the fundamental CSS `display` property and how it controls the layout behavior of elements.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding the Display Property</h2>
+                    <p>
+                        The CSS **`display`** property is one of the most important properties for controlling the layout of elements on a webpage. It defines how an element is rendered and how it interacts with other elements in terms of space and flow. Every HTML element has a default `display` value, but you can override it with CSS to achieve different layout behaviors.
+                    </p>
+                    <p>
+                        Understanding `display` is crucial for effective page structuring and responsive design, as it dictates whether an element takes up an entire line, flows alongside other elements, or behaves as a flexible container.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>📝 Key Concept</h4>
+                        <p>The <code>display</code> property dictates an element's type of display box. This box type determines how the element's width, height, and content layout are handled, and how it interacts with its siblings.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Common `display` Values</h2>
+                    <p>
+                        There are several `display` values, but the most commonly used ones are `block`, `inline`, and `inline-block`. Modern CSS also introduces `flex` and `grid` for more advanced layout systems.
+                    </p>
+
+                    <h3><code>display: block;</code></h3>
+                    <p>
+                        Block-level elements always start on a new line and take up the full available width by default. They respect `width`, `height`, `margin`, and `padding` properties. Examples include `<div>`, `<p>`, `<h1>` - `<h6>`, and `<ul>`.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- HTML --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"block-element"</span><span class="tag">&gt;</span>Block Element 1<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"block-element"</span><span class="tag">&gt;</span>Block Element 2<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">/* CSS */</span>
+<span class="selector">.block-element</span> {
+    <span class="property">background-color</span>: <span class="value">var(--primary-color)</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+    <span class="property">margin</span>: <span class="value">10px 0</span>;
+    <span class="property">padding</span>: <span class="value">15px</span>;
+    <span class="property">width</span>: <span class="value">200px</span>; <span class="comment">/* You can set width */</span>
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Block Elements</div>
+                        <div style="background-color: var(--primary-color); color: white; margin: 10px 0; padding: 15px; width: 200px;">Block Element 1</div>
+                        <div style="background-color: var(--primary-color); color: white; margin: 10px 0; padding: 15px; width: 250px;">Block Element 2 (different width)</div>
+                    </div>
+
+                    <h3><code>display: inline;</code></h3>
+                    <p>
+                        Inline elements do not start on a new line and only take up as much width as their content requires. They do not respect `width`, `height`, `margin-top`, or `margin-bottom` (though `margin-left` and `margin-right` work). `padding` works horizontally but can cause overlap issues vertically. Examples include `<span>`, `<a>`, `<strong>`, `<em>`.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- HTML --&gt;</span>
+<span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"inline-element"</span><span class="tag">&gt;</span>Inline Text 1<span class="tag">&lt;/span&gt;</span>
+<span class="tag">&lt;span</span> <span class="attr">class=</span><span class="string">"inline-element"</span><span class="tag">&gt;</span>Inline Text 2<span class="tag">&lt;/span&gt;</span>
+
+<span class="comment">/* CSS */</span>
+<span class="selector">.inline-element</span> {
+    <span class="property">background-color</span>: <span class="value">var(--secondary-color)</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+    <span class="property">margin</span>: <span class="value">5px</span>; <span class="comment">/* Top/bottom margin won't apply */</span>
+    <span class="property">padding</span>: <span class="value">5px 10px</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Inline Elements</div>
+                        <span style="background-color: var(--secondary-color); color: white; margin: 5px; padding: 5px 10px;">Inline Text 1</span>
+                        <span style="background-color: var(--secondary-color); color: white; margin: 5px; padding: 5px 10px;">Inline Text 2</span>
+                        This is some surrounding text to show inline behavior.
+                    </div>
+
+                    <h3><code>display: inline-block;</code></h3>
+                    <p>
+                        Inline-block elements combine features of both inline and block elements. They flow horizontally like inline elements but respect `width`, `height`, `margin`, and `padding` properties like block elements. They do not force a new line after them. This makes them useful for creating grid-like layouts with more control than pure inline elements.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- HTML --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"inline-block-element"</span><span class="tag">&gt;</span>Item A<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"inline-block-element"</span><span class="tag">&gt;</span>Item B<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"inline-block-element"</span><span class="tag">&gt;</span>Item C<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">/* CSS */</span>
+<span class="selector">.inline-block-element</span> {
+    <span class="property">display</span>: <span class="value">inline-block</span>;
+    <span class="property">background-color</span>: <span class="value">var(--accent-color)</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+    <span class="property">width</span>: <span class="value">100px</span>;
+    <span class="property">height</span>: <span class="value">80px</span>;
+    <span class="property">margin</span>: <span class="value">10px</span>;
+    <span class="property">padding</span>: <span class="value">10px</span>;
+    <span class="property">text-align</span>: <span class="value">center</span>;
+    <span class="property">line-height</span>: <span class="value">60px</span>; <span class="comment">/* Vertically center text */</span>
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Inline-Block Elements</div>
+                        <div style="background-color: var(--accent-color); color: white; width: 100px; height: 80px; margin: 10px; padding: 10px; display: inline-block; text-align: center; line-height: 60px;">Item A</div>
+                        <div style="background-color: var(--accent-color); color: white; width: 100px; height: 80px; margin: 10px; padding: 10px; display: inline-block; text-align: center; line-height: 60px;">Item B</div>
+                        <div style="background-color: var(--accent-color); color: white; width: 100px; height: 80px; margin: 10px; padding: 10px; display: inline-block; text-align: center; line-height: 60px;">Item C</div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Advanced `display` Values: `flex` and `grid`</h2>
+                    <p>
+                        Beyond the basic block and inline behaviors, CSS introduced `flex` and `grid` to revolutionize complex layout creation.
+                    </p>
+                    <h3><code>display: flex;</code></h3>
+                    <p>
+                        Turns an element into a **flex container**, enabling its direct children to become **flex items** that can be laid out along a single axis (row or column). This is ideal for component-level layouts, navigation menus, or aligning items within a section.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.flex-container</span> {
+    <span class="property">display</span>: <span class="value">flex</span>;
+    <span class="property">justify-content</span>: <span class="value">space-around</span>; <span class="comment">/* Distribute space between items */</span>
+    <span class="property">align-items</span>: <span class="value">center</span>; <span class="comment">/* Vertically center items */</span>
+    <span class="property">height</span>: <span class="value">100px</span>;
+    <span class="property">background-color</span>: <span class="value">var(--bg-tertiary)</span>;
+    <span class="property">padding</span>: <span class="value">10px</span>;
+}</pre>
+                    </div>
+                    <h3><code>display: grid;</code></h3>
+                    <p>
+                        Turns an element into a **grid container**, enabling its direct children to become **grid items** that can be laid out in two dimensions (rows AND columns). This is powerful for page-level layouts or complex UI structures.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.grid-container</span> {
+    <span class="property">display</span>: <span class="value">grid</span>;
+    <span class="property">grid-template-columns</span>: <span class="value">1fr 1fr 1fr</span>; <span class="comment">/* Three equal columns */</span>
+    <span class="property">gap</span>: <span class="value">10px</span>;
+    <span class="property">background-color</span>: <span class="value">var(--bg-tertiary)</span>;
+    <span class="property">padding</span>: <span class="value">10px</span>;
+}</pre>
+                    </div>
+                    <p>
+                        We will delve deeper into Flexbox and Grid in their respective dedicated topics!
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2><code>display: none;</code> and Visibility</h2>
+                    <p>
+                        Setting `display: none;` completely removes an element from the document flow. It won't take up any space, and it will be invisible. This is different from `visibility: hidden;`, which makes an element invisible but still reserves its space in the layout.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.hidden-element</span> {
+    <span class="property">display</span>: <span class="value">none</span>; <span class="comment">/* Element completely removed from layout */</span>
+}
+
+<span class="selector">.invisible-element</span> {
+    <span class="property">visibility</span>: <span class="value">hidden</span>; <span class="comment">/* Element still takes up space but is not visible */</span>
+}</pre>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>💡 Tip</h4>
+                        <p>Use <code>display: none;</code> when you want to completely remove an element from rendering and layout calculations. Use <code>visibility: hidden;</code> if you want to hide an element but keep its space reserved in the layout.</p>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="box-model.html" class="nav-btn">&larr; Previous: Box Model</a>
+                    <a href="positioning.html" class="nav-btn">Next: Positioning &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+    
+</body>
+</html>

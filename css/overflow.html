@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow - CodeMaster Academy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="description" content="A guide to the CSS overflow property, which controls how an element's content is handled when it overflows its box.">
+    <style>
+        /* Custom CSS for this page's example */
+        .overflow-container {
+            width: 100%;
+            height: 150px;
+            background-color: var(--bg-primary);
+            border: 2px solid var(--border-color);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: var(--radius-md);
+        }
+        .overflow-content {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .overflow-visible {
+            overflow: visible;
+        }
+        .overflow-hidden {
+            overflow: hidden;
+        }
+        .overflow-scroll {
+            overflow: scroll;
+        }
+        .overflow-auto {
+            overflow: auto;
+        }
+        .overflow-example-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .overflow-card {
+            background-color: var(--bg-tertiary);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+        .overflow-card h4 {
+            margin-top: 0;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html" class="active">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">Overflow</h1>
+                    <p class="topic-description">
+                        Learn how to control content that is too large to fit inside an element's designated space.
+                    </p>
+                </div>
+            </section>
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What is the Overflow Property?</h2>
+                    <p>
+                        The CSS `overflow` property controls what happens when content is too big to fit into an element's content area. This is a common situation, especially with text that needs to fit into a fixed-size container. The `overflow` property, along with its related properties `overflow-x` and `overflow-y`, provides several ways to manage this.
+                    </p>
+                    <p>
+                        Managing overflow is key to maintaining clean layouts and ensuring a good user experience, as it prevents content from unexpectedly spilling out and disrupting other elements on the page.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Overflow Property Values</h2>
+                    <p>
+                        There are four main values for the `overflow` property:
+                    </p>
+                    <div class="overflow-example-wrapper">
+                        <div class="overflow-card">
+                            <h4><code>visible</code> (Default)</h4>
+                            <p>The overflowing content is not clipped and is rendered outside the element's box. It's as if the overflow property isn't even set.</p>
+                        </div>
+                        <div class="overflow-card">
+                            <h4><code>hidden</code></h4>
+                            <p>The overflowing content is clipped and the rest of the content is hidden. No scrollbars are provided to view the hidden content.</p>
+                        </div>
+                        <div class="overflow-card">
+                            <h4><code>scroll</code></h4>
+                            <p>The overflowing content is clipped, but scrollbars are added to the element so that the user can scroll to see the rest of the content. Scrollbars are always visible, even if the content does not overflow.</p>
+                        </div>
+                        <div class="overflow-card">
+                            <h4><code>auto</code></h4>
+                            <p>The overflowing content is clipped, but scrollbars are added only when necessary. This is the most common and user-friendly option for scrollable content.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Live Example</h2>
+                    <p>
+                        The following containers all have a fixed size, but they use different `overflow` property values to handle the overflowing text.
+                    </p>
+                    <div class="example-box">
+                        <div class="example-title">Overflow in Action</div>
+                        <div class="overflow-card">
+                            <h4><code>overflow: visible;</code></h4>
+                            <div class="overflow-container overflow-visible">
+                                <div class="overflow-content">
+                                    This is a long text that will overflow the container. With `overflow: visible;`, the text simply spills out of the container's bounds. This is the default behavior for most elements.
+                                    This text continues to overflow...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-card">
+                            <h4><code>overflow: hidden;</code></h4>
+                            <div class="overflow-container overflow-hidden">
+                                <div class="overflow-content">
+                                    This is a long text that will overflow the container. With `overflow: hidden;`, the text is clipped and the rest is not visible to the user. There are no scrollbars.
+                                    This text continues to overflow...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-card">
+                            <h4><code>overflow: scroll;</code></h4>
+                            <div class="overflow-container overflow-scroll">
+                                <div class="overflow-content">
+                                    This is a long text that will overflow the container. With `overflow: scroll;`, scrollbars are always present, even if there is no content to scroll.
+                                    This text continues to overflow... and overflow... and overflow... and overflow... and overflow...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-card">
+                            <h4><code>overflow: auto;</code></h4>
+                            <div class="overflow-container overflow-auto">
+                                <div class="overflow-content">
+                                    This is a long text that will overflow the container. With `overflow: auto;`, scrollbars appear only when the content is too large. This is the most practical choice.
+                                    This text continues to overflow... and overflow... and overflow... and overflow... and overflow...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="z-index.html" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                        Previous: Z-Index
+                    </a>
+                    <a href="filters.html" class="nav-btn">
+                        Next: Filters
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

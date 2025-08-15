@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Best Practices - CodeMaster Academy</title>
+    <meta name="description" content="Learn the essential principles for writing clean, maintainable, and effective web code.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html">Web Components</a></li>
+                        <li><a href="best-practices.html" class="active">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">Web Development Best Practices</h1>
+                    <p class="topic-description">
+                        Learn the essential principles for writing clean, maintainable, and effective web code.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>The Importance of Best Practices</h2>
+                    <p>
+                        Following best practices isn't just about writing "correct" code; it's about writing **sustainable, readable, and high-performing code**. A well-structured project is easier to maintain, faster to debug, and more scalable. By adopting these principles early, you'll build a strong foundation for your future in web development.
+                    </p>
+                    
+                    <div class="highlight-box">
+                        <h4>💡 Think of it as a blueprint!</h4>
+                        <p>A builder uses a blueprint to create a sturdy, functional house. In the same way, best practices are your blueprint for building a strong, reliable website that stands the test of time.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Semantic HTML</h2>
+                    <p>
+                        Semantic HTML refers to using HTML tags that clearly describe their meaning to both the browser and the developer. Instead of using generic <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags for everything, you use specific tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.
+                    </p>
+                    <p>
+                        This practice improves **accessibility** for screen readers, makes your code more **readable** for other developers, and can even help with **search engine optimization (SEO)**.
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ❌ Bad: Non-semantic tags --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class="header"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class="nav"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class="main-content"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class="post"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Good: Semantic tags --&gt;</span>
+<span class="tag">&lt;header&gt;</span>...<span class="tag">&lt;/header&gt;</span>
+<span class="tag">&lt;nav&gt;</span>...<span class="tag">&lt;/nav&gt;</span>
+<span class="tag">&lt;main&gt;</span>
+    <span class="tag">&lt;article&gt;</span>...<span class="tag">&lt;/article&gt;</span>
+<span class="tag">&lt;/main&gt;</span></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Code Readability & Comments</h2>
+                    <p>
+                        Clean code is organized, easy to read, and well-documented. Following a consistent style with proper **indentation** and **line breaks** is crucial. Use comments to explain the "why" behind your code, not just the "what."
+                    </p>
+                    
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- ❌ Bad: Hard to read --&gt;</span>
+<span class="tag">&lt;a</span> <span class="attr">href="#"</span> <span class="attr">class="btn btn-primary"</span><span class="tag">&gt;</span>Click here<span class="tag">&lt;/a&gt;</span>
+
+<span class="comment">&lt;!-- ✅ Good: Easy to read and comment --&gt;</span>
+<span class="comment">&lt;!-- Button for the main call to action --&gt;</span>
+<span class="tag">&lt;a</span>
+    <span class="attr">href="#"</span>
+    <span class="attr">class="btn btn-primary"</span>
+<span class="tag">&gt;</span>
+    Click here
+<span class="tag">&lt;/a&gt;</span></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Accessibility (A11y)</h2>
+                    <p>
+                        Building an accessible website means ensuring everyone, regardless of disability or device, can use your site.
+                    </p>
+                    <p>
+                        Key practices include:
+                    </p>
+                    <ul>
+                        <li>Using **meaningful alt text** on images for screen readers.</li>
+                        <li>Maintaining a **logical heading hierarchy** (h1, then h2, etc., without skipping levels).</li>
+                        <li>Ensuring **proper form labels** and keyboard navigation.</li>
+                    </ul>
+                </section>
+                
+                <nav class="navigation-controls">
+                    <a href="comments.html" class="nav-btn">&larr; Previous: Comments</a>
+                    <a href="accessibility.html" class="nav-btn">Next: Accessibility &rarr;</a>
+                </nav>
+            </div>
+            
+            <div class="overlay" onclick="document.getElementById('sidebar-toggle').checked = false;"></div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-brand">
+                            <h3>CodeMaster Academy</h3>
+                            <p>Your journey to becoming a web development expert starts here. Learn to build and design stunning, functional websites from scratch.</p>
+                        </div>
+                        <div class="footer-links">
+                            <div class="footer-section">
+                                <h4>HTML Course</h4>
+                                <ul>
+                                    <li><a href="introduction-to-html.html">Introduction</a></li>
+                                    <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                                    <li><a href="forms.html">Forms</a></li>
+                                    <li><a href="best-practices.html">Best Practices</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-section">
+                                <h4>CSS Course</h4>
+                                <ul>
+                                    <li><a href="../css/introduction-to-css.html">Introduction</a></li>
+                                    <li><a href="../css/flexbox.html">Flexbox</a></li>
+                                    <li><a href="../css/grid.html">Grid</a></li>
+                                    <li><a href="../css/best-practices.html">Best Practices</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        &copy; 2024 CodeMaster Academy. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+       
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax - CodeMaster Academy</title>
+    <meta name="description" content="Learn the fundamental syntax of CSS, including selectors, properties, and values.">
+    <!-- The following line assumes the style.css file is in a parent 'css' directory -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="syntax-of-css.html" class="active">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Syntax</h1>
+                    <p class="topic-description">
+                        Learn the fundamental syntax of CSS, the language that brings style and design to your web pages.
+                    </p>
+                </div>
+            </section>
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>The Anatomy of a CSS Rule</h2>
+                    <p>
+                        A CSS rule, or rule set, is the basic building block of any CSS stylesheet. It consists of a <strong>selector</strong> and a <strong>declaration block</strong>. The selector targets the HTML element you want to style, and the declaration block contains one or more declarations that define the styles.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* The basic structure of a CSS rule */</span>
+<span class="tag">h1</span> <span class="attr">{</span>
+  <span class="indent">color: <span class="string">blue</span>;</span> <span class="comment">/* A declaration */</span>
+  <span class="indent">font-size: <span class="string">24px</span>;</span> <span class="comment">/* Another declaration */</span>
+<span class="attr">}</span></pre>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>🔍 Components of a CSS Rule</h4>
+                        <ul>
+                            <li><strong>Selector</strong>: The `h1` in the example above. It points to the HTML element you want to style.</li>
+                            <li><strong>Declaration Block</strong>: The code enclosed in curly braces `{...}`. It contains all the styling for the selector.</li>
+                            <li><strong>Declaration</strong>: A single property and its value, like `color: blue;`.</li>
+                            <li><strong>Property</strong>: The attribute you want to change, like `color`.</li>
+                            <li><strong>Value</strong>: The specific value for the property, like `blue`.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Comments in CSS</h2>
+                    <p>
+                        Comments are an important part of writing clean and maintainable code. They are ignored by the browser but help developers understand the purpose of the code. CSS comments start with <code>/*</code> and end with <code>*/</code>.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* This is a single-line comment */</span>
+<span class="tag">p</span> <span class="attr">{</span>
+  <span class="indent">color: <span class="string">green</span>;</span> <span class="comment">/* This is a comment next to a declaration */</span>
+<span class="attr">}</span>
+
+<span class="comment">/*
+ * This is a
+ * multi-line
+ * comment.
+ */</span></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Grouping Selectors</h2>
+                    <p>
+                        If you want to apply the same styles to multiple HTML elements, you can group the selectors by separating them with a comma. This is an efficient way to write less code and keep your stylesheet organized.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* This rule styles both h1 and h2 elements */</span>
+<span class="tag">h1</span>, <span class="tag">h2</span> <span class="attr">{</span>
+  <span class="indent">font-family: <span class="string">'Inter'</span>, sans-serif;</span>
+  <span class="indent">font-weight: <span class="string">700</span>;</span>
+<span class="attr">}</span></pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Grouping by Class</div>
+                        <p>You can also group classes, IDs, or any other type of selector.</p>
+                        <div class="code-block" style="margin:0;">
+                            <pre><span class="comment">/* Apply same styles to 'success' and 'warning' classes */</span>
+<span class="tag">.success</span>, <span class="tag">.warning</span> <span class="attr">{</span>
+  <span class="indent">padding: <span class="string">1rem</span>;</span>
+  <span class="indent">border-radius: <span class="string">0.5rem</span>;</span>
+<span class="attr">}</span></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>The Cascade and Specificity</h2>
+                    <p>
+                        The "C" in CSS stands for Cascading, which is the process of combining different stylesheets and resolving conflicts between them. When multiple rules apply to the same element, the browser uses a system called <strong>specificity</strong> to determine which rule's styles to apply. A more specific selector will always override a less specific one.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>⚠️ Important!</h4>
+                        <p>Understanding specificity is key to mastering CSS. A selector's specificity is calculated based on the number and type of selectors used (e.g., ID selectors are more specific than class selectors, which are more specific than element selectors).</p>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="introduction-to-css.html" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                        Previous: Introduction to CSS
+                    </a>
+                    <a href="selectors.html" class="nav-btn">
+                        Next: Selectors
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Footer -->
+           
+        </main>
+        <div class="overlay"></div>
+    </div>
+</body>
+</html>

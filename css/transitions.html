@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions - CodeMaster Academy</title>
+    <meta name="description" content="Learn to create smooth animations between property values using CSS transitions.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html" class="active">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Transitions</h1>
+                    <p class="topic-description">
+                        Learn to create smooth, interactive animations by defining how CSS property changes should transition over time.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What are CSS Transitions?</h2>
+                    <p>
+                        CSS Transitions allow you to define how an element changes from one state to another over a given duration. Instead of an immediate change (e.g., a button instantly changing color on hover), transitions provide a smooth, animated effect. This significantly enhances the user experience by making interactions more fluid and visually appealing.
+                    </p>
+                    <p>
+                        Transitions are ideal for simple state changes triggered by user interactions (like hovers, clicks, or focus) or JavaScript modifications of CSS properties.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>✨ Key Benefit</h4>
+                        <p>CSS transitions provide a simple yet powerful way to add subtle animations to your web pages, improving user experience without needing complex JavaScript or keyframe animations for basic effects.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Transition Properties</h2>
+                    <p>
+                        To define a transition, you typically use a combination of four CSS properties, often combined into the `transition` shorthand property.
+                    </p>
+
+                    <h3>`transition-property`</h3>
+                    <p>
+                        Specifies the CSS property to which the transition effect should be applied. You can specify one or more properties, or `all` for all animatable properties.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.box</span> {
+    <span class="property">transition-property</span>: <span class="value">background-color</span>;
+}
+
+<span class="selector">.button</span> {
+    <span class="property">transition-property</span>: <span class="value">width, transform</span>;
+}
+
+<span class="selector">.element</span> {
+    <span class="property">transition-property</span>: <span class="value">all</span>; <span class="comment">/* Transitions all animatable properties */</span>
+}</pre>
+                    </div>
+
+                    <h3>`transition-duration`</h3>
+                    <p>
+                        Specifies how long the transition animation should take to complete. This value is typically given in seconds (`s`) or milliseconds (`ms`).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.box</span> {
+    <span class="property">transition-duration</span>: <span class="value">0.5s</span>;
+}
+
+<span class="selector">.button</span> {
+    <span class="property">transition-duration</span>: <span class="value">300ms</span>;
+}</pre>
+                    </div>
+
+                    <h3>`transition-timing-function`</h3>
+                    <p>
+                        Defines the speed curve of the transition effect. This determines how the animation progresses over time (e.g., starting slow and speeding up).
+                    </p>
+                    <ul>
+                        <li>`ease` (default): Slow start, fast middle, slow end.</li>
+                        <li>`linear`: Same speed from start to end.</li>
+                        <li>`ease-in`: Slow start.</li>
+                        <li>`ease-out`: Slow end.</li>
+                        <li>`ease-in-out`: Slow start and end.</li>
+                        <li>`cubic-bezier(n, n, n, n)`: Custom speed curve.</li>
+                        <li>`steps(integer, start|end)`: Transition in steps.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.box</span> {
+    <span class="property">transition-timing-function</span>: <span class="value">ease-in-out</span>;
+}
+
+<span class="selector">.button</span> {
+    <span class="property">transition-timing-function</span>: <span class="value">cubic-bezier(0.17, 0.67, 0.83, 0.67)</span>;
+}</pre>
+                    </div>
+
+                    <h3>`transition-delay`</h3>
+                    <p>
+                        Specifies a delay before the transition starts. This value is also given in seconds (`s`) or milliseconds (`ms`).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.box</span> {
+    <span class="property">transition-delay</span>: <span class="value">0.1s</span>; <span class="comment">/* Starts after 100ms */</span>
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>The `transition` Shorthand Property</h2>
+                    <p>
+                        The most common way to define transitions is using the `transition` shorthand property, which combines all four properties in a specific order:
+                        `transition: property duration timing-function delay;`
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.my-element</span> {
+    <span class="property">width</span>: <span class="value">100px</span>;
+    <span class="property">height</span>: <span class="value">100px</span>;
+    <span class="property">background-color</span>: <span class="value">var(--primary-color)</span>;
+    <span class="property">transition</span>: <span class="value">background-color 0.5s ease-out 0.1s, width 0.3s linear</span>;
+}
+
+<span class="selector">.my-element:hover</span> {
+    <span class="property">background-color</span>: <span class="value">var(--secondary-color)</span>;
+    <span class="property">width</span>: <span class="value">150px</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Live Example: Hover over the box</div>
+                        <style>
+                            .transition-demo-box {
+                                width: 100px;
+                                height: 100px;
+                                background-color: var(--primary-color);
+                                margin: 30px auto;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: white;
+                                font-weight: 500;
+                                border-radius: var(--radius-md);
+                                transition: background-color 0.4s ease-in-out, transform 0.4s ease-in-out, width 0.4s ease-in-out;
+                            }
+                            .transition-demo-box:hover {
+                                background-color: var(--secondary-color);
+                                transform: scale(1.1) rotate(5deg);
+                                width: 120px;
+                            }
+                        </style>
+                        <div class="transition-demo-box">Hover Me!</div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Animatable Properties</h2>
+                    <p>
+                        Not all CSS properties can be animated with transitions. Only properties that have "intermediate states" (i.e., they can smoothly change from one value to another) are animatable. Examples include:
+                    </p>
+                    <ul>
+                        <li>Colors: `background-color`, `color`, `border-color`</li>
+                        <li>Dimensions: `width`, `height`, `font-size`, `padding`, `margin`</li>
+                        <li>Transforms: `transform` (e.g., `translate`, `rotate`, `scale`)</li>
+                        <li>Opacity: `opacity`</li>
+                        <li>Shadows: `box-shadow`, `text-shadow`</li>
+                        <li>Positioning: `top`, `left`, `right`, `bottom`</li>
+                    </ul>
+                    <p>
+                        Properties like `display: none` to `display: block` or `visibility: hidden` to `visibility: visible` cannot be directly transitioned because they don't have intermediate states. However, you can combine `opacity` with `visibility` or `max-height` with `overflow` to achieve similar effects.
+                    </p>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="transforms.html" class="nav-btn">&larr; Previous: Transforms</a>
+                    <a href="animations.html" class="nav-btn">Next: Animations &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+   
+</body>
+</html>

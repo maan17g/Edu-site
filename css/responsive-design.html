@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design - CodeMaster Academy</title>
+    <meta name="description" content="Learn the principles of responsive web design to create websites that adapt to any device size.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for this page's example */
+        .responsive-example {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .responsive-box {
+            flex: 1 1 300px; /* This makes the boxes flexible and wrap */
+            background-color: var(--bg-tertiary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .responsive-example {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html" class="active">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">Responsive Design</h1>
+                    <p class="topic-description">
+                        Learn how to build websites that adapt beautifully to all devices, from mobile phones to large desktop monitors.
+                    </p>
+                </div>
+            </section>
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What is Responsive Design?</h2>
+                    <p>
+                        Responsive web design is an approach to web development that creates websites which provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computers).
+                    </p>
+                    <p>
+                        The key to responsive design is using a combination of **fluid grids**, **flexible images**, and **media queries** to adapt the layout and content to the user's screen size and orientation.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>💡 Key Principles</h4>
+                        <p>Responsive design is not about creating a separate website for each device. It's about designing a single website that can fluidly adjust its layout and elements to fit the screen size it's being viewed on.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Fluid Grids and Flexible Media</h2>
+                    <p>
+                        Instead of using fixed pixel values for widths, a responsive design uses relative units like percentages (<code>%</code>) or viewport units (<code>vw</code>, <code>vh</code>). This allows elements to stretch or shrink in proportion to the browser window. Similarly, images and other media should be flexible.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Example of a fluid container and flexible image --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">style=</span><span class="string">"width: 90%; max-width: 800px; margin: 0 auto;"</span><span class="tag">&gt;</span>
+  <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"https://placehold.co/800x400"</span> <span class="attr">alt=</span><span class="string">"Placeholder image"</span> <span class="attr">style=</span><span class="string">"width: 100%; height: auto;"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+                    </div>
+                    <p>
+                        The CSS property <code>max-width: 100%;</code> on an image ensures it will never be wider than its parent container, automatically scaling down on smaller screens while retaining its original size on larger ones.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Using Media Queries</h2>
+                    <p>
+                        Media queries are the cornerstone of responsive design. They allow you to apply CSS rules only when certain conditions are met, such as the viewport's width. The most common use is to define breakpoints where the layout changes to better suit the screen.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Example of a simple media query in CSS --&gt;</span>
+<span class="comment">&lt;style&gt;</span>
+  <span class="tag">.container</span> {
+    <span class="attr">background-color:</span> <span class="string">lightblue;</span>
+  }
+  <span class="tag">@media</span> <span class="attr">(max-width: 600px)</span> {
+    <span class="tag">.container</span> {
+      <span class="attr">background-color:</span> <span class="string">lightcoral;</span>
+      <span class="attr">flex-direction:</span> <span class="string">column;</span>
+    }
+  }
+<span class="comment">&lt;/style&gt;</span></pre>
+                    </div>
+                    <p>
+                        The example above changes the background color and layout of a container to be a column layout when the screen size is 600 pixels or less.
+                    </p>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Putting It All Together</h2>
+                    <p>
+                        Here is a simple example that combines a fluid layout with a media query. Resize your browser window to see the boxes stack vertically on smaller screens.
+                    </p>
+                    <div class="example-box">
+                        <div class="example-title">Responsive Example</div>
+                        <div class="responsive-example">
+                            <div class="responsive-box">
+                                <h3>Box 1</h3>
+                                <p>This is a flexible box.</p>
+                            </div>
+                            <div class="responsive-box">
+                                <h3>Box 2</h3>
+                                <p>This is a flexible box.</p>
+                            </div>
+                            <div class="responsive-box">
+                                <h3>Box 3</h3>
+                                <p>This is a flexible box.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Best Practices for Responsive Design</h2>
+                    <ul>
+                        <li><strong>Mobile-First Approach:</strong> Start designing and coding for the smallest screen first, then add media queries to enhance the design for larger screens.</li>
+                        <li><strong>Use Relative Units:</strong> Use <code>%</code>, <code>em</code>, <code>rem</code>, <code>vw</code>, and <code>vh</code> for sizing elements.</li>
+                        <li><strong>Test on Real Devices:</strong> Always check your responsive design on a variety of actual devices to ensure a perfect user experience.</li>
+                        <li><strong>Prioritize Performance:</strong> Optimize images and other assets to ensure your site loads quickly on mobile networks.</li>
+                    </ul>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="media-queries.html" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                        Previous: Media Queries
+                    </a>
+                    <a href="variables.html" class="nav-btn">
+                        Next: Variables
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+   
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

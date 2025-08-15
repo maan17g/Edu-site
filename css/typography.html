@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Typography - CodeMaster Academy</title>
+    <meta name="description"
+        content="A guide to CSS typography properties for controlling fonts, sizes, weights, and text styling.">
+    <!-- The following line assumes the style.css file is in a parent 'css' directory -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html" class="active">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Typography</h1>
+                    <p class="topic-description">
+                        Learn how to style text with CSS to control fonts, sizes, and layout for beautiful and readable
+                        web pages.
+                    </p>
+                </div>
+            </section>
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Controlling Font Family</h2>
+                    <p>
+                        The <code>font-family</code> property is used to specify the font for an element. It's a best
+                        practice to provide a "font stack"—a list of fonts in order of preference. The browser will use
+                        the first font it finds on the user's system. Always end your font stack with a generic family
+                        (<code>serif</code>, <code>sans-serif</code>, or <code>monospace</code>) as a fallback.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Using a font stack with a generic fallback */</span>
+<span class="tag">body</span> <span class="attr">{</span>
+  <span class="indent">font-family: <span class="string">'Inter'</span>, <span class="string">Arial</span>, <span class="string">sans-serif</span>;</span>
+<span class="attr">}</span>
+<span class="tag">h1</span> <span class="attr">{</span>
+  <span class="indent">font-family: <span class="string">'Georgia'</span>, <span class="string">Times</span>, <span class="string">serif</span>;</span>
+<span class="attr">}</span></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Setting Font Size</h2>
+                    <p>
+                        The <code>font-size</code> property controls the size of the text. While pixels
+                        (<code>px</code>) are fixed and absolute, it's often better to use relative units like
+                        <code>em</code>, <code>rem</code>, or percentages for better accessibility and responsiveness.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>📏 Relative vs. Absolute Units</h4>
+                        <p><strong>Absolute units</strong> (like <code>px</code>) have the same size on all media.
+                            <strong>Relative units</strong> (like <code>em</code>, <code>rem</code>, and <code>%</code>)
+                            scale relative to another length, making them ideal for responsive design.</p>
+                    </div>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Examples of font sizes using different units */</span>
+<span class="tag">p</span> <span class="attr">{</span>
+  <span class="indent">font-size: <span class="string">16px</span>; <span class="comment">/* Absolute unit */</span></span>
+<span class="attr">}</span>
+<span class="tag">.large-text</span> <span class="attr">{</span>
+  <span class="indent">font-size: <span class="string">1.5rem</span>; <span class="comment">/* Relative to the root element's font-size */</span></span>
+<span class="attr">}</span>
+<span class="tag">.small-text</span> <span class="attr">{</span>
+  <span class="indent">font-size: <span class="string">0.8em</span>; <span class="comment">/* Relative to the parent element's font-size */</span></span>
+<span class="attr">}</span></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Font Weight and Style</h2>
+                    <p>
+                        You can adjust the boldness and style of your text using the <code>font-weight</code> and
+                        <code>font-style</code> properties.
+                    </p>
+                    <div class="example-box">
+                        <div class="example-title">Property Values:</div>
+                        <ul>
+                            <li><code>font-weight</code>: <code>normal</code>, <code>bold</code>, <code>bolder</code>,
+                                <code>lighter</code>, or a number from 100 to 900.</li>
+                            <li><code>font-style</code>: <code>normal</code>, <code>italic</code>, or
+                                <code>oblique</code>.</li>
+                        </ul>
+                    </div>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Setting font weight and style */</span>
+<span class="tag">h2</span> <span class="attr">{</span>
+  <span class="indent">font-weight: <span class="string">700</span>; <span class="comment">/* Bold */</span></span>
+<span class="attr">}</span>
+<span class="tag">em</span> <span class="attr">{</span>
+  <span class="indent">font-style: <span class="string">italic</span>;</span>
+<span class="attr">}</span></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Line Height and Letter Spacing</h2>
+                    <p>
+                        These properties control the spacing around text, which is critical for readability.
+                        <code>line-height</code> sets the space between lines of text, while <code>letter-spacing</code>
+                        adjusts the space between individual characters.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Adjusting line height and letter spacing */</span>
+<span class="tag">p</span> <span class="attr">{</span>
+  <span class="indent">line-height: <span class="string">1.6</span>; <span class="comment">/* A unitless value is recommended for proportionality */</span></span>
+  <span class="indent">letter-spacing: <span class="string">0.5px</span>; <span class="comment">/* Tighter or looser spacing */</span></span>
+<span class="attr">}</span></pre>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="colors.html" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-arrow-left">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        Previous: Colors
+                    </a>
+                    <a href="box-model.html" class="nav-btn">
+                        Next: Box Model
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-arrow-right">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container footer-content">
+                    <div class="footer-brand">
+                        <h3>CodeMaster Academy</h3>
+                        <p>Your journey to becoming a web development expert starts here. Join our community and build
+                            your skills today.</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h4>Resources</h4>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2024 CodeMaster Academy. All rights reserved.
+                </div>
+            </footer>
+        </main>
+        <div class="overlay"></div>
+    </div>
+</body>
+
+</html>

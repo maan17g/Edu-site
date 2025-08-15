@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables - CodeMaster Academy</title>
+    <meta name="description" content="A comprehensive guide to using CSS variables for a more dynamic and manageable stylesheet.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for this page's example */
+        .variables-example {
+            background-color: var(--bg-tertiary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+        .themed-card {
+            --card-bg-color: var(--bg-primary);
+            --card-text-color: var(--text-primary);
+            --card-border-color: var(--border-color);
+            background-color: var(--card-bg-color);
+            color: var(--card-text-color);
+            border: 2px solid var(--card-border-color);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        .themed-card h4 {
+            color: var(--card-text-color);
+            margin-bottom: 0.5rem;
+        }
+        .themed-card p {
+            font-size: 0.9rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+        .dark-theme-card {
+            --card-bg-color: #2d3748;
+            --card-text-color: #a0aec0;
+            --card-border-color: #4a5568;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html" class="active">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Variables</h1>
+                    <p class="topic-description">
+                        Discover the power of CSS variables to make your stylesheets more dynamic, reusable, and easier to maintain.
+                    </p>
+                </div>
+            </section>
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What are CSS Variables?</h2>
+                    <p>
+                        CSS variables, formally known as **custom properties**, allow you to store specific values in a variable and reuse them throughout your stylesheet. This is incredibly useful for defining values that you use repeatedly, such as colors, fonts, or spacing. By changing a single variable, you can update every instance of that value across your entire website.
+                    </p>
+                    <p>
+                        This is especially powerful for creating design systems, themes (like light and dark modes), and ensuring a consistent look and feel.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>💡 Key Benefit</h4>
+                        <p>CSS variables reduce repetition and make your code more maintainable. You can easily update a global style by changing one variable instead of hunting down every instance of a color or font size.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Declaring and Using Variables</h2>
+                    <p>
+                        You declare a CSS variable by prefixing its name with two hyphens (<code>--</code>). The best practice is to declare global variables inside the <code>:root</code> pseudo-class, which makes them available to all elements on the page. To use a variable, you call it with the <code>var()</code> function.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="tag">:root</span> {
+  <span class="attr">--primary-color:</span> <span class="string">#667eea;</span>
+  <span class="attr">--font-family:</span> <span class="string">'Inter', sans-serif;</span>
+}
+
+<span class="tag">h1</span> {
+  <span class="attr">color:</span> <span class="string">var(--primary-color);</span>
+  <span class="attr">font-family:</span> <span class="string">var(--font-family);</span>
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Variable Scoping and Fallbacks</h2>
+                    <p>
+                        CSS variables are scoped, which means they are only available within the element you declare them on and its children. You can also provide a fallback value in the <code>var()</code> function. This value will be used if the variable is not defined.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- Local scope variable --&gt;</span>
+<span class="tag">.card</span> {
+  <span class="attr">--card-bg:</span> <span class="string">#ffffff;</span>
+  <span class="attr">background-color:</span> <span class="string">var(--card-bg);</span>
+}
+
+<span class="comment">&lt;!-- Using a fallback value --&gt;</span>
+<span class="tag">h2</span> {
+  <span class="attr">color:</span> <span class="string">var(--secondary-color, #333333);</span>
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Live Example</h2>
+                    <p>
+                        This example demonstrates how CSS variables can be used to easily switch themes. The first card uses the default light theme, while the second one overrides the variables locally to create a dark theme.
+                    </p>
+                    <div class="example-box">
+                        <div class="example-title">Theming with Variables</div>
+                        <div class="themed-card">
+                            <h4>Default Theme Card</h4>
+                            <p>This card uses the global variables set in the stylesheet. This is great for a consistent design.</p>
+                        </div>
+                        <div class="themed-card dark-theme-card">
+                            <h4>Dark Theme Card</h4>
+                            <p>This card overrides the variables locally to achieve a different look. This shows the power of variable scoping.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="responsive-design.html" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                        Previous: Responsive Design
+                    </a>
+                    <a href="units.html" class="nav-btn">
+                        Next: Units
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CodeMaster Academy</h3>
+                    <p>Your journey to becoming a coding master starts here. Learn the fundamentals and advanced techniques of web development.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Courses</h4>
+                        <ul>
+                            <li><a href="../html/introduction-to-html.html">HTML Fundamentals</a></li>
+                            <li><a href="../css/introduction-to-css.html">CSS Mastery</a></li>
+                            <li><a href="#">JavaScript Essentials</a></li>
+                            <li><a href="#">Frontend Frameworks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Our Mission</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeMaster Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

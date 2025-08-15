@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms - CodeMaster Academy</title>
+    <meta name="description" content="Learn to manipulate elements in 2D and 3D space using CSS transforms, including translate, rotate, scale, and skew.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html" class="active">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Transforms</h1>
+                    <p class="topic-description">
+                        Learn to manipulate elements in 2D and 3D space using CSS transforms, including translate, rotate, scale, and skew.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Introduction to CSS Transforms</h2>
+                    <p>
+                        CSS transforms allow you to move, rotate, scale, and skew elements in 2D or 3D space. They provide a powerful way to create dynamic visual effects without affecting the document flow, making them ideal for animations, hover effects, and responsive layouts. Transforms are performed on the visual rendering of an element, not its actual layout space.
+                    </p>
+                    <p>
+                        The primary property for applying transformations is `transform`. You can apply multiple transform functions to a single element by chaining them.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>💡 Key Concept</h4>
+                        <p>Transforms change the appearance of an element without altering its position in the document flow. This means that transformed elements won't push other elements around, which is a key distinction from properties like `margin` or `position`.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>2D Transform Functions</h2>
+                    <p>
+                        CSS provides several 2D transform functions to manipulate elements along the X and Y axes.
+                    </p>
+                    <h3>`translate()`</h3>
+                    <p>
+                        Moves an element from its current position.
+                    </p>
+                    <ul>
+                        <li>`translate(x, y)`: Moves along both X and Y axes.</li>
+                        <li>`translateX(x)`: Moves only along the X-axis.</li>
+                        <li>`translateY(y)`: Moves only along the Y-axis.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.translate-example</span> {
+    <span class="property">transform</span>: <span class="value">translate(50px, 20px)</span>; <span class="comment">/* Move right 50px, down 20px */</span>
+}
+
+<span class="selector">.translate-x-example</span> {
+    <span class="property">transform</span>: <span class="value">translateX(-30px)</span>; <span class="comment">/* Move left 30px */</span>
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Translate</div>
+                        <div style="width: 100px; height: 50px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; margin: 20px auto; border-radius: var(--radius-sm);">Original</div>
+                        <div style="width: 100px; height: 50px; background: var(--accent-color); color: white; display: flex; align-items: center; justify-content: center; margin: 20px auto; border-radius: var(--radius-sm); transform: translate(30px, 15px);">Translated</div>
+                    </div>
+
+                    <h3>`rotate()`</h3>
+                    <p>
+                        Rotates an element around its `transform-origin` (default is the center).
+                    </p>
+                    <ul>
+                        <li>`rotate(angle)`: Rotates by the specified angle (e.g., `45deg`, `0.5turn`, `1rad`).</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.rotate-example</span> {
+    <span class="property">transform</span>: <span class="value">rotate(45deg)</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Rotate</div>
+                        <div style="width: 100px; height: 50px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; margin: 20px auto; border-radius: var(--radius-sm);">Original</div>
+                        <div style="width: 100px; height: 50px; background: var(--accent-color); color: white; display: flex; align-items: center; justify-content: center; margin: 20px auto; border-radius: var(--radius-sm); transform: rotate(20deg);">Rotated</div>
+                    </div>
+
+                    <h3>`scale()`</h3>
+                    <p>
+                        Scales an element up or down.
+                    </p>
+                    <ul>
+                        <li>`scale(x, y)`: Scales along both X and Y axes. If `y` is omitted, it defaults to `x`.</li>
+                        <li>`scaleX(x)`: Scales only along the X-axis.</li>
+                        <li>`scaleY(y)`: Scales only along the Y-axis.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.scale-example</span> {
+    <span class="property">transform</span>: <span class="value">scale(1.2)</span>; <span class="comment">/* Scale up by 20% */</span>
+}
+
+<span class="selector">.scale-xy-example</span> {
+    <span class="property">transform</span>: <span class="value">scale(0.8, 1.5)</span>; <span class="comment">/* Shrink X, stretch Y */</span>
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Scale</div>
+                        <div style="width: 100px; height: 50px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; margin: 20px auto; border-radius: var(--radius-sm);">Original</div>
+                        <div style="width: 100px; height: 50px; background: var(--accent-color); color: white; display: flex; align-items: center; justify-content: center; margin: 20px auto; border-radius: var(--radius-sm); transform: scale(1.1);">Scaled</div>
+                    </div>
+
+                    <h3>`skew()`</h3>
+                    <p>
+                        Skews an element along the X and Y axes.
+                    </p>
+                    <ul>
+                        <li>`skew(angleX, angleY)`: Skews along both X and Y axes. If `angleY` is omitted, it defaults to `0`.</li>
+                        <li>`skewX(angle)`: Skews only along the X-axis.</li>
+                        <li>`skewY(angle)`: Skews only along the Y-axis.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.skew-example</span> {
+    <span class="property">transform</span>: <span class="value">skew(20deg, 10deg)</span>;
+}
+
+<span class="selector">.skew-x-example</span> {
+    <span class="property">transform</span>: <span class="value">skewX(-15deg)</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Skew</div>
+                        <div style="width: 100px; height: 50px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: center; margin: 20px auto; border-radius: var(--radius-sm);">Original</div>
+                        <div style="width: 100px; height: 50px; background: var(--accent-color); color: white; display: flex; align-items: center; justify-content: center; margin: 20px auto; border-radius: var(--radius-sm); transform: skew(10deg);">Skewed</div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>3D Transform Functions</h2>
+                    <p>
+                        For more advanced effects, CSS offers 3D transform functions. To enable 3D transformations, you often need to set the `perspective` property on a parent element or the element itself.
+                    </p>
+                    <h3>`translate3d()` and `translateZ()`</h3>
+                    <p>
+                        Moves an element in 3D space.
+                    </p>
+                    <ul>
+                        <li>`translate3d(x, y, z)`: Moves along X, Y, and Z axes.</li>
+                        <li>`translateZ(z)`: Moves only along the Z-axis (towards/away from the viewer).</li>
+                    </ul>
+                    <h3>`rotate3d()` and `rotateX/Y/Z()`</h3>
+                    <p>
+                        Rotates an element in 3D space.
+                    </p>
+                    <ul>
+                        <li>`rotate3d(x, y, z, angle)`: Rotates around a custom 3D vector (x,y,z) by a given angle.</li>
+                        <li>`rotateX(angle)`: Rotates around the X-axis.</li>
+                        <li>`rotateY(angle)`: Rotates around the Y-axis.</li>
+                        <li>`rotateZ(angle)`: Rotates around the Z-axis (same as 2D `rotate()`).</li>
+                    </ul>
+                    <h3>`scale3d()` and `scaleZ()`</h3>
+                    <p>
+                        Scales an element in 3D space.
+                    </p>
+                    <ul>
+                        <li>`scale3d(x, y, z)`: Scales along X, Y, and Z axes.</li>
+                        <li>`scaleZ(z)`: Scales only along the Z-axis.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.perspective-container</span> {
+    <span class="property">perspective</span>: <span class="value">800px</span>; <span class="comment">/* Apply perspective to a parent */</span>
+}
+
+<span class="selector">.rotate-3d-example</span> {
+    <span class="property">transform</span>: <span class="value">rotateY(60deg)</span>; <span class="comment">/* Rotate around Y-axis */</span>
+}
+
+<span class="selector">.translate-z-example</span> {
+    <span class="property">transform</span>: <span class="value">translateZ(100px)</span>; <span class="comment">/* Move element closer to viewer */</span>
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>`transform-origin` Property</h2>
+                    <p>
+                        By default, transformations are applied from the center of an element. The `transform-origin` property allows you to change this point.
+                    </p>
+                    <p>
+                        You can specify values using keywords (e.g., `top left`, `bottom right`), percentages, or lengths (e.g., `20% 80%`, `50px 100px`). For 3D transforms, a Z-axis value can also be provided.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.custom-origin-rotate</span> {
+    <span class="property">transform-origin</span>: <span class="value">top left</span>; <span class="comment">/* Rotate from the top-left corner */</span>
+    <span class="property">transform</span>: <span class="value">rotate(45deg)</span>;
+}</pre>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="shadows.html" class="nav-btn">&larr; Previous: Shadows</a>
+                    <a href="transitions.html" class="nav-btn">Next: Transitions &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+    
+</body>
+</html>

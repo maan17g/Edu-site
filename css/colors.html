@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors - CodeMaster Academy</title>
+    <meta name="description"
+        content="A guide to using CSS colors, including color keywords, hex codes, and RGB, RGBA, HSL, and HSLA values.">
+    <!-- The following line assumes the style.css file is in a parent 'css' directory -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html" class="active">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Colors</h1>
+                    <p class="topic-description">
+                        Learn to use various color formats to add vibrant and consistent styles to your web pages.
+                    </p>
+                </div>
+            </section>
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Defining Colors in CSS</h2>
+                    <p>
+                        Colors are a fundamental part of web design, and CSS provides several ways to specify them. You
+                        can set the color of text, backgrounds, borders, and more using different color formats, each
+                        with its own advantages.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>🎨 Key Concept</h4>
+                        <p>CSS supports many color formats, including human-readable keywords, precise hexadecimal
+                            codes, and versatile functions like <code>rgb()</code> and <code>hsl()</code>.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Color Keywords</h2>
+                    <p>
+                        The simplest way to specify a color is by using a predefined keyword. CSS provides over 140
+                        named colors. This is easy to read but offers less flexibility than other methods.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Styles the paragraph with a keyword color */</span>
+<span class="tag">p</span> <span class="attr">{</span>
+  <span class="indent">color: <span class="string">tomato</span>;</span>
+<span class="attr">}</span></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Hexadecimal (Hex) Values</h2>
+                    <p>
+                        A hex value is a six-digit code that represents a color by defining the amount of red, green,
+                        and blue. Each pair of digits (from <code>00</code> to <code>FF</code>) represents a color
+                        channel. Hex codes are widely used for their precision and compact format.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Hexadecimal values for colors */</span>
+<span class="tag">.primary-box</span> <span class="attr">{</span>
+  <span class="indent">background-color: <span class="string">#4facfe</span>;</span>
+<span class="attr">}</span>
+<span class="tag">.secondary-box</span> <span class="attr">{</span>
+  <span class="indent">background-color: <span class="string">#764ba2</span>;</span>
+<span class="attr">}</span></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>RGB and RGBA Values</h2>
+                    <p>
+                        The <code>rgb()</code> function defines a color using the intensity of red, green, and blue
+                        light, each with a value from 0 to 255. The <code>rgba()</code> function adds an alpha channel,
+                        which controls the color's transparency. The alpha value ranges from 0.0 (fully transparent) to
+                        1.0 (fully opaque).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Using RGB and RGBA functions */</span>
+<span class="tag">.solid-red</span> <span class="attr">{</span>
+  <span class="indent">background-color: <span class="string">rgb(255, 0, 0)</span>;</span>
+<span class="attr">}</span>
+<span class="tag">.transparent-blue</span> <span class="attr">{</span>
+  <span class="indent">background-color: <span class="string">rgba(0, 0, 255, 0.5)</span>;</span>
+<span class="attr">}</span></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>HSL and HSLA Values</h2>
+                    <p>
+                        The <code>hsl()</code> function defines a color using Hue, Saturation, and Lightness. This model
+                        is often more intuitive for humans, as it's easier to adjust the hue or lightness without
+                        changing the entire color. Like RGB, <code>hsla()</code> adds an alpha channel for transparency.
+                    </p>
+                    <div class="example-box">
+                        <div class="example-title">HSL Color Components:</div>
+                        <ul>
+                            <li><strong>Hue:</strong> A degree on the color wheel from 0 to 360 (e.g., 0=red, 120=green,
+                                240=blue).</li>
+                            <li><strong>Saturation:</strong> A percentage from 0% (shades of gray) to 100% (full color).
+                            </li>
+                            <li><strong>Lightness:</strong> A percentage from 0% (black) to 100% (white).</li>
+                        </ul>
+                    </div>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Using HSL and HSLA functions */</span>
+<span class="tag">.vibrant-green</span> <span class="attr">{</span>
+  <span class="indent">background-color: <span class="string">hsl(120, 100%, 50%)</span>;</span>
+<span class="attr">}</span>
+<span class="tag">.soft-blue</span> <span class="attr">{</span>
+  <span class="indent">background-color: <span class="string">hsla(240, 50%, 75%, 0.7)</span>;</span>
+<span class="attr">}</span></pre>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="selectors.html" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-arrow-left">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        Previous: Selectors
+                    </a>
+                    <a href="typography.html" class="nav-btn">
+                        Next: Typography
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-arrow-right">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Footer -->
+            
+        </main>
+        <div class="overlay"></div>
+    </div>
+</body>
+
+</html>

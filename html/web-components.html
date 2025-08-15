@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components - CodeMaster Academy</title>
+    <meta name="description" content="Learn the best practices for building reusable and encapsulated web components.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="head-element.html">Head Element</a></li>
+                        <li><a href="body-element.html">Body Element</a></li>
+                        <li><a href="headings.html">Headings</a></li>
+                        <li><a href="paragraphs.html">Paragraphs</a></li>
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="images.html">Images</a></li>
+                        <li><a href="lists.html">Lists</a></li>
+                        <li><a href="tables.html">Tables</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <li><a href="input-types.html">Input Types</a></li>
+                        <li><a href="semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="attributes.html">Attributes</a></li>
+                        <li><a href="classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="meta-tags.html">Meta Tags</a></li>
+                        <li><a href="html5-features.html">HTML5 Features</a></li>
+                        <li><a href="audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="canvas.html">Canvas</a></li>
+                        <li><a href="svg.html">SVG</a></li>
+                        <li><a href="iframes.html">Iframes</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="validation.html">Validation</a></li>
+                        <li><a href="entities.html">Entities</a></li>
+                        <li><a href="microdata.html">Microdata</a></li>
+                        <li><a href="web-components.html" class="active">Web Components</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">Web Components</h1>
+                    <p class="topic-description">
+                        Discover how to create custom, reusable, and encapsulated HTML elements that are ready for the modern web.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What are Web Components?</h2>
+                    <p>
+                        Web Components are a set of W3C standards that allow you to create new, reusable, and encapsulated custom elements to use in web pages and web applications. Think of them as building blocks that come with their own logic and styling, so you don't have to worry about them conflicting with the rest of your site.
+                    </p>
+                    <p>
+                        There are three main technologies that form the foundation of Web Components:
+                    </p>
+                    <ul>
+                        <li><strong>Custom Elements:</strong> A JavaScript API that allows you to define a new HTML tag, like <code>&lt;my-button&gt;</code>, and its behavior.</li>
+                        <li><strong>Shadow DOM:</strong> A way to attach a hidden, separate DOM tree to an element. This creates a "shadow" for the component, ensuring its styles and scripts don't leak out and affect the main page, and vice versa.</li>
+                        <li><strong>HTML Templates:</strong> The <code>&lt;template&gt;</code> and <code>&lt;slot&gt;</code> tags allow you to write reusable markup that is not rendered on the page until it's activated.</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <h4>💡 Why Use Web Components?</h4>
+                        <p>They promote code reuse, solve CSS and JavaScript conflicts through encapsulation, and allow for a clean separation of concerns. They are framework-agnostic and work in any modern browser.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Creating a Simple Web Component</h2>
+                    <p>
+                        Let's walk through an example of creating a simple custom element called <code>&lt;hello-world&gt;</code>. The key is to define a class that extends <code>HTMLElement</code> and then use <code>customElements.define()</code> to register it.
+                    </p>
+                    
+                    <h3>Step 1: Define the JavaScript Class</h3>
+                    <div class="code-block">
+                        <pre><span class="tag">class</span> <span class="attr">HelloWorldComponent</span> <span class="tag">extends</span> <span class="string">HTMLElement</span> {
+  <span class="string">constructor</span>() {
+    <span class="tag">super</span>();
+  }
+  
+  <span class="string">connectedCallback</span>() {
+    this.innerHTML = `&lt;h1&gt;Hello from a Web Component!&lt;/h1&gt;`;
+  }
+}</pre>
+                    </div>
+
+                    <h3>Step 2: Register the Element</h3>
+                    <div class="code-block">
+                        <pre>
+<span class="string">customElements</span>.<span class="tag">define</span>('hello-world', <span class="attr">HelloWorldComponent</span>);</pre>
+                    </div>
+
+                    <h3>Step 3: Use the Component in HTML</h3>
+                    <div class="code-block">
+                        <pre>
+<span class="tag">&lt;hello-world&gt;</span><span class="tag">&lt;/hello-world&gt;</span></pre>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div class="example-title">Live Example:</div>
+                        <style>
+                          /* Inline styles for the example to not interfere with main stylesheet */
+                          .example-hello-world {
+                            background-color: #f0f4f8;
+                            padding: 1rem;
+                            border-radius: 0.5rem;
+                            border: 1px solid #e2e8f0;
+                            text-align: center;
+                            font-family: var(--font-primary);
+                            margin-top: 1rem;
+                          }
+                        </style>
+                        <script>
+                            // Define the component if it's not already defined to avoid errors
+                            if (!customElements.get('hello-world')) {
+                                class HelloWorldComponent extends HTMLElement {
+                                    constructor() {
+                                        super();
+                                    }
+                                    connectedCallback() {
+                                        this.innerHTML = `
+                                            <div class="example-hello-world">
+                                                <h3>Hello from a Web Component!</h3>
+                                                <p>This is a custom tag rendered by JavaScript.</p>
+                                            </div>
+                                        `;
+                                    }
+                                }
+                                customElements.define('hello-world', HelloWorldComponent);
+                            }
+                        </script>
+                        <hello-world></hello-world>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Using Shadow DOM for Encapsulation</h2>
+                    <p>
+                        For more complex components, you'll want to use the Shadow DOM to ensure styles and behavior are self-contained. The styles you write inside the Shadow DOM will not affect anything outside of your component.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="tag">class</span> <span class="attr">EncapsulatedComponent</span> <span class="tag">extends</span> <span class="string">HTMLElement</span> {
+  <span class="string">constructor</span>() {
+    <span class="tag">super</span>();
+    <span class="string">// Attach a shadow DOM to the custom element</span>
+    const shadow = this.attachShadow({ mode: 'open' });
+    
+    <span class="string">// Add styles and HTML to the shadow DOM</span>
+    shadow.innerHTML = `
+      &lt;style&gt;
+        <span class="attr">h3</span> {
+          color: <span class="string">purple</span>;
+          font-family: <span class="string">sans-serif</span>;
+        }
+      &lt;/style&gt;
+      &lt;h3&gt;I am encapsulated!&lt;/h3&gt;
+      &lt;p&gt;My styles will not affect anything outside of this component.&lt;/p&gt;
+    `;
+  }
+}
+<span class="string">customElements</span>.<span class="tag">define</span>('encapsulated-component', <span class="attr">EncapsulatedComponent</span>);</pre>
+                    </div>
+                </section>
+                
+                <section class="content-section">
+                    <h2>Advanced: Slots for Dynamic Content</h2>
+                    <p>
+                        The <code>&lt;slot&gt;</code> element is a powerful tool for creating flexible components. It acts as a placeholder for content that you provide from the outside.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="tag">class</span> <span class="attr">CardComponent</span> <span class="tag">extends</span> <span class="string">HTMLElement</span> {
+  <span class="string">constructor</span>() {
+    <span class="tag">super</span>();
+    const shadow = this.attachShadow({ mode: 'open' });
+    shadow.innerHTML = `
+      &lt;style&gt;
+        .card {
+          border: <span class="string">1px solid gray</span>;
+          padding: <span class="string">16px</span>;
+          border-radius: <span class="string">8px</span>;
+          box-shadow: <span class="string">0 2px 4px rgba(0,0,0,0.1)</span>;
+        }
+      &lt;/style&gt;
+      &lt;div class="card"&gt;
+        &lt;slot&gt;<span class="string">Default Content</span>&lt;/slot&gt;
+      &lt;/div&gt;
+    `;
+  }
+}
+<span class="string">customElements</span>.<span class="tag">define</span>('my-card', <span class="attr">CardComponent</span>);</pre>
+                    </div>
+                    <h3>Using the Card with a Slot</h3>
+                    <div class="code-block">
+                        <pre>
+<span class="tag">&lt;my-card&gt;</span>
+  &lt;h3&gt;This is the Card Title&lt;/h3&gt;
+  &lt;p&gt;This content is placed inside the slot.&lt;/p&gt;
+<span class="tag">&lt;/my-card&gt;</span></pre>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="headings.html" class="nav-btn prev">
+                        &larr; Prev: Headings
+                    </a>
+                    <a href="best-practices.html" class="nav-btn next">
+                        Next: Best Practices &rarr;
+                    </a>
+                </div>
+            </div>
+            
+            
+        </main>
+        
+        <label for="sidebar-toggle" class="overlay"></label>
+    </div>
+    
+</body>
+</html>

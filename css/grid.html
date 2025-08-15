@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - CodeMaster Academy</title>
+    <meta name="description" content="Learn CSS Grid to create powerful two-dimensional page layouts with ease.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html" class="active">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Grid</h1>
+                    <p class="topic-description">
+                        Master CSS Grid to create robust and responsive two-dimensional page layouts with columns and rows.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Introduction to CSS Grid</h2>
+                    <p>
+                        CSS Grid Layout, often simply called "Grid," is a two-dimensional layout system for the web. It allows you to arrange content into columns and rows, providing precise control over the positioning and sizing of elements on a page. Unlike Flexbox, which is primarily a one-dimensional layout system (either rows OR columns), Grid excels at creating complex, overlapping, or non-linear layouts.
+                    </p>
+                    <p>
+                        Grid is perfect for designing the overall structure of a page, such as headers, footers, sidebars, and main content areas, making it a powerful tool for modern web design.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>📝 Key Concept</h4>
+                        <p>CSS Grid is a **two-dimensional** layout system, meaning it can handle both columns and rows simultaneously. This makes it ideal for laying out entire pages or complex sections of a UI.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Grid Container and Grid Items</h2>
+                    <p>
+                        To use CSS Grid, you first define a **grid container** by setting its <code>display</code> property to <code>grid</code> or <code>inline-grid</code>. All direct children of this container automatically become **grid items**.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">&lt;!-- HTML Structure --&gt;</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"grid-container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"grid-item"</span><span class="tag">&gt;</span>Item 1<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"grid-item"</span><span class="tag">&gt;</span>Item 2<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"grid-item"</span><span class="tag">&gt;</span>Item 3<span class="tag">&lt;/div&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">/* CSS */</span>
+<span class="selector">.grid-container</span> {
+    <span class="property">display</span>: <span class="value">grid</span>;
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Defining Grid Tracks: Columns and Rows</h2>
+                    <p>
+                        Once you have a grid container, you define the grid's structure using the <code>grid-template-columns</code> and <code>grid-template-rows</code> properties.
+                    </p>
+
+                    <h3><code>grid-template-columns</code></h3>
+                    <p>
+                        Specifies the size and number of columns. You can use fixed units (px, em, rem), percentages (%), or the flexible `fr` unit.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Three columns, 100px, 1fr, 2fr */</span>
+<span class="selector">.grid-container-cols</span> {
+    <span class="property">display</span>: <span class="value">grid</span>;
+    <span class="property">grid-template-columns</span>: <span class="value">100px 1fr 2fr</span>;
+    <span class="property">gap</span>: <span class="value">10px</span>; <span class="comment">/* Spacing between grid cells */</span>
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Grid Columns</div>
+                        <div style="display: grid; grid-template-columns: 100px 1fr 2fr; gap: 10px; border: 1px solid var(--border-color); padding: 10px; background-color: var(--bg-secondary);">
+                            <div style="background-color: var(--accent-color); color: white; padding: 15px;">Col 1</div>
+                            <div style="background-color: var(--accent-color); color: white; padding: 15px;">Col 2</div>
+                            <div style="background-color: var(--accent-color); color: white; padding: 15px;">Col 3</div>
+                        </div>
+                    </div>
+
+                    <h3><code>grid-template-rows</code></h3>
+                    <p>
+                        Specifies the size and number of rows. Works similarly to `grid-template-columns`.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Two rows, 50px and auto (content-based height) */</span>
+<span class="selector">.grid-container-rows</span> {
+    <span class="property">display</span>: <span class="value">grid</span>;
+    <span class="property">grid-template-rows</span>: <span class="value">50px auto</span>;
+    <span class="property">grid-template-columns</span>: <span class="value">1fr 1fr</span>; <span class="comment">/* Need columns for items to sit in */</span>
+    <span class="property">gap</span>: <span class="value">10px</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>gap</code> (or <code>grid-gap</code>)</h3>
+                    <p>
+                        Defines the space between grid cells (rows and columns). It's a shorthand for `grid-row-gap` and `grid-column-gap`.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.grid-container-gap</span> {
+    <span class="property">display</span>: <span class="value">grid</span>;
+    <span class="property">grid-template-columns</span>: <span class="value">repeat(3, 1fr)</span>;
+    <span class="property">gap</span>: <span class="value">20px</span>; <span class="comment">/* 20px space between both rows and columns */</span>
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Placing Grid Items</h2>
+                    <p>
+                        You can explicitly place grid items using line numbers or named grid areas.
+                    </p>
+
+                    <h3><code>grid-column</code> and <code>grid-row</code></h3>
+                    <p>
+                        These properties define an item's start and end position within the grid.
+                    </p>
+                    <ul>
+                        <li><code>grid-column-start</code> / <code>grid-column-end</code></li>
+                        <li><code>grid-row-start</code> / <code>grid-row-end</code></li>
+                        <li>Shorthands: <code>grid-column: start-line / end-line;</code> and <code>grid-row: start-line / end-line;</code></li>
+                        <li>Use <code>span N</code> to make an item span N tracks.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.grid-container-placement</span> {
+    <span class="property">display</span>: <span class="value">grid</span>;
+    <span class="property">grid-template-columns</span>: <span class="value">repeat(3, 1fr)</span>;
+    <span class="property">grid-template-rows</span>: <span class="value">100px 100px</span>;
+    <span class="property">gap</span>: <span class="value">10px</span>;
+}
+<span class="selector">.item-span</span> {
+    <span class="property">grid-column</span>: <span class="value">1 / span 2</span>; <span class="comment">/* Starts at line 1, spans 2 columns */</span>
+    <span class="property">grid-row</span>: <span class="value">1</span>; <span class="comment">/* Stays in the first row */</span>
+    <span class="property">background-color</span>: <span class="value">var(--primary-color)</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+    <span class="property">padding</span>: <span class="value">15px</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Item Spanning Columns</div>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 100px 100px; gap: 10px; border: 1px solid var(--border-color); padding: 10px; background-color: var(--bg-secondary);">
+                            <div style="grid-column: 1 / span 2; grid-row: 1; background-color: var(--primary-color); color: white; padding: 15px; display: flex; align-items: center; justify-content: center;">Spans 2 Columns</div>
+                            <div style="background-color: var(--accent-color); color: white; padding: 15px; display: flex; align-items: center; justify-content: center;">Item</div>
+                            <div style="background-color: var(--secondary-color); color: white; padding: 15px; display: flex; align-items: center; justify-content: center;">Item</div>
+                            <div style="background-color: var(--secondary-color); color: white; padding: 15px; display: flex; align-items: center; justify-content: center;">Item</div>
+                            <div style="background-color: var(--secondary-color); color: white; padding: 15px; display: flex; align-items: center; justify-content: center;">Item</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Alignment in Grid</h2>
+                    <p>
+                        Grid offers powerful alignment properties, similar to Flexbox, but adapted for a 2D context.
+                    </p>
+                    <ul>
+                        <li>**<code>justify-items</code>**: Aligns grid items along the **inline (row)** axis within their cells.</li>
+                        <li>**<code>align-items</code>**: Aligns grid items along the **block (column)** axis within their cells.</li>
+                        <li>**<code>place-items</code>**: Shorthand for <code>align-items</code> and <code>justify-items</code>.</li>
+                    </ul>
+                    <p>
+                        These properties are applied to the **grid container**.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.grid-container-align-items</span> {
+    <span class="property">display</span>: <span class="value">grid</span>;
+    <span class="property">grid-template-columns</span>: <span class="value">repeat(3, 100px)</span>; <span class="comment">/* Fixed width columns for demonstration */</span>
+    <span class="property">grid-template-rows</span>: <span class="value">80px</span>;
+    <span class="property">gap</span>: <span class="value">5px</span>;
+    <span class="property">justify-items</span>: <span class="value">center</span>; <span class="comment">/* Centers items horizontally in their cells */</span>
+    <span class="property">align-items</span>: <span class="value">end</span>; <span class="comment">/* Aligns items to the bottom of their cells */</span>
+    <span class="property">border</span>: <span class="value">1px solid #ccc</span>;
+    <span class="property">padding</span>: <span class="value">10px</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Aligning Grid Items</div>
+                        <div style="display: grid; grid-template-columns: repeat(3, 100px); grid-template-rows: 80px; gap: 5px; justify-items: center; align-items: end; border: 1px solid var(--border-color); padding: 10px; background-color: var(--bg-secondary);">
+                            <div style="background-color: var(--primary-color); color: white; padding: 5px;">Item 1</div>
+                            <div style="background-color: var(--primary-color); color: white; padding: 5px;">Item 2 Longer</div>
+                            <div style="background-color: var(--primary-color); color: white; padding: 5px;">Item 3</div>
+                        </div>
+                    </div>
+
+                    <p>
+                        There are also properties to align the entire grid tracks within the container if there's extra space:
+                    </p>
+                    <ul>
+                        <li>**<code>justify-content</code>**: Aligns grid tracks along the **inline (row)** axis.</li>
+                        <li>**<code>align-content</code>**: Aligns grid tracks along the **block (column)** axis.</li>
+                        <li>**<code>place-content</code>**: Shorthand for <code>align-content</code> and <code>justify-content</code>.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.grid-container-align-content</span> {
+    <span class="property">display</span>: <span class="value">grid</span>;
+    <span class="property">grid-template-columns</span>: <span class="value">repeat(2, 100px)</span>;
+    <span class="property">grid-template-rows</span>: <span class="value">repeat(2, 50px)</span>;
+    <span class="property">height</span>: <span class="value">200px</span>; <span class="comment">/* Give container extra height/width for content alignment to show */</span>
+    <span class="property">gap</span>: <span class="value">10px</span>;
+    <span class="property">justify-content</span>: <span class="value">space-around</span>; <span class="comment">/* Distributes columns with space around */</span>
+    <span class="property">align-content</span>: <span class="value">space-between</span>; <span class="comment">/* Distributes rows with space between */</span>
+    <span class="property">border</span>: <span class="value">1px solid #ccc</span>;
+    <span class="property">padding</span>: <span class="value">10px</span>;
+}</pre>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="flexbox.html" class="nav-btn">&larr; Previous: Flexbox</a>
+                    <a href="floats.html" class="nav-btn">Next: Floats &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+    
+</body>
+</html>

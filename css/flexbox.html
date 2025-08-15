@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox - CodeMaster Academy</title>
+    <meta name="description"
+        content="Learn about CSS Flexbox for creating efficient and responsive one-dimensional layouts.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li class="active"><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Flexbox</h1>
+                    <p class="topic-description">
+                        Master the CSS Flexible Box Layout module (Flexbox) to design efficient, responsive
+                        one-dimensional layouts.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What is Flexbox?</h2>
+                    <p>
+                        Flexbox, short for the Flexible Box Layout module, is a one-dimensional layout method in CSS
+                        designed to distribute space among items within a single row or column. It provides a more
+                        efficient way to align and distribute space among items in a container, even when their sizes
+                        are unknown or dynamic.
+                    </p>
+                    <p>
+                        Unlike traditional block layout (which is vertical) and inline layout (which is horizontal),
+                        Flexbox operates on a single axis at a time – either a row (horizontal) or a column (vertical).
+                        This makes it ideal for components like navigation menus, card grids, and any scenario where you
+                        need to align items flexibly.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>💡 Key Concept</h4>
+                        <p>Flexbox is a <b>one-dimensional</b> layout system. It deals with distributing items along
+                            either a row or a column, not both simultaneously. For two-dimensional layouts, consider CSS
+                            Grid.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Flex Container and Flex Items</h2>
+                    <p>
+                        Flexbox consists of two main components:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Flex Container:</strong> This is the parent element on which you apply
+                            <code>display: flex;</code> (or <code>display: inline-flex;</code>). It defines the flex
+                            context for its direct children.
+                        </li>
+                        <li>
+                            <strong>Flex Items:</strong> These are the direct children of the flex container. Once their
+                            parent becomes a flex container, they become flex items and their layout behavior is
+                            controlled by Flexbox properties.
+                        </li>
+                    </ul>
+
+                    <h3>Enabling Flexbox</h3>
+                    <p>
+                        To start using Flexbox, simply set the <code>display</code> property of a parent element to
+                        <code>flex</code>:
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.flex-container</span> {
+    <span class="property">display</span>: <span class="value">flex</span>; <span class="comment">/* Makes the element a flex container */</span>
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Basic Flex Container</div>
+                        <div
+                            style="display: flex; border: 1px solid var(--border-color); padding: 15px; background-color: var(--bg-secondary);">
+                            <div
+                                style="background-color: var(--accent-color); color: white; padding: 10px; margin: 5px; border-radius: var(--radius-sm);">
+                                Item 1</div>
+                            <div
+                                style="background-color: var(--accent-color); color: white; padding: 10px; margin: 5px; border-radius: var(--radius-sm);">
+                                Item 2</div>
+                            <div
+                                style="background-color: var(--accent-color); color: white; padding: 10px; margin: 5px; border-radius: var(--radius-sm);">
+                                Item 3</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Properties for the Flex Container</h2>
+                    <p>
+                        These properties are applied to the parent element (the flex container).
+                    </p>
+
+                    <h3><code>flex-direction</code></h3>
+                    <p>
+                        Establishes the main-axis, thus defining the direction flex items are placed in the flex
+                        container.
+                    </p>
+                    <ul>
+                        <li><code>row</code> (default): Items are arranged horizontally, from left to right.</li>
+                        <li><code>row-reverse</code>: Items are arranged horizontally, from right to left.</li>
+                        <li><code>column</code>: Items are arranged vertically, from top to bottom.</li>
+                        <li><code>column-reverse</code>: Items are arranged vertically, from bottom to top.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.flex-container</span> {
+    <span class="property">flex-direction</span>: <span class="value">column</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Flex Direction (Column)</div>
+                        <div
+                            style="display: flex; flex-direction: column; border: 1px solid var(--border-color); padding: 15px; background-color: var(--bg-secondary); height: 200px;">
+                            <div
+                                style="background-color: var(--primary-color); color: white; padding: 10px; margin: 5px; border-radius: var(--radius-sm);">
+                                Col Item 1</div>
+                            <div
+                                style="background-color: var(--primary-color); color: white; padding: 10px; margin: 5px; border-radius: var(--radius-sm);">
+                                Col Item 2</div>
+                            <div
+                                style="background-color: var(--primary-color); color: white; padding: 10px; margin: 5px; border-radius: var(--radius-sm);">
+                                Col Item 3</div>
+                        </div>
+                    </div>
+
+                    <h3><code>justify-content</code></h3>
+                    <p>
+                        Aligns flex items along the **main-axis** of the flex container.
+                    </p>
+                    <ul>
+                        <li><code>flex-start</code> (default): Items are packed towards the start of the flex-direction.
+                        </li>
+                        <li><code>flex-end</code>: Items are packed towards the end of the flex-direction.</li>
+                        <li><code>center</code>: Items are centered along the line.</li>
+                        <li><code>space-between</code>: Items are evenly distributed in the line; first item is at the
+                            start, last item at the end.</li>
+                        <li><code>space-around</code>: Items are evenly distributed in the line with equal space around
+                            them.</li>
+                        <li><code>space-evenly</code>: Items are distributed so that the spacing between any two items
+                            (and the space to the edges) is equal.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.flex-container</span> {
+    <span class="property">justify-content</span>: <span class="value">center</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>align-items</code></h3>
+                    <p>
+                        Aligns flex items along the **cross-axis** (perpendicular to the main-axis).
+                    </p>
+                    <ul>
+                        <li><code>stretch</code> (default): Items are stretched to fill the container (but still respect
+                            <code>min-width</code>/<code>max-width</code>).</li>
+                        <li><code>flex-start</code>: Items are packed towards the start of the cross-axis.</li>
+                        <li><code>flex-end</code>: Items are packed towards the end of the cross-axis.</li>
+                        <li><code>center</code>: Items are centered along the cross-axis.</li>
+                        <li><code>baseline</code>: Items are aligned such that their baselines align.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.flex-container</span> {
+    <span class="property">align-items</span>: <span class="value">flex-end</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>flex-wrap</code></h3>
+                    <p>
+                        By default, flex items will try to fit onto one line. This property sets whether flex items are
+                        forced onto one line or can wrap onto multiple lines.
+                    </p>
+                    <ul>
+                        <li><code>nowrap</code> (default): All flex items will be on one line.</li>
+                        <li><code>wrap</code>: Flex items will wrap onto multiple lines, from top to bottom.</li>
+                        <li><code>wrap-reverse</code>: Flex items will wrap onto multiple lines, from bottom to top.
+                        </li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.flex-container</span> {
+    <span class="property">flex-wrap</span>: <span class="value">wrap</span>;
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Properties for the Flex Items</h2>
+                    <p>
+                        These properties are applied to the direct children of the flex container (the flex items).
+                    </p>
+
+                    <h3><code>flex-grow</code></h3>
+                    <p>
+                        Defines the ability for a flex item to grow if necessary. It accepts a unitless proportion
+                        value.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.flex-item</span> {
+    <span class="property">flex-grow</span>: <span class="value">1</span>; <span class="comment">/* Item will grow to take up available space */</span>
+}</pre>
+                    </div>
+
+                    <h3><code>flex-shrink</code></h3>
+                    <p>
+                        Defines the ability for a flex item to shrink if necessary. It accepts a unitless proportion
+                        value.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.flex-item</span> {
+    <span class="property">flex-shrink</span>: <span class="value">0</span>; <span class="comment">/* Item will not shrink */</span>
+}</pre>
+                    </div>
+
+                    <h3><code>flex-basis</code></h3>
+                    <p>
+                        Defines the default size of an element before the remaining space is distributed. It can be a
+                        length (e.g., <code>200px</code>) or a keyword like <code>auto</code> (which means "look at my
+                        width/height property" or "size to my content").
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.flex-item</span> {
+    <span class="property">flex-basis</span>: <span class="value">150px</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>flex</code> Shorthand</h3>
+                    <p>
+                        The <code>flex</code> property is a shorthand for <code>flex-grow</code>,
+                        <code>flex-shrink</code>, and <code>flex-basis</code>.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.flex-item</span> {
+    <span class="property">flex</span>: <span class="value">1 1 auto</span>; <span class="comment">/* grow, shrink, basis */</span>
+    <span class="comment">/* Equivalent to: flex-grow: 1; flex-shrink: 1; flex-basis: auto; */</span>
+}
+
+<span class="selector">.flex-item-fixed</span> {
+    <span class="property">flex</span>: <span class="value">0 0 100px</span>; <span class="comment">/* Item will not grow or shrink, basis 100px */</span>
+}</pre>
+                    </div>
+
+                    <h3><code>order</code></h3>
+                    <p>
+                        By default, flex items are laid out in the source order. The <code>order</code> property
+                        controls the order in which flex items appear in the flex container, overriding the source
+                        order. It accepts an integer value (defaults to <code>0</code>).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.item-first</span> {
+    <span class="property">order</span>: <span class="value">-1</span>;
+}
+<span class="selector">.item-last</span> {
+    <span class="property">order</span>: <span class="value">1</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>align-self</code></h3>
+                    <p>
+                        This property allows individual flex items to override the <code>align-items</code> property set
+                        on the flex container. It takes the same values as <code>align-items</code>.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.item-override</span> {
+    <span class="property">align-self</span>: <span class="value">center</span>;
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Practical Use Cases for Flexbox</h2>
+                    <p>
+                        Flexbox is incredibly versatile and is used for a wide range of layout challenges:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Navigation Bars:</strong> Creating horizontally aligned menu items that distribute
+                            space evenly.
+
+                        </li>
+                        <li>
+                            <strong>Card Layouts:</strong> Arranging cards in rows, ensuring equal height or alignment,
+                            and wrapping them responsively.
+
+                        </li>
+                        <li>
+                            <strong>Form Elements:</strong> Aligning labels with input fields or placing buttons next to
+                            each other.
+                        </li>
+                        <li>
+                            <strong>Vertical Centering:</strong> Easily centering content vertically and horizontally
+                            within a container.
+                        </li>
+                    </ul>
+                    <div class="highlight-box">
+                        <h4>⭐ Tip</h4>
+                        <p>When unsure whether to use Flexbox or Grid, remember: Flexbox is for one-dimensional layouts
+                            (rows OR columns), while Grid is for two-dimensional layouts (rows AND columns
+                            simultaneously).</p>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="positioning.html" class="nav-btn">&larr; Previous: Positioning</a>
+                    <a href="grid.html" class="nav-btn">Next: Grid &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+
+</body>
+
+</html>

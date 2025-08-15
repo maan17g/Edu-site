@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-elements - CodeMaster Academy</title>
+    <meta name="description" content="Explore CSS pseudo-elements to style specific parts of an element, such as the first line, first letter, or content before/after an element.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html" class="active">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Pseudo-elements</h1>
+                    <p class="topic-description">
+                        Learn how CSS pseudo-elements enable you to style specific, non-document-tree parts of an element,
+                        such as the first letter of text or generated content.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What are Pseudo-elements?</h2>
+                    <p>
+                        CSS **pseudo-elements** are keywords added to selectors that allow you to style specific parts
+                        of an element's content, or insert content that isn't explicitly in the HTML. They essentially
+                        create "virtual" elements within the document tree that can be styled.
+                    </p>
+                    <p>
+                        A pseudo-element starts with a double colon (<code>::</code>). While a single colon (<code>:</code>)
+                        was historically used for pseudo-elements (and still works for older ones for backward compatibility),
+                        the double colon is the modern and recommended syntax to differentiate them from pseudo-classes.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>💡 Key Distinction</h4>
+                        <p>
+                            **Pseudo-classes** style an element based on its *state* or *position* (e.g., :hover, :first-child).
+                            **Pseudo-elements** style a *part* of an element or insert *generated content* (e.g., ::first-line, ::before).
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Common Pseudo-elements</h2>
+                    <h3><code>::before</code> and <code>::after</code></h3>
+                    <p>
+                        These are two of the most powerful and commonly used pseudo-elements. They allow you to insert
+                        content (via the <code>content</code> property) before or after the actual content of an element.
+                        This generated content is part of the styling, not part of the HTML document itself.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">h2::before</span> {
+    <span class="property">content</span>: <span class="string">"&raquo; "</span>; <span class="comment">/* Inserts a right-arrow character */</span>
+    <span class="property">color</span>: <span class="value">var(--primary-color)</span>;
+    <span class="property">font-weight</span>: <span class="value">bold</span>;
+}
+
+<span class="selector">a::after</span> {
+    <span class="property">content</span>: <span class="string">" &rarr;"</span>; <span class="comment">/* Adds an arrow after links */</span>
+    <span class="property">font-size</span>: <span class="value">0.8em</span>;
+    <span class="property">vertical-align</span>: <span class="value">super</span>;
+    <span class="property">opacity</span>: <span class="value">0.7</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example Usage:</div>
+                        <p>Using <code>::before</code> for decorative elements or icons, and <code>::after</code> for
+                            clearfixes or external link indicators.
+                        </p>
+                    </div>
+
+                    <h3><code>::first-line</code></h3>
+                    <p>
+                        Selects the first line of a block-level element. The length of the first line depends on the width
+                        of the element and the font size.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">p::first-line</span> {
+    <span class="property">font-variant</span>: <span class="value">small-caps</span>;
+    <span class="property">color</span>: <span class="value">var(--primary-color)</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>::first-letter</code></h3>
+                    <p>
+                        Selects the first letter of the first line of a block-level element. Often used for "drop caps"
+                        or initial letter styling.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">p::first-letter</span> {
+    <span class="property">font-size</span>: <span class="value">2.5em</span>;
+    <span class="property">font-weight</span>: <span class="value">bold</span>;
+    <span class="property">float</span>: <span class="value">left</span>;
+    <span class="property">margin-right</span>: <span class="value">0.1em</span>;
+    <span class="property">color</span>: <span class="value">var(--secondary-color)</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>::selection</code></h3>
+                    <p>
+                        Applies styles to the portion of an element that is highlighted by the user (e.g., text selected
+                        with the mouse).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">::selection</span> {
+    <span class="property">background</span>: <span class="value">var(--accent-color)</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>::placeholder</code></h3>
+                    <p>
+                        Styles the placeholder text of form input fields (<code>&lt;input&gt;</code> and <code>&lt;textarea&gt;</code>).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">input::placeholder</span> {
+    <span class="property">color</span>: <span class="value">var(--text-muted)</span>;
+    <span class="property">font-style</span>: <span class="value">italic</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>::marker</code></h3>
+                    <p>
+                        Styles the marker box of a list item, typically a bullet or number in <code>&lt;li&gt;</code>
+                        elements.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">li::marker</span> {
+    <span class="property">color</span>: <span class="value">var(--success-color)</span>;
+    <span class="property">font-size</span>: <span class="value">1.2em</span>;
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Practical Uses of Pseudo-elements</h2>
+                    <ul>
+                        <li>**Adding decorative content**: Icons, arrows, quotation marks, or other visual cues that
+                            don't need to be in the HTML.</li>
+                        <li>**Clearfixes**: Using <code>::after</code> with <code>clear: both; display: table;</code>
+                            to contain floats within a parent element.</li>
+                        <li>**Styling specific text parts**: Applying unique styles to the first letter or line of a
+                            paragraph for typographic effect.</li>
+                        <li>**Customizing form elements**: Styling placeholders, or scrollbars (though scrollbar
+                            pseudo-elements are non-standard and browser-specific).</li>
+                        <li>**Highlighting user selections**: Changing the background and text color of selected content.</li>
+                    </ul>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="pseudo-classes.html" class="nav-btn">&larr; Previous: Pseudo Classes</a>
+                    <a href="media-queries.html" class="nav-btn">Next: Media Queries &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+</body>
+</html>

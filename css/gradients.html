@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients - CodeMaster Academy</title>
+    <meta name="description" content="Learn about CSS gradients to create smooth color transitions for backgrounds and more.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html" class="active">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Gradients</h1>
+                    <p class="topic-description">
+                        Learn how to create smooth transitions between two or more specified colors using CSS gradients.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding CSS Gradients</h2>
+                    <p>
+                        CSS gradients allow you to display smooth transitions between two or more colors. They are a type of `<image>` data type and can be used anywhere an image is expected, such as the `background-image` property. Gradients are powerful because they are resolution-independent, meaning they scale perfectly without pixelation, unlike traditional image files.
+                    </p>
+                    <p>
+                        There are three main types of gradients in CSS:
+                    </p>
+                    <ul>
+                        <li><p><b>Linear Gradients:</b> Transition colors along a straight line (up, down, left, right, or diagonally).</p></li>
+                        <li><p><b>Radial Gradients:</b> Transition colors radiating outwards from a central point.</p></li>
+                        <li><p><b>Conic Gradients:</b> Transition colors around a central point, like a pie chart.</p></li>
+                    </ul>
+                    <div class="highlight-box">
+                        <h4>🎨 Design Tip</h4>
+                        <p>Gradients can add depth, modern aesthetics, and visual interest to your web elements without relying on external image files, reducing page load times.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Linear Gradients</h2>
+                    <p>
+                        Linear gradients create a smooth transition of colors along a straight line. You can specify the direction and the colors with their optional stop positions.
+                    </p>
+                    <h3>Basic Linear Gradient Syntax</h3>
+                    <p>
+                        The basic syntax for a linear gradient is `linear-gradient(direction, color-stop1, color-stop2, ...)`.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.linear-gradient-basic</span> {
+    <span class="property">background-image</span>: <span class="value">linear-gradient(red, yellow)</span>; <span class="comment">/* Top to bottom (default) */</span>
+}
+
+<span class="selector">.linear-gradient-direction</span> {
+    <span class="property">background-image</span>: <span class="value">linear-gradient(to right, red, orange)</span>; <span class="comment">/* Left to right */</span>
+}
+
+<span class="selector">.linear-gradient-diagonal</span> {
+    <span class="property">background-image</span>: <span class="value">linear-gradient(to bottom right, blue, green)</span>; <span class="comment">/* Top-left to bottom-right */</span>
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Linear Gradients</div>
+                        <div style="height: 50px; background-image: linear-gradient(red, yellow); margin-bottom: 10px; border-radius: var(--radius-sm);"></div>
+                        <p style="text-align: center; color: var(--text-muted); font-size: 0.875rem; margin-bottom: 10px;">Red to Yellow (top to bottom)</p>
+                        <div style="height: 50px; background-image: linear-gradient(to right, var(--primary-color), var(--accent-color)); margin-bottom: 10px; border-radius: var(--radius-sm);"></div>
+                        <p style="text-align: center; color: var(--text-muted); font-size: 0.875rem;">Primary to Accent (left to right)</p>
+                    </div>
+
+                    <h3>Color Stops and Percentages</h3>
+                    <p>
+                        You can add more than two colors and specify their positions using percentages, allowing for more complex transitions.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.multi-color-gradient</span> {
+    <span class="property">background-image</span>: <span class="value">linear-gradient(to right, red, orange 50%, yellow)</span>;
+}
+<span class="comment">/* Red starts at 0%, orange reaches 50% of the gradient, then transitions to yellow */</span>
+
+<span class="selector">.sharp-transition-gradient</span> {
+    <span class="property">background-image</span>: <span class="value">linear-gradient(to right, blue 0%, blue 50%, green 50%, green 100%)</span>;
+}
+<span class="comment">/* Creates a sharp line between blue and green at 50% */</span></pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Color Stops</div>
+                        <div style="height: 50px; background-image: linear-gradient(to right, #667eea, #f093fb 50%, #00f2fe); margin-bottom: 10px; border-radius: var(--radius-sm);"></div>
+                        <p style="text-align: center; color: var(--text-muted); font-size: 0.875rem;">Multi-color gradient with stops</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Radial Gradients</h2>
+                    <p>
+                        Radial gradients create color transitions that radiate outward from a central point, forming circles or ellipses.
+                    </p>
+                    <h3>Basic Radial Gradient Syntax</h3>
+                    <p>
+                        The basic syntax is `radial-gradient(shape size at position, color-stop1, color-stop2, ...)`.
+                    </p>
+                    <ul>
+                        <li><b>Shape:</b> `circle` or `ellipse` (default).</li>
+                        <li><b>Size:</b> `closest-corner`, `farthest-corner`, `closest-side`, `farthest-side` (default `farthest-corner` for `ellipse`, `farthest-side` for `circle`).</li>
+                        <li><b>Position:</b> Keywords like `center` (default), `top left`, or length/percentage values (e.g., `20% 30%`).</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.radial-gradient-basic</span> {
+    <span class="property">background-image</span>: <span class="value">radial-gradient(circle, white, black)</span>; <span class="comment">/* White center, fades to black */</span>
+}
+
+<span class="selector">.radial-gradient-at-position</span> {
+    <span class="property">background-image</span>: <span class="value">radial-gradient(at top left, yellow, green)</span>;
+}
+
+<span class="selector">.radial-gradient-ellipse</span> {
+    <span class="property">background-image</span>: <span class="value">radial-gradient(ellipse at center, red 0%, orange 50%, yellow 100%)</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Radial Gradients</div>
+                        <div style="height: 100px; background-image: radial-gradient(circle, var(--accent-color), var(--primary-color)); margin-bottom: 10px; border-radius: var(--radius-md);"></div>
+                        <p style="text-align: center; color: var(--text-muted); font-size: 0.875rem; margin-bottom: 10px;">Circle gradient</p>
+                        <div style="height: 100px; background-image: radial-gradient(ellipse at top right, #f5576c, #f093fb); border-radius: var(--radius-md);"></div>
+                        <p style="text-align: center; color: var(--text-muted); font-size: 0.875rem;">Ellipse gradient at top right</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Conic Gradients</h2>
+                    <p>
+                        Conic gradients create color transitions around a central point, rotating around it rather than radiating from it. They are often used for pie charts, color wheels, or decorative effects.
+                    </p>
+                    <h3>Basic Conic Gradient Syntax</h3>
+                    <p>
+                        The basic syntax is `conic-gradient(from angle at position, color-stop1, color-stop2, ...)`.
+                    </p>
+                    <ul>
+                        <li><b>Angle:</b> `from 0deg` (default is 0deg, pointing upwards).</li>
+                        <li><b>Position:</b> `at center` (default), `top left`, etc.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.conic-gradient-basic</span> {
+    <span class="property">background-image</span>: <span class="value">conic-gradient(red, yellow, green, blue, red)</span>;
+}
+
+<span class="selector">.conic-gradient-from-angle</span> {
+    <span class="property">background-image</span>: <span class="value">conic-gradient(from 45deg, purple, orange)</span>;
+}
+
+<span class="selector">.conic-gradient-at-position</span> {
+    <span class="property">background-image</span>: <span class="value">conic-gradient(at 20% 80%, white, black)</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Conic Gradients</div>
+                        <div style="height: 100px; width: 100px; border-radius: 50%; background-image: conic-gradient(red, yellow, green, blue, red); margin: 0 auto 10px; border: 1px solid var(--border-color);"></div>
+                        <p style="text-align: center; color: var(--text-muted); font-size: 0.875rem;">Basic conic gradient</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Repeating Gradients</h2>
+                    <p>
+                        You can create repeating patterns with gradients using `repeating-linear-gradient()`, `repeating-radial-gradient()`, and `repeating-conic-gradient()`. These functions work similarly to their non-repeating counterparts but will repeat the color stops you define.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.repeating-linear</span> {
+    <span class="property">background-image</span>: <span class="value">repeating-linear-gradient(45deg, #eee, #eee 10px, #ccc 10px, #ccc 20px)</span>;
+}
+
+<span class="selector">.repeating-radial</span> {
+    <span class="property">background-image</span>: <span class="value">repeating-radial-gradient(circle at center, #f0f0f0, #f0f0f0 10px, #dcdcdc 10px, #dcdcdc 20px)</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Repeating Linear Gradient</div>
+                        <div style="height: 100px; background-image: repeating-linear-gradient(45deg, var(--bg-tertiary), var(--bg-tertiary) 15px, var(--border-light) 15px, var(--border-light) 30px); border-radius: var(--radius-sm);"></div>
+                        <p style="text-align: center; color: var(--text-muted); font-size: 0.875rem; margin-top: 10px;">Repeating stripes</p>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="backgrounds.html" class="nav-btn">&larr; Previous: Backgrounds</a>
+                    <a href="shadows.html" class="nav-btn">Next: Shadows &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+  
+</body>
+</html>

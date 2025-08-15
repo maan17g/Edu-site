@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - CodeMaster Academy</title>
+    <meta name="description"
+        content="An in-depth guide to the CSS Box Model, the fundamental principle behind all web page layout.">
+    <!-- The following line assumes the style.css file is in a parent 'css' directory -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html" class="active">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Box Model</h1>
+                    <p class="topic-description">
+                        An in-depth guide to the CSS Box Model, the fundamental principle behind all web page layout.
+                    </p>
+                </div>
+            </section>
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding the CSS Box Model</h2>
+                    <p>
+                        The CSS Box Model is a foundational concept for all web design. It dictates that every HTML
+                        element is rendered as a rectangular box. This box is composed of four layers: the **content
+                        area**, **padding**, **border**, and **margin**. Understanding how these layers interact is
+                        essential for precise control over element spacing and layout.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>📦 Box Model Components</h4>
+                        <p>Imagine every element is like a package being shipped. The **content** is the item inside,
+                            **padding** is the foam protecting the item, the **border** is the cardboard box itself, and
+                            the **margin** is the empty space between your box and other packages.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Content, Padding, and Border</h2>
+                    <p>
+                        These three layers are considered part of the element's inner box.
+                    </p>
+                    <h3>Content Area</h3>
+                    <p>
+                        This is the innermost layer where the actual text, images, and other media are displayed. Its
+                        size is controlled by the `width` and `height` properties.
+                    </p>
+                    <h3>Padding</h3>
+                    <p>
+                        The padding creates space between the content and the border. It takes on the element's
+                        background color and is useful for giving content some breathing room. You can control each side
+                        individually or all sides at once.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="tag">.element</span> <span class="attr">{</span>
+  <span class="indent">padding: <span class="string">20px</span>; <span class="comment">/* Adds 20px of padding to all four sides */</span></span>
+  <span class="indent">padding-top: <span class="string">10px</span>; <span class="comment">/* Adds 10px to the top only */</span></span>
+  <span class="indent">padding: <span class="string">10px 20px</span>; <span class="comment">/* 10px top/bottom, 20px left/right */</span></span>
+<span class="attr">}</span></pre>
+                    </div>
+                    <h3>Border</h3>
+                    <p>
+                        The border is a line that surrounds the padding and content. You can style its thickness, style,
+                        and color. The `border` property is a shorthand for all three.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="tag">.element</span> <span class="attr">{</span>
+  <span class="indent">border-width: <span class="string">2px</span>;</span>
+  <span class="indent">border-style: <span class="string">solid</span>;</span>
+  <span class="indent">border-color: <span class="string">#667eea</span>;</span>
+  <span class="indent">border: <span class="string">2px solid #667eea</span>; <span class="comment">/* Shorthand for all three */</span></span>
+<span class="attr">}</span></pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Margin</h2>
+                    <p>
+                        The margin is the space outside the border, separating the element from its neighbors. Unlike
+                        padding, margin is transparent and does not take on the element's background color.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="tag">.element</span> <span class="attr">{</span>
+  <span class="indent">margin: <span class="string">30px</span>; <span class="comment">/* Adds 30px of margin to all four sides */</span></span>
+  <span class="indent">margin-bottom: <span class="string">15px</span>; <span class="comment">/* Adds 15px to the bottom only */</span></span>
+<span class="attr">}</span></pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Margin Collapsing</div>
+                        <p>
+                            A unique behavior of margins is "collapsing." When two vertical margins meet (e.g., the
+                            bottom margin of one paragraph and the top margin of the next), they collapse into a single
+                            margin, taking the value of the larger of the two.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Box Sizing: The Modern Approach</h2>
+                    <p>
+                        By default, the `width` and `height` properties only apply to the content area (`box-sizing:
+                        content-box`). This can make calculating layouts difficult because padding and borders are added
+                        on top of the specified width. The `border-box` value changes this behavior.
+                    </p>
+                    <p>
+                        With `box-sizing: border-box`, the `width` and `height` properties include the content, padding,
+                        and border, making layouts much more predictable.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* A popular and recommended practice */</span>
+<span class="tag">*</span>, <span class="tag">*::before</span>, <span class="tag">*::after</span> <span class="attr">{</span>
+  <span class="indent">box-sizing: <span class="string">border-box</span>;</span>
+<span class="attr">}</span>
+<span class="tag">.box</span> <span class="attr">{</span>
+  <span class="indent">width: <span class="string">300px</span>;</span>
+  <span class="indent">padding: <span class="string">20px</span>;</span>
+  <span class="indent">border: <span class="string">5px solid black</span>;</span>
+<span class="attr">}</span> <span class="comment">/* This box will have a total width of 300px, including padding and border */</span></pre>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="typography.html" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-arrow-left">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        Previous: Typography
+                    </a>
+                    <a href="display.html" class="nav-btn">
+                        Next: Display
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-arrow-right">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Footer -->
+            
+        </main>
+        <div class="overlay"></div>
+    </div>
+</body>
+
+</html>

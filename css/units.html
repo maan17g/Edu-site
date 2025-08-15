@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units - CodeMaster Academy</title>
+    <meta name="description" content="An in-depth guide to CSS units, covering absolute and relative units like px, em, rem, vw, and %.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for this page's example */
+        .units-example {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .unit-box {
+            background-color: var(--bg-tertiary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+        .unit-box h4 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        .em-rem-example {
+            background: var(--bg-primary);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border: 2px solid var(--border-color);
+        }
+        .em-parent {
+            font-size: 1.5em; /* This is 24px */
+            border: 2px solid var(--primary-color);
+            padding: 1em; /* This is 24px */
+            margin-bottom: 1rem;
+        }
+        .em-child {
+            font-size: 1.5em; /* This is 1.5 * 24px = 36px */
+            border: 2px solid var(--secondary-color);
+            padding: 1em; /* This is 36px */
+        }
+        .rem-parent {
+            font-size: 1.5rem; /* This is 1.5 * 16px = 24px */
+            border: 2px solid var(--primary-color);
+            padding: 1rem; /* This is 16px */
+            margin-top: 2rem;
+        }
+        .rem-child {
+            font-size: 1.5rem; /* This is 1.5 * 16px = 24px */
+            border: 2px solid var(--secondary-color);
+            padding: 1rem; /* This is 16px */
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html" class="active">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Units</h1>
+                    <p class="topic-description">
+                        Explore the different types of units in CSS and learn how to use them effectively to build robust and responsive layouts.
+                    </p>
+                </div>
+            </section>
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Absolute vs. Relative Units</h2>
+                    <p>
+                        CSS units are used to specify lengths, sizes, and other dimensions for elements. They can be broadly categorized into two types: **absolute** and **relative**.
+                    </p>
+                    <p>
+                        **Absolute units** are fixed and do not change based on other elements. They are useful for print media but are generally not recommended for screen design as they do not adapt to different screen sizes.
+                    </p>
+                    <p>
+                        **Relative units** are dynamic and scale relative to something else, such as the parent element's font size, the root element's font size, or the viewport dimensions. These are the preferred units for building responsive websites.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Common Absolute Units</h2>
+                    <div class="units-example">
+                        <div class="unit-box">
+                            <h4>px (Pixels)</h4>
+                            <p>A fixed number of pixels. The most common absolute unit, but not ideal for responsiveness.</p>
+                        </div>
+                        <div class="unit-box">
+                            <h4>pt (Points)</h4>
+                            <p>A point is $1/72$ of an inch. Often used in print media, but rarely in web development.</p>
+                        </div>
+                        <div class="unit-box">
+                            <h4>cm, mm, in</h4>
+                            <p>Centimeters, millimeters, and inches. Primarily used for print layouts, not screen.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Common Relative Units</h2>
+                    <div class="units-example">
+                        <div class="unit-box">
+                            <h4>em</h4>
+                            <p>Relative to the font size of the **parent** element. Can cause cascading sizing issues.</p>
+                        </div>
+                        <div class="unit-box">
+                            <h4>rem</h4>
+                            <p>Relative to the font size of the **root** (<code>html</code>) element. Highly recommended for consistent typography.</p>
+                        </div>
+                        <div class="unit-box">
+                            <h4>% (Percentage)</h4>
+                            <p>Relative to the size of the parent element. Often used for fluid layouts and widths.</p>
+                        </div>
+                        <div class="unit-box">
+                            <h4>vw, vh</h4>
+                            <p>Viewport width and viewport height. Relative to the browser window's size. Ideal for full-screen elements.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Live Example: em vs. rem</h2>
+                    <p>
+                        This example demonstrates the key difference between <code>em</code> and <code>rem</code>. The <code>em</code> unit is based on its parent's font size, which can lead to a compounding effect. The <code>rem</code> unit, however, is always based on the root font size, providing more predictable and consistent scaling.
+                    </p>
+                    <div class="example-box em-rem-example">
+                        <div class="em-parent">
+                            <p>Parent with font-size: 1.5em</p>
+                            <div class="em-child">
+                                <p>Child with font-size: 1.5em (relative to its parent)</p>
+                            </div>
+                        </div>
+                        <div class="rem-parent">
+                            <p>Parent with font-size: 1.5rem</p>
+                            <div class="rem-child">
+                                <p>Child with font-size: 1.5rem (relative to the root)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="variables.html" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                        Previous: Variables
+                    </a>
+                    <a href="z-index.html" class="nav-btn">
+                        Next: Z-Index
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CodeMaster Academy</h3>
+                    <p>Your journey to becoming a coding master starts here. Learn the fundamentals and advanced techniques of web development.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Courses</h4>
+                        <ul>
+                            <li><a href="../html/introduction-to-html.html">HTML Fundamentals</a></li>
+                            <li><a href="../css/introduction-to-css.html">CSS Mastery</a></li>
+                            <li><a href="#">JavaScript Essentials</a></li>
+                            <li><a href="#">Frontend Frameworks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Our Mission</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeMaster Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

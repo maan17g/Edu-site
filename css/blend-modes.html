@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Blend Modes - CodeMaster Academy</title>
+    <meta name="description" content="A guide to the CSS mix-blend-mode and background-blend-mode properties, which control how colors blend in overlapping elements.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for this page's example */
+        .blend-example-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            background-color: var(--bg-tertiary);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 2px solid var(--border-color);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            align-items: center;
+            justify-items: center;
+            padding: 1rem;
+        }
+
+        .blend-box {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: var(--radius-md);
+        }
+
+        .blend-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background-color: #f5576c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        /* Applying different mix-blend-mode values */
+        .blend-card {
+            background-color: var(--bg-secondary);
+            border-radius: var(--radius-lg);
+            padding: 1rem;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+        .blend-card h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Specific blend modes for each card */
+        .blend-card-normal .blend-content { mix-blend-mode: normal; }
+        .blend-card-multiply .blend-content { mix-blend-mode: multiply; }
+        .blend-card-screen .blend-content { mix-blend-mode: screen; }
+        .blend-card-overlay .blend-content { mix-blend-mode: overlay; }
+        .blend-card-darken .blend-content { mix-blend-mode: darken; }
+        .blend-card-lighten .blend-content { mix-blend-mode: lighten; }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html" class="active">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">Blend Modes</h1>
+                    <p class="topic-description">
+                        Discover how to blend the colors of an element with the content beneath it using `mix-blend-mode`.
+                    </p>
+                </div>
+            </section>
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What are CSS Blend Modes?</h2>
+                    <p>
+                        CSS blend modes allow you to specify how an element's content should blend with its background. This is a concept borrowed from graphic design software like Photoshop, where you can set layers to blend using modes like "Multiply" or "Screen." In CSS, you can use the `mix-blend-mode` property to achieve these same effects.
+                    </p>
+                    <p>
+                        The primary use case is to create complex visual effects by blending two or more overlapping elements. It's great for things like creating text that reveals a background image or making interactive hover effects.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2>The `mix-blend-mode` Property</h2>
+                    <p>
+                        The `mix-blend-mode` property applies to an element and controls how it blends with the element directly behind it. It's like applying a filter to the element itself and how it interacts with the background.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="tag">.overlapping-element</span> {
+  <span class="attr">mix-blend-mode:</span> <span class="string">multiply;</span>
+}</pre>
+                    </div>
+                    <p>
+                        Some common values include `normal`, `multiply`, `screen`, `overlay`, `darken`, `lighten`, and `difference`.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Live Example</h2>
+                    <p>
+                        In this example, a small red circle with different `mix-blend-mode` values is placed on top of a larger, gradient background. You can see how each blend mode changes the appearance of the circle based on the colors of the background beneath it.
+                    </p>
+                    <div class="example-box">
+                        <div class="example-title">Blend Modes in Action</div>
+                        <div class="blend-example-container">
+                            <div class="blend-card blend-card-normal">
+                                <h4>Normal</h4>
+                                <div class="blend-box">
+                                    <div class="blend-content" style="mix-blend-mode: normal;"></div>
+                                </div>
+                            </div>
+                            <div class="blend-card blend-card-multiply">
+                                <h4>Multiply</h4>
+                                <div class="blend-box">
+                                    <div class="blend-content" style="mix-blend-mode: multiply;"></div>
+                                </div>
+                            </div>
+                            <div class="blend-card blend-card-screen">
+                                <h4>Screen</h4>
+                                <div class="blend-box">
+                                    <div class="blend-content" style="mix-blend-mode: screen;"></div>
+                                </div>
+                            </div>
+                            <div class="blend-card blend-card-overlay">
+                                <h4>Overlay</h4>
+                                <div class="blend-box">
+                                    <div class="blend-content" style="mix-blend-mode: overlay;"></div>
+                                </div>
+                            </div>
+                            <div class="blend-card blend-card-darken">
+                                <h4>Darken</h4>
+                                <div class="blend-box">
+                                    <div class="blend-content" style="mix-blend-mode: darken;"></div>
+                                </div>
+                            </div>
+                            <div class="blend-card blend-card-lighten">
+                                <h4>Lighten</h4>
+                                <div class="blend-box">
+                                    <div class="blend-content" style="mix-blend-mode: lighten;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="filters.html" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                        Previous: Filters
+                    </a>
+                    <a href="best-practices.html" class="nav-btn">
+                        Next: Best Practices
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+   
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

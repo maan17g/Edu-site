@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds - CodeMaster Academy</title>
+    <meta name="description" content="Learn about CSS background properties to style the background of elements with colors, images, and more.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html" class="active">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Backgrounds</h1>
+                    <p class="topic-description">
+                        Discover how to style the background of HTML elements with colors, images, repeat patterns, and more.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding CSS Backgrounds</h2>
+                    <p>
+                        CSS background properties allow you to control the background of an element, including its color, image, how the image is positioned, and how it repeats. These properties are fundamental for creating visually appealing web designs.
+                    </p>
+                    <p>
+                        You can apply backgrounds to almost any HTML element, from the entire `<body>` to individual `<div>`s, buttons, and more.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>🎨 Design Tip</h4>
+                        <p>Well-chosen backgrounds can significantly impact the mood and professionalism of your website. Use them strategically to draw attention or provide visual context.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Background Color</h2>
+                    <p>
+                        The `background-color` property sets the solid color of an element's background. You can use named colors, hexadecimal codes, RGB values, RGBA values (including alpha for transparency), or HSL/HSLA values.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.colored-box</span> {
+    <span class="property">background-color</span>: <span class="value">lightblue</span>;
+}
+<span class="selector">.hex-color-box</span> {
+    <span class="property">background-color</span>: <span class="value">#FFD700</span>; <span class="comment">/* Gold */</span>
+}
+<span class="selector">.rgba-color-box</span> {
+    <span class="property">background-color</span>: <span class="value">rgba(255, 0, 0, 0.5)</span>; <span class="comment">/* Semi-transparent red */</span>
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Background Color</div>
+                        <div style="background-color: var(--primary-color); padding: 20px; color: white; margin-bottom: 10px;">
+                            This div has a primary background color.
+                        </div>
+                        <div style="background-color: var(--success-color); padding: 20px; color: white;">
+                            This div has a success background color.
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Background Image</h2>
+                    <p>
+                        The `background-image` property allows you to use an image as an element's background. You provide the URL to the image file. By default, background images repeat to cover the entire element.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.image-background</span> {
+    <span class="property">background-image</span>: <span class="value">url('../images/pattern.png')</span>;
+}
+<span class="comment">/* You can also use multiple background images */</span>
+<span class="selector">.multiple-images</span> {
+    <span class="property">background-image</span>: <span class="value">url('image1.png'), url('image2.png')</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Background Image</div>
+                        <div style="height: 100px; background-image: url('https://via.placeholder.com/50/667eea/ffffff?text=BG'); background-repeat: repeat-x; display: flex; align-items: center; justify-content: center; color: white;">
+                            Image background (repeats horizontally)
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Background Repeat</h2>
+                    <p>
+                        The `background-repeat` property controls how a background image repeats.
+                    </p>
+                    <ul>
+                        <li>`repeat` (default): Repeats horizontally and vertically.</li>
+                        <li>`repeat-x`: Repeats horizontally only.</li>
+                        <li>`repeat-y`: Repeats vertically only.</li>
+                        <li>`no-repeat`: Displays the image only once.</li>
+                        <li>`round`: Repeats the image to fit the area, scaling it if necessary without cropping.</li>
+                        <li>`space`: Repeats the image as many times as possible without clipping, distributing space evenly.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.no-repeat-bg</span> {
+    <span class="property">background-image</span>: <span class="value">url('../images/logo.png')</span>;
+    <span class="property">background-repeat</span>: <span class="value">no-repeat</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Background Repeat</div>
+                        <div style="height: 100px; background-image: url('https://via.placeholder.com/30/764ba2/ffffff?text=X'); background-repeat: no-repeat; display: flex; align-items: center; justify-content: center; color: white; border: 1px solid var(--border-color); margin-bottom: 10px;">
+                            No repeat
+                        </div>
+                        <div style="height: 100px; background-image: url('https://via.placeholder.com/30/f093fb/ffffff?text=X'); background-repeat: repeat-x; display: flex; align-items: center; justify-content: center; color: white; border: 1px solid var(--border-color);">
+                            Repeat X
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Background Position</h2>
+                    <p>
+                        The `background-position` property sets the starting position of a background image. You can use keywords (`top`, `bottom`, `left`, `right`, `center`) or length/percentage values (e.g., `20px 30px`, `50% 50%`).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.centered-bg</span> {
+    <span class="property">background-image</span>: <span class="value">url('../images/icon.png')</span>;
+    <span class="property">background-repeat</span>: <span class="value">no-repeat</span>;
+    <span class="property">background-position</span>: <span class="value">center center</span>;
+}
+<span class="selector">.top-right-bg</span> {
+    <span class="property">background-position</span>: <span class="value">top right</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Background Position</div>
+                        <div style="height: 100px; background-image: url('https://via.placeholder.com/50/4facfe/ffffff?text=ICON'); background-repeat: no-repeat; background-position: center; border: 1px solid var(--border-color);">
+                            Image centered
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Background Size</h2>
+                    <p>
+                        The `background-size` property specifies the size of the background image.
+                    </p>
+                    <ul>
+                        <li>`auto` (default): The background image retains its original size.</li>
+                        <li>`cover`: Scales the background image to be as large as possible so that it completely covers the background area. Some parts of the image may not be in view.</li>
+                        <li>`contain`: Scales the background image to be as large as possible while ensuring both its dimensions are less than or equal to the corresponding dimensions of the background positioning area. The entire image will be visible.</li>
+                        <li>Length/Percentage values: `100px 50px`, `50% auto`.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.cover-bg</span> {
+    <span class="property">background-image</span>: <span class="value">url('../images/large-bg.jpg')</span>;
+    <span class="property">background-size</span>: <span class="value">cover</span>;
+}
+<span class="selector">.contain-bg</span> {
+    <span class="property">background-image</span>: <span class="value">url('../images/small-bg.png')</span>;
+    <span class="property">background-size</span>: <span class="value">contain</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Background Size</div>
+                        <div style="height: 150px; background-image: url('https://via.placeholder.com/300x150/667eea/ffffff?text=Cover'); background-size: cover; background-position: center; border: 1px solid var(--border-color); margin-bottom: 10px;">
+                            Background size: cover
+                        </div>
+                        <div style="height: 150px; background-image: url('https://via.placeholder.com/100x50/764ba2/ffffff?text=Contain'); background-size: contain; background-repeat: no-repeat; background-position: center; border: 1px solid var(--border-color);">
+                            Background size: contain
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Background Attachment</h2>
+                    <p>
+                        The `background-attachment` property determines whether a background image scrolls with its containing block or is fixed.
+                    </p>
+                    <ul>
+                        <li>`scroll` (default): The background image scrolls with the element's content.</li>
+                        <li>`fixed`: The background image is fixed relative to the viewport. It won't scroll with the element.</li>
+                        <li>`local`: The background image scrolls with the element's content, but also allows it to scroll within the element if the element has scrollbars.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">body</span> {
+    <span class="property">background-image</span>: <span class="value">url('large-image.jpg')</span>;
+    <span class="property">background-attachment</span>: <span class="value">fixed</span>;
+}</pre>
+                    </div>
+                    <div class="highlight-box">
+                        <h4>💡 Tip</h4>
+                        <p>Using `background-attachment: fixed;` on the `body` or `html` element can create a parallax-like scrolling effect.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Background Shorthand Property</h2>
+                    <p>
+                        Similar to borders, you can combine multiple background properties into a single `background` shorthand property. The order of values generally matters for specific properties, but for basic usage, you can often provide them in a flexible order.
+                    </p>
+                    <p>
+                        The recommended order for the shorthand property is:
+                        `background-color background-image background-repeat background-attachment background-position / background-size`
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.shorthand-bg</span> {
+    <span class="property">background</span>: <span class="value">#f0f8ff url('logo.png') no-repeat center / 50% auto fixed</span>;
+}
+<span class="comment">/* This sets:
+   background-color: #f0f8ff;
+   background-image: url('logo.png');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: 50% auto;
+*/</span></pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Background Shorthand</div>
+                        <div style="height: 120px; background: #e0e0e0 url('https://via.placeholder.com/40/f5576c/ffffff?text=S') no-repeat center / 60% auto; border: 1px solid var(--border-color);">
+                            This background uses the shorthand property.
+                        </div>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="borders.html" class="nav-btn">&larr; Previous: Borders</a>
+                    <a href="gradients.html" class="nav-btn">Next: Gradients &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+
+</body>
+</html>

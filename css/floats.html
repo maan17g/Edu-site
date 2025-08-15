@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Floats - CodeMaster Academy</title>
+    <meta name="description" content="Learn about CSS floats for basic layout and text wrapping, and how to clear them.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html" class="active">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Floats</h1>
+                    <p class="topic-description">
+                        Discover how to use CSS floats for positioning elements and creating text wrap effects, and master how to clear them.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding CSS Floats</h2>
+                    <p>
+                        The CSS <code>float</code> property was originally designed for image placement within text, allowing text to wrap around an image similar to how images are placed in newspaper layouts. Over time, it was adapted for creating multi-column layouts before the advent of Flexbox and Grid. While Flexbox and Grid are now the preferred methods for most layouts, understanding floats is still important, especially when dealing with older codebases or specific text-wrapping scenarios.
+                    </p>
+                    <p>
+                        When an element is floated, it's taken out of the normal flow of the document but remains a part of it. Other elements (like text) will then flow around it.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>📝 Key Concept</h4>
+                        <p><code>float</code> was designed for text wrapping around elements but became a common, albeit less robust, tool for creating column layouts before modern CSS layout methods.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>The <code>float</code> Property</h2>
+                    <p>
+                        The <code>float</code> property can take one of the following values:
+                    </p>
+                    <ul>
+                        <li><code>none</code> (default): The element does not float.</li>
+                        <li><code>left</code>: The element floats to the left of its container.</li>
+                        <li><code>right</code>: The element floats to the right of its container.</li>
+                        <li><code>inherit</code>: The element inherits the float value from its parent.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Example of a floated image */</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"text-with-image"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;img</span> <span class="attr">src=</span><span class="string">"image.jpg"</span> <span class="attr">alt=</span><span class="string">"Example Image"</span> <span class="attr">class=</span><span class="string">"float-right-image"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;p&gt;</span>This is some paragraph text that will wrap around the floated image. The image is set to float right, so the text will flow to its left, filling the available space.<span class="tag">&lt;/p&gt;</span>
+    <span class="tag">&lt;p&gt;</span>More text continues here, demonstrating how content reflows around the floated element within its containing block.<span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">/* CSS for the floated image */</span>
+<span class="selector">.float-right-image</span> {
+    <span class="property">float</span>: <span class="value">right</span>;
+    <span class="property">width</span>: <span class="value">150px</span>;
+    <span class="property">height</span>: <span class="value">100px</span>;
+    <span class="property">margin-left</span>: <span class="value">20px</span>; <span class="comment">/* Space between image and text */</span>
+    <span class="property">margin-bottom</span>: <span class="value">10px</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Float Right</div>
+                        <div style="display: flex; gap: 1rem; flex-direction: column; border: 1px solid var(--border-color); padding: 10px; background-color: var(--bg-secondary);">
+                            <div class="text-with-image" style="overflow: hidden;">
+                                <div style="float: right; width: 100px; height: 100px; background-color: var(--accent-color); margin-left: 15px; margin-bottom: 5px; display: flex; align-items: center; justify-content: center; color: white;">Floated Div</div>
+                                <p style="margin-bottom: 0;">This is some paragraph text that demonstrates the effect of floating an element to the right. The text will wrap around the floated div, filling the available space next to it. As you add more text, it will continue to flow around the floated element until it runs out of vertical space within the container or encounters a cleared element. This behavior is useful for magazine-style layouts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>The Problem: Collapsing Parent Containers</h2>
+                    <p>
+                        One of the most common issues with floats is that they take elements out of the normal document flow. This can cause the parent container of floated elements to "collapse" (its height becomes zero) if it doesn't contain any non-floated content.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* HTML */</span>
+<span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"parent-container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"float-element"</span><span class="tag">&gt;</span>Floated Item 1<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"float-element"</span><span class="tag">&gt;</span>Floated Item 2<span class="tag">&lt;/div&gt;</span>
+    <span class="comment">&lt;!-- Parent container will collapse if nothing clears the floats --&gt;</span>
+<span class="tag">&lt;/div&gt;</span>
+
+<span class="comment">/* CSS */</span>
+<span class="selector">.parent-container</span> {
+    <span class="property">background-color</span>: <span class="value">#f0f0f0</span>;
+    <span class="property">border</span>: <span class="value">2px solid red</span>; <span class="comment">/* Notice the border collapse */</span>
+    <span class="property">padding</span>: <span class="value">10px</span>;
+}
+<span class="selector">.float-element</span> {
+    <span class="property">float</span>: <span class="value">left</span>;
+    <span class="property">width</span>: <span class="value">100px</span>;
+    <span class="property">height</span>: <span class="value">50px</span>;
+    <span class="property">background-color</span>: <span class="value">var(--primary-color)</span>;
+    <span class="property">margin</span>: <span class="value">10px</span>;
+    <span class="property">color</span>: <span class="value">white</span>;
+    <span class="property">display</span>: <span class="value">flex</span>;
+    <span class="property">align-items</span>: <span class="value">center</span>;
+    <span class="property">justify-content</span>: <span class="value">center</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Collapsing Parent</div>
+                        <p>Observe how the red border of the parent container only encompasses the padding, not the floated children:</p>
+                        <div style="background-color: var(--bg-tertiary); border: 2px solid var(--error-color); padding: 10px;">
+                            <div style="float: left; width: 80px; height: 50px; background-color: var(--primary-color); margin: 5px; display: flex; align-items: center; justify-content: center; color: white;">Float 1</div>
+                            <div style="float: left; width: 80px; height: 50px; background-color: var(--secondary-color); margin: 5px; display: flex; align-items: center; justify-content: center; color: white;">Float 2</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Clearing Floats with <code>clear</code></h2>
+                    <p>
+                        To fix the collapsing parent issue or to ensure subsequent content appears below all floated elements, you use the <code>clear</code> property.
+                    </p>
+                    <ul>
+                        <li><code>clear: left;</code>: Breaks past left-floated elements.</li>
+                        <li><code>clear: right;</code>: Breaks past right-floated elements.</li>
+                        <li><code>clear: both;</code>: Breaks past both left and right-floated elements.</li>
+                    </ul>
+
+                    <h3>Common Clearing Methods:</h3>
+
+                    <h4>1. Empty <code>&lt;div&gt;</code> (Least Recommended)</h4>
+                    <p>
+                        Adding an empty <code>&lt;div&gt;</code> with <code>clear: both;</code> immediately after the floated elements. This is semantically bad as it adds unnecessary HTML.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"parent-container"</span><span class="tag">&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"float-element"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">class=</span><span class="string">"float-element"</span><span class="tag">&gt;</span>...<span class="tag">&lt;/div&gt;</span>
+    <span class="tag">&lt;div</span> <span class="attr">style=</span><span class="string">"clear: both;"</span><span class="tag">&gt;&lt;/div&gt;</span> <span class="comment">&lt;!-- Empty div to clear --&gt;</span>
+<span class="tag">&lt;/div&gt;</span></pre>
+                    </div>
+
+                    <h4>2. The Overflow Method</h4>
+                    <p>
+                        Setting <code>overflow: auto;</code> or <code>overflow: hidden;</code> on the parent container. This creates a new block formatting context (BFC), which naturally contains floats. It's concise but can sometimes hide overflowing content.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.parent-container-cleared</span> {
+    <span class="property">background-color</span>: <span class="value">#f0f0f0</span>;
+    <span class="property">border</span>: <span class="value">2px solid green</span>;
+    <span class="property">padding</span>: <span class="value">10px</span>;
+    <span class="property">overflow</span>: <span class="value">hidden</span>; <span class="comment">/* or auto */</span>
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Clearing with Overflow</div>
+                        <p>The green border now correctly encompasses the floated items:</p>
+                        <div style="background-color: var(--bg-tertiary); border: 2px solid var(--success-color); padding: 10px; overflow: hidden;">
+                            <div style="float: left; width: 80px; height: 50px; background-color: var(--primary-color); margin: 5px; display: flex; align-items: center; justify-content: center; color: white;">Float 1</div>
+                            <div style="float: left; width: 80px; height: 50px; background-color: var(--secondary-color); margin: 5px; display: flex; align-items: center; justify-content: center; color: white;">Float 2</div>
+                        </div>
+                    </div>
+
+                    <h4>3. The Clearfix Hack (Recommended for older projects)</h4>
+                    <p>
+                        This method uses the <code>::after</code> pseudo-element to generate content that has <code>clear: both;</code> applied to it, effectively clearing floats without adding extra HTML.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.clearfix::after</span> {
+    <span class="property">content</span>: <span class="string">""</span>;
+    <span class="property">display</span>: <span class="value">table</span>; <span class="comment">/* or block */</span>
+    <span class="property">clear</span>: <span class="value">both</span>;
+}</pre>
+                    </div>
+                    <p>
+                        You then apply the <code>.clearfix</code> class to the parent container.
+                    </p>
+                    <div class="example-box">
+                        <div class="example-title">Example: Clearing with Clearfix</div>
+                        <p>The green border now correctly encompasses the floated items using `clearfix`:</p>
+                        <style>
+                            .clearfix-example::after {
+                                content: "";
+                                display: table;
+                                clear: both;
+                            }
+                        </style>
+                        <div class="clearfix-example" style="background-color: var(--bg-tertiary); border: 2px solid var(--success-color); padding: 10px;">
+                            <div style="float: left; width: 80px; height: 50px; background-color: var(--primary-color); margin: 5px; display: flex; align-items: center; justify-content: center; color: white;">Float 1</div>
+                            <div style="float: left; width: 80px; height: 50px; background-color: var(--secondary-color); margin: 5px; display: flex; align-items: center; justify-content: center; color: white;">Float 2</div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="grid.html" class="nav-btn">&larr; Previous: Grid</a>
+                    <a href="margins-and-padding.html" class="nav-btn">Next: Margins and Padding &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+    
+</body>
+</html>

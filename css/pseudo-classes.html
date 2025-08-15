@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-classes - CodeMaster Academy</title>
+    <meta name="description" content="Learn about CSS pseudo-classes to select and style elements based on their state, position, or other characteristics.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html" class="active">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Pseudo-classes</h1>
+                    <p class="topic-description">
+                        Discover how CSS pseudo-classes allow you to select and style elements based on their state,
+                        interaction, or position within the document tree.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What are Pseudo-classes?</h2>
+                    <p>
+                        CSS **pseudo-classes** are keywords added to selectors that specify a special state of the
+                        selected element(s). They allow you to apply styles based on criteria that cannot be expressed
+                        by simple selectors alone, such as whether an element is being hovered over, is the first child,
+                        or is checked.
+                    </p>
+                    <p>
+                        A pseudo-class starts with a single colon (<code>:</code>).
+                    </p>
+                    <div class="highlight-box">
+                        <h4>💡 Remember</h4>
+                        <p>Pseudo-classes select elements based on their *state* or *position*, not their content or attributes directly.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Common User-action Pseudo-classes</h2>
+                    <p>
+                        These pseudo-classes respond to user interaction with elements:
+                    </p>
+                    <h3><code>:hover</code></h3>
+                    <p>
+                        Applies styles when the user's mouse pointer is over an element.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">a:hover</span> {
+    <span class="property">color</span>: <span class="value">var(--secondary-color)</span>;
+    <span class="property">text-decoration</span>: <span class="value">underline</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:active</code></h3>
+                    <p>
+                        Applies styles when an element is being activated by the user (e.g., a mouse click is pressed
+                        down on it, or a key is pressed while it's focused).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">button:active</span> {
+    <span class="property">transform</span>: <span class="value">translateY(2px)</span>;
+    <span class="property">box-shadow</span>: <span class="value">none</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:focus</code></h3>
+                    <p>
+                        Applies styles when an element has received focus, typically from keyboard navigation (Tab key)
+                        or programmatic focus. Essential for accessibility.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">input:focus</span> {
+    <span class="property">border-color</span>: <span class="value">var(--primary-color)</span>;
+    <span class="property">box-shadow</span>: <span class="value">0 0 0 3px rgba(102, 126, 234, 0.2)</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:visited</code> and <code>:link</code></h3>
+                    <p>
+                        These are used specifically for anchor (<code>&lt;a&gt;</code>) elements.
+                    </p>
+                    <ul>
+                        <li><code>:link</code>: Selects unvisited links.</li>
+                        <li><code>:visited</code>: Selects links that the user has already visited. For privacy
+                            reasons, only a limited set of properties can be changed for <code>:visited</code> links.
+                        </li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">a:link</span> {
+    <span class="property">color</span>: <span class="value">var(--primary-color)</span>;
+}
+<span class="selector">a:visited</span> {
+    <span class="property">color</span>: <span class="value">#800080</span>; <span class="comment">/* Purple */</span>
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Structural Pseudo-classes</h2>
+                    <p>
+                        These pseudo-classes select elements based on their position within their parent element.
+                    </p>
+                    <h3><code>:first-child</code></h3>
+                    <p>
+                        Selects an element that is the first child of its parent.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">li:first-child</span> {
+    <span class="property">font-weight</span>: <span class="value">bold</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:last-child</code></h3>
+                    <p>
+                        Selects an element that is the last child of its parent.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">p:last-child</span> {
+    <span class="property">margin-bottom</span>: <span class="value">0</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:nth-child(n)</code></h3>
+                    <p>
+                        Selects elements based on a numeric pattern within their parent. <code>n</code> can be an
+                        integer, `odd`, `even`, or a formula like `An+B`.
+                    </p>
+                    <ul>
+                        <li><code>:nth-child(odd)</code> or <code>:nth-child(2n+1)</code>: Selects odd children.</li>
+                        <li><code>:nth-child(even)</code> or <code>:nth-child(2n)</code>: Selects even children.</li>
+                        <li><code>:nth-child(3)</code>: Selects the third child.</li>
+                        <li><code>:nth-child(3n)</code>: Selects every third child (3rd, 6th, 9th, etc.).</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">tr:nth-child(even)</span> {
+    <span class="property">background-color</span>: <span class="value">var(--bg-tertiary)</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:only-child</code></h3>
+                    <p>
+                        Selects an element that is the only child of its parent.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">div > p:only-child</span> {
+    <span class="property">text-align</span>: <span class="value">center</span>;
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Form Input Pseudo-classes</h2>
+                    <p>
+                        These pseudo-classes are commonly used to style form elements based on their state or validity.
+                    </p>
+                    <h3><code>:checked</code></h3>
+                    <p>
+                        Selects radio buttons or checkboxes that are checked.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">input[type="checkbox"]:checked + label</span> {
+    <span class="property">font-weight</span>: <span class="value">bold</span>;
+    <span class="property">color</span>: <span class="value">var(--success-color)</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:disabled</code></h3>
+                    <p>
+                        Selects input elements that are disabled.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">input:disabled</span> {
+    <span class="property">background-color</span>: <span class="value">var(--bg-tertiary)</span>;
+    <span class="property">cursor</span>: <span class="value">not-allowed</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:enabled</code></h3>
+                    <p>
+                        Selects input elements that are enabled (not disabled).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">input:enabled</span> {
+    <span class="property">background-color</span>: <span class="value">var(--bg-primary)</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:required</code> and <code>:optional</code></h3>
+                    <p>
+                        Selects input elements that have (or don't have) the <code>required</code> attribute.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">input:required</span> {
+    <span class="property">border-left</span>: <span class="value">3px solid var(--warning-color)</span>;
+}
+<span class="selector">input:optional</span> {
+    <span class="property">opacity</span>: <span class="value">0.8</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:valid</code> and <code>:invalid</code></h3>
+                    <p>
+                        Selects input elements whose content validates (or does not validate) according to their type or
+                        other validation rules (e.g., `pattern`, `minlength`).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">input:valid</span> {
+    <span class="property">border-color</span>: <span class="value">var(--success-color)</span>;
+}
+<span class="selector">input:invalid</span> {
+    <span class="property">border-color</span>: <span class="value">var(--error-color)</span>;
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Other Useful Pseudo-classes</h2>
+                    <h3><code>:not(selector)</code></h3>
+                    <p>
+                        Selects elements that do NOT match the specified selector.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">p:not(.intro)</span> {
+    <span class="property">text-indent</span>: <span class="value">1em</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:empty</code></h3>
+                    <p>
+                        Selects an element that has no children (including text nodes).
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">div:empty</span> {
+    <span class="property">height</span>: <span class="value">20px</span>;
+    <span class="property">background-color</span>: <span class="value">lightgray</span>;
+}</pre>
+                    </div>
+
+                    <h3><code>:root</code></h3>
+                    <p>
+                        Selects the root element of the document (which is typically <code>&lt;html&gt;</code>). Often
+                        used for defining CSS variables.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">:root</span> {
+    <span class="property">--main-color</span>: <span class="value">blue</span>;
+}</pre>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="animations.html" class="nav-btn">&larr; Previous: Animations</a>
+                    <a href="pseudo-elements.html" class="nav-btn">Next: Pseudo Elements &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+    
+</body>
+</html>

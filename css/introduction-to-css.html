@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS - CodeMaster Academy</title>
+    <meta name="description" content="Learn the fundamentals of CSS and how to style your web pages with cascading style sheets.">
+    <!-- Links to the main stylesheet and required fonts -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="html-structure.html">HTML Structure</a></li>
+                        <li><a href="forms.html">Forms</a></li>
+                        <!-- Add other HTML topics here as needed -->
+                    </ul>
+                </div>
+
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <!-- 'active' class highlights the current page -->
+                        <li><a href="../css/introduction-to-css.html" class="active">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <!-- Add other CSS topics here as needed -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <!-- Topic Header Section -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">Introduction to CSS</h1>
+                    <p class="topic-description">
+                        Learn to style your web pages with cascading style sheets to control presentation, layout, and appearance.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Main Content Sections -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What is CSS?</h2>
+                    <p>
+                        <strong>CSS</strong>, or <strong>Cascading Style Sheets</strong>, is the language used to describe the presentation of a web page written in a markup language like HTML. While HTML provides the content and structure of a page, CSS handles the visual aspects, such as colors, fonts, spacing, and layout.
+                    </p>
+                    <p>
+                        By separating content from presentation, CSS makes it easier to manage and update the look of your website. A single CSS file can control the style of multiple HTML pages, ensuring a consistent design across your entire site.
+                    </p>
+
+                    <div class="highlight-box">
+                        <h4>💡 Analogy</h4>
+                        <p>If HTML is the skeletal structure of a house, CSS is the interior and exterior design—the paint colors, furniture arrangement, flooring, and landscaping that make it visually appealing.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>The Three Ways to Add CSS</h2>
+                    <p>
+                        There are three main methods for applying CSS to your HTML document, each with its own use case and best practices.
+                    </p>
+                    <div class="example-box">
+                        <div class="example-title">1. External Stylesheets (Recommended)</div>
+                        <p>This is the most common method. You define your CSS rules in a separate <code>.css</code> file and link it to your HTML page using the <code>&lt;link&gt;</code> element in the <code>&lt;head&gt;</code> section. This is ideal for managing styles across an entire website.</p>
+                        <div class="code-block">
+                            <pre><span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;link</span> <span class="attr">rel=</span><span class="string">"stylesheet"</span> <span class="attr">href=</span><span class="string">"styles.css"</span><span class="tag">&gt;</span>
+<span class="tag">&lt;/head&gt;</span></pre>
+                        </div>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">2. Internal Stylesheets</div>
+                        <p>With this method, you place your CSS rules directly inside a <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section of your HTML document. This is useful for single pages or when the styles are unique to that page.</p>
+                        <div class="code-block">
+                            <pre><span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;style&gt;</span>
+        <span class="selector">h1</span> {
+            <span class="property">color</span>: <span class="value">blue</span>;
+        }
+    <span class="tag">&lt;/style&gt;</span>
+<span class="tag">&lt;/head&gt;</span></pre>
+                        </div>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">3. Inline Styles</div>
+                        <p>Inline styles are applied directly to an HTML element using the <code>style</code> attribute. This approach is generally discouraged as it mixes content and presentation, making your code difficult to read and maintain.</p>
+                        <div class="code-block">
+                            <pre><span class="tag">&lt;h1</span> <span class="attr">style=</span><span class="string">"color: blue;"</span><span class="tag">&gt;</span>Hello, World!<span class="tag">&lt;/h1&gt;</span></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>CSS Syntax</h2>
+                    <p>
+                        A CSS rule consists of a selector and a declaration block. The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Selector */</span>
+<span class="selector">p</span> {
+    <span class="comment">/* Declaration: property and value */</span>
+    <span class="property">font-size</span>: <span class="value">16px</span>;
+    <span class="property">line-height</span>: <span class="value">1.5</span>;
+    <span class="property">color</span>: <span class="value">#333</span>;
+}</pre>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="container navigation-controls">
+                <a href="../html/forms.html" class="nav-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    <span>Previous: Forms</span>
+                </a>
+                <a href="../css/css-syntax.html" class="nav-btn">
+                    <span>Next: CSS Syntax</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Footer Section -->
+        
+        </main>
+    </div>
+</body>
+</html>

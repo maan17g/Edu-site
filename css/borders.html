@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Borders - CodeMaster Academy</title>
+    <meta name="description" content="Learn about CSS borders to add lines around elements and enhance their visual appearance.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html" class="active">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Borders</h1>
+                    <p class="topic-description">
+                        Learn how to add and customize borders around HTML elements using CSS to enhance visual design.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Introduction to Borders</h2>
+                    <p>
+                        In CSS, borders are lines that go around elements, positioned between the padding and the margin as part of the CSS Box Model. Borders are used to visually separate elements, create outlines, or simply add decorative flair.
+                    </p>
+                    <p>
+                        You can control three main aspects of a border: its **width**, **style**, and **color**.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>🖼️ Visual Aid</h4>
+                        <p>Remember the Box Model: Content &rarr; Padding &rarr; **Border** &rarr; Margin. Borders are the "frame" of your element.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Border Width</h2>
+                    <p>
+                        The `border-width` property specifies the thickness of the border. You can use predefined values like `thin`, `medium`, `thick`, or specify a length in pixels (`px`), ems (`em`), etc.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.box-thin</span> {
+    <span class="property">border-width</span>: <span class="value">thin</span>;
+}
+<span class="selector">.box-medium</span> {
+    <span class="property">border-width</span>: <span class="value">medium</span>;
+}
+<span class="selector">.box-thick</span> {
+    <span class="property">border-width</span>: <span class="value">thick</span>;
+}
+<span class="selector">.box-10px</span> {
+    <span class="property">border-width</span>: <span class="value">10px</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Border Width</div>
+                        <p style="border: 2px solid var(--primary-color); padding: 5px;">This box has a 2px solid border.</p>
+                        <p style="border: thin solid var(--secondary-color); padding: 5px;">This box has a 'thin' solid border.</p>
+                        <p style="border: 5px solid var(--accent-color); padding: 5px;">This box has a 5px solid border.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Border Style</h2>
+                    <p>
+                        The `border-style` property defines the appearance of the border. There are several common values:
+                    </p>
+                    <ul>
+                        <li>`none`: No border (default).</li>
+                        <li>`solid`: A single, solid line.</li>
+                        <li>`dotted`: A border made of dots.</li>
+                        <li>`dashed`: A border made of dashes.</li>
+                        <li>`double`: A double border. The width of the two lines and the space between them equals the `border-width` value.</li>
+                        <li>`groove`: A 3D grooved border.</li>
+                        <li>`ridge`: A 3D ridged border.</li>
+                        <li>`inset`: A 3D inset border.</li>
+                        <li>`outset`: A 3D outset border.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.dotted-border</span> {
+    <span class="property">border-style</span>: <span class="value">dotted</span>;
+}
+<span class="selector">.dashed-border</span> {
+    <span class="property">border-style</span>: <span class="value">dashed</span>;
+}
+<span class="selector">.double-border</span> {
+    <span class="property">border-style</span>: <span class="value">double</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Border Style</div>
+                        <p style="border: 2px dotted var(--primary-color); padding: 5px;">Dotted border</p>
+                        <p style="border: 2px dashed var(--secondary-color); padding: 5px;">Dashed border</p>
+                        <p style="border: 4px double var(--accent-color); padding: 5px;">Double border</p>
+                        <p style="border: 5px groove grey; padding: 5px;">Groove border</p>
+                        <p style="border: 5px ridge grey; padding: 5px;">Ridge border</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Border Color</h2>
+                    <p>
+                        The `border-color` property sets the color of the border. You can use color names (e.g., `red`), hexadecimal codes (e.g., `#FF0000`), RGB values (e.g., `rgb(255,0,0)`), or HSL values.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.red-border</span> {
+    <span class="property">border-color</span>: <span class="value">red</span>;
+}
+<span class="selector">.hex-border</span> {
+    <span class="property">border-color</span>: <span class="value">#336699</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Border Color</div>
+                        <p style="border: 2px solid #ef4444; padding: 5px;">Red border</p>
+                        <p style="border: 2px solid #10b981; padding: 5px;">Green border</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Border Shorthand Property</h2>
+                    <p>
+                        You can set all three border properties (`width`, `style`, `color`) in a single shorthand property: `border`. The order typically doesn't matter, but convention is `width style color`.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.shorthand-box</span> {
+    <span class="property">border</span>: <span class="value">2px solid blue</span>;
+}
+<span class="comment">/* This is equivalent to: */</span>
+<span class="selector">.shorthand-box-expanded</span> {
+    <span class="property">border-width</span>: <span class="value">2px</span>;
+    <span class="property">border-style</span>: <span class="value">solid</span>;
+    <span class="property">border-color</span>: <span class="value">blue</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Border Shorthand</div>
+                        <p style="border: 3px dashed var(--primary-color); padding: 5px;">This box uses the border shorthand property.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Individual Border Sides</h2>
+                    <p>
+                        You can also apply borders to individual sides of an element using specific properties:
+                    </p>
+                    <ul>
+                        <li>`border-top`: Sets top border properties.</li>
+                        <li>`border-right`: Sets right border properties.</li>
+                        <li>`border-bottom`: Sets bottom border properties.</li>
+                        <li>`border-left`: Sets left border properties.</li>
+                    </ul>
+                    <div class="code-block">
+                        <pre><span class="selector">.individual-borders</span> {
+    <span class="property">border-top</span>: <span class="value">2px solid red</span>;
+    <span class="property">border-right</span>: <span class="value">4px dotted green</span>;
+    <span class="property">border-bottom</span>: <span class="value">6px dashed blue</span>;
+    <span class="property">border-left</span>: <span class="value">8px double purple</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Individual Borders</div>
+                        <div style="border-top: 2px solid #ef4444; border-right: 4px dotted #10b981; border-bottom: 6px dashed #4facfe; border-left: 8px double #764ba2; padding: 10px;">
+                            This box has different borders on each side.
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Border Radius</h2>
+                    <p>
+                        The `border-radius` property allows you to create **rounded corners** for an element's border. You can specify a single value for all corners or individual values for each corner.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="selector">.rounded-box</span> {
+    <span class="property">border-radius</span>: <span class="value">10px</span>; <span class="comment">/* All corners rounded by 10px */</span>
+}
+<span class="selector">.custom-corners</span> {
+    <span class="property">border-radius</span>: <span class="value">10px 0 20px 0</span>; <span class="comment">/* top-left, top-right, bottom-right, bottom-left (clockwise) */</span>
+}
+<span class="selector">.circle</span> {
+    <span class="property">border-radius</span>: <span class="value">50%</span>; <span class="comment">/* Makes a perfect circle if width and height are equal */</span>
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Border Radius</div>
+                        <div style="width: 100px; height: 50px; background-color: var(--primary-color); border: 2px solid var(--text-primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; margin-bottom: 10px;">
+                            Rounded
+                        </div>
+                        <div style="width: 100px; height: 50px; background-color: var(--secondary-color); border: 2px solid var(--text-primary); border-radius: 20px 0; display: flex; align-items: center; justify-content: center; color: white; margin-bottom: 10px;">
+                            Custom
+                        </div>
+                        <div style="width: 70px; height: 70px; background-color: var(--accent-color); border: 2px solid var(--text-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white;">
+                            Circle
+                        </div>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="margins-and-padding.html" class="nav-btn">&larr; Previous: Margins and Padding</a>
+                    <a href="backgrounds.html" class="nav-btn">Next: Backgrounds &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+    
+</body>
+</html>

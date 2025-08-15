@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries - CodeMaster Academy</title>
+    <meta name="description"
+        content="Learn about CSS Media Queries to create responsive web designs that adapt to different screen sizes and devices.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html" class="active">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Media Queries</h1>
+                    <p class="topic-description">
+                        Discover how CSS Media Queries are fundamental to responsive web design, allowing you to apply
+                        different styles based on device characteristics like screen width, height, and orientation.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What are Media Queries?</h2>
+                    <p>
+                        **Media Queries** are a CSS3 feature that allow content to adapt to different devices and screen
+                        sizes without requiring changes to the content itself. They are a cornerstone of **responsive
+                        web design**.
+                        Using media queries, you can create a single website that looks great and functions well on a
+                        desktop computer, a tablet, or a mobile phone.
+                    </p>
+                    <p>
+                        A media query consists of a **media type** (e.g., <code>screen</code>, <code>print</code>) and
+                        can include one or more **media features** (e.g., <code>min-width</code>,
+                        <code>max-height</code>)
+                        to test for. If the media type and all media features match the environment, the styles inside
+                        the
+                        media query block are applied.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>🎯 Core Purpose</h4>
+                        <p>Media queries enable websites to be truly responsive, providing an optimized user experience
+                            regardless of the device or viewport size.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Basic Syntax</h2>
+                    <p>
+                        The basic syntax for a media query is:
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="at-rule">@media</span> <span class="keyword">media-type</span> <span class="keyword">and</span> (<span class="property">media-feature</span><span class="value">: value</span>) {
+    <span class="comment">/* CSS rules go here */</span>
+}</pre>
+                    </div>
+                    <p>
+                        You can combine multiple media features using logical operators like <code>and</code>,
+                        <code>not</code>, and <code>only</code>.
+                    </p>
+
+                    <h3>Common Media Types:</h3>
+                    <ul>
+                        <li><code>all</code>: For all media type devices.</li>
+                        <li><code>screen</code>: For computer screens, tablets, smart-phones, etc. (most common for
+                            web).</li>
+                        <li><code>print</code>: For printers.</li>
+                        <li><code>speech</code>: For screen readers that "read" the page aloud.</li>
+                    </ul>
+
+                    <h3>Common Media Features:</h3>
+                    <ul>
+                        <li><code>width</code> / <code>min-width</code> / <code>max-width</code>: Viewport width.</li>
+                        <li><code>height</code> / <code>min-height</code> / <code>max-height</code>: Viewport height.
+                        </li>
+                        <li><code>orientation</code>: Checks the orientation of the viewport (<code>portrait</code> or
+                            <code>landscape</code>).</li>
+                        <li><code>resolution</code>: Checks the pixel density (e.g.,
+                            <code>min-resolution: 300dpi</code>).</li>
+                        <li><code>aspect-ratio</code>: Checks the ratio of the viewport's width to its height.</li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>Practical Examples</h2>
+
+                    <h3>Changing styles for smaller screens (e.g., mobile phones)</h3>
+                    <p>
+                        A common use case is to adjust layouts for mobile devices. This query applies styles when the
+                        viewport width is 768px or less.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="at-rule">@media</span> <span class="keyword">screen</span> <span class="keyword">and</span> (<span class="property">max-width</span><span class="value">: 768px</span>) {
+    <span class="selector">.container</span> {
+        <span class="property">padding</span>: <span class="value">0 1rem</span>; <span class="comment">/* Reduce padding on smaller screens */</span>
+    }
+    <span class="selector">.hero-content</span> {
+        <span class="property">grid-template-columns</span>: <span class="value">1fr</span>; <span class="comment">/* Stack content vertically */</span>
+        <span class="property">text-align</span>: <span class="value">center</span>;
+    }
+    <span class="selector">.sidebar</span> {
+        <span class="property">width</span>: <span class="value">280px</span>; <span class="comment">/* Adjust sidebar width for mobile */</span>
+    }
+}</pre>
+                    </div>
+
+                    <h3>Styling for landscape orientation on tablets</h3>
+                    <p>
+                        You might want to apply specific styles when a device (like a tablet) is in landscape mode.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="at-rule">@media</span> <span class="keyword">screen</span> <span class="keyword">and</span> (<span class="property">min-width</span><span class="value">: 769px</span>) <span class="keyword">and</span> (<span class="property">max-width</span><span class="value">: 1024px</span>) <span class="keyword">and</span> (<span class="property">orientation</span><span class="value">: landscape</span>) {
+    <span class="selector">.tablet-landscape-specific-layout</span> {
+        <span class="property">display</span>: <span class="value">flex</span>;
+        <span class="property">justify-content</span>: <span class="value">space-around</span>;
+    }
+}</pre>
+                    </div>
+
+                    <h3>Applying print-specific styles</h3>
+                    <p>
+                        This media query ensures that the page looks clean and legible when printed, often hiding
+                        navigation elements and adjusting font sizes.
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="at-rule">@media</span> <span class="keyword">print</span> {
+    <span class="selector">.sidebar</span>, <span class="selector">.header</span>, <span class="selector">.navigation-controls</span>, <span class="selector">.footer</span> {
+        <span class="property">display</span>: <span class="value">none</span>; <span class="comment">/* Hide non-essential elements */</span>
+    }
+    <span class="selector">body</span> {
+        <span class="property">color</span>: <span class="value">black</span>;
+        <span class="property">background</span>: <span class="value">white</span>;
+    }
+    <span class="selector">a</span> {
+        <span class="property">text-decoration</span>: <span class="value">none</span>; <span class="comment">/* Remove underlines from links */</span>
+        <span class="property">color</span>: <span class="value">black</span>;
+    }
+}</pre>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Mobile-First vs. Desktop-First</h2>
+                    <p>
+                        There are two main strategies for using media queries in responsive design:
+                    </p>
+                    <ul>
+                        <li>
+                            **Mobile-First (Recommended)**: Start by designing and coding for the smallest screens first
+                            (e.g., mobile phones).
+                            Then, use <code>min-width</code> media queries to progressively enhance the design for
+                            larger screens.
+                            This approach ensures good performance and a solid foundation for all devices.
+                            <div class="code-block">
+                                <pre><span class="comment">/* Mobile styles (default) */</span>
+<span class="selector">body</span> {
+    <span class="property">font-size</span>: <span class="value">16px</span>;
+}
+
+<span class="at-rule">@media</span> <span class="keyword">screen</span> <span class="keyword">and</span> (<span class="property">min-width</span><span class="value">: 600px</span>) {
+    <span class="comment">/* Tablet styles */</span>
+    <span class="selector">body</span> {
+        <span class="property">font-size</span>: <span class="value">18px</span>;
+    }
+}
+
+<span class="at-rule">@media</span> <span class="keyword">screen</span> <span class="keyword">and</span> (<span class="property">min-width</span><span class="value">: 992px</span>) {
+    <span class="comment">/* Desktop styles */</span>
+    <span class="selector">body</span> {
+        <span class="property">font-size</span>: <span class="value">20px</span>;
+    }
+}</pre>
+                            </div>
+                        </li>
+                        <li>
+                            **Desktop-First**: Start by designing for large screens, then use <code>max-width</code>
+                            media queries
+                            to adapt the design for smaller screens. While feasible, it can sometimes lead to more
+                            overrides and less optimized performance for mobile devices.
+                            <div class="code-block">
+                                <pre><span class="comment">/* Desktop styles (default) */</span>
+<span class="selector">body</span> {
+    <span class="property">font-size</span>: <span class="value">20px</span>;
+}
+
+<span class="at-rule">@media</span> <span class="keyword">screen</span> <span class="keyword">and</span> (<span class="property">max-width</span><span class="value">: 991px</span>) {
+    <span class="comment">/* Tablet styles */</span>
+    <span class="selector">body</span> {
+        <span class="property">font-size</span>: <span class="value">18px</span>;
+    }
+}
+
+<span class="at-rule">@media</span> <span class="keyword">screen</span> <span class="keyword">and</span> (<span class="property">max-width</span><span class="value">: 599px</span>) {
+    <span class="comment">/* Mobile styles */</span>
+    <span class="selector">body</span> {
+        <span class="property">font-size</span>: <span class="value">16px</span>;
+    }
+}</pre>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2><code>&lt;meta name="viewport"&gt;</code> Tag</h2>
+                    <p>
+                        For media queries to work correctly on mobile devices, you **must** include the following
+                        <code>&lt;meta&gt;</code> tag in the <code>&lt;head&gt;</code> of your HTML document:
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="tag">&lt;meta</span> <span class="attr">name=</span><span class="string">"viewport"</span> <span class="attr">content=</span><span class="string">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span></pre>
+                    </div>
+                    <p>
+                        This tag tells the browser to set the viewport width to the device's width and to set the
+                        initial
+                        zoom level to 1.0. Without it, mobile browsers might render the page at a desktop width and then
+                        scale it down,
+                        breaking your responsive design.
+                    </p>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="pseudo-elements.html" class="nav-btn">&larr; Previous: Pseudo Elements</a>
+                    <a href="responsive-design.html" class="nav-btn">Next: Responsive Design &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+</body>
+
+</html>

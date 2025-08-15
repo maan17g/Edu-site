@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index - CodeMaster Academy</title>
+    <meta name="description" content="Learn how to control the stacking order of positioned elements using the z-index property in CSS.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for this page's example */
+        .z-index-container {
+            position: relative;
+            height: 250px;
+            background-color: var(--bg-tertiary);
+            border-radius: var(--radius-lg);
+            border: 2px dashed var(--border-color);
+            padding: 2rem;
+        }
+
+        .z-box {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: var(--radius-md);
+            padding: 1rem;
+            color: white;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+        }
+
+        .z-box:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Define specific positions and z-index values for the example boxes */
+        .z-box-1 {
+            background-color: #f5576c; /* Color for box 1 */
+            top: 20px;
+            left: 20px;
+            z-index: 1; /* Lowest z-index */
+        }
+
+        .z-box-2 {
+            background-color: #667eea; /* Color for box 2 */
+            top: 50px;
+            left: 50px;
+            z-index: 2; /* Middle z-index */
+        }
+
+        .z-box-3 {
+            background-color: #00f2fe; /* Color for box 3 */
+            top: 80px;
+            left: 80px;
+            z-index: 3; /* Highest z-index */
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="../css/introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="../css/css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="../css/selectors.html">Selectors</a></li>
+                        <li><a href="../css/colors.html">Colors</a></li>
+                        <li><a href="../css/typography.html">Typography</a></li>
+                        <li><a href="../css/box-model.html">Box Model</a></li>
+                        <li><a href="../css/display.html">Display</a></li>
+                        <li><a href="../css/positioning.html">Positioning</a></li>
+                        <li><a href="../css/flexbox.html">Flexbox</a></li>
+                        <li><a href="../css/grid.html">Grid</a></li>
+                        <li><a href="../css/floats.html">Floats</a></li>
+                        <li><a href="../css/margins-and-padding.html">Margins and Padding</a></li>
+                        <li><a href="../css/borders.html">Borders</a></li>
+                        <li><a href="../css/backgrounds.html">Backgrounds</a></li>
+                        <li><a href="../css/gradients.html">Gradients</a></li>
+                        <li><a href="../css/shadows.html">Shadows</a></li>
+                        <li><a href="../css/transforms.html">Transforms</a></li>
+                        <li><a href="../css/transitions.html">Transitions</a></li>
+                        <li><a href="../css/animations.html">Animations</a></li>
+                        <li><a href="../css/pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="../css/pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="../css/media-queries.html">Media Queries</a></li>
+                        <li><a href="../css/responsive-design.html">Responsive Design</a></li>
+                        <li><a href="../css/variables.html">Variables</a></li>
+                        <li><a href="../css/units.html">Units</a></li>
+                        <li><a href="../css/z-index.html" class="active">Z-Index</a></li>
+                        <li><a href="../css/overflow.html">Overflow</a></li>
+                        <li><a href="../css/filters.html">Filters</a></li>
+                        <li><a href="../css/blend-modes.html">Blend Modes</a></li>
+                        <li><a href="../css/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+            <!-- Topic Header -->
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">Z-Index</h1>
+                    <p class="topic-description">
+                        Control the stacking order of elements on a page, determining which elements appear on top of others.
+                    </p>
+                </div>
+            </section>
+            <!-- Topic Content -->
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>What is Z-Index?</h2>
+                    <p>
+                        The `z-index` property in CSS is used to control the vertical stacking order of elements that overlap. Think of the z-axis as a line coming out of the screen towards you. Elements with a higher `z-index` value are positioned "closer" to the user and will appear on top of elements with lower values.
+                    </p>
+                    <p>
+                        It's important to remember that `z-index` only works on elements that have a defined `position` value other than `static` (the default). This means you must apply `position: relative;`, `position: absolute;`, `position: fixed;`, or `position: sticky;` for `z-index` to have any effect.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>💡 Key Rule</h4>
+                        <p>Z-index is ignored for non-positioned elements. If you set `z-index: 100;` on a `div` with `position: static;`, it will have no effect on its stacking order.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Understanding Stacking Contexts</h2>
+                    <p>
+                        Elements are stacked based on their **stacking context**. A stacking context is a three-dimensional concept that is generated by an element that has a `position` value other than `static` and a `z-index` value other than `auto`.
+                    </p>
+                    <p>
+                        The key takeaway is that `z-index` values are only compared within the same stacking context. An element with a `z-index` of 10 inside a container with a `z-index` of 1 will always be rendered below an element with a `z-index` of 2 that is in a different stacking context (or the root stacking context).
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2>Live Example</h2>
+                    <p>
+                        In this example, three boxes are positioned to overlap. Notice how the box with the highest `z-index` value (`Box 3`) appears on top, while the box with the lowest value (`Box 1`) is at the bottom.
+                    </p>
+                    <div class="example-box">
+                        <div class="example-title">Z-Index in Action</div>
+                        <div class="z-index-container">
+                            <div class="z-box z-box-1">Box 1<br>z-index: 1</div>
+                            <div class="z-box z-box-2">Box 2<br>z-index: 2</div>
+                            <div class="z-box z-box-3">Box 3<br>z-index: 3</div>
+                        </div>
+                    </div>
+                </section>
+                
+                <div class="navigation-controls">
+                    <a href="units.html" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                        Previous: Units
+                    </a>
+                    <a href="overflow.html" class="nav-btn">
+                        Next: Overflow
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>CodeMaster Academy</h3>
+                    <p>Your journey to becoming a coding master starts here. Learn the fundamentals and advanced techniques of web development.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Courses</h4>
+                        <ul>
+                            <li><a href="../html/introduction-to-html.html">HTML Fundamentals</a></li>
+                            <li><a href="../css/introduction-to-css.html">CSS Mastery</a></li>
+                            <li><a href="#">JavaScript Essentials</a></li>
+                            <li><a href="#">Frontend Frameworks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Our Mission</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeMaster Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <label for="sidebar-toggle" class="overlay"></label>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margins and Padding - CodeMaster Academy</title>
+    <meta name="description" content="Learn about CSS margins and padding to control spacing around and within elements.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Course Topics</h2>
+                <label for="sidebar-toggle" class="close-btn">&times;</label>
+            </div>
+            <div class="sidebar-content">
+                <div class="topic-section">
+                    <h3>HTML Fundamentals</h3>
+                    <ul class="topic-list">
+                        <li><a href="../html/introduction-to-html.html">Introduction to HTML</a></li>
+                        <li><a href="../html/html-structure.html">HTML Structure</a></li>
+                        <li><a href="../html/head-element.html">Head Element</a></li>
+                        <li><a href="../html/body-element.html">Body Element</a></li>
+                        <li><a href="../html/headings.html">Headings</a></li>
+                        <li><a href="../html/paragraphs.html">Paragraphs</a></li>
+                        <li><a href="../html/links.html">Links</a></li>
+                        <li><a href="../html/images.html">Images</a></li>
+                        <li><a href="../html/lists.html">Lists</a></li>
+                        <li><a href="../html/tables.html">Tables</a></li>
+                        <li><a href="../html/forms.html">Forms</a></li>
+                        <li><a href="../html/input-types.html">Input Types</a></li>
+                        <li><a href="../html/semantic-elements.html">Semantic Elements</a></li>
+                        <li><a href="../html/divs-and-spans.html">Divs and Spans</a></li>
+                        <li><a href="../html/attributes.html">Attributes</a></li>
+                        <li><a href="../html/classes-and-ids.html">Classes and IDs</a></li>
+                        <li><a href="../html/comments.html">Comments</a></li>
+                        <li><a href="../html/meta-tags.html">Meta Tags</a></li>
+                        <li><a href="../html/html5-features.html">HTML5 Features</a></li>
+                        <li><a href="../html/audio-and-video.html">Audio and Video</a></li>
+                        <li><a href="../html/canvas.html">Canvas</a></li>
+                        <li><a href="../html/svg.html">SVG</a></li>
+                        <li><a href="../html/iframes.html">Iframes</a></li>
+                        <li><a href="../html/accessibility.html">Accessibility</a></li>
+                        <li><a href="../html/validation.html">Validation</a></li>
+                        <li><a href="../html/entities.html">Entities</a></li>
+                        <li><a href="../html/microdata.html">Microdata</a></li>
+                        <li><a href="../html/web-components.html">Web Components</a></li>
+                        <li><a href="../html/best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+                <div class="topic-section">
+                    <h3>CSS Mastery</h3>
+                    <ul class="topic-list">
+                        <li><a href="introduction-to-css.html">Introduction to CSS</a></li>
+                        <li><a href="css-syntax.html">CSS Syntax</a></li>
+                        <li><a href="selectors.html">Selectors</a></li>
+                        <li><a href="colors.html">Colors</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                        <li><a href="box-model.html">Box Model</a></li>
+                        <li><a href="display.html">Display</a></li>
+                        <li><a href="positioning.html">Positioning</a></li>
+                        <li><a href="flexbox.html">Flexbox</a></li>
+                        <li><a href="grid.html">Grid</a></li>
+                        <li><a href="floats.html">Floats</a></li>
+                        <li><a href="margins-and-padding.html" class="active">Margins and Padding</a></li>
+                        <li><a href="borders.html">Borders</a></li>
+                        <li><a href="backgrounds.html">Backgrounds</a></li>
+                        <li><a href="gradients.html">Gradients</a></li>
+                        <li><a href="shadows.html">Shadows</a></li>
+                        <li><a href="transforms.html">Transforms</a></li>
+                        <li><a href="transitions.html">Transitions</a></li>
+                        <li><a href="animations.html">Animations</a></li>
+                        <li><a href="pseudo-classes.html">Pseudo Classes</a></li>
+                        <li><a href="pseudo-elements.html">Pseudo Elements</a></li>
+                        <li><a href="media-queries.html">Media Queries</a></li>
+                        <li><a href="responsive-design.html">Responsive Design</a></li>
+                        <li><a href="variables.html">Variables</a></li>
+                        <li><a href="units.html">Units</a></li>
+                        <li><a href="z-index.html">Z-Index</a></li>
+                        <li><a href="overflow.html">Overflow</a></li>
+                        <li><a href="filters.html">Filters</a></li>
+                        <li><a href="blend-modes.html">Blend Modes</a></li>
+                        <li><a href="best-practices.html">Best Practices</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <label for="sidebar-toggle" class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="logo">
+                    <h1><a href="../index.html">CodeMaster Academy</a></h1>
+                </div>
+            </header>
+
+            <section class="topic-header">
+                <div class="container">
+                    <h1 class="topic-title">CSS Margins and Padding</h1>
+                    <p class="topic-description">
+                        Master CSS margins and padding to effectively control the spacing around and within your HTML elements, defining your layout.
+                    </p>
+                </div>
+            </section>
+
+            <div class="topic-content">
+                <section class="content-section">
+                    <h2>Understanding Margins and Padding</h2>
+                    <p>
+                        In CSS, **margins** and **padding** are fundamental properties for controlling the spacing of elements on a webpage. They are part of the CSS Box Model, which describes how elements are rendered as rectangular boxes.
+                    </p>
+                    <p>
+                        Think of the Box Model like layers around your content:
+                    </p>
+                    <ul>
+                        <li>**Content**: The actual content of the element (text, images, etc.).</li>
+                        <li>**Padding**: Space between the content and the element's border. The background color of the element extends to fill the padding.</li>
+                        <li>**Border**: A line that surrounds the padding and content.</li>
+                        <li>**Margin**: Space outside the element's border, separating it from other elements. Margins are always transparent.</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <h4>💡 Analogy</h4>
+                        <p>Imagine a framed picture. The picture itself is the **content**. The matting around the picture is the **padding**. The frame itself is the **border**. The empty wall space around the framed picture is the **margin**.</p>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>CSS Padding</h2>
+                    <p>
+                        The **padding** property adds space inside an element, between its content and its border. Padding is affected by the element's background color.
+                    </p>
+                    <p>
+                        You can set padding for all four sides at once, or for individual sides:
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Shorthand padding property */</span>
+<span class="selector">.element</span> {
+    <span class="property">padding</span>: <span class="value">20px</span>; <span class="comment">/* 20px padding on all sides */</span>
+    <span class="property">padding</span>: <span class="value">10px 20px</span>; <span class="comment">/* 10px top/bottom, 20px left/right */</span>
+    <span class="property">padding</span>: <span class="value">10px 20px 30px</span>; <span class="comment">/* 10px top, 20px left/right, 30px bottom */</span>
+    <span class="property">padding</span>: <span class="value">10px 20px 30px 40px</span>; <span class="comment">/* 10px top, 20px right, 30px bottom, 40px left (clockwise from top) */</span>
+}
+
+<span class="comment">/* Individual padding properties */</span>
+<span class="selector">.element</span> {
+    <span class="property">padding-top</span>: <span class="value">10px</span>;
+    <span class="property">padding-right</span>: <span class="value">20px</span>;
+    <span class="property">padding-bottom</span>: <span class="value">30px</span>;
+    <span class="property">padding-left</span>: <span class="value">40px</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Padding</div>
+                        <p>This box has 30px padding on all sides. Notice how the background color extends into the padding area.</p>
+                        <div style="background-color: var(--primary-color); color: white; border: 2px solid var(--accent-color); padding: 30px;">
+                            This is content inside a padded box.
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>CSS Margins</h2>
+                    <p>
+                        The **margin** property creates space around an element, outside of its border. Margins are always transparent.
+                    </p>
+                    <p>
+                        Similar to padding, you can set margins for all four sides at once, or for individual sides:
+                    </p>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Shorthand margin property */</span>
+<span class="selector">.element</span> {
+    <span class="property">margin</span>: <span class="value">20px</span>; <span class="comment">/* 20px margin on all sides */</span>
+    <span class="property">margin</span>: <span class="value">10px 20px</span>; <span class="comment">/* 10px top/bottom, 20px left/right */</span>
+    <span class="property">margin</span>: <span class="value">10px 20px 30px</span>; <span class="comment">/* 10px top, 20px left/right, 30px bottom */</span>
+    <span class="property">margin</span>: <span class="value">10px 20px 30px 40px</span>; <span class="comment">/* 10px top, 20px right, 30px bottom, 40px left (clockwise from top) */</span>
+}
+
+<span class="comment">/* Individual margin properties */</span>
+<span class="selector">.element</span> {
+    <span class="property">margin-top</span>: <span class="value">10px</span>;
+    <span class="property">margin-right</span>: <span class="value">20px</span>;
+    <span class="property">margin-bottom</span>: <span class="value">30px</span>;
+    <span class="property">margin-left</span>: <span class="value">40px</span>;
+}</pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Margin</div>
+                        <p>This box has 30px margin on all sides, creating space around it. The space is transparent.</p>
+                        <div style="background-color: var(--secondary-color); color: white; border: 2px solid var(--accent-color); padding: 10px; margin: 30px;">
+                            This is content inside a box with margin.
+                        </div>
+                        <div style="background-color: var(--bg-tertiary); padding: 10px;">
+                            This is another box demonstrating the margin around the previous one.
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Margin Collapsing</h2>
+                    <p>
+                        One unique behavior of vertical margins is **margin collapsing**. When two adjacent vertical margins meet (e.g., the bottom margin of one element and the top margin of the next), they collapse into a single margin, which is the larger of the two.
+                    </p>
+                    <p>
+                        This only applies to **vertical margins** of block-level elements. Horizontal margins never collapse.
+                    </p>
+                    <div class="highlight-box">
+                        <h4>⚠️ Important Note</h4>
+                        <p>Margin collapsing can sometimes lead to unexpected spacing. Be aware of it when designing your layouts, especially with paragraphs or headings.</p>
+                    </div>
+                    <div class="code-block">
+                        <pre><span class="comment">/* Example of margin collapsing */</span>
+<span class="selector">p</span> {
+    <span class="property">margin-bottom</span>: <span class="value">20px</span>;
+}
+<span class="selector">h2</span> {
+    <span class="property">margin-top</span>: <span class="value">30px</span>;
+}
+<span class="comment">/* Between a p and an h2, the effective margin will be 30px, not 50px */</span></pre>
+                    </div>
+                    <div class="example-box">
+                        <div class="example-title">Example: Margin Collapsing</div>
+                        <p style="background-color: var(--bg-tertiary); padding: 10px; margin-bottom: 20px;">Paragraph 1 (margin-bottom: 20px)</p>
+                        <p style="background-color: var(--bg-tertiary); padding: 10px; margin-top: 30px;">Paragraph 2 (margin-top: 30px)</p>
+                        <p>
+                            Notice the space between the two paragraphs. Even though the first has a 20px bottom margin and the second a 30px top margin, the actual space will be 30px due to margin collapsing.
+                        </p>
+                    </div>
+                </section>
+
+                <div class="navigation-controls">
+                    <a href="floats.html" class="nav-btn">&larr; Previous: Floats</a>
+                    <a href="borders.html" class="nav-btn">Next: Borders &rarr;</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="overlay"></div>
+
+    
+        
+</body>
+</html>
